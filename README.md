@@ -4,6 +4,18 @@ This is a prototyp.
 
 Smart Office is an IoT Project to practice a lot of IoT's concepts like NodeRed, MQTT, Security, Raspberry Pi, GrovePi, senses, ESP32, LoRa, REST APIs, cloud, Ubuntu, Arduino 
 
+## How to plug sensors
+
+### On the RPI 
+- Relay : D0
+- Rotary angle : A0
+- Button : D3
+- Buzzer : D8
+- Sound sensor : A1
+- Blue light : D2
+- Light sensor : A2
+- LCD screen : I2C
+
 ## Structure
 
 The project is divided into four levels
