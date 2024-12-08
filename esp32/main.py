@@ -10,7 +10,7 @@ PUB_DELAY = 5
 SSID = "kotinas"         # Your Wi-Fi SSID
 PASSWORD = "rootroot"    # Your Wi-Fi Password
 
-BROKER = "test.mosquitto.org"  # Replace with your broker address
+BROKER = "broker.hivemq.com"  # Replace with your broker address
 TOPIC_TEMP = "hepl/smartoffice/temperature"
 TOPIC_SUB = "hepl/smartoffice/esp32"
 
