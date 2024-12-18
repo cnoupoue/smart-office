@@ -1,0 +1,22 @@
+# Node RED
+
+A three-part website for the client hosted on the client VM using NodeRed.
+
+## Parts
+
+* A dashboard with RPI data
+* A reservation pannel with the used rooms (a calendar to display free rooms, via a mongodb 
+* A log part for the admin with all MQTT requests etc
+* A support to help the client to contact us (with webex)
+
+## What we did 
+
+* Install Node Red (the user is `hepl` and password `heplhepl`
+* Launch node red `node-red &` then go to the [localhost](localhost:1880)
+
+## What we have to do
+
+Secure Node Red with https
+-> generate a CA for the whole project
+-> edit `.node-red/settings.json`
+-> set node-red starts at the boot
