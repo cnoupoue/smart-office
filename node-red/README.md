@@ -2,6 +2,10 @@
 
 A three-part website for the client hosted on the client VM using NodeRed.
 
+## Files
+
+`flows.json` is the data for node-red flow
+
 ## Parts
 
 * A dashboard with RPI data

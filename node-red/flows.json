@@ -1,0 +1,153 @@
+[
+    {
+        "id": "0277478f1e68b0ce",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "64e17c81b37a50e9",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "bonjour",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "378c1238cb74a79f"
+            ]
+        ]
+    },
+    {
+        "id": "d40e5791a86fde0c",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "injecter",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "91ae86d3af35290f"
+            ]
+        ]
+    },
+    {
+        "id": "378c1238cb74a79f",
+        "type": "debug",
+        "z": "0277478f1e68b0ce",
+        "name": "stout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "91ae86d3af35290f",
+        "type": "exec",
+        "z": "0277478f1e68b0ce",
+        "command": "ls",
+        "addpay": "",
+        "append": "/",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "mycommand",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "378c1238cb74a79f"
+            ],
+            [
+                "b245b057998ac4a0"
+            ],
+            [
+                "61a31c7d7a4e4cc5"
+            ]
+        ]
+    },
+    {
+        "id": "b245b057998ac4a0",
+        "type": "debug",
+        "z": "0277478f1e68b0ce",
+        "name": "stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "61a31c7d7a4e4cc5",
+        "type": "debug",
+        "z": "0277478f1e68b0ce",
+        "name": "stdin",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f6be92f70f3a6451",
+        "type": "ping",
+        "z": "0277478f1e68b0ce",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "",
+        "host": "zecawebstudio.fr",
+        "timer": "20",
+        "inputs": 0,
+        "x": 440,
+        "y": 400,
+        "wires": [
+            [
+                "378c1238cb74a79f"
+            ]
+        ]
+    }
+]
