@@ -13,3 +13,10 @@ We used Docker to containerize our database.
 The Dockerfile is available in this folder.
 
 The credits for the database are : `hepl` and password is `heplhepl`
+
+## Launch the database
+
+`sudo docker compose -f docker-compose.yaml up -d`
+
+`sudo docker exec -it mongo-client mongosh`
+
