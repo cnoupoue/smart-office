@@ -1,0 +1,31 @@
+version: "1.0"
+
+services:
+  mongodb:
+    image: mongo-iot-image:1.0
+    container_name: mongo-client
+    restart: unless-stopped
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=hepl
+      - MONGO_INITDB_ROOT_PASSWORD=heplhepl
+    ports:
+      - "27017:27017"
+    networks:
+      - iot-network
+
+  node-red:
+    image: nodered-iot-image:1.0
+    container_name: nodered-client
+    restart: unless-stopped
+    ports:
+      - "1880:1880"
+    environment:
+      - MONGO_URI=mongodb://hepl:heplhepl@mongodb:27017
+    depends_on:
+      - mongodb
+    networks:
+      - iot-network
+
+networks:
+  iot-network:
+    driver: bridge
