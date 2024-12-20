@@ -21,7 +21,7 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#f9f06b",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "edited": true,
                 "reset": false
@@ -36,11 +36,11 @@
             "themeState": {
                 "base-color": {
                     "default": "#097479",
-                    "value": "#097479",
-                    "edited": false
+                    "value": "#f9f06b",
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#f9f06b",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -48,11 +48,11 @@
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#0eb8c0",
+                    "value": "#fcf7b5",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -68,7 +68,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#f9f06b",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -109,33 +109,13 @@
     {
         "id": "1db4abaa008c9aa6",
         "type": "ui_group",
-        "name": "SmartOffice",
+        "name": "RPI data",
         "tab": "b58955a989bd717a",
         "order": 1,
         "disp": true,
-        "width": 24,
+        "width": 9,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "276afc4cbf7acf33",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "1db4abaa008c9aa6",
-        "order": 3,
-        "width": 24,
-        "height": 1
-    },
-    {
-        "id": "dd11f12ee106fca0",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "1db4abaa008c9aa6",
-        "order": 4,
-        "width": 24,
-        "height": 1
     },
     {
         "id": "08886a7cd4dd855e",
@@ -170,120 +150,37 @@
         "hidden": false
     },
     {
-        "id": "d40e5791a86fde0c",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "injecter",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 110,
-        "y": 240,
-        "wires": [
-            [
-                "91ae86d3af35290f"
-            ]
-        ]
+        "id": "e79fb037b99350a5",
+        "type": "ui_group",
+        "name": "User Data",
+        "tab": "b58955a989bd717a",
+        "order": 2,
+        "disp": true,
+        "width": 9,
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "378c1238cb74a79f",
-        "type": "debug",
+        "id": "383a99d955142ce0",
+        "type": "ui_spacer",
         "z": "0277478f1e68b0ce",
-        "name": "stout",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 690,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "91ae86d3af35290f",
-        "type": "exec",
-        "z": "0277478f1e68b0ce",
-        "command": "ls",
-        "addpay": "",
-        "append": "/",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "mycommand",
-        "x": 390,
-        "y": 240,
-        "wires": [
-            [
-                "378c1238cb74a79f"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "f6be92f70f3a6451",
-        "type": "ping",
-        "z": "0277478f1e68b0ce",
-        "protocol": "Automatic",
-        "mode": "triggered",
-        "name": "Try internet connection",
-        "host": "www.google.com",
-        "timer": "20",
-        "inputs": 1,
-        "x": 400,
-        "y": 60,
-        "wires": [
-            [
-                "378c1238cb74a79f"
-            ]
-        ]
-    },
-    {
-        "id": "895004ce98163906",
-        "type": "ui_numeric",
-        "z": "0277478f1e68b0ce",
-        "name": "",
-        "label": "Température souhaitée",
-        "tooltip": "",
+        "name": "spacer",
         "group": "1db4abaa008c9aa6",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": "15",
-        "max": "35",
-        "step": "0.5",
-        "className": "",
-        "x": 140,
-        "y": 400,
-        "wires": [
-            [
-                "7ce08affddeab4ea"
-            ]
-        ]
+        "order": 2,
+        "width": 9,
+        "height": 1
     },
     {
         "id": "7ce08affddeab4ea",
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
-        "name": "",
+        "name": "temperature",
         "group": "1db4abaa008c9aa6",
-        "order": 8,
-        "width": 0,
-        "height": 0,
+        "order": 4,
+        "width": 3,
+        "height": 3,
         "gtype": "gage",
-        "title": "Temperature actuelle",
+        "title": "Temperature",
         "label": "°",
         "format": "{{value}}",
         "min": 0,
@@ -297,8 +194,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 400,
-        "y": 400,
+        "x": 570,
+        "y": 360,
         "wires": []
     },
     {
@@ -313,67 +210,49 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "find.toArray",
-        "x": 510,
-        "y": 580,
+        "x": 610,
+        "y": 560,
         "wires": [
             [
-                "378c1238cb74a79f"
+                "f7d333af7d00a920",
+                "81028e271494cec3"
             ]
         ]
     },
     {
-        "id": "9f3decb1d297a430",
-        "type": "ui_button",
-        "z": "0277478f1e68b0ce",
-        "name": "TestDB",
-        "group": "1db4abaa008c9aa6",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Test DB",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 140,
-        "y": 580,
-        "wires": [
-            [
-                "fc16cec106e0b878"
-            ]
-        ]
-    },
-    {
-        "id": "fc16cec106e0b878",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "const query = { login: \"john_doe\" };\n\nmsg.payload = [query];\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 580,
-        "wires": [
-            [
-                "457eb4dcb938678a"
-            ]
-        ]
-    },
-    {
-        "id": "fd78936fda35d4da",
+        "id": "45e37034f54ed538",
         "type": "inject",
         "z": "0277478f1e68b0ce",
-        "name": "",
+        "name": "buzzer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "bip",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "339ea9fe7fda0283"
+            ]
+        ]
+    },
+    {
+        "id": "da2935c32034ab79",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "button",
         "props": [
             {
                 "p": "payload"
@@ -390,11 +269,486 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 520,
+        "x": 110,
+        "y": 260,
         "wires": [
             [
-                "fc16cec106e0b878"
+                "2236d7e5a8b2ebf9"
+            ]
+        ]
+    },
+    {
+        "id": "436002b409972571",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "camera",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "d8847c5688312b3c"
+            ]
+        ]
+    },
+    {
+        "id": "a951431026817237",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "temperature",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "25",
+        "payloadType": "num",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "1c572a9b6aad7cc2"
+            ]
+        ]
+    },
+    {
+        "id": "7006526e0ba7d14a",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "light_sensor",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "a322f0f04a91ee26"
+            ]
+        ]
+    },
+    {
+        "id": "66c441938b660ea1",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "rfid",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "726aa267c0eb4bad"
+            ]
+        ]
+    },
+    {
+        "id": "340db043376c7982",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "sound_sensor",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 660,
+        "wires": [
+            [
+                "14651d281752c495"
+            ]
+        ]
+    },
+    {
+        "id": "ef372e205502e45d",
+        "type": "ui_switch",
+        "z": "0277478f1e68b0ce",
+        "name": "Button on",
+        "label": "RPI button state",
+        "tooltip": "",
+        "group": "1db4abaa008c9aa6",
+        "order": 1,
+        "width": 9,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 480,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2037c6326bff8ce",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "group": "e79fb037b99350a5",
+        "order": 2,
+        "width": 9,
+        "height": 1,
+        "name": "logged",
+        "label": "Connecté : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1030,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5ea7201186c39d78",
+        "type": "ui_gauge",
+        "z": "0277478f1e68b0ce",
+        "name": "light_level ",
+        "group": "1db4abaa008c9aa6",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Light level",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 580,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "73b0e66ce5cfb17b",
+        "type": "ui_audio",
+        "z": "0277478f1e68b0ce",
+        "name": "buzzer_sound",
+        "group": "1db4abaa008c9aa6",
+        "voice": "urn:moz-tts:speechd:English%20(America,%20New%20York%20City)+anikaRobot?en-US-NYC",
+        "always": "",
+        "x": 460,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "339ea9fe7fda0283",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 60,
+        "wires": [
+            [
+                "73b0e66ce5cfb17b",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "d8847c5688312b3c",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "2236d7e5a8b2ebf9",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 260,
+        "wires": [
+            [
+                "ef372e205502e45d",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "1c572a9b6aad7cc2",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "7ce08affddeab4ea",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "a322f0f04a91ee26",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 460,
+        "wires": [
+            [
+                "5ea7201186c39d78",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "726aa267c0eb4bad",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "const query = { login: \"john_doe\" };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "457eb4dcb938678a"
+            ]
+        ]
+    },
+    {
+        "id": "f7d333af7d00a920",
+        "type": "debug",
+        "z": "0277478f1e68b0ce",
+        "name": "rpi_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "14651d281752c495",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 660,
+        "wires": [
+            [
+                "3fa65fc688213d56",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "3fa65fc688213d56",
+        "type": "ui_gauge",
+        "z": "0277478f1e68b0ce",
+        "name": "sound-level",
+        "group": "1db4abaa008c9aa6",
+        "order": 5,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Sound level",
+        "label": "°",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": true,
+        "className": "",
+        "x": 610,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d9bf3ab6f987cd5a",
+        "type": "ui_form",
+        "z": "0277478f1e68b0ce",
+        "name": "Contact us",
+        "label": "Contact us",
+        "group": "e79fb037b99350a5",
+        "order": 1,
+        "width": 9,
+        "height": 1,
+        "options": [
+            {
+                "label": "Support",
+                "value": "Support",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Support": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 850,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "81028e271494cec3",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "msg.payload = msg.payload.login;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 560,
+        "wires": [
+            [
+                "f2037c6326bff8ce"
             ]
         ]
     }
