@@ -138,6 +138,30 @@
         "height": 1
     },
     {
+        "id": "08886a7cd4dd855e",
+        "type": "mongodb4-client",
+        "name": "MongoDB",
+        "protocol": "mongodb",
+        "hostname": "localhost",
+        "port": "27017",
+        "dbName": "reservationDB",
+        "appName": "",
+        "authSource": "admin",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
         "id": "b58955a989bd717a",
         "type": "ui_tab",
         "name": "Home",
@@ -217,87 +241,9 @@
         "y": 60,
         "wires": [
             [
-                "378c1238cb74a79f",
-                "be6b920956d601b4"
+                "378c1238cb74a79f"
             ]
         ]
-    },
-    {
-        "id": "a191d3b2b096aef2",
-        "type": "ui_button",
-        "z": "0277478f1e68b0ce",
-        "name": "Internet test",
-        "group": "1db4abaa008c9aa6",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Try internet connection",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "try internet connection",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 110,
-        "y": 60,
-        "wires": [
-            [
-                "f6be92f70f3a6451"
-            ]
-        ]
-    },
-    {
-        "id": "be6b920956d601b4",
-        "type": "ui_text",
-        "z": "0277478f1e68b0ce",
-        "group": "1db4abaa008c9aa6",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Your connection :",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 750,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "7ce08affddeab4ea",
-        "type": "ui_gauge",
-        "z": "0277478f1e68b0ce",
-        "name": "",
-        "group": "1db4abaa008c9aa6",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Temperature actuelle",
-        "label": "°",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "40",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 400,
-        "y": 400,
-        "wires": []
     },
     {
         "id": "895004ce98163906",
@@ -328,67 +274,128 @@
         ]
     },
     {
-        "id": "55a448333027c30d",
-        "type": "ui_switch",
+        "id": "7ce08affddeab4ea",
+        "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "name": "",
-        "label": "Allumer la lumière",
-        "tooltip": "",
         "group": "1db4abaa008c9aa6",
-        "order": 1,
+        "order": 8,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
+        "gtype": "gage",
+        "title": "Temperature actuelle",
+        "label": "°",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
         "className": "",
-        "x": 130,
-        "y": 480,
+        "x": 400,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "457eb4dcb938678a",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.toArray",
+        "x": 510,
+        "y": 580,
         "wires": [
             [
-                "77f17548a12ad182"
+                "378c1238cb74a79f"
             ]
         ]
     },
     {
-        "id": "77f17548a12ad182",
-        "type": "ui_colour_picker",
+        "id": "9f3decb1d297a430",
+        "type": "ui_button",
         "z": "0277478f1e68b0ce",
-        "name": "",
-        "label": "",
+        "name": "TestDB",
         "group": "1db4abaa008c9aa6",
-        "format": "hex",
-        "outformat": "string",
-        "showSwatch": true,
-        "showPicker": false,
-        "showValue": false,
-        "showHue": false,
-        "showAlpha": false,
-        "showLightness": true,
-        "square": "false",
-        "dynOutput": "false",
-        "order": 7,
+        "order": 5,
         "width": 0,
         "height": 0,
-        "passthru": true,
+        "passthru": false,
+        "label": "Test DB",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "className": "",
-        "x": 350,
-        "y": 480,
+        "x": 140,
+        "y": 580,
         "wires": [
-            []
+            [
+                "fc16cec106e0b878"
+            ]
+        ]
+    },
+    {
+        "id": "fc16cec106e0b878",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "const query = { login: \"john_doe\" };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 580,
+        "wires": [
+            [
+                "457eb4dcb938678a"
+            ]
+        ]
+    },
+    {
+        "id": "fd78936fda35d4da",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "fc16cec106e0b878"
+            ]
         ]
     }
 ]
