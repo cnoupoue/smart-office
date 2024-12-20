@@ -16,7 +16,19 @@ The credits for the database are : `hepl` and password is `heplhepl`
 
 ## Launch the database
 
-`sudo docker compose -f docker-compose.yaml up -d`
+`./runapp.sh`
 
-`sudo docker exec -it mongo-client mongosh`
+`sudo docker exec -it mongo-client mongosh -u hepl -p heplhepl --authenticationDatabase admin`
+
+> use reservationDB
+>
+> show collections
+>
+> db.client.find().pretty();
+>
+> db.premise.find().pretty();
+>
+> db.reservation.find().pretty();
+>
+> db.log.find().pretty();
 
