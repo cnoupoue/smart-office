@@ -8,6 +8,8 @@ A three-part website for the client hosted on the client VM using NodeRed.
 * `settings.json` is the node-red configuration
 * `package.json` are the installed packages
 
+To copy them from the `.node-red` package, please use the `./get_nodered_config.sh` script
+
 Here's the list of packages we installed 
 - node-red-dashboard
 - node-red-contrib-mongodb4
