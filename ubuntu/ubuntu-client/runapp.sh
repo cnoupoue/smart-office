@@ -1,10 +1,8 @@
 #!/bin/bash
 
-sudo docker build -t mongo-iot-image:1.0 mongodb/Dockefile
+sudo docker build -t mongo-iot-image:1.0 mongodb/
 
-sudo docker build -t nodered-iot-image:1.0 node-red/Dockerfile
-
-echo "Images rebuilt"
+echo "MongoDB image rebuilt"
 
 sudo docker compose -f docker-compose.yaml down
 
