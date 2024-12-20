@@ -4,7 +4,13 @@ A three-part website for the client hosted on the client VM using NodeRed.
 
 ## Files
 
-`flows.json` is the data for node-red flow
+* `flows.json` is the data for node-red flow
+* `settings.json` is the node-red configuration
+* `package.json` are the installed packages
+
+Here's the list of packages we installed 
+- node-red-dashboard
+- node-red-contrib-mongodb4
 
 ## Parts
 
