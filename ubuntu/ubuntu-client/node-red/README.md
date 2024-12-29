@@ -13,6 +13,8 @@ To copy them from the `.node-red` package, please use the `./get_nodered_config.
 Here's the list of packages we installed 
 - node-red-dashboard
 - node-red-contrib-mongodb4
+- node-red-contrib-uimedia
+- node-red-node-ui-table
 
 ## Parts
 
