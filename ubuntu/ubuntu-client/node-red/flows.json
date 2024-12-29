@@ -2,10 +2,163 @@
     {
         "id": "0277478f1e68b0ce",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "1 RPI",
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "4e821b48bbd42ca3",
+        "type": "tab",
+        "label": "Main Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4db1d4819dfea4ef",
+        "type": "tab",
+        "label": "Reservation",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "df1a303ec9e1b819",
+        "type": "tab",
+        "label": "1Reservation",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d959e01e9af70966",
+        "type": "tab",
+        "label": "Support",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0ab432dc59b6d0a3",
+        "type": "tab",
+        "label": "Logs",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "19da2f4cf4bf4170",
+        "type": "tab",
+        "label": "Users",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a71c83548b86d5cf",
+        "type": "tab",
+        "label": "CreateUser",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "01557fa3c5d57cbe",
+        "type": "tab",
+        "label": "EditUser",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "50484f8edde3dcf6",
+        "type": "group",
+        "z": "4e821b48bbd42ca3",
+        "name": "Group",
+        "style": {
+            "label": false
+        },
+        "nodes": [
+            "55b5a88e854315aa",
+            "a91a3199ac6a18da",
+            "209054f98f416386",
+            "68e0cfa4b06db715",
+            "a580835a1833e887"
+        ],
+        "x": 74,
+        "y": 139,
+        "w": 732,
+        "h": 142
+    },
+    {
+        "id": "829459fd4bc2bd59",
+        "type": "group",
+        "z": "4e821b48bbd42ca3",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5588a030b4ba3054",
+            "4a0e9bc2ee73a43b",
+            "99e8dec59f4301b0",
+            "1a334ccfcf23875f",
+            "3244fdb1a10c6c55"
+        ],
+        "x": 74,
+        "y": 319,
+        "w": 732,
+        "h": 142
+    },
+    {
+        "id": "cd243a0843f64ae7",
+        "type": "group",
+        "z": "4e821b48bbd42ca3",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ef5500a5e12cb9c4",
+            "803591f4887b5365",
+            "d01c87dadb6b1f01",
+            "b67d5e6402ba9e62",
+            "70fc72c1310dd2e9"
+        ],
+        "x": 74,
+        "y": 499,
+        "w": 732,
+        "h": 142
+    },
+    {
+        "id": "52529d8d7b615ffa",
+        "type": "group",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fb85b18a99c3394a",
+            "f032958d3bcb43c7",
+            "59cf1e44b794d204",
+            "dcd7d03b0d6ee46b"
+        ],
+        "x": 874,
+        "y": 479,
+        "w": 392,
+        "h": 162
     },
     {
         "id": "9e1f662934605284",
@@ -21,7 +174,7 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#f9f06b",
+                "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "edited": true,
                 "reset": false
@@ -36,11 +189,11 @@
             "themeState": {
                 "base-color": {
                     "default": "#097479",
-                    "value": "#f9f06b",
+                    "value": "#097479",
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#f9f06b",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -48,11 +201,11 @@
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#fcf7b5",
+                    "value": "#0eb8c0",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -68,7 +221,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#f9f06b",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -109,11 +262,11 @@
     {
         "id": "1db4abaa008c9aa6",
         "type": "ui_group",
-        "name": "RPI data",
+        "name": "Local associé",
         "tab": "b58955a989bd717a",
-        "order": 1,
-        "disp": true,
-        "width": 9,
+        "order": 2,
+        "disp": false,
+        "width": 12,
         "collapse": false,
         "className": ""
     },
@@ -144,30 +297,513 @@
     {
         "id": "b58955a989bd717a",
         "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
+        "name": "RPI",
+        "icon": "",
+        "order": 6,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "40a836b15e21b5f0",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "",
+        "order": 1,
         "disabled": false,
         "hidden": false
     },
     {
-        "id": "e79fb037b99350a5",
+        "id": "1760465bb1ca33bd",
         "type": "ui_group",
-        "name": "User Data",
-        "tab": "b58955a989bd717a",
-        "order": 2,
-        "disp": true,
-        "width": 9,
+        "name": "Main",
+        "tab": "40a836b15e21b5f0",
+        "order": 1,
+        "disp": false,
+        "width": 28,
         "collapse": false,
         "className": ""
     },
     {
-        "id": "383a99d955142ce0",
+        "id": "dc7fd2a2a5b25c12",
+        "type": "ui_tab",
+        "name": "Réservation",
+        "icon": "",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7d4fc252c55d200f",
+        "type": "ui_tab",
+        "name": "Support",
+        "icon": "",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0e66de217ecb6d6e",
+        "type": "ui_tab",
+        "name": "Logs",
+        "icon": "",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f4731d1939b558e5",
+        "type": "ui_tab",
+        "name": "Utilisateurs",
+        "icon": "",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "821b48d3e4d5beb6",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "dc7fd2a2a5b25c12",
+        "order": 1,
+        "disp": false,
+        "width": 34,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b255ced8c894f4f0",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "7d4fc252c55d200f",
+        "order": 1,
+        "disp": false,
+        "width": 34,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f87d496c91fac1c3",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "0e66de217ecb6d6e",
+        "order": 1,
+        "disp": false,
+        "width": 34,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b433e86cb98af344",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "f4731d1939b558e5",
+        "order": 1,
+        "disp": false,
+        "width": 34,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "841582caaa17523e",
+        "type": "ui_group",
+        "name": "Appareils",
+        "tab": "40a836b15e21b5f0",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8753015cdcb44cc3",
+        "type": "ui_group",
+        "name": "Carte",
+        "tab": "40a836b15e21b5f0",
+        "order": 3,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7fda8290ea03273e",
+        "type": "ui_group",
+        "name": "Qualité de l'air",
+        "tab": "40a836b15e21b5f0",
+        "order": 4,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7c4ba8e1e71b582f",
+        "type": "ui_group",
+        "name": "Bruit",
+        "tab": "b58955a989bd717a",
+        "order": 3,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eba1eeab2c58edb8",
+        "type": "ui_group",
+        "name": "Température",
+        "tab": "b58955a989bd717a",
+        "order": 4,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "77cc3ec7a2ad9d4e",
+        "type": "ui_group",
+        "name": "Humidité",
+        "tab": "b58955a989bd717a",
+        "order": 5,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f755c7094e0204d7",
+        "type": "ui_group",
+        "name": "Luminosité",
+        "tab": "b58955a989bd717a",
+        "order": 6,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6d9ac2ca21f48ee4",
+        "type": "ui_group",
+        "name": "Caméra",
+        "tab": "b58955a989bd717a",
+        "order": 7,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "78055e7e1fa8ec1f",
+        "type": "ui_group",
+        "name": "Alerte",
+        "tab": "b58955a989bd717a",
+        "order": 9,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eb521a47e9a8db09",
+        "type": "ui_group",
+        "name": "Derniers scans de cartes",
+        "tab": "b58955a989bd717a",
+        "order": 8,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "de51837b8b377b3b",
+        "type": "ui_group",
+        "name": "Réservation",
+        "tab": "b58955a989bd717a",
+        "order": 10,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f36af4e5677b5672",
+        "type": "ui_group",
+        "name": "GPS",
+        "tab": "b58955a989bd717a",
+        "order": 11,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f988ca3073539a8c",
+        "type": "ui_group",
+        "name": "Header",
+        "tab": "b58955a989bd717a",
+        "order": 1,
+        "disp": false,
+        "width": 34,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "203cc1b0203b20d1",
         "type": "ui_spacer",
         "z": "0277478f1e68b0ce",
         "name": "spacer",
-        "group": "1db4abaa008c9aa6",
+        "group": "841582caaa17523e",
+        "order": 1,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "b61928c2414a64a5",
+        "type": "ui_spacer",
+        "z": "0277478f1e68b0ce",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3a6075dcd8f27d9a",
+        "type": "ui_spacer",
+        "z": "0277478f1e68b0ce",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "56500c023292202f",
+        "type": "ui_spacer",
+        "z": "0277478f1e68b0ce",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3d0ffe75e9acb6b5",
+        "type": "ui_spacer",
+        "z": "0277478f1e68b0ce",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 11,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "408723294537ab96",
+        "type": "ui_spacer",
+        "z": "0277478f1e68b0ce",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "2dd860a0786620d5",
+        "type": "ui_tab",
+        "name": "1Reservation",
+        "icon": "",
+        "order": 7,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "ca6e864468baaad4",
+        "type": "ui_group",
+        "name": "Form",
+        "tab": "2dd860a0786620d5",
+        "order": 1,
+        "disp": false,
+        "width": "23",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bcfe87b000577192",
+        "type": "ui_spacer",
+        "z": "d959e01e9af70966",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
         "order": 2,
-        "width": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "50266fbbc1e9602e",
+        "type": "ui_spacer",
+        "z": "d959e01e9af70966",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2326a7e8db4f8453",
+        "type": "ui_spacer",
+        "z": "d959e01e9af70966",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 4,
+        "width": 34,
+        "height": 1
+    },
+    {
+        "id": "fbf02550bd1fccdf",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "821b48d3e4d5beb6",
+        "order": 2,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "51c099a503ef3ca5",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "821b48d3e4d5beb6",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "7537cae06b7ff52a",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "821b48d3e4d5beb6",
+        "order": 5,
+        "width": 34,
+        "height": 1
+    },
+    {
+        "id": "147be3928f16525b",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "b433e86cb98af344",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "2196b56a83b1b291",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "b433e86cb98af344",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "17d61cb8f8ed1382",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "b433e86cb98af344",
+        "order": 6,
+        "width": 28,
+        "height": 1
+    },
+    {
+        "id": "c7b473b3c51d1231",
+        "type": "ui_tab",
+        "name": "CreateUser",
+        "icon": "",
+        "order": 8,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "600bf87db0283dac",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "c7b473b3c51d1231",
+        "order": 1,
+        "disp": false,
+        "width": 34,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fe00c51b9ccea92f",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "600bf87db0283dac",
+        "order": 2,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "d9c60283f21d18d6",
+        "type": "ui_spacer",
+        "z": "19da2f4cf4bf4170",
+        "name": "spacer",
+        "group": "600bf87db0283dac",
+        "order": 4,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "bf68deda59755705",
+        "type": "ui_tab",
+        "name": "EditUser",
+        "icon": "",
+        "order": 9,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "1e09fa150998fee1",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "bf68deda59755705",
+        "order": 1,
+        "disp": false,
+        "width": 34,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "21e05f13d924f582",
+        "type": "ui_spacer",
+        "z": "01557fa3c5d57cbe",
+        "name": "spacer",
+        "group": "1e09fa150998fee1",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "f5ead6b6eb26ef4a",
+        "type": "ui_spacer",
+        "z": "01557fa3c5d57cbe",
+        "name": "spacer",
+        "group": "1e09fa150998fee1",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2e6d4ba76a39cb0c",
+        "type": "ui_spacer",
+        "z": "01557fa3c5d57cbe",
+        "name": "spacer",
+        "group": "1e09fa150998fee1",
+        "order": 5,
+        "width": 34,
         "height": 1
     },
     {
@@ -175,10 +811,10 @@
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "name": "temperature",
-        "group": "1db4abaa008c9aa6",
-        "order": 4,
-        "width": 3,
-        "height": 3,
+        "group": "eba1eeab2c58edb8",
+        "order": 1,
+        "width": 12,
+        "height": 2,
         "gtype": "gage",
         "title": "Temperature",
         "label": "°",
@@ -194,117 +830,9 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 570,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "457eb4dcb938678a",
-        "type": "mongodb4",
-        "z": "0277478f1e68b0ce",
-        "clientNode": "08886a7cd4dd855e",
-        "mode": "collection",
-        "collection": "client",
-        "operation": "find",
-        "output": "toArray",
-        "maxTimeMS": "0",
-        "handleDocId": false,
-        "name": "find.toArray",
-        "x": 610,
-        "y": 560,
-        "wires": [
-            [
-                "f7d333af7d00a920",
-                "81028e271494cec3"
-            ]
-        ]
-    },
-    {
-        "id": "45e37034f54ed538",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "buzzer",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "bip",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 60,
-        "wires": [
-            [
-                "339ea9fe7fda0283"
-            ]
-        ]
-    },
-    {
-        "id": "da2935c32034ab79",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "button",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 260,
-        "wires": [
-            [
-                "2236d7e5a8b2ebf9"
-            ]
-        ]
-    },
-    {
-        "id": "436002b409972571",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "camera",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
+        "x": 590,
         "y": 160,
-        "wires": [
-            [
-                "d8847c5688312b3c"
-            ]
-        ]
+        "wires": []
     },
     {
         "id": "a951431026817237",
@@ -323,8 +851,8 @@
         "topic": "",
         "payload": "25",
         "payloadType": "num",
-        "x": 130,
-        "y": 360,
+        "x": 150,
+        "y": 160,
         "wires": [
             [
                 "1c572a9b6aad7cc2"
@@ -348,40 +876,11 @@
         "topic": "",
         "payload": "5",
         "payloadType": "num",
-        "x": 130,
-        "y": 460,
+        "x": 150,
+        "y": 480,
         "wires": [
             [
                 "a322f0f04a91ee26"
-            ]
-        ]
-    },
-    {
-        "id": "66c441938b660ea1",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "rfid",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 560,
-        "wires": [
-            [
-                "726aa267c0eb4bad"
             ]
         ]
     },
@@ -406,8 +905,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 660,
+        "x": 150,
+        "y": 240,
         "wires": [
             [
                 "14651d281752c495"
@@ -415,75 +914,22 @@
         ]
     },
     {
-        "id": "ef372e205502e45d",
-        "type": "ui_switch",
-        "z": "0277478f1e68b0ce",
-        "name": "Button on",
-        "label": "RPI button state",
-        "tooltip": "",
-        "group": "1db4abaa008c9aa6",
-        "order": 1,
-        "width": 9,
-        "height": 2,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 480,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f2037c6326bff8ce",
-        "type": "ui_text",
-        "z": "0277478f1e68b0ce",
-        "group": "e79fb037b99350a5",
-        "order": 2,
-        "width": 9,
-        "height": 1,
-        "name": "logged",
-        "label": "Connecté : ",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1030,
-        "y": 560,
-        "wires": []
-    },
-    {
         "id": "5ea7201186c39d78",
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "name": "light_level ",
-        "group": "1db4abaa008c9aa6",
-        "order": 3,
-        "width": 3,
-        "height": 3,
+        "group": "f755c7094e0204d7",
+        "order": 1,
+        "width": 12,
+        "height": 2,
         "gtype": "gage",
-        "title": "Light level",
+        "title": "Luminosité",
         "label": "units",
         "format": "{{value}}",
         "min": 0,
-        "max": 10,
+        "max": "20",
         "colors": [
-            "#00b500",
+            "#99c1f1",
             "#e6e600",
             "#ca3838"
         ],
@@ -491,83 +937,9 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 580,
-        "y": 460,
+        "x": 600,
+        "y": 480,
         "wires": []
-    },
-    {
-        "id": "73b0e66ce5cfb17b",
-        "type": "ui_audio",
-        "z": "0277478f1e68b0ce",
-        "name": "buzzer_sound",
-        "group": "1db4abaa008c9aa6",
-        "voice": "urn:moz-tts:speechd:English%20(America,%20New%20York%20City)+anikaRobot?en-US-NYC",
-        "always": "",
-        "x": 460,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "339ea9fe7fda0283",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 60,
-        "wires": [
-            [
-                "73b0e66ce5cfb17b",
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "d8847c5688312b3c",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 160,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "2236d7e5a8b2ebf9",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 260,
-        "wires": [
-            [
-                "ef372e205502e45d",
-                "f7d333af7d00a920"
-            ]
-        ]
     },
     {
         "id": "1c572a9b6aad7cc2",
@@ -581,12 +953,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 360,
+        "x": 350,
+        "y": 160,
         "wires": [
             [
-                "7ce08affddeab4ea",
-                "f7d333af7d00a920"
+                "7ce08affddeab4ea"
             ]
         ]
     },
@@ -602,32 +973,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 460,
+        "x": 370,
+        "y": 480,
         "wires": [
             [
-                "5ea7201186c39d78",
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "726aa267c0eb4bad",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "const query = { login: \"john_doe\" };\n\nmsg.payload = [query];\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 310,
-        "y": 560,
-        "wires": [
-            [
-                "457eb4dcb938678a"
+                "5ea7201186c39d78"
             ]
         ]
     },
@@ -660,12 +1010,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 660,
+        "x": 370,
+        "y": 240,
         "wires": [
             [
-                "3fa65fc688213d56",
-                "f7d333af7d00a920"
+                "3fa65fc688213d56"
             ]
         ]
     },
@@ -674,10 +1023,10 @@
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "name": "sound-level",
-        "group": "1db4abaa008c9aa6",
-        "order": 5,
-        "width": 3,
-        "height": 3,
+        "group": "7c4ba8e1e71b582f",
+        "order": 1,
+        "width": 12,
+        "height": 2,
         "gtype": "gage",
         "title": "Sound level",
         "label": "°",
@@ -693,49 +1042,1450 @@
         "seg2": "",
         "diff": true,
         "className": "",
-        "x": 610,
-        "y": 660,
+        "x": 630,
+        "y": 240,
         "wires": []
     },
     {
-        "id": "d9bf3ab6f987cd5a",
+        "id": "2cbf6b2a0733df7e",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "local",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "290 C",
+        "payloadType": "str",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "b25b11cde203614a"
+            ]
+        ]
+    },
+    {
+        "id": "b25b11cde203614a",
         "type": "ui_form",
         "z": "0277478f1e68b0ce",
-        "name": "Contact us",
-        "label": "Contact us",
-        "group": "e79fb037b99350a5",
+        "name": "associated_local",
+        "label": "Local associé",
+        "group": "1db4abaa008c9aa6",
         "order": 1,
-        "width": 9,
+        "width": 12,
         "height": 1,
         "options": [
             {
-                "label": "Support",
-                "value": "Support",
+                "label": "",
+                "value": "local1",
                 "type": "text",
                 "required": true,
                 "rows": null
             }
         ],
         "formValue": {
-            "Support": ""
+            "local1": ""
         },
         "payload": "",
-        "submit": "submit",
-        "cancel": "cancel",
+        "submit": "Enregistrer",
+        "cancel": "Supprimer",
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 850,
-        "y": 660,
+        "x": 390,
+        "y": 320,
         "wires": [
             []
         ]
     },
     {
-        "id": "81028e271494cec3",
+        "id": "8d83378d17572eea",
+        "type": "ui_gauge",
+        "z": "0277478f1e68b0ce",
+        "name": "humidity",
+        "group": "77cc3ec7a2ad9d4e",
+        "order": 1,
+        "width": 12,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Humidité",
+        "label": "°",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 600,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d1b7f378b4eafaa2",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "humidity",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 140,
+        "y": 400,
+        "wires": [
+            [
+                "23653ae5c39ed34f"
+            ]
+        ]
+    },
+    {
+        "id": "23653ae5c39ed34f",
         "type": "function",
         "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "8d83378d17572eea"
+            ]
+        ]
+    },
+    {
+        "id": "ee93e7ac092f78b3",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "group": "f988ca3073539a8c",
+        "order": 1,
+        "width": 34,
+        "height": 1,
+        "name": "title",
+        "label": "Vue d'ensemble > ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 350,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "93981230535d1cb9",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "290 C",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "290C ",
+        "payloadType": "str",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "ee93e7ac092f78b3"
+            ]
+        ]
+    },
+    {
+        "id": "c9b96fcb3f9a4c9f",
+        "type": "ui_button",
+        "z": "0277478f1e68b0ce",
+        "name": "camera_button",
+        "group": "6d9ac2ca21f48ee4",
+        "order": 1,
+        "width": 12,
+        "height": 2,
+        "passthru": false,
+        "label": "Accéder à la caméra",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d8a4d7a697b706b",
+        "type": "ui_button",
+        "z": "0277478f1e68b0ce",
+        "name": "alert_button",
+        "group": "78055e7e1fa8ec1f",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "passthru": false,
+        "label": "Désactiver l'alarme",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "75680836e4f80837"
+            ]
+        ]
+    },
+    {
+        "id": "75680836e4f80837",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "group": "78055e7e1fa8ec1f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "alert",
+        "label": "Température élevée",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 350,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "008d0f8c6ef1132f",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "group": "de51837b8b377b3b",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "name": "reservation",
+        "label": "Libre",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 130,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ea41ab0465f47990",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "group": "eb521a47e9a8db09",
+        "order": 1,
+        "width": 12,
+        "height": 6,
+        "name": "logs",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 350,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "b2adb1c024dc31f8",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "logs_injector",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "20/12 10:43 Pierre Paul",
+        "payloadType": "str",
+        "x": 150,
+        "y": 800,
+        "wires": [
+            [
+                "ea41ab0465f47990"
+            ]
+        ]
+    },
+    {
+        "id": "9b88fd4b128fc57c",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "group": "f36af4e5677b5672",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "name": "gps_location",
+        "label": "Localisation détectée",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 370,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "6a6730ad1b5f4f13",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "gps_injector",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Rue du cheval blanc, 4000 Liège",
+        "payloadType": "str",
+        "x": 150,
+        "y": 880,
+        "wires": [
+            [
+                "9b88fd4b128fc57c"
+            ]
+        ]
+    },
+    {
+        "id": "4c27675628385ea0",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "group": "1760465bb1ca33bd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "title",
+        "label": "Vue d'ensemble",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 130,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "55b5a88e854315aa",
+        "type": "ui_button",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "rpi1",
+        "group": "841582caaa17523e",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "290A",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "redirect1",
+        "payloadType": "global",
+        "topic": "",
+        "topicType": "str",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "a91a3199ac6a18da",
+                "209054f98f416386",
+                "a580835a1833e887"
+            ]
+        ]
+    },
+    {
+        "id": "a91a3199ac6a18da",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "group": "841582caaa17523e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "is_active",
+        "label": "actif",
+        "format": "",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#33d17a",
+        "x": 360,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "209054f98f416386",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "group": "841582caaa17523e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "is_free",
+        "label": "occupé",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#e01b24",
+        "x": 350,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "68e0cfa4b06db715",
+        "type": "ui_ui_control",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "",
+        "events": "change",
+        "x": 720,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a580835a1833e887",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"RPI\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 180,
+        "wires": [
+            [
+                "68e0cfa4b06db715"
+            ]
+        ]
+    },
+    {
+        "id": "5588a030b4ba3054",
+        "type": "ui_button",
+        "z": "4e821b48bbd42ca3",
+        "g": "829459fd4bc2bd59",
+        "name": "rpi2",
+        "group": "841582caaa17523e",
+        "order": 7,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "290C",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "redirect1",
+        "payloadType": "global",
+        "topic": "",
+        "topicType": "str",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "4a0e9bc2ee73a43b",
+                "99e8dec59f4301b0",
+                "3244fdb1a10c6c55"
+            ]
+        ]
+    },
+    {
+        "id": "4a0e9bc2ee73a43b",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "g": "829459fd4bc2bd59",
+        "group": "841582caaa17523e",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "is_active",
+        "label": "innactif",
+        "format": "",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#c01c28",
+        "x": 360,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "99e8dec59f4301b0",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "g": "829459fd4bc2bd59",
+        "group": "841582caaa17523e",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "is_free",
+        "label": "libre",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#57e389",
+        "x": 350,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "1a334ccfcf23875f",
+        "type": "ui_ui_control",
+        "z": "4e821b48bbd42ca3",
+        "g": "829459fd4bc2bd59",
+        "name": "",
+        "events": "change",
+        "x": 720,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3244fdb1a10c6c55",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "g": "829459fd4bc2bd59",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"RPI\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "1a334ccfcf23875f"
+            ]
+        ]
+    },
+    {
+        "id": "ef5500a5e12cb9c4",
+        "type": "ui_button",
+        "z": "4e821b48bbd42ca3",
+        "g": "cd243a0843f64ae7",
+        "name": "rpi3",
+        "group": "841582caaa17523e",
+        "order": 12,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "1020292",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "black",
+        "icon": "",
+        "payload": "redirect1",
+        "payloadType": "global",
+        "topic": "",
+        "topicType": "str",
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "803591f4887b5365",
+                "d01c87dadb6b1f01",
+                "70fc72c1310dd2e9"
+            ]
+        ]
+    },
+    {
+        "id": "803591f4887b5365",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "g": "cd243a0843f64ae7",
+        "group": "841582caaa17523e",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "name": "is_active",
+        "label": "actif",
+        "format": "",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#33d17a",
+        "x": 360,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d01c87dadb6b1f01",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "g": "cd243a0843f64ae7",
+        "group": "841582caaa17523e",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "name": "is_free",
+        "label": "pas de local associé",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#f9f06b",
+        "x": 350,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b67d5e6402ba9e62",
+        "type": "ui_ui_control",
+        "z": "4e821b48bbd42ca3",
+        "g": "cd243a0843f64ae7",
+        "name": "",
+        "events": "change",
+        "x": 720,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70fc72c1310dd2e9",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "g": "cd243a0843f64ae7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"RPI\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 540,
+        "wires": [
+            [
+                "b67d5e6402ba9e62"
+            ]
+        ]
+    },
+    {
+        "id": "fb85b18a99c3394a",
+        "type": "ui_gauge",
+        "z": "4e821b48bbd42ca3",
+        "g": "52529d8d7b615ffa",
+        "name": "air_quality",
+        "group": "7fda8290ea03273e",
+        "order": 2,
+        "width": 8,
+        "height": 6,
+        "gtype": "donut",
+        "title": "Qualité globale :",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1170,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "f032958d3bcb43c7",
+        "type": "ui_gauge",
+        "z": "4e821b48bbd42ca3",
+        "g": "52529d8d7b615ffa",
+        "name": "co_quantity",
+        "group": "7fda8290ea03273e",
+        "order": 1,
+        "width": 8,
+        "height": 6,
+        "gtype": "donut",
+        "title": "Quantité de CO",
+        "label": "",
+        "format": "{{value}} (190 µg/m3)",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1170,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "59cf1e44b794d204",
+        "type": "inject",
+        "z": "4e821b48bbd42ca3",
+        "g": "52529d8d7b615ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 970,
+        "y": 520,
+        "wires": [
+            [
+                "fb85b18a99c3394a"
+            ]
+        ]
+    },
+    {
+        "id": "dcd7d03b0d6ee46b",
+        "type": "inject",
+        "z": "4e821b48bbd42ca3",
+        "g": "52529d8d7b615ffa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 970,
+        "y": 600,
+        "wires": [
+            [
+                "f032958d3bcb43c7"
+            ]
+        ]
+    },
+    {
+        "id": "1123a8fd972228e4",
+        "type": "inject",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Rue du cheval blanc, 4000 Liège",
+        "payloadType": "str",
+        "x": 910,
+        "y": 160,
+        "wires": [
+            [
+                "2b2f7c601b02fc11",
+                "2434401338424164"
+            ]
+        ]
+    },
+    {
+        "id": "2b2f7c601b02fc11",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "group": "8753015cdcb44cc3",
+        "order": 1,
+        "width": 16,
+        "height": 1,
+        "name": "address",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 1160,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fafc0daa77fce036",
+        "type": "debug",
+        "z": "4e821b48bbd42ca3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2434401338424164",
+        "type": "http request",
+        "z": "4e821b48bbd42ca3",
+        "name": "card_api",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://tile.thunderforest.com/atlas/15/50/5.png?apikey=2c638bb0038b42458849958796f0ad4f",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1160,
+        "y": 240,
+        "wires": [
+            [
+                "fafc0daa77fce036"
+            ]
+        ]
+    },
+    {
+        "id": "48119b2e3c1db487",
+        "type": "ui_media",
+        "z": "4e821b48bbd42ca3",
+        "group": "8753015cdcb44cc3",
+        "name": "",
+        "width": 16,
+        "height": 4,
+        "order": 2,
+        "category": "images",
+        "file": "Screenshot from 2024-12-25 13-17-55.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 970,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef266be67d609a53",
+        "type": "ui_text",
+        "z": "4db1d4819dfea4ef",
+        "group": "821b48d3e4d5beb6",
+        "order": 1,
+        "width": 18,
+        "height": 1,
+        "name": "title",
+        "label": "Réservation",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 130,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d111525c60253573",
+        "type": "ui_table",
+        "z": "4db1d4819dfea4ef",
+        "group": "821b48d3e4d5beb6",
+        "name": "",
+        "order": 6,
+        "width": 34,
+        "height": 13,
+        "columns": [
+            {
+                "field": "",
+                "title": "Client",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Local",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Début",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Fin",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Action",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 130,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b54ecb6b4b720a44",
+        "type": "ui_button",
+        "z": "4db1d4819dfea4ef",
+        "name": "button",
+        "group": "821b48d3e4d5beb6",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Réserver",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 550,
+        "y": 60,
+        "wires": [
+            [
+                "64aebe12c013e608"
+            ]
+        ]
+    },
+    {
+        "id": "982bdb0a083bd7bd",
+        "type": "ui_ui_control",
+        "z": "4db1d4819dfea4ef",
+        "name": "",
+        "events": "change",
+        "x": 940,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64aebe12c013e608",
+        "type": "change",
+        "z": "4db1d4819dfea4ef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"1Reservation\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 60,
+        "wires": [
+            [
+                "982bdb0a083bd7bd"
+            ]
+        ]
+    },
+    {
+        "id": "be0b18b31c0adf57",
+        "type": "ui_form",
+        "z": "df1a303ec9e1b819",
+        "name": "booking_form",
+        "label": "",
+        "group": "ca6e864468baaad4",
+        "order": 2,
+        "width": 23,
+        "height": 10,
+        "options": [
+            {
+                "label": "Utilisateur",
+                "value": "Utilisateur",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Local",
+                "value": "Local",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Début",
+                "value": "Début",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Fin",
+                "value": "Fin",
+                "type": "date",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Utilisateur": "",
+            "Local": "",
+            "Début": "",
+            "Fin": ""
+        },
+        "payload": "",
+        "submit": "Réserver",
+        "cancel": "Annuler",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7b193dda725f7f2",
+        "type": "ui_text",
+        "z": "df1a303ec9e1b819",
+        "group": "ca6e864468baaad4",
+        "order": 1,
+        "width": 23,
+        "height": 1,
+        "name": "title",
+        "label": "Réservation > ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b182437a122655b4",
+        "type": "inject",
+        "z": "df1a303ec9e1b819",
+        "name": "reserver",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Réserver",
+        "payloadType": "str",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "f7b193dda725f7f2"
+            ]
+        ]
+    },
+    {
+        "id": "065d264aa47c211a",
+        "type": "ui_text",
+        "z": "d959e01e9af70966",
+        "group": "b255ced8c894f4f0",
+        "order": 1,
+        "width": 33,
+        "height": 1,
+        "name": "title",
+        "label": "Support",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "22b93b9e152a72e5",
+        "type": "ui_text",
+        "z": "0ab432dc59b6d0a3",
+        "group": "f87d496c91fac1c3",
+        "order": 1,
+        "width": 18,
+        "height": 1,
+        "name": "title",
+        "label": "Logs",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "64f1c571c4ecc0a8",
+        "type": "ui_table",
+        "z": "0ab432dc59b6d0a3",
+        "group": "f87d496c91fac1c3",
+        "name": "",
+        "order": 5,
+        "width": 34,
+        "height": 9,
+        "columns": [
+            {
+                "field": "",
+                "title": "id",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Local",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Topic",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Valeur",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 110,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "67e4568a7a3501fe",
+        "type": "ui_date_picker",
+        "z": "0ab432dc59b6d0a3",
+        "name": "",
+        "label": "Rechercher une date",
+        "group": "f87d496c91fac1c3",
+        "order": 3,
+        "width": 14,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 500,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "457eb4dcb938678a",
+        "type": "mongodb4",
+        "z": "19da2f4cf4bf4170",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.toArray",
+        "x": 610,
+        "y": 60,
+        "wires": [
+            [
+                "81028e271494cec3"
+            ]
+        ]
+    },
+    {
+        "id": "66c441938b660ea1",
+        "type": "inject",
+        "z": "19da2f4cf4bf4170",
+        "name": "rfid",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "726aa267c0eb4bad"
+            ]
+        ]
+    },
+    {
+        "id": "f2037c6326bff8ce",
+        "type": "ui_text",
+        "z": "19da2f4cf4bf4170",
+        "d": true,
+        "group": "b433e86cb98af344",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "logged",
+        "label": "Connecté : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1030,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "726aa267c0eb4bad",
+        "type": "function",
+        "z": "19da2f4cf4bf4170",
+        "name": "set payload",
+        "func": "const query = { login: \"john_doe\" };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 60,
+        "wires": [
+            [
+                "457eb4dcb938678a"
+            ]
+        ]
+    },
+    {
+        "id": "81028e271494cec3",
+        "type": "function",
+        "z": "19da2f4cf4bf4170",
         "name": "set payload",
         "func": "msg.payload = msg.payload.login;\nreturn msg;",
         "outputs": 1,
@@ -745,11 +2495,470 @@
         "finalize": "",
         "libs": [],
         "x": 830,
-        "y": 560,
+        "y": 60,
         "wires": [
             [
                 "f2037c6326bff8ce"
             ]
+        ]
+    },
+    {
+        "id": "961826f4c996c896",
+        "type": "ui_text",
+        "z": "19da2f4cf4bf4170",
+        "group": "b433e86cb98af344",
+        "order": 1,
+        "width": 20,
+        "height": 1,
+        "name": "title",
+        "label": "Utilisateurs",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 90,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "dc580c9303e5a1a7",
+        "type": "ui_table",
+        "z": "19da2f4cf4bf4170",
+        "group": "b433e86cb98af344",
+        "name": "",
+        "order": 7,
+        "width": 34,
+        "height": 10,
+        "columns": [
+            {
+                "field": "",
+                "title": "id",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Email",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Prénom",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Nom",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Téléphone",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Role",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "",
+                "title": "Action",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 90,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2511177c847c7df8",
+        "type": "ui_button",
+        "z": "19da2f4cf4bf4170",
+        "name": "button",
+        "group": "b433e86cb98af344",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Créer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "4c39ee51ddf3b1a6"
+            ]
+        ]
+    },
+    {
+        "id": "ec687b3180687b6d",
+        "type": "ui_ui_control",
+        "z": "19da2f4cf4bf4170",
+        "name": "",
+        "events": "change",
+        "x": 900,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c39ee51ddf3b1a6",
+        "type": "change",
+        "z": "19da2f4cf4bf4170",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"CreateUser\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 180,
+        "wires": [
+            [
+                "ec687b3180687b6d"
+            ]
+        ]
+    },
+    {
+        "id": "f540ca4c2be60134",
+        "type": "ui_form",
+        "z": "a71c83548b86d5cf",
+        "name": "create_user_form",
+        "label": "",
+        "group": "600bf87db0283dac",
+        "order": 3,
+        "width": 23,
+        "height": 1,
+        "options": [
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Prénom",
+                "value": "Prénom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Nom",
+                "value": "Nom",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mot de passe",
+                "value": "Mot de passe",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Téléhpne",
+                "value": "Téléphone",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Role admin",
+                "value": "Admin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "RFID",
+                "value": "RFID",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": "",
+            "Prénom": "",
+            "Nom": "",
+            "Mot de passe": "",
+            "Téléphone": "",
+            "Admin": false,
+            "RFID": ""
+        },
+        "payload": "",
+        "submit": "Créer",
+        "cancel": "Annuler",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cedfe5448181f34",
+        "type": "ui_text",
+        "z": "a71c83548b86d5cf",
+        "group": "600bf87db0283dac",
+        "order": 1,
+        "width": 23,
+        "height": 1,
+        "name": "title",
+        "label": "Utilisateur > ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "be608c14c998f1dc",
+        "type": "inject",
+        "z": "a71c83548b86d5cf",
+        "name": "créer",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Créer",
+        "payloadType": "str",
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "2cedfe5448181f34"
+            ]
+        ]
+    },
+    {
+        "id": "70df47423de0b885",
+        "type": "ui_form",
+        "z": "01557fa3c5d57cbe",
+        "name": "edit_user_form",
+        "label": "",
+        "group": "1e09fa150998fee1",
+        "order": 6,
+        "width": 34,
+        "height": 7,
+        "options": [
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Prénom",
+                "value": "Prénom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Nom",
+                "value": "Nom",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mot de passe",
+                "value": "Mot de passe",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Téléhpne",
+                "value": "Téléphone",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Role admin",
+                "value": "Admin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "RFID",
+                "value": "RFID",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": "",
+            "Prénom": "",
+            "Nom": "",
+            "Mot de passe": "",
+            "Téléphone": "",
+            "Admin": false,
+            "RFID": ""
+        },
+        "payload": "",
+        "submit": "Créer",
+        "cancel": "Annuler",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c43bb6eb20edbbc",
+        "type": "ui_text",
+        "z": "01557fa3c5d57cbe",
+        "group": "1e09fa150998fee1",
+        "order": 1,
+        "width": 24,
+        "height": 1,
+        "name": "title",
+        "label": "Utilisateur > ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 350,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a83704f6176303df",
+        "type": "inject",
+        "z": "01557fa3c5d57cbe",
+        "name": "edit",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Modifier",
+        "payloadType": "str",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "3c43bb6eb20edbbc"
+            ]
+        ]
+    },
+    {
+        "id": "254b9a8fdd1a2021",
+        "type": "ui_button",
+        "z": "01557fa3c5d57cbe",
+        "name": "delete_button",
+        "group": "1e09fa150998fee1",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Supprimer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 720,
+        "y": 40,
+        "wires": [
+            []
         ]
     }
 ]
