@@ -1,0 +1,755 @@
+[
+    {
+        "id": "0277478f1e68b0ce",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9e1f662934605284",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#f9f06b",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#f9f06b",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#f9f06b",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#fcf7b5",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#f9f06b",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "SmartOffice",
+            "hideToolbar": "false",
+            "allowSwipe": "mouse",
+            "lockMenu": "true",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1db4abaa008c9aa6",
+        "type": "ui_group",
+        "name": "RPI data",
+        "tab": "b58955a989bd717a",
+        "order": 1,
+        "disp": true,
+        "width": 9,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "08886a7cd4dd855e",
+        "type": "mongodb4-client",
+        "name": "MongoDB",
+        "protocol": "mongodb",
+        "hostname": "localhost",
+        "port": "27017",
+        "dbName": "reservationDB",
+        "appName": "",
+        "authSource": "admin",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "b58955a989bd717a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e79fb037b99350a5",
+        "type": "ui_group",
+        "name": "User Data",
+        "tab": "b58955a989bd717a",
+        "order": 2,
+        "disp": true,
+        "width": 9,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "383a99d955142ce0",
+        "type": "ui_spacer",
+        "z": "0277478f1e68b0ce",
+        "name": "spacer",
+        "group": "1db4abaa008c9aa6",
+        "order": 2,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "7ce08affddeab4ea",
+        "type": "ui_gauge",
+        "z": "0277478f1e68b0ce",
+        "name": "temperature",
+        "group": "1db4abaa008c9aa6",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 570,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "457eb4dcb938678a",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.toArray",
+        "x": 610,
+        "y": 560,
+        "wires": [
+            [
+                "f7d333af7d00a920",
+                "81028e271494cec3"
+            ]
+        ]
+    },
+    {
+        "id": "45e37034f54ed538",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "buzzer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "bip",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "339ea9fe7fda0283"
+            ]
+        ]
+    },
+    {
+        "id": "da2935c32034ab79",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "button",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "2236d7e5a8b2ebf9"
+            ]
+        ]
+    },
+    {
+        "id": "436002b409972571",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "camera",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "d8847c5688312b3c"
+            ]
+        ]
+    },
+    {
+        "id": "a951431026817237",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "temperature",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "25",
+        "payloadType": "num",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "1c572a9b6aad7cc2"
+            ]
+        ]
+    },
+    {
+        "id": "7006526e0ba7d14a",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "light_sensor",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "a322f0f04a91ee26"
+            ]
+        ]
+    },
+    {
+        "id": "66c441938b660ea1",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "rfid",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "726aa267c0eb4bad"
+            ]
+        ]
+    },
+    {
+        "id": "340db043376c7982",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "sound_sensor",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 660,
+        "wires": [
+            [
+                "14651d281752c495"
+            ]
+        ]
+    },
+    {
+        "id": "ef372e205502e45d",
+        "type": "ui_switch",
+        "z": "0277478f1e68b0ce",
+        "name": "Button on",
+        "label": "RPI button state",
+        "tooltip": "",
+        "group": "1db4abaa008c9aa6",
+        "order": 1,
+        "width": 9,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 480,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2037c6326bff8ce",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "group": "e79fb037b99350a5",
+        "order": 2,
+        "width": 9,
+        "height": 1,
+        "name": "logged",
+        "label": "Connecté : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1030,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5ea7201186c39d78",
+        "type": "ui_gauge",
+        "z": "0277478f1e68b0ce",
+        "name": "light_level ",
+        "group": "1db4abaa008c9aa6",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Light level",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 580,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "73b0e66ce5cfb17b",
+        "type": "ui_audio",
+        "z": "0277478f1e68b0ce",
+        "name": "buzzer_sound",
+        "group": "1db4abaa008c9aa6",
+        "voice": "urn:moz-tts:speechd:English%20(America,%20New%20York%20City)+anikaRobot?en-US-NYC",
+        "always": "",
+        "x": 460,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "339ea9fe7fda0283",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 60,
+        "wires": [
+            [
+                "73b0e66ce5cfb17b",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "d8847c5688312b3c",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "2236d7e5a8b2ebf9",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 260,
+        "wires": [
+            [
+                "ef372e205502e45d",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "1c572a9b6aad7cc2",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "7ce08affddeab4ea",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "a322f0f04a91ee26",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 460,
+        "wires": [
+            [
+                "5ea7201186c39d78",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "726aa267c0eb4bad",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "const query = { login: \"john_doe\" };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "457eb4dcb938678a"
+            ]
+        ]
+    },
+    {
+        "id": "f7d333af7d00a920",
+        "type": "debug",
+        "z": "0277478f1e68b0ce",
+        "name": "rpi_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "14651d281752c495",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 660,
+        "wires": [
+            [
+                "3fa65fc688213d56",
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "3fa65fc688213d56",
+        "type": "ui_gauge",
+        "z": "0277478f1e68b0ce",
+        "name": "sound-level",
+        "group": "1db4abaa008c9aa6",
+        "order": 5,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Sound level",
+        "label": "°",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": true,
+        "className": "",
+        "x": 610,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d9bf3ab6f987cd5a",
+        "type": "ui_form",
+        "z": "0277478f1e68b0ce",
+        "name": "Contact us",
+        "label": "Contact us",
+        "group": "e79fb037b99350a5",
+        "order": 1,
+        "width": 9,
+        "height": 1,
+        "options": [
+            {
+                "label": "Support",
+                "value": "Support",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Support": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 850,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "81028e271494cec3",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "set payload",
+        "func": "msg.payload = msg.payload.login;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 560,
+        "wires": [
+            [
+                "f2037c6326bff8ce"
+            ]
+        ]
+    }
+]
