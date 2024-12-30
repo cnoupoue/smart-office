@@ -18,7 +18,6 @@ def readMessage(ser):
     decodedMessage = decodeMessage(message)
     return decodedMessage
     
-
 def decodeMessage(msg):
     # Extract HEX data
     if "Data: (HEX:)" in msg:

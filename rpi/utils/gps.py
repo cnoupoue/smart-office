@@ -164,6 +164,9 @@ def read():
         return in_data
 
 def get_coordinates(gpgga_data):
+    if gpgga_data == None:
+        return None
+
     # Extract raw latitude, direction, longitude, and direction
     raw_latitude = gpgga_data[2]
     latitude_direction = gpgga_data[3]

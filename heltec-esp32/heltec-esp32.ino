@@ -53,6 +53,7 @@ void setup() {
 
   // Configure RFID
   display.init();
+  display.flipScreenVertically();
   display.clear();
   display.display();
   
@@ -68,13 +69,13 @@ void loop() {
   char* data = readRFID();
   if (data == nullptr) {
     display.clear();
-    display.drawString(0, 0, "Card scan incorrect.");
-    display.drawString(0, 10, "Please try again.");
+    display.drawString(0, 0, "Scan incorrecte.");
+    display.drawString(0, 10, "Réessayez.");
     display.display();
     delay(2000);
   } else if (strlen(data) > 0) {
     display.clear();
-    display.drawString(0, 0, "Access granted.");
+    display.drawString(0, 0, "Accès accordé.");
     display.display();
     sendMessage(data);
     delay(2000);
@@ -84,7 +85,7 @@ void loop() {
 
 char* readRFID() {
   display.clear();
-  display.drawString(0, 0, "Waiting for RFID card...");
+  display.drawString(0, 0, "En attente de la carte...");
   display.display();
 
   RFID.begin(9600, SERIAL_8N1, RX_PIN, TX_PIN); // Initialize RFID serial
@@ -136,9 +137,14 @@ bool checkRFIDPrefix(char* rfidData, const char* prefix) {
 
 
 void sendMessage(const char* message) {
+  // prefix
+  char prefix[] = "smartoffice:"; 
+  char result[256];
+  strcpy(result, prefix); 
+  strcat(result, message);
   // if(lora_idle == true) {
 		txNumber += 0.01;
-		sprintf(txpacket,message);  //start a package
+		sprintf(txpacket,result);  //start a package
 		Serial.printf("\r\nsending packet \"%s\" , length %d\r\n",txpacket, strlen(txpacket));
 		Radio.Send( (uint8_t *)txpacket, strlen(txpacket) ); //send the package out	
     // lora_idle = false;

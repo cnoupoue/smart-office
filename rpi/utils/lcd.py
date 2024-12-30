@@ -1,14 +1,17 @@
 #!/usr/bin/env python
-from grovepi import *
-from grove_rgb_lcd import *
+import grove_rgb_lcd
 
 def set_rgb(r, g, b):
     try:
-        setRGB(r, g, b)
+        grove_rgb_lcd.setRGB(r, g, b)
+        return 0
     except (IOError,TypeError) as e:
-        print("Error" + str(e))
+        print("Error: " + str(e))
+        return -1
 def set_text(text):
     try:
-        setText(text)
+        grove_rgb_lcd.setText(text)
+        return 0
     except (IOError,TypeError) as e:
-        print("Error" + str(e))
+        print("Error: " + str(e))
+        return -1

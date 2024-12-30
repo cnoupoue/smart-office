@@ -1,12 +1,10 @@
-import controllers.common
-import utils.mqtt as mqtt
+import controllers.common as common
 import utils.la66 as la66
 import serial
-import time
+import env
+import controllers.mqtt_controller as mqtt_controller
 
-def start():
-    mqtt.connect("broker.hivemq.com", 1883)
-    print("waiting for esp32 oled messages")
+def run():
     ser = None
     try:
         ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
@@ -14,12 +12,11 @@ def start():
             if ser.in_waiting <= 0:
                 continue
             message = la66.readMessage(ser)
-            if message != None:
-                print("message received: " + message)
-                mqtt.publish("hepl/smartoffice/esp32",  "DOOR_ON")
-                time.sleep(2)
-                mqtt.publish("hepl/smartoffice/esp32",  "DOOR_OFF")
+            if not message or not message.startswith("smartoffice:"):
+                continue
+            extractedMessage = message.split(":")[1]
+            mqtt_controller.publish(env.RFID, extractedMessage)
                 
     except Exception as e:
-        print("Error: " + e)
+        print("Error: " + str(e))
     finally: ser.close()

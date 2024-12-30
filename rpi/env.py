@@ -1,17 +1,27 @@
+# PROCESS TIME
+HELLO_DELAY = 10 # each x seconds, check the premise
+# LIGHT_SENSOR_DELAY = 2
+# SOUND_SENSOR_DELAY = 2
+GPS_DELAY = 60
+CAMERA_HELLO_DELAY = 5
+# BUTTON_DELAY = 0.5
+
 # MQTT BROKER
 BROKER = "broker.hivemq.com"
-CLIENT_ID = "id1"
+CLIENT_ID = "1"
 PORT = 1883
-
-# MQTT TOPIC
-MQTT_TOPIC_ROOT = "smartoffice/"
-DEF_COMPANY_ID = "id1/"
-def_local = "null/"
-def_sensor = "rpi/"
-INITIAL_TOPIC = MQTT_TOPIC_ROOT + DEF_COMPANY_ID + def_local + def_sensor
 
 # ENV VARIABLES
 PREMISE_ENV_VAR_NAME = 'SMARTOFFICE_PREMISE'
+LCD_ENV_VAR_NAME = 'LCD_VAR'
+SERIAL_ID = None
+
+# MQTT TOPIC
+MQTT_ROOT_TOPIC = "smartoffice/"
+DEF_COMPANY_ID = "2/"
+def_local = "null"
+HELLO_TOPIC = None
+YOU_ARE_TOPIC = None
 
 # SENSOR TYPE
 LIGHT_SENSOR = "light_sensor"
@@ -21,6 +31,7 @@ GPS = "gps"
 BUTTON = "button"
 BUZZER = "buzzer"
 LCD = "lcd"
+RFID = "rfid"
 TEMPERATURE = "temperature"
 LED = "led"
 RELAY = "relay"

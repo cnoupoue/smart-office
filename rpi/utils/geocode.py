@@ -1,6 +1,6 @@
 from geopy.geocoders import Nominatim
 
-def getCity(latitude, longitude):
+def getAdress(latitude, longitude):
     # Initialize geolocator
     geoLoc = Nominatim(user_agent="GeoLoc")
 
@@ -13,13 +13,15 @@ def getCity(latitude, longitude):
         # print("Raw Address Data:", address)
         
         # Extract the smallest accepted locality, including tower and city
-        smallest_city = (
-            address.get('municipality') or  # Municipality
-            address.get('city') or          # City
-            address.get('county') or        # County
-            address.get('state')            # Finally, fallback to state
-        )
+        # smallest_city = (
+        #     address.get('municipality') or  # Municipality
+        #     address.get('city') or          # City
+        #     address.get('county') or        # County
+        #     address.get('state')            # Finally, fallback to state
+        # )
         
-        return smallest_city
+        # road = address.get('road')
+
+        return address
     else:
         return None

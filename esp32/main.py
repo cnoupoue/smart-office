@@ -4,15 +4,17 @@ import time
 import network
 from umqtt.simple import MQTTClient
 import uasyncio as asyncio
+import json
 
-PUB_DELAY = 5
+PUB_DELAY = 2
 
 SSID = "kotinas"         # Your Wi-Fi SSID
 PASSWORD = "rootroot"    # Your Wi-Fi Password
 
 BROKER = "broker.hivemq.com"  # Replace with your broker address
-TOPIC_TEMP = "hepl/smartoffice/temperature"
-TOPIC_SUB = "hepl/smartoffice/esp32"
+TOPIC_TEMP = "smartoffice/2/1000000044888d31/temperature"
+TOPIC_SUB_RELAY = "smartoffice/2/1000000044888d31/relay"
+TOPIC_SUB_LED = "smartoffice/2/1000000044888d31/led"
 
 LED = machine.Pin(5, machine.Pin.OUT)
 RELAY = machine.Pin(18, machine.Pin.OUT)
@@ -27,71 +29,99 @@ async def connect_wifi():
         time.sleep(1)
     print("Connected to Wi-Fi:", wlan.ifconfig())
 
-def connect_mqtt():
-    client = MQTTClient("esp32", BROKER)
+def connect_mqtt(client_id):
+    client = MQTTClient(client_id, BROKER)
     client.connect()
-    print("Connected to MQTT Broker")
+    print(f"Connected to MQTT Broker with ID: {client_id}")
     return client
 
 def getTemperature():
     TEMPERATURE.measure()
-    return str(TEMPERATURE.temperature())
+    data = {"temperature": str(TEMPERATURE.temperature()), "humidity": str(TEMPERATURE.humidity()),}
+    return json.dumps(data)
 
 def pub_mqtt(client, message):
-    client.publish(TOPIC_TEMP, message)
+    client.publish(TOPIC_TEMP, message, qos=2)
     print(f"Published {message} for topic {TOPIC_TEMP}")
 
 def sub_callback(topic, msg):
-    m = msg.decode()
-    if m == "RESERVED_ON":
-        LED.on()
-        print("reserved")
-    elif m == "RESERVED_OFF":
-        LED.off()
-        print("not reserved")
-    elif m == "DOOR_ON":
-        RELAY.on()
-        print("door open")
-    elif m == "DOOR_OFF":
-        RELAY.off()
-        print("door close")
+    
+    m : str= msg.decode()
+    t : str= topic.decode()
+    if t == TOPIC_SUB_LED:
+        if m == "ON":
+            LED.off()
+            time.sleep(0.1)
+            LED.on()
+            print("reserved")
+        elif m == "OFF":
+            LED.on()
+            time.sleep(0.1)
+            LED.off()
+            print("not reserved")
+        else:
+            print(f"unknown message: {m}")
+    elif t == TOPIC_SUB_RELAY:
+        if m == "ON":
+            RELAY.on()
+            print("door open")
+        elif m == "OFF":
+            RELAY.off()
+            print("door close")
+        elif m.startswith("ON_OFF:"):
+            delay = int(m.split(":")[1])
+            RELAY.on()
+            time.sleep(delay)
+            RELAY.off()
+            print("door close")
+        else:
+            print(f"unknown message: {m}")
     else:
-        print(f"unknown message: {m}")
+        print(f"unknown topic: {t}")
 
-async def sub_mqtt(client) :
+
+async def sub_mqtt():
+    client = connect_mqtt("esp32_sub")
     client.set_callback(sub_callback)
-    client.connect()
-    client.subscribe(TOPIC_SUB)
-    print(f"Subscribed to {TOPIC_SUB}")
+    while True:
+        try:
+            client.connect()
+            client.subscribe(TOPIC_SUB_LED)
+            client.subscribe(TOPIC_SUB_RELAY)
+            print(f"Subscribed to {TOPIC_SUB_LED} and {TOPIC_SUB_RELAY}")
 
+            while True:
+                client.check_msg()  # Non-blocking check for messages
+                await asyncio.sleep(1)
+        except OSError as e:
+            print(f"Error in sub_mqtt: {e}, reconnecting...")
+            await asyncio.sleep(5)  # Wait before retrying
+
+async def pub_mqtt_temp():
+    client = connect_mqtt("esp32_pub")
     try:
         while True:
-            client.check_msg()  # Non-blocking check for messages
-            await asyncio.sleep(1)  # Async sleep to yield control
-    finally:
-        print("Disconnecting...")
-        client.disconnect()
-
-async def pub_mqtt_temp(client) :
-    try:
-        while True:
-            pub_mqtt(client, getTemperature())
+            temp = getTemperature()
+            pub_mqtt(client, temp)
             await asyncio.sleep(PUB_DELAY)
+    except Exception as e:
+        print(f"Error in pub_mqtt_temp: {e}")
     finally:
-        print("Disconnecting...")
+        print("Disconnecting publisher...")
         client.disconnect()
 
 # code
 async def main():
     await connect_wifi()
-    # Run the MQTT subscriber
-    client = MQTTClient("esp32", BROKER)
-    # Async task for subscription
-    asyncio.create_task(sub_mqtt(client))
-    # Async task for publication
-    asyncio.create_task(pub_mqtt_temp(client))
+    # Create separate tasks for subscription and publication
+    asyncio.create_task(pub_mqtt_temp())
+    asyncio.create_task(sub_mqtt())
+
+    # indicator of ready
+    await asyncio.sleep(0.5)
+
     # Infinite loop necessary to keep program alive, otherwise it will stop when reaching the end of the code
     while True:
-        await asyncio.sleep(0.1)
+        await asyncio.sleep(0.5)
 
 asyncio.run(main())
