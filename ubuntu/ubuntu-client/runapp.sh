@@ -7,3 +7,7 @@ echo "MongoDB image rebuilt"
 sudo docker compose -f docker-compose.yaml down
 
 sudo docker compose -f docker-compose.yaml up -d
+
+echo "MongoDB up"
+
+python3 flask-nginx/auth_server_api.py &
