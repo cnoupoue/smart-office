@@ -1,3 +1,4 @@
+`pip install adafruit-ampy`
 # Étapes de configuration du ESP32 pour exécuter le code
 1. Bien brancher les capteurs au ESP
 1. Connecter ESP32 au PC avec un bon câble
