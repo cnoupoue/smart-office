@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
     <title>Login</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <div class="login-container">
-        <h1>Login</h1>
-        {% if error %}
-            <p class="error">{{ error }}</p>
-        {% endif %}
+        <h2>Login</h2>
         <form method="POST">
             {{ form.hidden_tag() }}
             <div class="form-group">
-                {{ form.username.label }}<br>
-                {{ form.username(class="form-control") }}
+                {{ form.email.label }}
+                {{ form.email(size=32) }}
             </div>
             <div class="form-group">
-                {{ form.password.label }}<br>
-                {{ form.password(class="form-control") }}
+                {{ form.password.label }}
+                {{ form.password(size=32) }}
             </div>
             <div class="form-group">
-                {{ form.submit(class="btn") }}
+                {{ form.submit() }}
             </div>
+            {% if error_message %}
+                <div class="error-message">{{ error_message }}</div>
+            {% endif %}
         </form>
     </div>
 </body>

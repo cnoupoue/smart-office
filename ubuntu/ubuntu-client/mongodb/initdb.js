@@ -11,23 +11,23 @@ db.createCollection("client");
 db.client.insertMany([
     {
         _id: ObjectId(),
-        email: "example1@example.com",
+        email: "cameron.noupoue@student.hepl.be",
         firstname: "Cameron",
         name: "Noupoue",
         telephone: 123456789,
-        password: "password",
-        salt: "password",
+        password: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe.DSg.zs82PvlO8rpesoP4gtQwOik8fW",
+        salt: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe",
         role: "user",
         rfid: null // Optional attribute for RFID association
     },
     {
         _id: ObjectId(),
-        email: "example2@example.com",
+        email: "kotiyev.nasser@student.hepl.be",
         firstname: "Nasser",
         name: "Kotiyev",
         telephone: 987654321,
-        password: "password",
-        salt: "password",
+        password: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe.DSg.zs82PvlO8rpesoP4gtQwOik8fW",
+        salt: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe",
         role: "admin",
         rfid: "ABC123" // Example RFID tag
     }
