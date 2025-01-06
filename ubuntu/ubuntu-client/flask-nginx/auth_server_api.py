@@ -1,14 +1,21 @@
 import bcrypt
-from flask import Flask, request, jsonify, render_template, redirect, url_for
+import jwt
+import datetime
+from flask import Flask, request, jsonify, render_template, redirect, url_for, session
 from flask_pymongo import PyMongo
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
+from bson import ObjectId
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'cameronnasser'
 app.config["MONGO_URI"] = "mongodb://hepl:heplhepl@localhost:27017/reservationDB?authSource=admin"
 mongo = PyMongo(app)
+
+SECRET_KEY = 'cameronnasser'
+ALGORITHM = 'HS256'
+EXPIRATION_TIME = 3600  # 1 heure
 
 def hash_password(password):
     salt = bcrypt.gensalt()
@@ -17,6 +24,23 @@ def hash_password(password):
 
 def check_password(stored_hash, salt, password):
     return stored_hash.encode('utf-8') == bcrypt.hashpw(password.encode(), salt.encode('utf-8'))
+
+def generate_token(user_id):
+    expiration = datetime.datetime.utcnow() + datetime.timedelta(seconds=EXPIRATION_TIME)
+    token = jwt.encode({
+        'user_id': user_id,
+        'exp': expiration
+    }, SECRET_KEY, algorithm=ALGORITHM)
+    return token
+
+def verify_token(token):
+    try:
+        decoded_token = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        return decoded_token['user_id']
+    except jwt.ExpiredSignatureError:
+        return None
+    except jwt.InvalidTokenError:
+        return None
 
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired()])
@@ -37,14 +61,27 @@ def login():
         user = mongo.db['client'].find_one({"email": email})
         if user:
             if check_password(user['password'], user['salt'], password):
-                return jsonify(message="Login successful"), 200
+                token = generate_token(str(user['_id']))
+                session['token'] = token
+                return jsonify(message="Login successful", token=token), 200
             else:
-                error_message = "Invalid credentials. Please, try again"
-                #return jsonify(message="Invalid credentials"), 401
+                error_message = "Invalid credentials. Please try again."
         else:
-            error_message = "User not found"
-            #return jsonify(message="User not found"), 404
+            error_message = "User not found. Please check your email."
+    
     return render_template('login.html', form=form, error_message=error_message)
+
+@app.route('/verify_token')
+def protected():
+    token = session.get('token')
+    if token:
+        user_id = verify_token(token)
+        if user_id:
+            return jsonify(message="Welcome to the protected page"), 200
+        else:
+            return jsonify(message="Invalid or expired token"), 401
+    else:
+        return jsonify(message="No token provided"), 401
 
 if __name__ == '__main__':
     app.run(debug=True)
