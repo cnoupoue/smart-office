@@ -1,8 +1,11 @@
 import bcrypt
 import jwt
 import datetime
-from flask import Flask, request, jsonify, redirect, url_for, session
+from flask import Flask, request, jsonify, render_template, redirect, url_for, session
 from flask_pymongo import PyMongo
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, SubmitField
+from wtforms.validators import DataRequired
 from bson import ObjectId
 
 app = Flask(__name__)
@@ -39,39 +42,44 @@ def verify_token(token):
     except jwt.InvalidTokenError:
         return None
 
+class LoginForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    submit = SubmitField('Login')
+
 @app.route('/')
 def index():
-    return jsonify(message="API is working"), 200
+    return redirect(url_for('login'))
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    data = request.get_json()
-    email = data.get('email')
-    password = data.get('password')
-    
-    if not email or not password:
-        return jsonify(message="Email and password are required"), 400
-    
-    user = mongo.db['client'].find_one({"email": email})
-    if user:
-        if check_password(user['password'], user['salt'], password):
-            token = generate_token(str(user['_id']))
-            session['token'] = token
-            response = jsonify(message="Login successful", token=token)
-            response.headers['X-Redirect-To'] = '/dashboard/'
-            return response, 200
+    form = LoginForm()
+    error_message = None
+    if form.validate_on_submit():
+        email = form.email.data
+        password = form.password.data
+        user = mongo.db['client'].find_one({"email": email})
+        if user:
+            if check_password(user['password'], user['salt'], password):
+                token = generate_token(str(user['_id']))
+                session['token'] = token
+                response = jsonify(message="Login successful", token=token)
+                response.headers['X-Redirect-To'] = '/dashboard/'
+                return response, 200
+            else:
+                error_message = "Invalid credentials. Please try again."
         else:
-            return jsonify(message="Invalid credentials. Please try again."), 401
-    else:
-        return jsonify(message="User not found. Please check your email."), 404
+            error_message = "User not found. Please check your email."
+    
+    return render_template('login.html', form=form, error_message=error_message)
 
-@app.route('/validate_token', methods=['GET'])
+@app.route('/validate_token')
 def validate_token():
     token = session.get('token')
     if token:
         user_id = verify_token(token)
         if user_id:
-            return jsonify(message="Token is valid, welcome to the protected area."), 200
+            return jsonify(message="Welcome to the protected page"), 200
         else:
             return jsonify(message="Invalid or expired token"), 401
     else:
@@ -79,4 +87,3 @@ def validate_token():
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5000)
-

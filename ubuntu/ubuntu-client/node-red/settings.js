@@ -170,7 +170,12 @@ module.exports = {
      * The following property can be used to specify a different root path.
      * If set to false, this is disabled.
      */
-    //httpAdminRoot: '/admin',
+    httpAdminRoot: '/admin',
+    httpNodeRoot: '/ui',
+    httpServerOptions: {
+    	secure: false,
+    }
+    httpProxy: true,
 
     /** The following property can be used to add a custom middleware function
      * in front of all admin http routes. For example, to set custom http

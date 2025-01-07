@@ -8,3 +8,4 @@ sudo systemctl enable nginx
 sudo systemctl status nginx
 
 sudo cp nginx.conf /etc/nginx/nginx.conf
+sudo cp login.html /etc/nginx/html/login.html

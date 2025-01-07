@@ -2392,117 +2392,6 @@
         ]
     },
     {
-        "id": "457eb4dcb938678a",
-        "type": "mongodb4",
-        "z": "19da2f4cf4bf4170",
-        "clientNode": "08886a7cd4dd855e",
-        "mode": "collection",
-        "collection": "client",
-        "operation": "find",
-        "output": "toArray",
-        "maxTimeMS": "0",
-        "handleDocId": false,
-        "name": "find.toArray",
-        "x": 610,
-        "y": 60,
-        "wires": [
-            [
-                "81028e271494cec3"
-            ]
-        ]
-    },
-    {
-        "id": "66c441938b660ea1",
-        "type": "inject",
-        "z": "19da2f4cf4bf4170",
-        "name": "rfid",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 60,
-        "wires": [
-            [
-                "726aa267c0eb4bad"
-            ]
-        ]
-    },
-    {
-        "id": "f2037c6326bff8ce",
-        "type": "ui_text",
-        "z": "19da2f4cf4bf4170",
-        "d": true,
-        "group": "b433e86cb98af344",
-        "order": 5,
-        "width": 6,
-        "height": 1,
-        "name": "logged",
-        "label": "Connecté : ",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1030,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "726aa267c0eb4bad",
-        "type": "function",
-        "z": "19da2f4cf4bf4170",
-        "name": "set payload",
-        "func": "const query = { login: \"john_doe\" };\n\nmsg.payload = [query];\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 310,
-        "y": 60,
-        "wires": [
-            [
-                "457eb4dcb938678a"
-            ]
-        ]
-    },
-    {
-        "id": "81028e271494cec3",
-        "type": "function",
-        "z": "19da2f4cf4bf4170",
-        "name": "set payload",
-        "func": "msg.payload = msg.payload.login;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 830,
-        "y": 60,
-        "wires": [
-            [
-                "f2037c6326bff8ce"
-            ]
-        ]
-    },
-    {
         "id": "961826f4c996c896",
         "type": "ui_text",
         "z": "19da2f4cf4bf4170",
@@ -2534,7 +2423,7 @@
         "height": 10,
         "columns": [
             {
-                "field": "",
+                "field": "_id",
                 "title": "id",
                 "width": "",
                 "align": "left",
@@ -2544,7 +2433,7 @@
                 }
             },
             {
-                "field": "",
+                "field": "email",
                 "title": "Email",
                 "width": "",
                 "align": "left",
@@ -2554,7 +2443,7 @@
                 }
             },
             {
-                "field": "",
+                "field": "firstname",
                 "title": "Prénom",
                 "width": "",
                 "align": "left",
@@ -2564,7 +2453,7 @@
                 }
             },
             {
-                "field": "",
+                "field": "name",
                 "title": "Nom",
                 "width": "",
                 "align": "left",
@@ -2574,7 +2463,7 @@
                 }
             },
             {
-                "field": "",
+                "field": "telephone",
                 "title": "Téléphone",
                 "width": "",
                 "align": "left",
@@ -2584,7 +2473,7 @@
                 }
             },
             {
-                "field": "",
+                "field": "role",
                 "title": "Role",
                 "width": "",
                 "align": "left",
@@ -2594,21 +2483,25 @@
                 }
             },
             {
-                "field": "",
+                "field": "action",
                 "title": "Action",
                 "width": "",
                 "align": "left",
-                "formatter": "plaintext",
+                "formatter": "html",
                 "formatterParams": {
                     "target": "_blank"
                 }
             }
         ],
-        "outputs": 0,
-        "cts": false,
-        "x": 90,
+        "outputs": 1,
+        "cts": true,
+        "x": 1110,
         "y": 260,
-        "wires": []
+        "wires": [
+            [
+                "54b6b1816cad72e5"
+            ]
+        ]
     },
     {
         "id": "2511177c847c7df8",
@@ -2678,6 +2571,116 @@
         ]
     },
     {
+        "id": "d2187ab358b627bf",
+        "type": "mongodb4",
+        "z": "19da2f4cf4bf4170",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.clients",
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "a921be82d0c2c420"
+            ]
+        ]
+    },
+    {
+        "id": "36cc1cb37ca35536",
+        "type": "inject",
+        "z": "19da2f4cf4bf4170",
+        "name": "trigger",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "5b027e2170cc7ef8"
+            ]
+        ]
+    },
+    {
+        "id": "5b027e2170cc7ef8",
+        "type": "function",
+        "z": "19da2f4cf4bf4170",
+        "name": "set payload",
+        "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "d2187ab358b627bf"
+            ]
+        ]
+    },
+    {
+        "id": "a921be82d0c2c420",
+        "type": "function",
+        "z": "19da2f4cf4bf4170",
+        "name": "add_action",
+        "func": "let users = msg.payload;\n\nusers = users.map(user => {\n    user.action = `<a href=\"/ui/#!/8?id=${user._id}\">Modifier</a>`;\n    return user;\n});\n\n\nmsg.payload = users;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "dc580c9303e5a1a7"
+            ]
+        ]
+    },
+    {
+        "id": "54b6b1816cad72e5",
+        "type": "change",
+        "z": "19da2f4cf4bf4170",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "user_id",
+                "pt": "global",
+                "to": "example1@example.com",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1330,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "f540ca4c2be60134",
         "type": "ui_form",
         "z": "a71c83548b86d5cf",
@@ -2697,67 +2700,69 @@
             },
             {
                 "label": "Prénom",
-                "value": "Prénom",
+                "value": "firstname",
                 "type": "text",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Nom",
-                "value": "Nom",
-                "type": "date",
+                "value": "name",
+                "type": "text",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Mot de passe",
-                "value": "Mot de passe",
+                "value": "password",
                 "type": "password",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Téléhpne",
-                "value": "Téléphone",
+                "label": "Téléphone",
+                "value": "telephone",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Role admin",
-                "value": "Admin",
+                "value": "role",
                 "type": "checkbox",
                 "required": false,
                 "rows": null
             },
             {
                 "label": "RFID",
-                "value": "RFID",
+                "value": "rfid",
                 "type": "number",
-                "required": true,
+                "required": false,
                 "rows": null
             }
         ],
         "formValue": {
             "email": "",
-            "Prénom": "",
-            "Nom": "",
-            "Mot de passe": "",
-            "Téléphone": "",
-            "Admin": false,
-            "RFID": ""
+            "firstname": "",
+            "name": "",
+            "password": "",
+            "telephone": "",
+            "role": false,
+            "rfid": ""
         },
         "payload": "",
         "submit": "Créer",
         "cancel": "Annuler",
-        "topic": "topic",
+        "topic": "payload",
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
         "x": 170,
         "y": 160,
         "wires": [
-            []
+            [
+                "027dbc9a9f236cce"
+            ]
         ]
     },
     {
@@ -2793,7 +2798,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "Créer",
@@ -2803,6 +2808,44 @@
         "wires": [
             [
                 "2cedfe5448181f34"
+            ]
+        ]
+    },
+    {
+        "id": "aadfbbe2d1c83e76",
+        "type": "mongodb4",
+        "z": "a71c83548b86d5cf",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "createClient",
+        "x": 690,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "027dbc9a9f236cce",
+        "type": "function",
+        "z": "a71c83548b86d5cf",
+        "name": "roleConverter",
+        "func": "let user = msg.payload;\n\nif (user.role === false) {\n    user.role = \"user\";\n} else if (user.role === true) {\n    user.role = \"admin\";\n}\n\nmsg.payload = user;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "aadfbbe2d1c83e76"
             ]
         ]
     },
@@ -2826,67 +2869,69 @@
             },
             {
                 "label": "Prénom",
-                "value": "Prénom",
+                "value": "firstname",
                 "type": "text",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Nom",
-                "value": "Nom",
-                "type": "date",
+                "value": "name",
+                "type": "text",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Mot de passe",
-                "value": "Mot de passe",
+                "value": "password",
                 "type": "password",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Téléhpne",
-                "value": "Téléphone",
+                "label": "Téléphone",
+                "value": "telephone",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Role admin",
-                "value": "Admin",
+                "value": "role",
                 "type": "checkbox",
                 "required": false,
                 "rows": null
             },
             {
                 "label": "RFID",
-                "value": "RFID",
+                "value": "rfid",
                 "type": "number",
-                "required": true,
+                "required": false,
                 "rows": null
             }
         ],
         "formValue": {
             "email": "",
-            "Prénom": "",
-            "Nom": "",
-            "Mot de passe": "",
-            "Téléphone": "",
-            "Admin": false,
-            "RFID": ""
+            "firstname": "",
+            "name": "",
+            "password": "",
+            "telephone": "",
+            "role": false,
+            "rfid": ""
         },
         "payload": "",
-        "submit": "Créer",
+        "submit": "Modifier",
         "cancel": "Annuler",
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 140,
-        "y": 140,
+        "x": 720,
+        "y": 300,
         "wires": [
-            []
+            [
+                "88cbe4022143dfab"
+            ]
         ]
     },
     {
@@ -2920,9 +2965,9 @@
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "10",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "Modifier",
@@ -2931,7 +2976,8 @@
         "y": 40,
         "wires": [
             [
-                "3c43bb6eb20edbbc"
+                "3c43bb6eb20edbbc",
+                "73a0b0e86d1ecfcd"
             ]
         ]
     },
@@ -2959,6 +3005,103 @@
         "y": 40,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "73a0b0e86d1ecfcd",
+        "type": "function",
+        "z": "01557fa3c5d57cbe",
+        "name": "function 1",
+        "func": "var searchId = global.get(\"user_id\");\n\nif (!searchId) {\n    return { payload: { error: \"Global variable 'searchId' is not set\" } };\n}\n\nvar query = { email: searchId };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "63d2c5beb1139d43"
+            ]
+        ]
+    },
+    {
+        "id": "63d2c5beb1139d43",
+        "type": "mongodb4",
+        "z": "01557fa3c5d57cbe",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "find",
+        "output": "forEach",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "findWithId",
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "70df47423de0b885"
+            ]
+        ]
+    },
+    {
+        "id": "42f7a03b222d39b5",
+        "type": "debug",
+        "z": "01557fa3c5d57cbe",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b61235c8ef4235fa",
+        "type": "mongodb4",
+        "z": "01557fa3c5d57cbe",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "updateOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "edit",
+        "x": 1170,
+        "y": 300,
+        "wires": [
+            [
+                "42f7a03b222d39b5"
+            ]
+        ]
+    },
+    {
+        "id": "88cbe4022143dfab",
+        "type": "function",
+        "z": "01557fa3c5d57cbe",
+        "name": "function 2",
+        "func": "let formData = msg.payload;\n\nmsg.payload = {\n    \"query\": { \"email\": formData.email },\n    \"update\": { \n        \"$set\": {\n            \"firstname\": formData.firstname,\n            \"name\": formData.name,\n            \"password\": formData.password,\n            \"telephone\": formData.telephone,\n            \"role\": formData.role,\n            \"rfid\": formData.rfid\n        }\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 300,
+        "wires": [
+            [
+                "b61235c8ef4235fa",
+                "42f7a03b222d39b5"
+            ]
         ]
     }
 ]
