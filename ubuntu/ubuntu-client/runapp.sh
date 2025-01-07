@@ -11,7 +11,7 @@ stop_processes() {
 # Fonction pour relancer Flask et Node-RED dans des terminaux séparés
 start_processes() {
     echo "Launching Flask API in a new terminal..."
-    gnome-terminal -- bash -c "python3 flask-nginx/auth_server_api.py; exec bash" &
+    gnome-terminal -- bash -c "python3 flask/auth_server_api.py; exec bash" &
 
     echo "Launching Node-RED in a new terminal..."
     gnome-terminal -- bash -c "node-red; exec bash" &
