@@ -1988,22 +1988,6 @@
         "wires": []
     },
     {
-        "id": "fafc0daa77fce036",
-        "type": "debug",
-        "z": "4e821b48bbd42ca3",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1300,
-        "y": 240,
-        "wires": []
-    },
-    {
         "id": "2434401338424164",
         "type": "http request",
         "z": "4e821b48bbd42ca3",
@@ -2022,9 +2006,7 @@
         "x": 1160,
         "y": 240,
         "wires": [
-            [
-                "fafc0daa77fce036"
-            ]
+            []
         ]
     },
     {
@@ -3306,6 +3288,7 @@
         "id": "f7d333af7d00a920",
         "type": "debug",
         "z": "1118678650c503c3",
+        "d": true,
         "name": "mosquitto_debug",
         "active": true,
         "tosidebar": true,
@@ -3323,6 +3306,7 @@
         "id": "93578839b4841675",
         "type": "mqtt in",
         "z": "1118678650c503c3",
+        "d": true,
         "name": "hello",
         "topic": "smartoffice/2/+/hello",
         "qos": "2",
@@ -3342,6 +3326,7 @@
         "id": "c5c99200d4be6aee",
         "type": "mqtt in",
         "z": "1118678650c503c3",
+        "d": true,
         "name": "get_temperature",
         "topic": "smartoffice/2/+/temperature",
         "qos": "2",
@@ -3363,6 +3348,7 @@
         "id": "dc64d5a8f07b8a51",
         "type": "mqtt in",
         "z": "1118678650c503c3",
+        "d": true,
         "name": "get_light_sensor",
         "topic": "smartoffice/2/+/light_sensor",
         "qos": "2",
@@ -3384,6 +3370,7 @@
         "id": "e6c2b49c82e472ec",
         "type": "mqtt in",
         "z": "1118678650c503c3",
+        "d": true,
         "name": "get_sound_sensor",
         "topic": "smartoffice/2/+/sound_sensor",
         "qos": "2",
@@ -3405,6 +3392,7 @@
         "id": "482f68d72f3e71f6",
         "type": "mqtt in",
         "z": "1118678650c503c3",
+        "d": true,
         "name": "get_location",
         "topic": "smartoffice/2/+/gps",
         "qos": "2",
@@ -3426,6 +3414,7 @@
         "id": "50c67b457275e78e",
         "type": "mqtt in",
         "z": "1118678650c503c3",
+        "d": true,
         "name": "get_rfid",
         "topic": "smartoffice/2/+/rfid",
         "qos": "2",
