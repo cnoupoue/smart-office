@@ -153,7 +153,7 @@ module.exports = {
      * The following property can be used to listen on a specific interface. For
      * example, the following would only allow connections from the local machine.
      */
-    //uiHost: "127.0.0.1",
+    uiHost: "127.0.0.1",
 
     /** The maximum size of HTTP request that will be accepted by the runtime api.
      * Default: 5mb
@@ -170,7 +170,12 @@ module.exports = {
      * The following property can be used to specify a different root path.
      * If set to false, this is disabled.
      */
-    //httpAdminRoot: '/admin',
+    httpAdminRoot: '/admin',
+    httpNodeRoot: '/',
+    httpServerOptions: {
+    	secure: false,
+	httpProxy: true
+    },
 
     /** The following property can be used to add a custom middleware function
      * in front of all admin http routes. For example, to set custom http
@@ -201,10 +206,10 @@ module.exports = {
      * See https://github.com/troygoode/node-cors#configuration-options for
      * details on its contents. The following is a basic permissive set of options:
      */
-    //httpNodeCors: {
-    //    origin: "*",
-    //    methods: "GET,PUT,POST,DELETE"
-    //},
+    httpNodeCors: {
+        origin: "*",
+        methods: "GET,PUT,POST,DELETE"
+    },
 
     /** If you need to set an http proxy please set an environment variable
      * called http_proxy (or HTTP_PROXY) outside of Node-RED in the operating system.
@@ -527,7 +532,7 @@ module.exports = {
      *  middleware:{function or array}, (req,res,next) - http middleware
      *  ioMiddleware:{function or array}, (socket,next) - socket.io middleware
      */
-    //ui: { path: "ui" },
+    ui: { path: "" },
 
     /** Colourise the console output of the debug node */
     //debugUseColors: true,

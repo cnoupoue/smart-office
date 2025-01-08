@@ -4,6 +4,7 @@ db = db.getSiblingDB('reservationDB');
 db.client.drop();
 db.premise.drop();
 db.reservation.drop();
+db.device.drop();
 db.log.drop();
 
 // Create the 'client' collection
@@ -11,25 +12,29 @@ db.createCollection("client");
 db.client.insertMany([
     {
         _id: ObjectId(),
-        email: "example1@example.com",
+        email: "cameron.noupoue@student.hepl.be",
         firstname: "Cameron",
         name: "Noupoue",
         telephone: 123456789,
-        password: "password",
-        salt: "password",
+        password: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe.DSg.zs82PvlO8rpesoP4gtQwOik8fW",
+        salt: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe",
         role: "user",
-        rfid: null // Optional attribute for RFID association
+        rfid: null, // Optional attribute for RFID association
+        token: "exampleToken123",
+        token_expiration: "2025-01-10T10:00:00Z"
     },
     {
         _id: ObjectId(),
-        email: "example2@example.com",
+        email: "kotiyev.nasser@student.hepl.be",
         firstname: "Nasser",
         name: "Kotiyev",
         telephone: 987654321,
-        password: "password",
-        salt: "password",
+        password: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe.DSg.zs82PvlO8rpesoP4gtQwOik8fW",
+        salt: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe",
         role: "admin",
-        rfid: "ABC123" // Example RFID tag
+        rfid: "ABC123", // Example RFID tag
+        token: "exampleAdminToken456",
+        token_expiration: "2025-01-15T10:00:00Z"
     }
 ]);
 
@@ -43,6 +48,21 @@ db.premise.insertMany([
     {
         _id: ObjectId(),
         name: "290C"
+    }
+]);
+
+// Create the 'device' collection
+db.createCollection("device");
+db.device.insertMany([
+    {
+        _id: ObjectId(),
+        name: "Temperature Sensor",
+        id_premise: db.premise.findOne({ name: "290A" })._id
+    },
+    {
+        _id: ObjectId(),
+        name: "Door Lock",
+        id_premise: db.premise.findOne({ name: "290C" })._id
     }
 ]);
 
@@ -73,14 +93,16 @@ db.log.insertMany([
         topic: "RFID_SCAN",
         date_log: ISODate("2024-12-25T09:15:00Z"),
         value_log: "ABC123",
-        id_premise: db.premise.findOne({ name: "290A" })._id
+        id_premise: db.premise.findOne({ name: "290A" })._id,
+        id_device: db.device.findOne({ name: "Temperature Sensor" })._id
     },
     {
         _id: ObjectId(),
         topic: "DOOR_OPEN",
         date_log: ISODate("2024-12-25T09:20:00Z"),
         value_log: "Manually unlocked",
-        id_premise: db.premise.findOne({ name: "290A" })._id
+        id_premise: db.premise.findOne({ name: "290A" })._id,
+        id_device: db.device.findOne({ name: "Door Lock" })._id
     }
 ]);
 
