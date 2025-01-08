@@ -42,7 +42,23 @@ source ~/.bashrc
 ```bash
 sudo vncpasswd -weakpwd -service
 ```
+## sur RPI
+### installer un serveur vnc
+```
+sudo apt update
+sudo apt install tightvncserver
+vncserver :1
+```
 
+Créer un SSH reversed tunneling
+```
+ssh -i ./ubuntu_oracle.key -R 5910:localhost:5901 ubuntu@darkquarx.be
+```
+Attention, il faut s'assurer que sur Ubuntu server, le processus n'utilise pas le port 5910, il faut tuer ce processus avec la commande:
+```bash
+sudo kill $(sudo lsof -t -i:5910)
+ss -aptn | grep 5910
+```
 # pour que l'écran RPI s'affiche sur VNC:
 ```bash
 sudo nano /boot/config.txt
@@ -63,4 +79,13 @@ https://randomnerdtutorials.com/video-streaming-with-raspberry-pi-camera/
 Ne pas oublier de modifier le code python en ajoutant cette ligne dans `finally` à la fin
 ```python
 camera.close()
+```
+
+# lancer les scripts au démarrage:
+```bash
+crontab -e
+```
+
+```bash
+@reboot /home/pi/Documents/office-station/script.sh
 ```

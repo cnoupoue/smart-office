@@ -15,7 +15,16 @@ def init():
     lcd_controller.display_info("Demarrage de \nl'appareil...")
     global MQTTC
     MQTTC = MQTT(sub_callback = manage_subscribed_topics)
-    MQTTC.connect(url=env.BROKER, port=env.PORT)
+    retry = True
+    while(retry):
+        try:
+            MQTTC.connect(url=env.BROKER, port=env.PORT)
+            retry = False
+        except Exception as e:
+            print("GOT: " + str(e) + ",\nTry to reconnect in 2 seconds")
+            retry = True
+            time.sleep(2)
+            lcd_controller.display_error("En attente de \nconnexion reseau")
     MQTTC.subscribe(env.HELLO_TOPIC, 2)
     MQTTC.subscribe(env.YOU_ARE_TOPIC)
 

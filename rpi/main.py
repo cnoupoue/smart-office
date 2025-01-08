@@ -18,9 +18,11 @@ common.init_serial_number()
 # essential thread initialisation
 t_multi_sensor_controller = threading.Thread(target=multi_sensor_controller.run).start()
 
-# MQTT initialisation
-mqtt_controller.init()
-
+try:
+    # MQTT initialisation
+    mqtt_controller.init()
+except Exception as e:
+    print("ERROR")
 # Asking to client_server for premise
 mqtt_controller.ask_for_premise()
 
