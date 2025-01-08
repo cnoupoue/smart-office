@@ -58,7 +58,7 @@ def login():
             token = generate_token(str(user['_id']))
             session['token'] = token
             response = jsonify(message="Login successful", token=token)
-            response.headers['X-Redirect-To'] = '/dashboard/'
+            response.headers['X-Redirect-To'] = '/'
             return response, 200
         else:
             return jsonify(message="Invalid credentials. Please try again."), 401

@@ -15,6 +15,7 @@ Here's the list of packages we installed
 - node-red-contrib-mongodb4
 - node-red-contrib-uimedia
 - node-red-node-ui-table
+- node-red-contrib-web-worldmap
 
 ## Parts
 
@@ -34,3 +35,5 @@ Secure Node Red with https
 -> generate a CA for the whole project
 -> edit `.node-red/settings.json`
 -> set node-red starts at the boot
+
+Using of httpNodeCors to allow external origins for HTTP request (cfr. nginx)

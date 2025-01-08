@@ -22,14 +22,12 @@ read -p "Do you want to rebuild the MongoDB Docker image? (y/n): " rebuild_choic
 if [[ "$rebuild_choice" =~ ^[Yy]$ ]]; then
     echo "Rebuilding MongoDB image..."
     sudo docker build -t mongo-iot-image:1.0 mongodb/ && echo "MongoDB image rebuilt"
+    echo "Restarting Docker Compose services..."
+    sudo docker compose -f docker-compose.yaml down
+    sudo docker compose -f docker-compose.yaml up -d && echo "Docker Compose services are up"
 else
     echo "Skipping MongoDB image rebuild."
 fi
-
-# Arrêter et redémarrer les conteneurs Docker
-echo "Restarting Docker Compose services..."
-sudo docker compose -f docker-compose.yaml down
-sudo docker compose -f docker-compose.yaml up -d && echo "Docker Compose services are up"
 
 # Arrêter les processus existants
 stop_processes
@@ -40,5 +38,10 @@ sleep 2
 # Relancer Flask et Node-RED
 start_processes
 
+# Lancer Nginx via le script nginx/start_nginx.sh
+echo "Starting Nginx using nginx/start_nginx.sh..."
+cd nginx
+bash ./start_nginx.sh && echo "Nginx started successfully" || echo "Failed to start Nginx"
+cd "$(dirname "$0")"
 echo "All services have been restarted successfully."
 
