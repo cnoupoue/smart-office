@@ -1,2 +1,0 @@
-- Mettre le CSS sur le fichier nginx/login.html
-- Bloquer l'accès à Node-Red/ui si on ne passe pas par nginx
