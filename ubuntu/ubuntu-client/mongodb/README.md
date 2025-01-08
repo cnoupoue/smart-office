@@ -6,6 +6,8 @@ We use MongoDB as our NoSQL database to store the client, the rooms, the reserve
 
 The database schema is available in this repository : `database.png`
 
+![Database Schema](./database.png)
+
 ## Mongo Instance
 
 We used Docker to containerize our database. 
