@@ -25,7 +25,7 @@ db.client.insertMany([
     },
     {
         _id: ObjectId(),
-        email: "kotiyev.nasser@student.hepl.be",
+        email: "nasser.kotiyev@student.hepl.be",
         firstname: "Nasser",
         name: "Kotiyev",
         telephone: 987654321,
