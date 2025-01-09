@@ -28,7 +28,10 @@ def _get_last_message():
     return messages[0]
 
 # Main loop to listen for messages
-last_message_id = _get_last_message()['id']
+last_message_id= None
+
+def init():
+    _get_last_message()['id']
 
 def wait_for_command():
     while True:

@@ -111,7 +111,10 @@ def subscribeToOtherTopics():
 def execute_publications():
     while True:
         topic, payload, qos = message_queue.get()
-        MQTTC.publish(topic, payload, qos)
+        retain = False
+        # if topic.endswith("gps"):
+        #     retain=True
+        MQTTC.publish(topic, payload, qos, retain)
     
 def disconnect():
     MQTTC.disconnect()

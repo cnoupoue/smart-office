@@ -9,12 +9,14 @@ SOUND_MAX_VALUE = 1000
 last_read = 0
 
 def read(SOUND_QUEUE):
+    global last_read
     sound_value = sound_sensor.read()
     avg_sound_value = 0
         # filter not valid data
         # and only send if 2 seconds passed
     ready = time.time() - last_read >= env.SOUND_SENSOR_DELAY
     if sound_value < SOUND_MAX_VALUE and ready:
+        last_read = time.time()
         SOUND_QUEUE.append(sound_value)
             # calculation for more accuracy based on previous values
         avg_sound_value = sum(SOUND_QUEUE) / len(SOUND_QUEUE)

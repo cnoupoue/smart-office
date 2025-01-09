@@ -6,7 +6,8 @@ import time
 
 last_read = 0
 
-def read(last_read, BUTTON_QUEUE, button_old_value, set_button_old_value):
+def read(BUTTON_QUEUE, button_old_value, set_button_old_value):
+    global last_read
     button_value = button.read()
     avg_button_value = 0
     ready = time.time() - last_read >= env.BUTTON_DELAY
@@ -18,9 +19,11 @@ def read(last_read, BUTTON_QUEUE, button_old_value, set_button_old_value):
         avg_button_value = sum(BUTTON_QUEUE) / len(BUTTON_QUEUE)
         # logic to detect pressed action once
         if avg_button_value >= 0.5 and button_old_value == 0 and ready:
+            last_read = time.time()
             mqtt_controller.publish(env.BUTTON, "PRESSED")
             set_button_old_value(1)
             print("PRESSED")
         elif avg_button_value < 0.5 and button_old_value == 1 and ready:
+            last_read = time.time()
             set_button_old_value(0)
 

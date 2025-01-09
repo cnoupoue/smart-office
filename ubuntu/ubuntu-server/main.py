@@ -4,47 +4,9 @@ import shodan_api
 import sendgrid_api
 import twilio_api
 import time
-
 import threading
-
-def execute_command():
-    def send_sms():
-        # get and send short shodan results via sms
-        msg_for_sms = shodan_api.get_vuln_message_for_sms()
-        twilio_api.send(msg_for_sms)
-        webex_api.send_message("SMS envoyé!")
-
-    def send_email():
-        # get and send long shodan results via email
-        list_vuln_for_email = shodan_api.get_vuln_list_for_email()
-        sendgrid_api.send(message=encapsulate_into_vuln_html(list_vuln_for_email))
-        webex_api.send_message("Email envoyé!")
-
-    # Create threads for SMS and email
-    sms_thread = threading.Thread(target=send_sms)
-    email_thread = threading.Thread(target=send_email)
-
-    # Start the threads
-    sms_thread.start()
-    email_thread.start()
-
-    # Join the threads to wait for their completion
-    sms_thread.join()
-    email_thread.join()
-
-
-def run():
-    print("Waiting for new messages...")
-    while True:
-        command = webex_api.wait_for_command()
-
-        if command == 'shodan':
-            print("command received")
-            message = "Requête shodan envoyé. Vous recevrez les résultats par mail (prend quelques minutes) et SMS."
-            webex_api.send_message(message)
-            execute_command()
-
-        time.sleep(2)  # Check for new messages every 10 seconds
+import mongo_api
+from mqtt import MQTT
 
 def encapsulate_into_vuln_html(list):
     vulnerabilities_table = ""
@@ -83,5 +45,49 @@ def encapsulate_into_vuln_html(list):
 </div>     
 """
 
-run()
+def execute_command():
+    # get and send short shodan results via sms
+    msg_for_sms = shodan_api.get_vuln_message_for_sms()
+    twilio_api.send(msg_for_sms)
+    webex_api.send_message("SMS envoyé!")
 
+    def send_email():
+        # get and send long shodan results via email
+        list_vuln_for_email = shodan_api.get_vuln_list_for_email()
+        sendgrid_api.send(message=encapsulate_into_vuln_html(list_vuln_for_email))
+        webex_api.send_message("Email envoyé!")
+
+    # Create threads for email
+    email_thread = threading.Thread(target=send_email)
+    email_thread.start()
+    email_thread.join()
+
+def save_mqtt_logs():
+    MQTTC = MQTT(sub_callback = callback, 
+                 secured=True, 
+                 ca_certs="mosquitto.org.crt",
+                 certfile="clientcrt.pem",
+                 keyfile="clientkey.pem")
+    MQTTC.connect("test.mosquitto.org", 8883)
+    MQTTC.publish("test", "hello")
+    MQTTC.subscribe("test")
+    while True:
+        time.sleep(2)
+def callback(topic, message):
+    print(topic, message)
+def start_webex_handler():
+    print("Waiting for new messages...")
+    webex_api.init()
+    while True:
+        command = webex_api.wait_for_command()
+
+        if command == 'shodan':
+            print("command received")
+            message = "Requête shodan envoyé. Vous recevrez les résultats par mail (prend quelques minutes) et SMS."
+            webex_api.send_message(message)
+            execute_command()
+
+        time.sleep(1)  # Check for new messages every 10 seconds
+
+threading.Thread(target=save_mqtt_logs).start()
+# start_webex_handler()
