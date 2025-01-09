@@ -25,7 +25,7 @@ db.client.insertMany([
     },
     {
         _id: ObjectId(),
-        email: "kotiyev.nasser@student.hepl.be",
+        email: "nasser.kotiyev@student.hepl.be",
         firstname: "Nasser",
         name: "Kotiyev",
         telephone: 987654321,
@@ -56,14 +56,9 @@ db.createCollection("device");
 db.device.insertMany([
     {
         _id: ObjectId(),
-        name: "Temperature Sensor",
+        name: "MyRPI-IoT",
         id_premise: db.premise.findOne({ name: "290A" })._id
     },
-    {
-        _id: ObjectId(),
-        name: "Door Lock",
-        id_premise: db.premise.findOne({ name: "290C" })._id
-    }
 ]);
 
 // Create the 'reservation' collection
@@ -94,7 +89,7 @@ db.log.insertMany([
         date_log: ISODate("2024-12-25T09:15:00Z"),
         value_log: "ABC123",
         id_premise: db.premise.findOne({ name: "290A" })._id,
-        id_device: db.device.findOne({ name: "Temperature Sensor" })._id
+        id_device: db.device.findOne({ name: "MyRPI-IoT" })._id
     },
     {
         _id: ObjectId(),
@@ -102,7 +97,7 @@ db.log.insertMany([
         date_log: ISODate("2024-12-25T09:20:00Z"),
         value_log: "Manually unlocked",
         id_premise: db.premise.findOne({ name: "290A" })._id,
-        id_device: db.device.findOne({ name: "Door Lock" })._id
+        id_device: db.device.findOne({ name: "MyRPI-IoT" })._id
     }
 ]);
 

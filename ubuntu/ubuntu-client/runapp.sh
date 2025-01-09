@@ -39,9 +39,9 @@ sleep 2
 start_processes
 
 # Lancer Nginx via le script nginx/start_nginx.sh
-echo "Starting Nginx using nginx/start_nginx.sh..."
-cd nginx
-bash ./start_nginx.sh && echo "Nginx started successfully" || echo "Failed to start Nginx"
-cd "$(dirname "$0")"
-echo "All services have been restarted successfully."
+#echo "Starting Nginx using nginx/start_nginx.sh..."
+#cd nginx
+#bash ./start_nginx.sh && echo "Nginx started successfully" || echo "Failed to start Nginx"
+#cd "$(dirname "$0")"
+#echo "All services have been restarted successfully."
 
