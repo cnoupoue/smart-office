@@ -72,14 +72,6 @@
         "env": []
     },
     {
-        "id": "1118678650c503c3",
-        "type": "tab",
-        "label": "Event Listener",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "50484f8edde3dcf6",
         "type": "group",
         "z": "4e821b48bbd42ca3",
@@ -160,12 +152,11 @@
         "nodes": [
             "fb85b18a99c3394a",
             "f032958d3bcb43c7",
-            "59cf1e44b794d204",
-            "dcd7d03b0d6ee46b"
+            "4f7dd4b144e7f41d"
         ],
-        "x": 874,
+        "x": 1054,
         "y": 479,
-        "w": 392,
+        "w": 292,
         "h": 162
     },
     {
@@ -374,7 +365,7 @@
         "tab": "dc7fd2a2a5b25c12",
         "order": 1,
         "disp": false,
-        "width": 34,
+        "width": 29,
         "collapse": false,
         "className": ""
     },
@@ -396,7 +387,7 @@
         "tab": "0e66de217ecb6d6e",
         "order": 1,
         "disp": false,
-        "width": 34,
+        "width": 29,
         "collapse": false,
         "className": ""
     },
@@ -407,7 +398,7 @@
         "tab": "f4731d1939b558e5",
         "order": 1,
         "disp": false,
-        "width": 34,
+        "width": 29,
         "collapse": false,
         "className": ""
     },
@@ -555,66 +546,6 @@
         "className": ""
     },
     {
-        "id": "203cc1b0203b20d1",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 1,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "b61928c2414a64a5",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 3,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "3a6075dcd8f27d9a",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 6,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "56500c023292202f",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 8,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "3d0ffe75e9acb6b5",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 11,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "408723294537ab96",
-        "type": "ui_spacer",
-        "z": "0277478f1e68b0ce",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 13,
-        "width": 4,
-        "height": 1
-    },
-    {
         "id": "2dd860a0786620d5",
         "type": "ui_tab",
         "name": "1Reservation",
@@ -633,96 +564,6 @@
         "width": "23",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "bcfe87b000577192",
-        "type": "ui_spacer",
-        "z": "d959e01e9af70966",
-        "name": "spacer",
-        "group": "b255ced8c894f4f0",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "50266fbbc1e9602e",
-        "type": "ui_spacer",
-        "z": "d959e01e9af70966",
-        "name": "spacer",
-        "group": "f87d496c91fac1c3",
-        "order": 2,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "2326a7e8db4f8453",
-        "type": "ui_spacer",
-        "z": "d959e01e9af70966",
-        "name": "spacer",
-        "group": "f87d496c91fac1c3",
-        "order": 4,
-        "width": 34,
-        "height": 1
-    },
-    {
-        "id": "fbf02550bd1fccdf",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "821b48d3e4d5beb6",
-        "order": 2,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "51c099a503ef3ca5",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "821b48d3e4d5beb6",
-        "order": 4,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "7537cae06b7ff52a",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "821b48d3e4d5beb6",
-        "order": 5,
-        "width": 34,
-        "height": 1
-    },
-    {
-        "id": "147be3928f16525b",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "b433e86cb98af344",
-        "order": 2,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "2196b56a83b1b291",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "b433e86cb98af344",
-        "order": 4,
-        "width": 5,
-        "height": 1
-    },
-    {
-        "id": "17d61cb8f8ed1382",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "b433e86cb98af344",
-        "order": 6,
-        "width": 28,
-        "height": 1
     },
     {
         "id": "c7b473b3c51d1231",
@@ -859,6 +700,136 @@
         "servername": "",
         "verifyservercert": true,
         "alpnprotocol": ""
+    },
+    {
+        "id": "5eaa2c834f3274ec",
+        "type": "ui_spacer",
+        "z": "4db1d4819dfea4ef",
+        "name": "spacer",
+        "group": "821b48d3e4d5beb6",
+        "order": 3,
+        "width": 29,
+        "height": 1
+    },
+    {
+        "id": "4b10401f138508c4",
+        "type": "ui_spacer",
+        "z": "0ab432dc59b6d0a3",
+        "name": "spacer",
+        "group": "b433e86cb98af344",
+        "order": 3,
+        "width": 29,
+        "height": 1
+    },
+    {
+        "id": "e2cc31ff64ac188f",
+        "type": "ui_spacer",
+        "z": "0ab432dc59b6d0a3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "86226e5c38d3b3bf",
+        "type": "ui_spacer",
+        "z": "0ab432dc59b6d0a3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 4,
+        "width": 29,
+        "height": 1
+    },
+    {
+        "id": "f3a08283dd9986da",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 1,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "9ad2bfdd9930ce40",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "8460b08d2593fcc7",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 6,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "132a750d071fc015",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f4ee0191ec87e50d",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 11,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "c8d06474d29e7d88",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d3ab588c8981d764",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "7fda8290ea03273e",
+        "order": 4,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "64a222381a385473",
+        "type": "ui_spacer",
+        "z": "d959e01e9af70966",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "58e28a0c5ac22840",
+        "type": "ui_spacer",
+        "z": "d959e01e9af70966",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 3,
+        "width": 34,
+        "height": 1
     },
     {
         "id": "7ce08affddeab4ea",
@@ -1285,7 +1256,9 @@
         "x": 140,
         "y": 560,
         "wires": [
-            []
+            [
+                "a147a8a9cc0a78fb"
+            ]
         ]
     },
     {
@@ -1448,6 +1421,190 @@
             [
                 "9b88fd4b128fc57c"
             ]
+        ]
+    },
+    {
+        "id": "f7d333af7d00a920",
+        "type": "debug",
+        "z": "0277478f1e68b0ce",
+        "name": "mosquitto_debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "93578839b4841675",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "name": "hello",
+        "topic": "smartoffice/2/+/hello",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1020,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "c5c99200d4be6aee",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "name": "get_temperature",
+        "topic": "smartoffice/2/+/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1100,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "dc64d5a8f07b8a51",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "name": "get_light_sensor",
+        "topic": "smartoffice/2/+/light_sensor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1180,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "e6c2b49c82e472ec",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "name": "get_sound_sensor",
+        "topic": "smartoffice/2/+/sound_sensor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1260,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "482f68d72f3e71f6",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "name": "get_location",
+        "topic": "smartoffice/2/+/gps",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1340,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "50c67b457275e78e",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "name": "get_rfid",
+        "topic": "smartoffice/2/+/rfid",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1420,
+        "wires": [
+            [
+                "f7d333af7d00a920"
+            ]
+        ]
+    },
+    {
+        "id": "a147a8a9cc0a78fb",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "name": "containsLink",
+        "func": "msg.payload = \"http://192.168.167.178:8000/camera\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "c502d1aa06ef84c8"
+            ]
+        ]
+    },
+    {
+        "id": "c502d1aa06ef84c8",
+        "type": "ui_template",
+        "z": "0277478f1e68b0ce",
+        "group": "6d9ac2ca21f48ee4",
+        "name": "redirect",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload) {\n                window.open(msg.payload, '_blank');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 560,
+        "wires": [
+            []
         ]
     },
     {
@@ -1834,38 +1991,9 @@
         "type": "ui_gauge",
         "z": "4e821b48bbd42ca3",
         "g": "52529d8d7b615ffa",
-        "name": "air_quality",
-        "group": "7fda8290ea03273e",
-        "order": 2,
-        "width": 8,
-        "height": 6,
-        "gtype": "donut",
-        "title": "Qualité globale :",
-        "label": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 1170,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "f032958d3bcb43c7",
-        "type": "ui_gauge",
-        "z": "4e821b48bbd42ca3",
-        "g": "52529d8d7b615ffa",
         "name": "co_quantity",
         "group": "7fda8290ea03273e",
-        "order": 1,
+        "order": 2,
         "width": 8,
         "height": 6,
         "gtype": "donut",
@@ -1873,71 +2001,49 @@
         "label": "",
         "format": "{{value}} (190 µg/m3)",
         "min": 0,
-        "max": "10",
+        "max": "200",
         "colors": [
             "#00b500",
             "#e6e600",
             "#ca3838"
         ],
-        "seg1": "",
-        "seg2": "",
+        "seg1": "50",
+        "seg2": "100",
         "diff": false,
         "className": "",
-        "x": 1170,
-        "y": 600,
+        "x": 1150,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "59cf1e44b794d204",
-        "type": "inject",
+        "id": "f032958d3bcb43c7",
+        "type": "ui_gauge",
         "z": "4e821b48bbd42ca3",
+        "d": true,
         "g": "52529d8d7b615ffa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
+        "name": "air_quality",
+        "group": "7fda8290ea03273e",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "gtype": "donut",
+        "title": "Qualité de l'air",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ffa348"
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 970,
-        "y": 520,
-        "wires": [
-            [
-                "fb85b18a99c3394a"
-            ]
-        ]
-    },
-    {
-        "id": "dcd7d03b0d6ee46b",
-        "type": "inject",
-        "z": "4e821b48bbd42ca3",
-        "g": "52529d8d7b615ffa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 970,
+        "seg1": "50",
+        "seg2": "100",
+        "diff": false,
+        "className": "",
+        "x": 1150,
         "y": 600,
-        "wires": [
-            [
-                "f032958d3bcb43c7"
-            ]
-        ]
+        "wires": []
     },
     {
         "id": "1123a8fd972228e4",
@@ -1960,9 +2066,9 @@
         "y": 160,
         "wires": [
             [
-                "2b2f7c601b02fc11",
-                "2434401338424164",
-                "4c27675628385ea0"
+                "3bc6f0b95980261e",
+                "eb17202416c7c47c",
+                "990b135bf2ec1184"
             ]
         ]
     },
@@ -1983,19 +2089,74 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 1160,
+        "x": 1720,
         "y": 160,
         "wires": []
     },
     {
-        "id": "2434401338424164",
+        "id": "7d7db317f38e1625",
+        "type": "ui_worldmap",
+        "z": "4e821b48bbd42ca3",
+        "group": "8753015cdcb44cc3",
+        "order": 2,
+        "width": 16,
+        "height": 5,
+        "name": "",
+        "lat": "50.6418143",
+        "lon": "5.5725594483456655",
+        "zoom": "18",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "true",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR",
+        "maplist": "OSMC",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1420,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2dfae8b7e7686a90",
+        "type": "mqtt in",
+        "z": "4e821b48bbd42ca3",
+        "name": "get_location",
+        "topic": "smartoffice/2/+/gps",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 910,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3bc6f0b95980261e",
         "type": "http request",
         "z": "4e821b48bbd42ca3",
-        "name": "card_api",
+        "name": "getAddressFromGpsSensor",
         "method": "GET",
-        "ret": "bin",
+        "ret": "txt",
         "paytoqs": "ignore",
-        "url": "https://tile.thunderforest.com/atlas/15/50/5.png?apikey=2c638bb0038b42458849958796f0ad4f",
+        "url": "https://api.geoapify.com/v1/geocode/reverse?lat=50.641780905467826&lon=5.572511534949572&apiKey=deeb5f3960dc4cf78c576f97f9ad146f",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -2003,34 +2164,226 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1160,
-        "y": 240,
+        "x": 1180,
+        "y": 160,
         "wires": [
-            []
+            [
+                "83e04dd130ea4f2a"
+            ]
         ]
     },
     {
-        "id": "48119b2e3c1db487",
-        "type": "ui_media",
+        "id": "83e04dd130ea4f2a",
+        "type": "function",
         "z": "4e821b48bbd42ca3",
-        "group": "8753015cdcb44cc3",
-        "name": "",
-        "width": 16,
-        "height": 4,
-        "order": 2,
-        "category": "images",
-        "file": "Screenshot from 2024-12-25 13-17-55.png",
-        "layout": "adjust",
-        "showcontrols": true,
-        "loop": true,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 970,
-        "y": 260,
+        "name": "formatDataFromApi",
+        "func": "var data = JSON.parse(msg.payload);\n\nmsg.payload = data.features[0].properties.formatted;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 160,
         "wires": [
-            []
+            [
+                "2b2f7c601b02fc11"
+            ]
         ]
+    },
+    {
+        "id": "eb17202416c7c47c",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "injectCoordinatesToWorldmap",
+        "func": "msg.payload = {\n    name: \"SmartOffice\",\n    lat: 50.6418143,         // Latitude dynamique\n    lon: 5.5725594483456655, // Longitude dynamique\n    icon: \"fa-map-marker\",   // Icône à utiliser sur la carte\n    fillColor: \"#ff0000\",    // Couleur de remplissage (optionnel)\n    color: \"#ff0000\"         // Couleur du contour (optionnel)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 240,
+        "wires": [
+            [
+                "7d7db317f38e1625"
+            ]
+        ]
+    },
+    {
+        "id": "990b135bf2ec1184",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "storeCoordinatesInContext",
+        "func": "//var lat = msg.payload.latitude;  // Assurez-vous que le payload contient latitude\n//var lon = msg.payload.longitude; // Assurez-vous que le payload contient longitude\nvar lat = 50.641780905467826\nvar lon = 5.572511534949572\nglobal.set(\"coordinates\", { latitude: lat, longitude: lon });\n\nmsg.payload = \"Coordinates stored: Latitude = \" + lat + \", Longitude = \" + lon;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 340,
+        "wires": [
+            [
+                "bbae968c8ad7c12f"
+            ]
+        ]
+    },
+    {
+        "id": "bbae968c8ad7c12f",
+        "type": "debug",
+        "z": "4e821b48bbd42ca3",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "cb1b78fea3a07f49",
+        "type": "http request",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 780,
+        "wires": [
+            [
+                "c76811d58c34c5d6"
+            ]
+        ]
+    },
+    {
+        "id": "10e719f75a3e1ff9",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "injectApiParameters",
+        "func": "var coordinates = global.get(\"coordinates\");\n\nif (coordinates && coordinates.latitude && coordinates.longitude) {\n    var lat = coordinates.latitude;\n    var lon = coordinates.longitude;\n\n    msg.url = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&hourly=pm10,pm2_5&timezone=auto`;\n    return msg;\n} else {\n    node.error(\"Coordinates not found in global context\", msg);\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 780,
+        "wires": [
+            [
+                "cb1b78fea3a07f49"
+            ]
+        ]
+    },
+    {
+        "id": "a960b3602a6a3cd1",
+        "type": "inject",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 670,
+        "y": 780,
+        "wires": [
+            [
+                "10e719f75a3e1ff9"
+            ]
+        ]
+    },
+    {
+        "id": "c76811d58c34c5d6",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "checkAirQuality",
+        "func": "try {\n    let payloadObject = JSON.parse(msg.payload);\n\n    if (payloadObject && payloadObject.elevation) {\n        let elevation = payloadObject.elevation;\n        msg.payload = elevation;\n    } else {\n        msg.payload = \"Elevation data not available.\";\n    }\n} catch (error) {\n    msg.payload = \"Invalid JSON data.\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 780,
+        "wires": [
+            [
+                "fb85b18a99c3394a",
+                "388a14b9ed4aeb4e"
+            ]
+        ]
+    },
+    {
+        "id": "388a14b9ed4aeb4e",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "convertAirQualityIntoString",
+        "func": "if (msg.payload >= 0 && msg.payload <= 50) {\n    msg.payload = \"Bonne\";\n} else if (msg.payload > 50 && msg.payload <= 100) {\n    msg.payload = \"Modérée\";\n} else if (msg.payload > 100) {\n    msg.payload = \"Mauvaise\";\n} else {\n    msg.payload = \"Valeur invalide\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 780,
+        "wires": [
+            [
+                "f032958d3bcb43c7",
+                "4f7dd4b144e7f41d"
+            ]
+        ]
+    },
+    {
+        "id": "4f7dd4b144e7f41d",
+        "type": "ui_text",
+        "z": "4e821b48bbd42ca3",
+        "g": "52529d8d7b615ffa",
+        "group": "7fda8290ea03273e",
+        "order": 1,
+        "width": 8,
+        "height": 6,
+        "name": "air_quality",
+        "label": "Qualité globale de l'air",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "30",
+        "color": "#ffffff",
+        "x": 1250,
+        "y": 600,
+        "wires": []
     },
     {
         "id": "ef266be67d609a53",
@@ -2038,7 +2391,7 @@
         "z": "4db1d4819dfea4ef",
         "group": "821b48d3e4d5beb6",
         "order": 1,
-        "width": 18,
+        "width": 26,
         "height": 1,
         "name": "title",
         "label": "Réservation",
@@ -2054,80 +2407,13 @@
         "wires": []
     },
     {
-        "id": "d111525c60253573",
-        "type": "ui_table",
-        "z": "4db1d4819dfea4ef",
-        "group": "821b48d3e4d5beb6",
-        "name": "",
-        "order": 6,
-        "width": 34,
-        "height": 13,
-        "columns": [
-            {
-                "field": "id_client",
-                "title": "Client",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "id_premise",
-                "title": "Local",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "start_time",
-                "title": "Début",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "end_time",
-                "title": "Fin",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "action",
-                "title": "Action",
-                "width": "",
-                "align": "left",
-                "formatter": "html",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 1070,
-        "y": 260,
-        "wires": []
-    },
-    {
         "id": "b54ecb6b4b720a44",
         "type": "ui_button",
         "z": "4db1d4819dfea4ef",
         "name": "button",
         "group": "821b48d3e4d5beb6",
-        "order": 3,
-        "width": 2,
+        "order": 2,
+        "width": 3,
         "height": 1,
         "passthru": false,
         "label": "Réserver",
@@ -2203,7 +2489,7 @@
         "y": 260,
         "wires": [
             [
-                "d2d764f24a97ca5f"
+                "fb7b1857d18b2bf0"
             ]
         ]
     },
@@ -2217,18 +2503,20 @@
                 "p": "payload"
             }
         ],
-        "repeat": "10",
+        "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
+        "x": 150,
         "y": 260,
         "wires": [
             [
-                "547d7b722673664e"
+                "547d7b722673664e",
+                "8d1b3b656f574cf7",
+                "9fc6d51011e61320"
             ]
         ]
     },
@@ -2257,20 +2545,218 @@
         "type": "function",
         "z": "4db1d4819dfea4ef",
         "name": "add_action",
-        "func": "let reservations = msg.payload;\n\nreservations = reservations.map(reservation => {\n    reservation.action = `<a href=\"/ui/#!/8?id=${reservation._id}\">Annuler</a>`;\n    return reservation;\n});\n\n\nmsg.payload = reservations;\n\nreturn msg;\n",
+        "func": "let reservations = msg.payload;\n\nif (Array.isArray(reservations)) {\n    reservations.forEach(item => {\n        if (item.start_time) {\n            let date = new Date(item.start_time); // Convertir en objet Date\n            item.start_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n        if (item.end_time) {\n            let date = new Date(item.end_time); // Convertir en objet Date\n            item.end_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\nreservations = reservations.map(reservation => {\n    reservation.action = `<a href=\"/#!/8?id=${reservation._id}\">Annuler</a>`;\n    return reservation;\n});\n\n\nmsg.payload = reservations;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
+        "x": 1070,
         "y": 260,
         "wires": [
             [
-                "d111525c60253573"
+                "988308436198a81e"
             ]
         ]
+    },
+    {
+        "id": "988308436198a81e",
+        "type": "ui_template",
+        "z": "4db1d4819dfea4ef",
+        "group": "821b48d3e4d5beb6",
+        "name": "",
+        "order": 4,
+        "width": 29,
+        "height": 6,
+        "format": "<table>\n    <thead>\n        <tr>\n            <th>Client</th>\n            <th>Local</th>\n            <th>Début</th>\n            <th>Fin</th>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row.client_email }}</td>\n            <td>{{ row.premise_name }}</td>\n            <td>{{ row.start_time }}</td>\n            <td>{{ row.end_time }}</td>\n            <td ng-bind-html=\"row.action\"></td>\n        </tr>\n    </tbody>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1300,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48907777a1396e60",
+        "type": "mongodb4",
+        "z": "4db1d4819dfea4ef",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.clients",
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "7ab1a10749d1ae94"
+            ]
+        ]
+    },
+    {
+        "id": "8d1b3b656f574cf7",
+        "type": "function",
+        "z": "4db1d4819dfea4ef",
+        "name": "set payload",
+        "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "48907777a1396e60"
+            ]
+        ]
+    },
+    {
+        "id": "5ab0868f656e94ae",
+        "type": "mongodb4",
+        "z": "4db1d4819dfea4ef",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "premise",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.premise",
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "192ca4dd97f406f7"
+            ]
+        ]
+    },
+    {
+        "id": "9fc6d51011e61320",
+        "type": "function",
+        "z": "4db1d4819dfea4ef",
+        "name": "set payload",
+        "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "5ab0868f656e94ae"
+            ]
+        ]
+    },
+    {
+        "id": "3df8284650839b33",
+        "type": "function",
+        "z": "4db1d4819dfea4ef",
+        "name": "joinDataToHaveClientAndPremise",
+        "func": "let reservations = flow.get('reservationData');\nlet clients = flow.get('clientData');\nlet premises = flow.get('premiseData');\n\n// Ajouter email et name aux objets de reservation\nreservations.forEach(reservation => {\n    // Trouver le client correspondant à id_client\n    let client = clients.find(client => client._id.toString() === reservation.id_client.toString());\n    if (client) {\n        reservation.client_email = client.email;\n    } else {\n        reservation.client_email = null; // ou une valeur par défaut\n    }\n\n    // Trouver la premise correspondant à id_premise\n    let premise = premises.find(premise => premise._id.toString() === reservation.id_premise.toString());\n    if (premise) {\n        reservation.premise_name = premise.name;\n    } else {\n        reservation.premise_name = null; // ou une valeur par défaut\n    }\n});\n\nmsg.payload = reservations;\nnode.warn(msg);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 340,
+        "wires": [
+            [
+                "d2d764f24a97ca5f",
+                "a17509e65aef4558"
+            ]
+        ]
+    },
+    {
+        "id": "7ab1a10749d1ae94",
+        "type": "function",
+        "z": "4db1d4819dfea4ef",
+        "name": "waitAndSend",
+        "func": "flow.set('clientData', msg.payload); // Stocker dans le flow context",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 340,
+        "wires": [
+            [
+                "3df8284650839b33"
+            ]
+        ]
+    },
+    {
+        "id": "192ca4dd97f406f7",
+        "type": "function",
+        "z": "4db1d4819dfea4ef",
+        "name": "waitAndSend",
+        "func": "flow.set('premiseData', msg.payload); // Stocker dans le flow context",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 420,
+        "wires": [
+            [
+                "3df8284650839b33"
+            ]
+        ]
+    },
+    {
+        "id": "fb7b1857d18b2bf0",
+        "type": "function",
+        "z": "4db1d4819dfea4ef",
+        "name": "waitAndSend",
+        "func": "flow.set('reservationData', msg.payload); // Stocker dans le flow context",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "3df8284650839b33"
+            ]
+        ]
+    },
+    {
+        "id": "a17509e65aef4558",
+        "type": "debug",
+        "z": "4db1d4819dfea4ef",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 480,
+        "wires": []
     },
     {
         "id": "be0b18b31c0adf57",
@@ -2399,12 +2885,81 @@
         "wires": []
     },
     {
+        "id": "0822e0a08a81e9e3",
+        "type": "ui_button",
+        "z": "d959e01e9af70966",
+        "name": "support_link_button",
+        "group": "b255ced8c894f4f0",
+        "order": 5,
+        "width": 34,
+        "height": 4,
+        "passthru": false,
+        "label": "Accéder au support WebEx",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "1e4cc66b57ed2b56"
+            ]
+        ]
+    },
+    {
+        "id": "1e4cc66b57ed2b56",
+        "type": "function",
+        "z": "d959e01e9af70966",
+        "name": "containsLink",
+        "func": "msg.payload = \"https://web.webex.com/spaces/aHR0cHM6Ly9jb252LWsud2J4Mi5jb20vY29udmVyc2F0aW9uL2FwaS92MS9jb252ZXJzYXRpb25zLzZmNTg2ODcwLThkMzYtMTFlZi05NGM2LWZiYThmZGViNmE3ZA==\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "c26166e6305d6f8e"
+            ]
+        ]
+    },
+    {
+        "id": "c26166e6305d6f8e",
+        "type": "ui_template",
+        "z": "d959e01e9af70966",
+        "group": "b255ced8c894f4f0",
+        "name": "redirect",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload) {\n                window.open(msg.payload, '_blank');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "22b93b9e152a72e5",
         "type": "ui_text",
         "z": "0ab432dc59b6d0a3",
         "group": "f87d496c91fac1c3",
         "order": 1,
-        "width": 18,
+        "width": 24,
         "height": 1,
         "name": "title",
         "label": "Logs",
@@ -2420,90 +2975,25 @@
         "wires": []
     },
     {
-        "id": "64f1c571c4ecc0a8",
-        "type": "ui_table",
-        "z": "0ab432dc59b6d0a3",
-        "group": "f87d496c91fac1c3",
-        "name": "",
-        "order": 5,
-        "width": 34,
-        "height": 9,
-        "columns": [
-            {
-                "field": "_id",
-                "title": "id",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "id_premise",
-                "title": "Local",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "topic",
-                "title": "Topic",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "date_log",
-                "title": "Date",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "value_log",
-                "title": "Valeur",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 790,
-        "y": 240,
-        "wires": []
-    },
-    {
         "id": "67e4568a7a3501fe",
         "type": "ui_date_picker",
         "z": "0ab432dc59b6d0a3",
         "name": "",
-        "label": "Rechercher une date",
+        "label": "Rechercher par date",
         "group": "f87d496c91fac1c3",
-        "order": 3,
-        "width": 14,
+        "order": 2,
+        "width": 3,
         "height": 1,
         "passthru": true,
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 500,
-        "y": 60,
+        "x": 640,
+        "y": 80,
         "wires": [
-            []
+            [
+                "a657d51e759ff876"
+            ]
         ]
     },
     {
@@ -2522,7 +3012,7 @@
         "y": 240,
         "wires": [
             [
-                "64f1c571c4ecc0a8"
+                "2cf404800ccde71e"
             ]
         ]
     },
@@ -2536,14 +3026,14 @@
                 "p": "payload"
             }
         ],
-        "repeat": "10",
+        "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
+        "x": 110,
         "y": 240,
         "wires": [
             [
@@ -2572,12 +3062,90 @@
         ]
     },
     {
+        "id": "5df8d8e55bcfaa12",
+        "type": "ui_template",
+        "z": "0ab432dc59b6d0a3",
+        "group": "f87d496c91fac1c3",
+        "name": "",
+        "order": 5,
+        "width": 29,
+        "height": 7,
+        "format": "<table>\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Local</th>\n            <th>Topic</th>\n            <th>Date</th>\n            <th>Valeur</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row._id }}</td>\n            <td>{{ row.id_premise }}</td>\n            <td>{{ row.topic }}</td>\n            <td>{{ row.date_log }}</td>\n            <td>{{ row.value_log }}</td>\n        </tr>\n    </tbody>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1040,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "055e71fa92eae72e",
+        "type": "debug",
+        "z": "0ab432dc59b6d0a3",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2cf404800ccde71e",
+        "type": "function",
+        "z": "0ab432dc59b6d0a3",
+        "name": "set payload",
+        "func": "let data = msg.payload;\n\nif (Array.isArray(data)) {\n    data.forEach(item => {\n        if (item.date_log) {\n            let date = new Date(item.date_log); // Convertir en objet Date\n            item.date_log = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\n\nif (Array.isArray(data)) {\n    context.set('mongodbData', data);\n}\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 240,
+        "wires": [
+            [
+                "5df8d8e55bcfaa12"
+            ]
+        ]
+    },
+    {
+        "id": "a657d51e759ff876",
+        "type": "function",
+        "z": "0ab432dc59b6d0a3",
+        "name": "function 3",
+        "func": "// Récupérer les données depuis le contexte\nlet data = context.get(\"mongodbData\");\n\n// Vérifier si 'data' est bien un tableau\nif (!Array.isArray(data)) {\n    msg.payload = { status: \"mongodbData is not an array or not found\" };\n    return msg;  // Quitte tôt si 'data' n'est pas un tableau\n}\n\n// Récupérer le timestamp depuis msg.payload\nlet timestamp = msg.payload; \n\n// Convertir le timestamp en objet Date et en format ISO\nlet date = new Date(timestamp);\nlet isoDate = date.toISOString();  // Format : 2024-12-25T09:15:00.000Z\n\n// Filtrer les objets de 'data' dont \"date_log\" correspond à isoDate\nlet filteredData = data.filter(item => item.date_log === isoDate);\n\n// Vérifier si des objets ont été filtrés\nif (filteredData.length > 0) {\n    msg.payload = filteredData;\n} else {\n    // Si aucun objet ne correspond, retourner tous les éléments\n    msg.payload = { status: \"No matching data found\", data: data };\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 120,
+        "wires": [
+            [
+                "5df8d8e55bcfaa12",
+                "055e71fa92eae72e"
+            ]
+        ]
+    },
+    {
         "id": "961826f4c996c896",
         "type": "ui_text",
         "z": "19da2f4cf4bf4170",
         "group": "b433e86cb98af344",
         "order": 1,
-        "width": 20,
+        "width": 26,
         "height": 1,
         "name": "title",
         "label": "Utilisateurs",
@@ -2593,103 +3161,12 @@
         "wires": []
     },
     {
-        "id": "dc580c9303e5a1a7",
-        "type": "ui_table",
-        "z": "19da2f4cf4bf4170",
-        "group": "b433e86cb98af344",
-        "name": "",
-        "order": 7,
-        "width": 34,
-        "height": 10,
-        "columns": [
-            {
-                "field": "_id",
-                "title": "id",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "email",
-                "title": "Email",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "firstname",
-                "title": "Prénom",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "name",
-                "title": "Nom",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "telephone",
-                "title": "Téléphone",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "role",
-                "title": "Role",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "action",
-                "title": "Action",
-                "width": "",
-                "align": "left",
-                "formatter": "html",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 1,
-        "cts": true,
-        "x": 1110,
-        "y": 260,
-        "wires": [
-            [
-                "54b6b1816cad72e5"
-            ]
-        ]
-    },
-    {
         "id": "2511177c847c7df8",
         "type": "ui_button",
         "z": "19da2f4cf4bf4170",
         "name": "button",
         "group": "b433e86cb98af344",
-        "order": 3,
+        "order": 2,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -2820,7 +3297,7 @@
         "type": "function",
         "z": "19da2f4cf4bf4170",
         "name": "add_action",
-        "func": "let users = msg.payload;\n\nusers = users.map(user => {\n    user.action = `<a href=\"/ui/#!/8?id=${user._id}\">Modifier</a>`;\n    return user;\n});\n\n\nmsg.payload = users;\n\nreturn msg;\n",
+        "func": "let users = msg.payload;\n\nusers = users.map(user => {\n    user.action = `<a href=\"/#!/8?id=${user._id}\">Modifier</a>`;\n    return user;\n});\n\n\nmsg.payload = users;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2831,7 +3308,7 @@
         "y": 260,
         "wires": [
             [
-                "dc580c9303e5a1a7"
+                "478210a64f28ad5c"
             ]
         ]
     },
@@ -2855,6 +3332,27 @@
         "to": "",
         "reg": false,
         "x": 1330,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "478210a64f28ad5c",
+        "type": "ui_template",
+        "z": "19da2f4cf4bf4170",
+        "group": "b433e86cb98af344",
+        "name": "",
+        "order": 4,
+        "width": 29,
+        "height": 6,
+        "format": "<table>\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Email</th>\n            <th>Prénom</th>\n            <th>Nom</th>\n            <th>Téléphone</th>\n            <th>Role</th>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row._id }}</td>\n            <td>{{ row.email }}</td>\n            <td>{{ row.firstname }}</td>\n            <td>{{ row.name }}</td>\n            <td>{{ row.telephone }}</td>\n            <td>{{ row.role }}</td>\n            <td ng-bind-html=\"row.action\"></td>        </tr>\n    </tbody>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1100,
         "y": 260,
         "wires": [
             []
@@ -3281,154 +3779,6 @@
             [
                 "b61235c8ef4235fa",
                 "42f7a03b222d39b5"
-            ]
-        ]
-    },
-    {
-        "id": "f7d333af7d00a920",
-        "type": "debug",
-        "z": "1118678650c503c3",
-        "d": true,
-        "name": "mosquitto_debug",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 930,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "93578839b4841675",
-        "type": "mqtt in",
-        "z": "1118678650c503c3",
-        "d": true,
-        "name": "hello",
-        "topic": "smartoffice/2/+/hello",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 110,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c5c99200d4be6aee",
-        "type": "mqtt in",
-        "z": "1118678650c503c3",
-        "d": true,
-        "name": "get_temperature",
-        "topic": "smartoffice/2/+/temperature",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 180,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "dc64d5a8f07b8a51",
-        "type": "mqtt in",
-        "z": "1118678650c503c3",
-        "d": true,
-        "name": "get_light_sensor",
-        "topic": "smartoffice/2/+/light_sensor",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 260,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "e6c2b49c82e472ec",
-        "type": "mqtt in",
-        "z": "1118678650c503c3",
-        "d": true,
-        "name": "get_sound_sensor",
-        "topic": "smartoffice/2/+/sound_sensor",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 150,
-        "y": 340,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "482f68d72f3e71f6",
-        "type": "mqtt in",
-        "z": "1118678650c503c3",
-        "d": true,
-        "name": "get_location",
-        "topic": "smartoffice/2/+/gps",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 420,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "50c67b457275e78e",
-        "type": "mqtt in",
-        "z": "1118678650c503c3",
-        "d": true,
-        "name": "get_rfid",
-        "topic": "smartoffice/2/+/rfid",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 110,
-        "y": 500,
-        "wires": [
-            [
-                "f7d333af7d00a920"
             ]
         ]
     }
