@@ -7,6 +7,13 @@ Smart Office is an IoT Project to practice a lot of IoT's concepts like NodeRed,
 ##
 
 To use the scripts, please clone this repository on the same folder than your `.node-red/` directory
+## How to run the project
+
+You have to build your certificates 
+
+```bash
+./setup_ssl.sh
+```
 
 ## How to plug sensors
 

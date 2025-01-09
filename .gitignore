@@ -5,6 +5,9 @@
 # Private key
 *.ppk
 
+### Certificates
+certificates/*
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
