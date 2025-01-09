@@ -611,7 +611,7 @@
         "name": "EditUser",
         "icon": "",
         "order": 9,
-        "disabled": false,
+        "disabled": true,
         "hidden": true
     },
     {
@@ -722,26 +722,6 @@
         "height": 1
     },
     {
-        "id": "e2cc31ff64ac188f",
-        "type": "ui_spacer",
-        "z": "0ab432dc59b6d0a3",
-        "name": "spacer",
-        "group": "f87d496c91fac1c3",
-        "order": 3,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "86226e5c38d3b3bf",
-        "type": "ui_spacer",
-        "z": "0ab432dc59b6d0a3",
-        "name": "spacer",
-        "group": "f87d496c91fac1c3",
-        "order": 4,
-        "width": 29,
-        "height": 1
-    },
-    {
         "id": "f3a08283dd9986da",
         "type": "ui_spacer",
         "z": "4e821b48bbd42ca3",
@@ -829,6 +809,26 @@
         "group": "b255ced8c894f4f0",
         "order": 3,
         "width": 34,
+        "height": 1
+    },
+    {
+        "id": "ce85ca96bf7f3312",
+        "type": "ui_spacer",
+        "z": "0ab432dc59b6d0a3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "f3794d5d57b171e6",
+        "type": "ui_spacer",
+        "z": "0ab432dc59b6d0a3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 5,
+        "width": 29,
         "height": 1
     },
     {
@@ -2145,7 +2145,9 @@
         "x": 910,
         "y": 240,
         "wires": [
-            []
+            [
+                "96da40a1ccfe7227"
+            ]
         ]
     },
     {
@@ -2386,6 +2388,22 @@
         "wires": []
     },
     {
+        "id": "96da40a1ccfe7227",
+        "type": "debug",
+        "z": "4e821b48bbd42ca3",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 440,
+        "wires": []
+    },
+    {
         "id": "ef266be67d609a53",
         "type": "ui_text",
         "z": "4db1d4819dfea4ef",
@@ -2410,7 +2428,7 @@
         "id": "b54ecb6b4b720a44",
         "type": "ui_button",
         "z": "4db1d4819dfea4ef",
-        "name": "button",
+        "name": "button_book",
         "group": "821b48d3e4d5beb6",
         "order": 2,
         "width": 3,
@@ -2426,7 +2444,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 550,
+        "x": 570,
         "y": 60,
         "wires": [
             [
@@ -2485,11 +2503,11 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "find.reservation",
-        "x": 600,
-        "y": 260,
+        "x": 540,
+        "y": 420,
         "wires": [
             [
-                "fb7b1857d18b2bf0"
+                "3df8284650839b33"
             ]
         ]
     },
@@ -2506,17 +2524,15 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "0.5",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 110,
         "y": 260,
         "wires": [
             [
-                "547d7b722673664e",
-                "8d1b3b656f574cf7",
-                "9fc6d51011e61320"
+                "547d7b722673664e"
             ]
         ]
     },
@@ -2532,8 +2548,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 260,
+        "x": 310,
+        "y": 340,
         "wires": [
             [
                 "5d4a41df373f227d"
@@ -2544,16 +2560,16 @@
         "id": "d2d764f24a97ca5f",
         "type": "function",
         "z": "4db1d4819dfea4ef",
-        "name": "add_action",
-        "func": "let reservations = msg.payload;\n\nif (Array.isArray(reservations)) {\n    reservations.forEach(item => {\n        if (item.start_time) {\n            let date = new Date(item.start_time); // Convertir en objet Date\n            item.start_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n        if (item.end_time) {\n            let date = new Date(item.end_time); // Convertir en objet Date\n            item.end_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\nreservations = reservations.map(reservation => {\n    reservation.action = `<a href=\"/#!/8?id=${reservation._id}\">Annuler</a>`;\n    return reservation;\n});\n\n\nmsg.payload = reservations;\nreturn msg;",
+        "name": "add_action_and_format_date",
+        "func": "let reservations = msg.payload;\n\nif (Array.isArray(reservations)) {\n    reservations.forEach(item => {\n        if (item.start_time) {\n            let date = new Date(item.start_time); // Convertir en objet Date\n            item.start_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n        if (item.end_time) {\n            let date = new Date(item.end_time); // Convertir en objet Date\n            item.end_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\nreservations = reservations.map(reservation => {\n    reservation.action = `<a href=\"/cancel_booking?id=${reservation._id}\">Annuler</a>`;\n    return reservation;\n});\n\n\nmsg.payload = reservations;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
-        "y": 260,
+        "x": 1140,
+        "y": 420,
         "wires": [
             [
                 "988308436198a81e"
@@ -2575,90 +2591,10 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1300,
-        "y": 260,
+        "x": 1200,
+        "y": 520,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "48907777a1396e60",
-        "type": "mongodb4",
-        "z": "4db1d4819dfea4ef",
-        "clientNode": "08886a7cd4dd855e",
-        "mode": "collection",
-        "collection": "client",
-        "operation": "find",
-        "output": "toArray",
-        "maxTimeMS": "0",
-        "handleDocId": false,
-        "name": "find.clients",
-        "x": 590,
-        "y": 340,
-        "wires": [
-            [
-                "7ab1a10749d1ae94"
-            ]
-        ]
-    },
-    {
-        "id": "8d1b3b656f574cf7",
-        "type": "function",
-        "z": "4db1d4819dfea4ef",
-        "name": "set payload",
-        "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 340,
-        "wires": [
-            [
-                "48907777a1396e60"
-            ]
-        ]
-    },
-    {
-        "id": "5ab0868f656e94ae",
-        "type": "mongodb4",
-        "z": "4db1d4819dfea4ef",
-        "clientNode": "08886a7cd4dd855e",
-        "mode": "collection",
-        "collection": "premise",
-        "operation": "find",
-        "output": "toArray",
-        "maxTimeMS": "0",
-        "handleDocId": false,
-        "name": "find.premise",
-        "x": 590,
-        "y": 420,
-        "wires": [
-            [
-                "192ca4dd97f406f7"
-            ]
-        ]
-    },
-    {
-        "id": "9fc6d51011e61320",
-        "type": "function",
-        "z": "4db1d4819dfea4ef",
-        "name": "set payload",
-        "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 420,
-        "wires": [
-            [
-                "5ab0868f656e94ae"
-            ]
         ]
     },
     {
@@ -2666,97 +2602,108 @@
         "type": "function",
         "z": "4db1d4819dfea4ef",
         "name": "joinDataToHaveClientAndPremise",
-        "func": "let reservations = flow.get('reservationData');\nlet clients = flow.get('clientData');\nlet premises = flow.get('premiseData');\n\n// Ajouter email et name aux objets de reservation\nreservations.forEach(reservation => {\n    // Trouver le client correspondant à id_client\n    let client = clients.find(client => client._id.toString() === reservation.id_client.toString());\n    if (client) {\n        reservation.client_email = client.email;\n    } else {\n        reservation.client_email = null; // ou une valeur par défaut\n    }\n\n    // Trouver la premise correspondant à id_premise\n    let premise = premises.find(premise => premise._id.toString() === reservation.id_premise.toString());\n    if (premise) {\n        reservation.premise_name = premise.name;\n    } else {\n        reservation.premise_name = null; // ou une valeur par défaut\n    }\n});\n\nmsg.payload = reservations;\nnode.warn(msg);\nreturn msg;",
+        "func": "let reservations = msg.payload;\nglobal.set('reservationData', reservations)\nlet clients = global.get('clientData');\nlet premises = global.get('premiseData');\n\n// Ajouter email et name aux objets de reservation\nreservations.forEach(reservation => {\n    // Trouver le client correspondant à id_client\n    let client = clients.find(client => reservation.id_client && client._id && client._id.toString() === reservation.id_client.toString());\n    if (client) {\n        reservation.client_email = client.email;\n    } else {\n        reservation.client_email = null; // ou une valeur par défaut\n    }\n\n    // Trouver la premise correspondant à id_premise\n    let premise = premises.find(premise => reservation.id_premise && premise._id && premise._id.toString() === reservation.id_premise.toString());\n    if (premise) {\n        reservation.premise_name = premise.name;\n    } else {\n        reservation.premise_name = null; // ou une valeur par défaut\n    }\n});\n\nmsg.payload = reservations;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1100,
-        "y": 340,
-        "wires": [
-            [
-                "d2d764f24a97ca5f",
-                "a17509e65aef4558"
-            ]
-        ]
-    },
-    {
-        "id": "7ab1a10749d1ae94",
-        "type": "function",
-        "z": "4db1d4819dfea4ef",
-        "name": "waitAndSend",
-        "func": "flow.set('clientData', msg.payload); // Stocker dans le flow context",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 810,
-        "y": 340,
-        "wires": [
-            [
-                "3df8284650839b33"
-            ]
-        ]
-    },
-    {
-        "id": "192ca4dd97f406f7",
-        "type": "function",
-        "z": "4db1d4819dfea4ef",
-        "name": "waitAndSend",
-        "func": "flow.set('premiseData', msg.payload); // Stocker dans le flow context",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 810,
+        "x": 820,
         "y": 420,
         "wires": [
             [
-                "3df8284650839b33"
+                "d2d764f24a97ca5f"
             ]
         ]
     },
     {
-        "id": "fb7b1857d18b2bf0",
+        "id": "5d123201b01615c5",
+        "type": "http in",
+        "z": "4db1d4819dfea4ef",
+        "name": "cancel_booking_request",
+        "url": "/cancel_booking",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 610,
+        "y": 340,
+        "wires": [
+            [
+                "87b77c671fe9d809"
+            ]
+        ]
+    },
+    {
+        "id": "87b77c671fe9d809",
         "type": "function",
         "z": "4db1d4819dfea4ef",
-        "name": "waitAndSend",
-        "func": "flow.set('reservationData', msg.payload); // Stocker dans le flow context",
+        "name": "cancel_reservation",
+        "func": "let reservations = global.get('reservationData');\n\nlet reservationId = msg.req.query.id;\n\nlet reservation = reservations.find(reservation => reservation._id.toString() === reservationId);\n\ndelete reservation.action;\ndelete reservation.premise_name;\ndelete reservation.client_email;\ndelete reservation.start_time;\ndelete reservation.end_time;\n\nif (reservation) {\n    msg.payload = reservation;\n} else {\n    msg.payload = { message: \"Réservation non trouvée\" };\n}\n\nreturn msg;\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 260,
+        "x": 850,
+        "y": 340,
         "wires": [
             [
-                "3df8284650839b33"
+                "f1fd48d9d3b2017d"
             ]
         ]
     },
     {
-        "id": "a17509e65aef4558",
-        "type": "debug",
+        "id": "1968917eb0d9146d",
+        "type": "function",
         "z": "4db1d4819dfea4ef",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1280,
-        "y": 480,
+        "name": "redirect_to_reservation_page",
+        "func": "msg.statusCode = 302;\nmsg.headers = { location: \"/#!/1\" }; // Lien vers lequel rediriger\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 340,
+        "wires": [
+            [
+                "c8bddb85ddc80226"
+            ]
+        ]
+    },
+    {
+        "id": "c8bddb85ddc80226",
+        "type": "http response",
+        "z": "4db1d4819dfea4ef",
+        "name": "http_response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1620,
+        "y": 340,
         "wires": []
+    },
+    {
+        "id": "f1fd48d9d3b2017d",
+        "type": "mongodb4",
+        "z": "4db1d4819dfea4ef",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "reservation",
+        "operation": "deleteOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "remove_reservation",
+        "x": 1120,
+        "y": 340,
+        "wires": [
+            [
+                "1968917eb0d9146d"
+            ]
+        ]
     },
     {
         "id": "be0b18b31c0adf57",
@@ -2771,38 +2718,54 @@
         "options": [
             {
                 "label": "Utilisateur",
-                "value": "Utilisateur",
+                "value": "id_client",
                 "type": "text",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Local",
-                "value": "Local",
+                "value": "id_premise",
                 "type": "text",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Début",
-                "value": "Début",
+                "value": "start_date",
                 "type": "date",
                 "required": true,
                 "rows": null
             },
             {
+                "label": "Heure",
+                "value": "start_time",
+                "type": "time",
+                "required": true,
+                "rows": null
+            },
+            {
                 "label": "Fin",
-                "value": "Fin",
+                "value": "end_date",
                 "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure",
+                "value": "end_time",
+                "type": "time",
                 "required": true,
                 "rows": null
             }
         ],
         "formValue": {
-            "Utilisateur": "",
-            "Local": "",
-            "Début": "",
-            "Fin": ""
+            "id_client": "",
+            "id_premise": "",
+            "start_date": "",
+            "start_time": "",
+            "end_date": "",
+            "end_time": ""
         },
         "payload": "",
         "submit": "Réserver",
@@ -2811,10 +2774,12 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 160,
-        "y": 180,
+        "x": 140,
+        "y": 360,
         "wires": [
-            []
+            [
+                "c7c3bb6395593a9c"
+            ]
         ]
     },
     {
@@ -2850,8 +2815,8 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
+        "once": true,
+        "onceDelay": "0.4",
         "topic": "",
         "payload": "Réserver",
         "payloadType": "str",
@@ -2859,9 +2824,145 @@
         "y": 80,
         "wires": [
             [
-                "f7b193dda725f7f2"
+                "f7b193dda725f7f2",
+                "665db45f4d7359c0"
             ]
         ]
+    },
+    {
+        "id": "55ea4423867b72a4",
+        "type": "ui_dropdown",
+        "z": "df1a303ec9e1b819",
+        "d": true,
+        "name": "clients_dropdown",
+        "label": "",
+        "tooltip": "",
+        "place": "Choisir un client",
+        "group": "ca6e864468baaad4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "payload",
+        "topicType": "msg",
+        "className": "",
+        "x": 370,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "665db45f4d7359c0",
+        "type": "function",
+        "z": "df1a303ec9e1b819",
+        "name": "getClients",
+        "func": "let data = global.get('clientData');\nmsg.options = data.map(client => client.email);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "55ea4423867b72a4"
+            ]
+        ]
+    },
+    {
+        "id": "c7c3bb6395593a9c",
+        "type": "function",
+        "z": "df1a303ec9e1b819",
+        "name": "prepareObject",
+        "func": "// Récupérer le message payload\nlet data = msg.payload;\n\n// Récupérer les données client depuis la variable globale\nlet clientData = global.get('clientData');\nlet premiseData = global.get('premiseData');\n\n// Regrouper start_date et start_time dans une nouvelle clé start_datetime\nlet startDate = new Date(data.start_date);\nlet startTime = new Date(data.start_time);\nstartDate.setHours(startTime.getHours());\nstartDate.setMinutes(startTime.getMinutes());\nstartDate.setSeconds(startTime.getSeconds());\ndata.start_time = startDate.toISOString(); // Formater la date résultante\n\n// Regrouper end_date et end_time dans une nouvelle clé end_datetime\nlet endDate = new Date(data.end_date);\nlet endTime = new Date(data.end_time);\nendDate.setHours(endTime.getHours());\nendDate.setMinutes(endTime.getMinutes());\nendDate.setSeconds(endTime.getSeconds());\ndata.end_time = endDate.toISOString(); // Formater la date résultante\n\n// Remplacer id_client par _id du client correspondant\nlet client = clientData.find(client => client.email === data.id_client);\nif (client) {\n    data.id_client = client._id;\n} else {\n    // Si aucun client n'est trouvé, garder l'ID initial ou gérer l'erreur\n    data.id_client = null;\n}\n\nlet premise = premiseData.find(premise => premise.name === data.id_premise);\nif (client) {\n    data.id_premise = premise._id;\n} else {\n    // Si aucun client n'est trouvé, garder l'ID initial ou gérer l'erreur\n    data.id_premise = null;\n}\n\n// Supprimer les anciens champs\ndelete data.start_date;\ndelete data.end_date;\n\nmsg.payload = data;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 360,
+        "wires": [
+            [
+                "e595840b287591df"
+            ]
+        ]
+    },
+    {
+        "id": "e595840b287591df",
+        "type": "mongodb4",
+        "z": "df1a303ec9e1b819",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "reservation",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "insertReservation",
+        "x": 550,
+        "y": 360,
+        "wires": [
+            [
+                "cc714ee28301d5b1",
+                "34e2bb5e1ea5df41"
+            ]
+        ]
+    },
+    {
+        "id": "cc714ee28301d5b1",
+        "type": "function",
+        "z": "df1a303ec9e1b819",
+        "name": "redirect_to_reservation_page",
+        "func": "msg.payload = {\"tab\":\"Réservation\"};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 360,
+        "wires": [
+            [
+                "0b9cfdfd3387f444"
+            ]
+        ]
+    },
+    {
+        "id": "0b9cfdfd3387f444",
+        "type": "ui_ui_control",
+        "z": "df1a303ec9e1b819",
+        "name": "change_tab",
+        "events": "all",
+        "x": 1090,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34e2bb5e1ea5df41",
+        "type": "debug",
+        "z": "df1a303ec9e1b819",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 260,
+        "wires": []
     },
     {
         "id": "065d264aa47c211a",
@@ -2959,7 +3060,7 @@
         "z": "0ab432dc59b6d0a3",
         "group": "f87d496c91fac1c3",
         "order": 1,
-        "width": 24,
+        "width": 20,
         "height": 1,
         "name": "title",
         "label": "Logs",
@@ -2981,7 +3082,7 @@
         "name": "",
         "label": "Rechercher par date",
         "group": "f87d496c91fac1c3",
-        "order": 2,
+        "order": 3,
         "width": 3,
         "height": 1,
         "passthru": true,
@@ -2989,7 +3090,7 @@
         "topicType": "msg",
         "className": "",
         "x": 640,
-        "y": 80,
+        "y": 120,
         "wires": [
             [
                 "a657d51e759ff876"
@@ -3012,7 +3113,7 @@
         "y": 240,
         "wires": [
             [
-                "2cf404800ccde71e"
+                "7878dc4f22923344"
             ]
         ]
     },
@@ -3067,50 +3168,34 @@
         "z": "0ab432dc59b6d0a3",
         "group": "f87d496c91fac1c3",
         "name": "",
-        "order": 5,
+        "order": 6,
         "width": 29,
         "height": 7,
-        "format": "<table>\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Local</th>\n            <th>Topic</th>\n            <th>Date</th>\n            <th>Valeur</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row._id }}</td>\n            <td>{{ row.id_premise }}</td>\n            <td>{{ row.topic }}</td>\n            <td>{{ row.date_log }}</td>\n            <td>{{ row.value_log }}</td>\n        </tr>\n    </tbody>\n</table>",
+        "format": "<table>\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Local</th>\n            <th>Topic</th>\n            <th>Date</th>\n            <th>Valeur</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row._id }}</td>\n            <td>{{ row.premise_name }}</td>\n            <td>{{ row.topic }}</td>\n            <td>{{ row.readableDate }}</td>\n            <td>{{ row.value_log }}</td>\n        </tr>\n    </tbody>\n</table>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1040,
+        "x": 1260,
         "y": 240,
         "wires": [
             []
         ]
     },
     {
-        "id": "055e71fa92eae72e",
-        "type": "debug",
-        "z": "0ab432dc59b6d0a3",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1100,
-        "y": 120,
-        "wires": []
-    },
-    {
         "id": "2cf404800ccde71e",
         "type": "function",
         "z": "0ab432dc59b6d0a3",
         "name": "set payload",
-        "func": "let data = msg.payload;\n\nif (Array.isArray(data)) {\n    data.forEach(item => {\n        if (item.date_log) {\n            let date = new Date(item.date_log); // Convertir en objet Date\n            item.date_log = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\n\nif (Array.isArray(data)) {\n    context.set('mongodbData', data);\n}\n\nmsg.payload = data;\nreturn msg;",
+        "func": "let data = msg.payload;\n\nif (Array.isArray(data)) {\n    data.forEach(item => {\n        if (item.date_log) {\n            let date = new Date(item.date_log);\n            item.readableDate = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            });\n        }\n    });\n}\n\n\nif (Array.isArray(data)) {\n    flow.set('mongodbData', data);\n}\n\nmsg.payload = data;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 1070,
         "y": 240,
         "wires": [
             [
@@ -3122,20 +3207,67 @@
         "id": "a657d51e759ff876",
         "type": "function",
         "z": "0ab432dc59b6d0a3",
-        "name": "function 3",
-        "func": "// Récupérer les données depuis le contexte\nlet data = context.get(\"mongodbData\");\n\n// Vérifier si 'data' est bien un tableau\nif (!Array.isArray(data)) {\n    msg.payload = { status: \"mongodbData is not an array or not found\" };\n    return msg;  // Quitte tôt si 'data' n'est pas un tableau\n}\n\n// Récupérer le timestamp depuis msg.payload\nlet timestamp = msg.payload; \n\n// Convertir le timestamp en objet Date et en format ISO\nlet date = new Date(timestamp);\nlet isoDate = date.toISOString();  // Format : 2024-12-25T09:15:00.000Z\n\n// Filtrer les objets de 'data' dont \"date_log\" correspond à isoDate\nlet filteredData = data.filter(item => item.date_log === isoDate);\n\n// Vérifier si des objets ont été filtrés\nif (filteredData.length > 0) {\n    msg.payload = filteredData;\n} else {\n    // Si aucun objet ne correspond, retourner tous les éléments\n    msg.payload = { status: \"No matching data found\", data: data };\n}\n\nreturn msg;\n",
+        "name": "sortByDate",
+        "func": "// Récupérer les données depuis le contexte\nlet data = flow.get(\"mongodbData\");\n\n// Vérifier si 'data' est bien un tableau\nif (!Array.isArray(data)) {\n    msg.payload = { status: \"mongodbData is not an array or not found\" };\n    return msg;  // Quitte tôt si 'data' n'est pas un tableau\n}\n\nlet timestamp = msg.payload; \n\nlet date = new Date(timestamp);\nlet targetDate = date.toISOString().split('T')[0]; // Extraire uniquement la partie 'YYYY-MM-DD'\n\n// Filtrer les objets de 'data' dont \"date_log\" correspond à la même date\nlet filteredData = data.filter(item => {\n    let itemDate = new Date(item.date_log).toISOString().split('T')[0];\n    return itemDate === targetDate;\n});\n\nif (filteredData.length > 0) {\n    msg.payload = filteredData;\n} else {\n    msg.payload = { status: \"No matching data found\", data: data };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
+        "x": 910,
         "y": 120,
         "wires": [
             [
-                "5df8d8e55bcfaa12",
-                "055e71fa92eae72e"
+                "5df8d8e55bcfaa12"
+            ]
+        ]
+    },
+    {
+        "id": "7878dc4f22923344",
+        "type": "function",
+        "z": "0ab432dc59b6d0a3",
+        "name": "joinDataToHavePremise",
+        "func": "let logs = msg.payload;\nlet premises = global.get('premiseData');\n\n// Ajouter email et name aux objets de reservation\nlogs.forEach(log => {\n    // Trouver la premise correspondant à id_premise\n    let premise = premises.find(premise => premise._id.toString() === log.id_premise.toString());\n    if (premise) {\n        log.premise_name = premise.name;\n    } else {\n        log.premise_name = null; // ou une valeur par défaut\n    }\n});\n\nmsg.payload = logs;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 240,
+        "wires": [
+            [
+                "2cf404800ccde71e"
+            ]
+        ]
+    },
+    {
+        "id": "a12d5659ca6e4f67",
+        "type": "ui_button",
+        "z": "0ab432dc59b6d0a3",
+        "name": "reset_logs",
+        "group": "f87d496c91fac1c3",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Réinitialiser",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "62b35b4144bc0c52"
             ]
         ]
     },
@@ -3164,7 +3296,7 @@
         "id": "2511177c847c7df8",
         "type": "ui_button",
         "z": "19da2f4cf4bf4170",
-        "name": "button",
+        "name": "create_user",
         "group": "b433e86cb98af344",
         "order": 2,
         "width": 3,
@@ -3180,7 +3312,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 510,
+        "x": 530,
         "y": 180,
         "wires": [
             [
@@ -3268,7 +3400,8 @@
         "y": 260,
         "wires": [
             [
-                "5b027e2170cc7ef8"
+                "5b027e2170cc7ef8",
+                "9fc6d51011e61320"
             ]
         ]
     },
@@ -3297,7 +3430,7 @@
         "type": "function",
         "z": "19da2f4cf4bf4170",
         "name": "add_action",
-        "func": "let users = msg.payload;\n\nusers = users.map(user => {\n    user.action = `<a href=\"/#!/8?id=${user._id}\">Modifier</a>`;\n    return user;\n});\n\n\nmsg.payload = users;\n\nreturn msg;\n",
+        "func": "let users = msg.payload;\n\nglobal.set('clientData', users);\n\nusers = users.map(user => {\n    user.action = `<a href=\"/delete_user?id=${user._id}\">Supprimer</a>`;\n    return user;\n});\n\n\nmsg.payload = users;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3310,31 +3443,6 @@
             [
                 "478210a64f28ad5c"
             ]
-        ]
-    },
-    {
-        "id": "54b6b1816cad72e5",
-        "type": "change",
-        "z": "19da2f4cf4bf4170",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "user_id",
-                "pt": "global",
-                "to": "example1@example.com",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1330,
-        "y": 260,
-        "wires": [
-            []
         ]
     },
     {
@@ -3354,6 +3462,64 @@
         "className": "",
         "x": 1100,
         "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ab0868f656e94ae",
+        "type": "mongodb4",
+        "z": "19da2f4cf4bf4170",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "premise",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.premise",
+        "x": 530,
+        "y": 360,
+        "wires": [
+            [
+                "192ca4dd97f406f7"
+            ]
+        ]
+    },
+    {
+        "id": "9fc6d51011e61320",
+        "type": "function",
+        "z": "19da2f4cf4bf4170",
+        "name": "set payload",
+        "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "5ab0868f656e94ae"
+            ]
+        ]
+    },
+    {
+        "id": "192ca4dd97f406f7",
+        "type": "function",
+        "z": "19da2f4cf4bf4170",
+        "name": "waitAndSend",
+        "func": "global.set('premiseData', msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 360,
         "wires": [
             []
         ]
@@ -3504,14 +3670,17 @@
         "x": 690,
         "y": 160,
         "wires": [
-            []
+            [
+                "9b5ec61c8a1b1076",
+                "ab2f3df19898e40e"
+            ]
         ]
     },
     {
         "id": "027dbc9a9f236cce",
         "type": "function",
         "z": "a71c83548b86d5cf",
-        "name": "roleConverter",
+        "name": "prepareObject",
         "func": "let user = msg.payload;\n\nif (user.role === false) {\n    user.role = \"user\";\n} else if (user.role === true) {\n    user.role = \"admin\";\n}\n\nmsg.payload = user;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -3528,9 +3697,58 @@
         ]
     },
     {
+        "id": "ab2f3df19898e40e",
+        "type": "function",
+        "z": "a71c83548b86d5cf",
+        "name": "redirect_to_reservation_page",
+        "func": "msg.payload = {\"tab\":\"Utilisateurs\"};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 160,
+        "wires": [
+            [
+                "ac2484a266f7be90"
+            ]
+        ]
+    },
+    {
+        "id": "ac2484a266f7be90",
+        "type": "ui_ui_control",
+        "z": "a71c83548b86d5cf",
+        "name": "change_tab",
+        "events": "all",
+        "x": 1190,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b5ec61c8a1b1076",
+        "type": "debug",
+        "z": "a71c83548b86d5cf",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 100,
+        "wires": []
+    },
+    {
         "id": "70df47423de0b885",
         "type": "ui_form",
         "z": "01557fa3c5d57cbe",
+        "d": true,
         "name": "edit_user_form",
         "label": "",
         "group": "1e09fa150998fee1",
@@ -3616,6 +3834,7 @@
         "id": "3c43bb6eb20edbbc",
         "type": "ui_text",
         "z": "01557fa3c5d57cbe",
+        "d": true,
         "group": "1e09fa150998fee1",
         "order": 1,
         "width": 24,
@@ -3637,6 +3856,7 @@
         "id": "a83704f6176303df",
         "type": "inject",
         "z": "01557fa3c5d57cbe",
+        "d": true,
         "name": "edit",
         "props": [
             {
@@ -3675,12 +3895,12 @@
         "bgcolor": "red",
         "className": "",
         "icon": "",
-        "payload": "",
+        "payload": "{ \"url\": \"https://example.com\" }",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 720,
-        "y": 40,
+        "x": 180,
+        "y": 480,
         "wires": [
             []
         ]
@@ -3689,6 +3909,7 @@
         "id": "73a0b0e86d1ecfcd",
         "type": "function",
         "z": "01557fa3c5d57cbe",
+        "d": true,
         "name": "function 1",
         "func": "var searchId = global.get(\"user_id\");\n\nif (!searchId) {\n    return { payload: { error: \"Global variable 'searchId' is not set\" } };\n}\n\nvar query = { email: searchId };\n\nmsg.payload = [query];\nreturn msg;",
         "outputs": 1,
@@ -3709,6 +3930,7 @@
         "id": "63d2c5beb1139d43",
         "type": "mongodb4",
         "z": "01557fa3c5d57cbe",
+        "d": true,
         "clientNode": "08886a7cd4dd855e",
         "mode": "collection",
         "collection": "client",
@@ -3726,25 +3948,10 @@
         ]
     },
     {
-        "id": "42f7a03b222d39b5",
-        "type": "debug",
-        "z": "01557fa3c5d57cbe",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1240,
-        "y": 220,
-        "wires": []
-    },
-    {
         "id": "b61235c8ef4235fa",
         "type": "mongodb4",
         "z": "01557fa3c5d57cbe",
+        "d": true,
         "clientNode": "08886a7cd4dd855e",
         "mode": "collection",
         "collection": "client",
@@ -3756,15 +3963,14 @@
         "x": 1170,
         "y": 300,
         "wires": [
-            [
-                "42f7a03b222d39b5"
-            ]
+            []
         ]
     },
     {
         "id": "88cbe4022143dfab",
         "type": "function",
         "z": "01557fa3c5d57cbe",
+        "d": true,
         "name": "function 2",
         "func": "let formData = msg.payload;\n\nmsg.payload = {\n    \"query\": { \"email\": formData.email },\n    \"update\": { \n        \"$set\": {\n            \"firstname\": formData.firstname,\n            \"name\": formData.name,\n            \"password\": formData.password,\n            \"telephone\": formData.telephone,\n            \"role\": formData.role,\n            \"rfid\": formData.rfid\n        }\n    }\n}\n\nreturn msg;\n",
         "outputs": 1,
@@ -3777,8 +3983,95 @@
         "y": 300,
         "wires": [
             [
-                "b61235c8ef4235fa",
-                "42f7a03b222d39b5"
+                "b61235c8ef4235fa"
+            ]
+        ]
+    },
+    {
+        "id": "50702c252190167a",
+        "type": "http in",
+        "z": "01557fa3c5d57cbe",
+        "name": "remove_user_request",
+        "url": "/delete_user",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 400,
+        "y": 480,
+        "wires": [
+            [
+                "5c78dcafba76ebfd"
+            ]
+        ]
+    },
+    {
+        "id": "5c78dcafba76ebfd",
+        "type": "function",
+        "z": "01557fa3c5d57cbe",
+        "name": "remove_user_preparation",
+        "func": "let users = global.get('clientData');\n\nlet userId = msg.req.query.id;\n\nlet user = users.find(user => user._id.toString() === userId);\ndelete user.action;\n\nif (user) {\n    msg.payload = user;\n} else {\n    msg.payload = { message: \"Utilisateur non trouvé\" };\n}\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "342a07ec23ace6e8"
+            ]
+        ]
+    },
+    {
+        "id": "22835d4307fbe224",
+        "type": "function",
+        "z": "01557fa3c5d57cbe",
+        "name": "redirect_to_clients_page",
+        "func": "msg.statusCode = 302;\nmsg.headers = { location: \"/#!/4\" };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 480,
+        "wires": [
+            [
+                "06200f288e5e02a9"
+            ]
+        ]
+    },
+    {
+        "id": "06200f288e5e02a9",
+        "type": "http response",
+        "z": "01557fa3c5d57cbe",
+        "name": "http_response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1380,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "342a07ec23ace6e8",
+        "type": "mongodb4",
+        "z": "01557fa3c5d57cbe",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "client",
+        "operation": "deleteOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "remove_user",
+        "x": 890,
+        "y": 480,
+        "wires": [
+            [
+                "22835d4307fbe224"
             ]
         ]
     }
