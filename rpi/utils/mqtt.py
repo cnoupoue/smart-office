@@ -45,7 +45,7 @@ class MQTT:
             self.client.connect(url, port, keepalive=keepalive)
             self.client.loop_start()
         except Exception as e:
-            print(f"Error connecting to broker: {e}")
+            raise e
 
     def publish(self, topic, value, qos=0):
         """Publish a message to a topic."""

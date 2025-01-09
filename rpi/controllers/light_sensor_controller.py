@@ -7,13 +7,15 @@ import controllers.mqtt_controller as mqtt_controller
 
 # the max value i got when putting a light source behind
 LIGHT_MAX_VALUE = 800 
+last_read = 0
 
-def read(COUNTER, LIGHT_QUEUE):
+def read(LIGHT_QUEUE):
     light_value = light_sensor.read()
     avg_light_value = 0
     # filter not valid data
     # and only send if 2 seconds passed
-    if light_value < LIGHT_MAX_VALUE and COUNTER == 0:
+    ready = time.time() - last_read >= env.LIGHT_SENSOR_DELAY
+    if light_value < LIGHT_MAX_VALUE and ready:
         LIGHT_QUEUE.append(light_value)
         # calculation for more accuracy based on previous values
         avg_light_value = sum(LIGHT_QUEUE) / len(LIGHT_QUEUE)

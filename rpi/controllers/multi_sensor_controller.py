@@ -18,13 +18,10 @@ LIGHT_QUEUE = deque([0]*10, maxlen=10)
 lcd_old_value = common.get_lcd()
 
 def run():
-    COUNTER = 0
     lcd_old_value = common.get_lcd()
 
     while True:
         time.sleep(0.02)
-
-        COUNTER = (COUNTER+1)%100
         
         # lcd state handle
         if lcd_old_value != common.get_lcd():
@@ -43,10 +40,10 @@ def run():
             continue
 
         # sound sensor
-        sound_sensor_controller.read(COUNTER, SOUND_QUEUE)
+        sound_sensor_controller.read(SOUND_QUEUE)
 
         # light sensor
-        light_sensor_controller.read(COUNTER, LIGHT_QUEUE)
+        light_sensor_controller.read(LIGHT_QUEUE)
             
         # button sensor
         button_old_value = os.environ.get("BUTTON_OLD_VALUE", "0")
