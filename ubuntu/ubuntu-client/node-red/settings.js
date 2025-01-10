@@ -19,6 +19,7 @@
  *  - Node Settings
  *
  **/
+const path = require('path');
 
 module.exports = {
 
@@ -93,10 +94,10 @@ module.exports = {
      */
 
     /** Option 1: static object */
-    //https: {
-    //  key: require("fs").readFileSync('privkey.pem'),
-    //  cert: require("fs").readFileSync('cert.pem')
-    //},
+    https: {
+      key: require("fs").readFileSync(path.resolve(__dirname, 'noderedkey.pem')),
+      cert: require("fs").readFileSync(path.resolve(__dirname, 'noderedcert.pem'))
+    },
 
     /** Option 2: function that returns the HTTP configuration object */
     // https: function() {
@@ -117,7 +118,7 @@ module.exports = {
     /** The following property can be used to cause insecure HTTP connections to
      * be redirected to HTTPS.
      */
-    //requireHttps: true,
+    requireHttps: true,
 
     /** To password protect the node-defined HTTP endpoints (httpNodeRoot),
      * including node-red-dashboard, or the static content (httpStatic), the
