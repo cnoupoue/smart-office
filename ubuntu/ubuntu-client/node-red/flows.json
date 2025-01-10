@@ -2254,6 +2254,7 @@
         "id": "cb1b78fea3a07f49",
         "type": "http request",
         "z": "4e821b48bbd42ca3",
+        "d": true,
         "name": "",
         "method": "GET",
         "ret": "txt",
@@ -2266,8 +2267,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1170,
-        "y": 780,
+        "x": 1150,
+        "y": 960,
         "wires": [
             [
                 "c76811d58c34c5d6"
@@ -2278,6 +2279,7 @@
         "id": "10e719f75a3e1ff9",
         "type": "function",
         "z": "4e821b48bbd42ca3",
+        "d": true,
         "name": "injectApiParameters",
         "func": "var coordinates = global.get(\"coordinates\");\n\nif (coordinates && coordinates.latitude && coordinates.longitude) {\n    var lat = coordinates.latitude;\n    var lon = coordinates.longitude;\n\n    msg.url = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&hourly=pm10,pm2_5&timezone=auto`;\n    return msg;\n} else {\n    node.error(\"Coordinates not found in global context\", msg);\n}",
         "outputs": 1,
@@ -2286,8 +2288,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 780,
+        "x": 880,
+        "y": 960,
         "wires": [
             [
                 "cb1b78fea3a07f49"
@@ -2298,6 +2300,7 @@
         "id": "a960b3602a6a3cd1",
         "type": "inject",
         "z": "4e821b48bbd42ca3",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -2315,8 +2318,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 670,
-        "y": 780,
+        "x": 650,
+        "y": 960,
         "wires": [
             [
                 "10e719f75a3e1ff9"
@@ -2327,6 +2330,7 @@
         "id": "c76811d58c34c5d6",
         "type": "function",
         "z": "4e821b48bbd42ca3",
+        "d": true,
         "name": "checkAirQuality",
         "func": "try {\n    let payloadObject = JSON.parse(msg.payload);\n\n    if (payloadObject && payloadObject.elevation) {\n        let elevation = payloadObject.elevation;\n        msg.payload = elevation;\n    } else {\n        msg.payload = \"Elevation data not available.\";\n    }\n} catch (error) {\n    msg.payload = \"Invalid JSON data.\";\n}\n\nreturn msg;\n",
         "outputs": 1,
@@ -2335,11 +2339,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1400,
-        "y": 780,
+        "x": 1380,
+        "y": 960,
         "wires": [
             [
-                "fb85b18a99c3394a",
                 "388a14b9ed4aeb4e"
             ]
         ]
@@ -2348,6 +2351,7 @@
         "id": "388a14b9ed4aeb4e",
         "type": "function",
         "z": "4e821b48bbd42ca3",
+        "d": true,
         "name": "convertAirQualityIntoString",
         "func": "if (msg.payload >= 0 && msg.payload <= 50) {\n    msg.payload = \"Bonne\";\n} else if (msg.payload > 50 && msg.payload <= 100) {\n    msg.payload = \"Modérée\";\n} else if (msg.payload > 100) {\n    msg.payload = \"Mauvaise\";\n} else {\n    msg.payload = \"Valeur invalide\";\n}\nreturn msg;\n",
         "outputs": 1,
@@ -2356,13 +2360,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1680,
-        "y": 780,
+        "x": 1660,
+        "y": 960,
         "wires": [
-            [
-                "f032958d3bcb43c7",
-                "4f7dd4b144e7f41d"
-            ]
+            []
         ]
     },
     {
@@ -2402,6 +2403,120 @@
         "x": 960,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "db9490194e0d84ad",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "getLatAndLon",
+        "func": "var coordinates = global.get(\"coordinates\");\n\nif (coordinates && coordinates.latitude && coordinates.longitude) {\n    var lat = coordinates.latitude;\n    var lon = coordinates.longitude;\n    msg.payload = `${lat} ${lon}`;\n\n    return msg;\n} else {\n    node.error(\"Coordinates not found in global context\", msg);\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 780,
+        "wires": [
+            [
+                "f99b355d863dff2e"
+            ]
+        ]
+    },
+    {
+        "id": "867dd12675ba7723",
+        "type": "inject",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 590,
+        "y": 780,
+        "wires": [
+            [
+                "db9490194e0d84ad"
+            ]
+        ]
+    },
+    {
+        "id": "6442631fb648dd6a",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "convertAirQualityIntoString",
+        "func": "if (msg.payload >= 0 && msg.payload <= 50) {\n    msg.payload = \"Bonne\";\n} else if (msg.payload > 50 && msg.payload <= 100) {\n    msg.payload = \"Modérée\";\n} else if (msg.payload > 100) {\n    msg.payload = \"Mauvaise\";\n} else {\n    msg.payload = \"Valeur invalide\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 780,
+        "wires": [
+            [
+                "4f7dd4b144e7f41d"
+            ]
+        ]
+    },
+    {
+        "id": "f99b355d863dff2e",
+        "type": "exec",
+        "z": "4e821b48bbd42ca3",
+        "command": "python3 python_request.py ${payload}",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "api_python_requests",
+        "x": 1040,
+        "y": 780,
+        "wires": [
+            [
+                "96da40a1ccfe7227",
+                "413463b444a6cc80"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "413463b444a6cc80",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "function 3",
+        "func": "msg.payload = parseInt(msg.payload, 10);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 780,
+        "wires": [
+            [
+                "6442631fb648dd6a",
+                "fb85b18a99c3394a",
+                "96da40a1ccfe7227"
+            ]
+        ]
     },
     {
         "id": "ef266be67d609a53",
