@@ -43,9 +43,9 @@ Toutes les vulnérabilités détectées sur la machine Ubuntu Server:\n''' + "; 
 def get_vuln_list_for_email():
     vuln_list = []
     for vuln in fetch_shodan():
+        time.sleep(5)
         try:
             vuln_list.append(_get_cve_summary(vuln))
-            time.sleep(5)
         except Exception as e:
             print("failed to get on vulnerability: " + str(e))
             continue

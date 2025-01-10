@@ -34,3 +34,12 @@ lancer tightVNC viewer, mettre l'adresse `darkquarx.be:5901` avec le mot de pass
 ### se connecter en GUI
 lancer l'application xtightvncviewer avec la commande `xtightvncviewer`, ensuite entrer le port utilisé dans le reverse tunneling `localhost:5909`, et se connecter avec le mot de passe `smartoffice`
 
+# Lancer application python
+Dans `/home/pi/Documents/officestation/main.py`
+```bash
+nohup python3 main.py &
+```
+# Donner un access ssl à la RPI
+```bash
+ngrok tcp 22
+```
