@@ -3,5 +3,4 @@
 sudo killall mosquitto
 
 echo "Démarrage de Mosquitto en mode verbeux..."
-sudo mosquitto -v
-
+gnome-terminal -- bash -c "sudo mosquitto -v; exec bash"
