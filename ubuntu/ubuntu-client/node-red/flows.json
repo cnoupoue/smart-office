@@ -84,12 +84,22 @@
             "a91a3199ac6a18da",
             "209054f98f416386",
             "68e0cfa4b06db715",
-            "a580835a1833e887"
+            "a580835a1833e887",
+            "e76a965d86634085",
+            "5ff74dcd7064a6fa",
+            "fde7679c576a0709",
+            "287aae9a9238b558",
+            "c10f6f1561b6cd40",
+            "38d122b3c3b12009",
+            "b938c7cb121c53e7",
+            "6fab27b9c05f9df7",
+            "e81a75bf50a618c9",
+            "07a0fd7fb6a301ec"
         ],
-        "x": 74,
-        "y": 139,
-        "w": 732,
-        "h": 142
+        "x": 54,
+        "y": 159,
+        "w": 1192,
+        "h": 322
     },
     {
         "id": "829459fd4bc2bd59",
@@ -111,33 +121,8 @@
             "1a334ccfcf23875f",
             "3244fdb1a10c6c55"
         ],
-        "x": 74,
-        "y": 319,
-        "w": 732,
-        "h": 142
-    },
-    {
-        "id": "cd243a0843f64ae7",
-        "type": "group",
-        "z": "4e821b48bbd42ca3",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "ef5500a5e12cb9c4",
-            "803591f4887b5365",
-            "d01c87dadb6b1f01",
-            "b67d5e6402ba9e62",
-            "70fc72c1310dd2e9"
-        ],
-        "x": 74,
-        "y": 499,
+        "x": 54,
+        "y": 539,
         "w": 732,
         "h": 142
     },
@@ -196,11 +181,14 @@
             "bd4e3660d71f5103",
             "168eaec1b7a98d4a",
             "f62dc34083744dc0",
-            "d420f6fcbf97a6a1"
+            "d420f6fcbf97a6a1",
+            "5ff5d5d141451727",
+            "823bbfc739fc0d8f",
+            "5e9433c8a2cb5521"
         ],
         "x": 14,
         "y": 39,
-        "w": 1272,
+        "w": 1592,
         "h": 442
     },
     {
@@ -223,11 +211,12 @@
             "d056b9c31bc3dabe",
             "f93ac2a6971844a0",
             "2272194001cc5497",
-            "600770e1c9962a12"
+            "600770e1c9962a12",
+            "b163c44657714096"
         ],
-        "x": 754,
-        "y": 499,
-        "w": 732,
+        "x": 1054,
+        "y": 539,
+        "w": 992,
         "h": 242
     },
     {
@@ -250,11 +239,12 @@
             "e2c10c63f4e84396",
             "c2d22e93f525737f",
             "9067218c53ba6cbe",
-            "f506b700ac5e373b"
+            "f506b700ac5e373b",
+            "bfdbe67471782da6"
         ],
         "x": 14,
         "y": 599,
-        "w": 712,
+        "w": 1012,
         "h": 202
     },
     {
@@ -298,8 +288,8 @@
             "a147a8a9cc0a78fb",
             "c502d1aa06ef84c8"
         ],
-        "x": 1314,
-        "y": 319,
+        "x": 1614,
+        "y": 79,
         "w": 652,
         "h": 82
     },
@@ -346,12 +336,13 @@
             "4431d4db3aa78aee",
             "50c67b457275e78e",
             "a4648b7c3b62ec2a",
-            "ad051c630f71aca6"
+            "ad051c630f71aca6",
+            "fdb9322806b9d976"
         ],
         "x": 14,
-        "y": 919,
-        "w": 632,
-        "h": 142
+        "y": 899,
+        "w": 992,
+        "h": 162
     },
     {
         "id": "20dfacadc7600b19",
@@ -374,11 +365,12 @@
             "11b9a3c190463011",
             "14a69f243c9384b2",
             "dc21bb075e71a6ab",
-            "34f824be3a8439fc"
+            "34f824be3a8439fc",
+            "738570c47c3f2c0f"
         ],
         "x": 14,
         "y": 1079,
-        "w": 872,
+        "w": 1072,
         "h": 182
     },
     {
@@ -397,7 +389,6 @@
         "nodes": [
             "93578839b4841675",
             "e1a692039636ccb6",
-            "f9cacadcad47695b",
             "a419e9e367d6a717",
             "f49b0d09a33e7b5b",
             "fd3a94d5c2f5f41d",
@@ -409,12 +400,16 @@
             "547243056bf26e0a",
             "ee93e7ac092f78b3",
             "52305503b0150169",
-            "86413ad55842e730"
+            "86413ad55842e730",
+            "eead5ce7da467f2e",
+            "418329f2df6a1ff5",
+            "83519b076962155a",
+            "044d98a2b8dc7c7a"
         ],
         "x": 14,
-        "y": 1279,
-        "w": 1552,
-        "h": 322
+        "y": 1259,
+        "w": 1752,
+        "h": 342
     },
     {
         "id": "2b444b808f2003ca",
@@ -435,11 +430,12 @@
             "482f68d72f3e71f6",
             "5b3126d8779138f9",
             "c6f719b6be57c666",
-            "9b88fd4b128fc57c"
+            "9b88fd4b128fc57c",
+            "421ae207c005b560"
         ],
         "x": 14,
-        "y": 1879,
-        "w": 652,
+        "y": 1839,
+        "w": 952,
         "h": 202
     },
     {
@@ -461,11 +457,16 @@
             "52498b44064f823a",
             "ea9465a1fc8c9e18",
             "cf28368a6c246fc7",
-            "008d0f8c6ef1132f"
+            "008d0f8c6ef1132f",
+            "3a6fa2bcfc33ca85",
+            "e9c399127f96be64",
+            "7e980f13e9bced0d",
+            "5d363f243f30be67",
+            "cdf5a67d5c2ad4cf"
         ],
         "x": 14,
-        "y": 1659,
-        "w": 1232,
+        "y": 1619,
+        "w": 1932,
         "h": 202
     },
     {
@@ -1286,8 +1287,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 1130,
-        "y": 540,
+        "x": 1430,
+        "y": 580,
         "wires": []
     },
     {
@@ -1400,8 +1401,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1420,
-        "y": 360,
+        "x": 1720,
+        "y": 120,
         "wires": [
             [
                 "a147a8a9cc0a78fb"
@@ -1478,7 +1479,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1150,
-        "y": 1760,
+        "y": 1720,
         "wires": []
     },
     {
@@ -1500,7 +1501,6 @@
         "wires": [
             [
                 "e1a692039636ccb6",
-                "f9cacadcad47695b",
                 "52305503b0150169",
                 "c24b96c496942605"
             ]
@@ -1568,8 +1568,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 870,
-        "y": 540,
+        "x": 1170,
+        "y": 580,
         "wires": [
             [
                 "3fa65fc688213d56",
@@ -1593,7 +1593,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 110,
-        "y": 1920,
+        "y": 1880,
         "wires": [
             [
                 "5b3126d8779138f9",
@@ -1636,8 +1636,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1650,
-        "y": 360,
+        "x": 1950,
+        "y": 120,
         "wires": [
             [
                 "c502d1aa06ef84c8"
@@ -1660,8 +1660,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1880,
-        "y": 360,
+        "x": 2180,
+        "y": 120,
         "wires": [
             []
         ]
@@ -1777,7 +1777,8 @@
         "wires": [
             [
                 "2e61021ce704dfe4",
-                "5c0e85234562f4e2"
+                "5c0e85234562f4e2",
+                "83519b076962155a"
             ]
         ]
     },
@@ -1799,7 +1800,8 @@
         "wires": [
             [
                 "547243056bf26e0a",
-                "ee93e7ac092f78b3"
+                "ee93e7ac092f78b3",
+                "83519b076962155a"
             ]
         ]
     },
@@ -2206,7 +2208,8 @@
         "y": 260,
         "wires": [
             [
-                "b04bf2629fdccf3b"
+                "b04bf2629fdccf3b",
+                "823bbfc739fc0d8f"
             ]
         ]
     },
@@ -2276,7 +2279,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 550,
-        "y": 1920,
+        "y": 1880,
         "wires": []
     },
     {
@@ -2293,7 +2296,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1920,
+        "y": 1880,
         "wires": [
             [
                 "9b88fd4b128fc57c"
@@ -2349,7 +2352,7 @@
         "z": "0277478f1e68b0ce",
         "g": "e47015bbcd561a71",
         "name": "formatDataToLog",
-        "func": "const array = msg.payload;\n\nconst rfid = array.map(num => String.fromCharCode(num)).join(\"\");\nconst topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: rfid,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "func": "const array = msg.payload;\n\nconst rfid = array.map(num => String.fromCharCode(num)).join(\"\");\nconst topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nlet currentDate = new Date();\nlet currentDateAdjusted = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);\n\nmsg.payload = {\n    topic: topic,\n    date_log: currentDateAdjusted.toISOString,\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2361,7 +2364,7 @@
         "wires": [
             [
                 "ad051c630f71aca6",
-                "4431d4db3aa78aee"
+                "fdb9322806b9d976"
             ]
         ]
     },
@@ -2475,7 +2478,7 @@
         "wires": [
             [
                 "15c91546bc53c7d2",
-                "7e4d06239d75c45e"
+                "5ff5d5d141451727"
             ]
         ]
     },
@@ -2494,8 +2497,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 560,
-        "y": 2040,
+        "x": 860,
+        "y": 2000,
         "wires": []
     },
     {
@@ -2516,7 +2519,7 @@
         "wires": [
             [
                 "e2c10c63f4e84396",
-                "c2d22e93f525737f"
+                "bfdbe67471782da6"
             ]
         ]
     },
@@ -2533,12 +2536,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 620,
+        "x": 1430,
+        "y": 660,
         "wires": [
             [
                 "d056b9c31bc3dabe",
-                "f93ac2a6971844a0"
+                "b163c44657714096"
             ]
         ]
     },
@@ -2560,27 +2563,8 @@
         "wires": [
             [
                 "dc21bb075e71a6ab",
-                "34f824be3a8439fc"
+                "738570c47c3f2c0f"
             ]
-        ]
-    },
-    {
-        "id": "f9cacadcad47695b",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "g": "0d0f4ba3b295a5e0",
-        "name": "formatDataToLog",
-        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 1460,
-        "wires": [
-            []
         ]
     },
     {
@@ -2597,11 +2581,11 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1980,
+        "y": 1940,
         "wires": [
             [
-                "1aeaa4607ee6b29a",
-                "5dc1787fd36ea227"
+                "5dc1787fd36ea227",
+                "421ae207c005b560"
             ]
         ]
     },
@@ -2619,7 +2603,7 @@
         "handleDocId": false,
         "name": "generateLog",
         "x": 550,
-        "y": 1980,
+        "y": 1940,
         "wires": [
             []
         ]
@@ -2658,7 +2642,7 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 580,
+        "x": 880,
         "y": 440,
         "wires": []
     },
@@ -2696,7 +2680,7 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 620,
+        "x": 920,
         "y": 700,
         "wires": []
     },
@@ -2713,8 +2697,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "generateLog",
-        "x": 1370,
-        "y": 540,
+        "x": 1670,
+        "y": 580,
         "wires": [
             []
         ]
@@ -2734,8 +2718,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 1380,
-        "y": 620,
+        "x": 1940,
+        "y": 660,
         "wires": []
     },
     {
@@ -2753,8 +2737,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 520,
-        "y": 960,
+        "x": 900,
+        "y": 940,
         "wires": []
     },
     {
@@ -2791,7 +2775,7 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 660,
+        "x": 980,
         "y": 1220,
         "wires": []
     },
@@ -2899,8 +2883,8 @@
         "font": "",
         "fontSize": "36",
         "color": "#ffffff",
-        "x": 1230,
-        "y": 700,
+        "x": 1530,
+        "y": 740,
         "wires": []
     },
     {
@@ -2916,8 +2900,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 700,
+        "x": 1290,
+        "y": 740,
         "wires": [
             [
                 "2272194001cc5497"
@@ -2981,10 +2965,11 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1380,
+        "y": 1360,
         "wires": [
             [
-                "86413ad55842e730"
+                "86413ad55842e730",
+                "418329f2df6a1ff5"
             ]
         ]
     },
@@ -3001,8 +2986,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "generateLog",
-        "x": 550,
-        "y": 1320,
+        "x": 570,
+        "y": 1300,
         "wires": [
             []
         ]
@@ -3024,7 +3009,8 @@
         "y": 360,
         "wires": [
             [
-                "f62dc34083744dc0"
+                "f62dc34083744dc0",
+                "823bbfc739fc0d8f"
             ]
         ]
     },
@@ -3083,7 +3069,7 @@
         "finalize": "",
         "libs": [],
         "x": 160,
-        "y": 1760,
+        "y": 1720,
         "wires": [
             [
                 "38e95f2c24175c35"
@@ -3104,7 +3090,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 1760,
+        "y": 1720,
         "wires": [
             [
                 "52498b44064f823a"
@@ -3131,7 +3117,7 @@
         "repair": false,
         "outputs": 2,
         "x": 730,
-        "y": 1760,
+        "y": 1720,
         "wires": [
             [
                 "ea9465a1fc8c9e18"
@@ -3162,10 +3148,11 @@
         "to": "",
         "reg": false,
         "x": 920,
-        "y": 1820,
+        "y": 1780,
         "wires": [
             [
-                "008d0f8c6ef1132f"
+                "008d0f8c6ef1132f",
+                "7e980f13e9bced0d"
             ]
         ]
     },
@@ -3190,10 +3177,360 @@
         "to": "",
         "reg": false,
         "x": 920,
-        "y": 1700,
+        "y": 1660,
         "wires": [
             [
-                "008d0f8c6ef1132f"
+                "008d0f8c6ef1132f",
+                "e9c399127f96be64"
+            ]
+        ]
+    },
+    {
+        "id": "eead5ce7da467f2e",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 840,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "bfdbe67471782da6",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 700,
+        "wires": [
+            [
+                "c2d22e93f525737f"
+            ]
+        ]
+    },
+    {
+        "id": "5ff5d5d141451727",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "7e4d06239d75c45e"
+            ]
+        ]
+    },
+    {
+        "id": "b163c44657714096",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "cd6f4e02c3e3acd0",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 660,
+        "wires": [
+            [
+                "f93ac2a6971844a0"
+            ]
+        ]
+    },
+    {
+        "id": "fdb9322806b9d976",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "e47015bbcd561a71",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 940,
+        "wires": [
+            [
+                "4431d4db3aa78aee"
+            ]
+        ]
+    },
+    {
+        "id": "738570c47c3f2c0f",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "20dfacadc7600b19",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1220,
+        "wires": [
+            [
+                "34f824be3a8439fc"
+            ]
+        ]
+    },
+    {
+        "id": "418329f2df6a1ff5",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1360,
+        "wires": [
+            [
+                "eead5ce7da467f2e"
+            ]
+        ]
+    },
+    {
+        "id": "421ae207c005b560",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "2b444b808f2003ca",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 2000,
+        "wires": [
+            [
+                "1aeaa4607ee6b29a"
+            ]
+        ]
+    },
+    {
+        "id": "823bbfc739fc0d8f",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "formatToPublicBroker",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premiseName\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 200,
+        "wires": [
+            [
+                "5e9433c8a2cb5521"
+            ]
+        ]
+    },
+    {
+        "id": "5e9433c8a2cb5521",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 1500,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "83519b076962155a",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "formatToPublicBroker",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premiseName\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1420,
+        "y": 1440,
+        "wires": [
+            [
+                "044d98a2b8dc7c7a"
+            ]
+        ]
+    },
+    {
+        "id": "044d98a2b8dc7c7a",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 1660,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "3a6fa2bcfc33ca85",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c09494ed61fa6c9",
+        "x": 1410,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "e9c399127f96be64",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "formatToPrivateBrokerON",
+        "func": "const deviceData = global.get('serial_id');\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/led\";\nmsg.payload = \"ON\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 1660,
+        "wires": [
+            [
+                "3a6fa2bcfc33ca85",
+                "cdf5a67d5c2ad4cf"
+            ]
+        ]
+    },
+    {
+        "id": "7e980f13e9bced0d",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "formatToPrivateBrokerOFF",
+        "func": "const deviceData = global.get('serial_id');\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/led\";\nmsg.payload = \"OFF\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 1780,
+        "wires": [
+            [
+                "3a6fa2bcfc33ca85",
+                "cdf5a67d5c2ad4cf"
+            ]
+        ]
+    },
+    {
+        "id": "5d363f243f30be67",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 1840,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "cdf5a67d5c2ad4cf",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "formatToPublicBroker",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premiseName\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 1720,
+        "wires": [
+            [
+                "5d363f243f30be67"
             ]
         ]
     },
@@ -3239,12 +3576,10 @@
         "payloadType": "global",
         "topic": "",
         "topicType": "str",
-        "x": 150,
-        "y": 180,
+        "x": 130,
+        "y": 200,
         "wires": [
             [
-                "a91a3199ac6a18da",
-                "209054f98f416386",
                 "a580835a1833e887"
             ]
         ]
@@ -3259,16 +3594,16 @@
         "width": 0,
         "height": 0,
         "name": "is_active",
-        "label": "actif",
-        "format": "",
+        "label": "",
+        "format": "{{msg.payload}}",
         "layout": "row-left",
         "className": "",
-        "style": true,
+        "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#33d17a",
-        "x": 360,
-        "y": 180,
+        "x": 980,
+        "y": 320,
         "wires": []
     },
     {
@@ -3281,16 +3616,16 @@
         "width": 0,
         "height": 0,
         "name": "is_free",
-        "label": "occupé",
-        "format": "",
-        "layout": "row-spread",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
         "className": "",
-        "style": true,
+        "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#e01b24",
-        "x": 350,
-        "y": 240,
+        "x": 1170,
+        "y": 380,
         "wires": []
     },
     {
@@ -3300,8 +3635,8 @@
         "g": "50484f8edde3dcf6",
         "name": "",
         "events": "change",
-        "x": 720,
-        "y": 180,
+        "x": 700,
+        "y": 200,
         "wires": [
             []
         ]
@@ -3326,8 +3661,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
-        "y": 180,
+        "x": 520,
+        "y": 200,
         "wires": [
             [
                 "68e0cfa4b06db715"
@@ -3356,8 +3691,8 @@
         "payloadType": "global",
         "topic": "",
         "topicType": "str",
-        "x": 150,
-        "y": 360,
+        "x": 130,
+        "y": 580,
         "wires": [
             [
                 "4a0e9bc2ee73a43b",
@@ -3385,8 +3720,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#c01c28",
-        "x": 360,
-        "y": 360,
+        "x": 340,
+        "y": 580,
         "wires": []
     },
     {
@@ -3408,8 +3743,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#57e389",
-        "x": 350,
-        "y": 420,
+        "x": 330,
+        "y": 640,
         "wires": []
     },
     {
@@ -3420,8 +3755,8 @@
         "g": "829459fd4bc2bd59",
         "name": "",
         "events": "change",
-        "x": 720,
-        "y": 360,
+        "x": 700,
+        "y": 580,
         "wires": [
             []
         ]
@@ -3447,132 +3782,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
-        "y": 360,
+        "x": 520,
+        "y": 580,
         "wires": [
             [
                 "1a334ccfcf23875f"
-            ]
-        ]
-    },
-    {
-        "id": "ef5500a5e12cb9c4",
-        "type": "ui_button",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "g": "cd243a0843f64ae7",
-        "name": "rpi3",
-        "group": "841582caaa17523e",
-        "order": 12,
-        "width": 8,
-        "height": 1,
-        "passthru": false,
-        "label": "1020292",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "black",
-        "icon": "",
-        "payload": "redirect1",
-        "payloadType": "global",
-        "topic": "",
-        "topicType": "str",
-        "x": 150,
-        "y": 540,
-        "wires": [
-            [
-                "803591f4887b5365",
-                "d01c87dadb6b1f01",
-                "70fc72c1310dd2e9"
-            ]
-        ]
-    },
-    {
-        "id": "803591f4887b5365",
-        "type": "ui_text",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "g": "cd243a0843f64ae7",
-        "group": "841582caaa17523e",
-        "order": 15,
-        "width": 0,
-        "height": 0,
-        "name": "is_active",
-        "label": "actif",
-        "format": "",
-        "layout": "row-left",
-        "className": "",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#33d17a",
-        "x": 360,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "d01c87dadb6b1f01",
-        "type": "ui_text",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "g": "cd243a0843f64ae7",
-        "group": "841582caaa17523e",
-        "order": 14,
-        "width": 0,
-        "height": 0,
-        "name": "is_free",
-        "label": "pas de local associé",
-        "format": "",
-        "layout": "row-spread",
-        "className": "",
-        "style": true,
-        "font": "",
-        "fontSize": 16,
-        "color": "#f9f06b",
-        "x": 350,
-        "y": 600,
-        "wires": []
-    },
-    {
-        "id": "b67d5e6402ba9e62",
-        "type": "ui_ui_control",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "g": "cd243a0843f64ae7",
-        "name": "",
-        "events": "change",
-        "x": 720,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "70fc72c1310dd2e9",
-        "type": "change",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "g": "cd243a0843f64ae7",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"tab\":\"RPI\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 540,
-        "y": 540,
-        "wires": [
-            [
-                "b67d5e6402ba9e62"
             ]
         ]
     },
@@ -3652,8 +3866,8 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 1320,
-        "y": 300,
+        "x": 720,
+        "y": 120,
         "wires": []
     },
     {
@@ -3688,8 +3902,8 @@
         "mapurl": "",
         "mapopt": "",
         "mapwms": false,
-        "x": 1420,
-        "y": 240,
+        "x": 820,
+        "y": 60,
         "wires": []
     },
     {
@@ -3704,8 +3918,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1170,
-        "y": 240,
+        "x": 570,
+        "y": 60,
         "wires": [
             [
                 "7d7db317f38e1625"
@@ -3779,7 +3993,8 @@
         "y": 780,
         "wires": [
             [
-                "db9490194e0d84ad"
+                "db9490194e0d84ad",
+                "ca32210b57565f5d"
             ]
         ]
     },
@@ -3867,8 +4082,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 930,
-        "y": 240,
+        "x": 330,
+        "y": 60,
         "wires": [
             [
                 "5b169e960d830605",
@@ -3895,12 +4110,292 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
-        "y": 300,
+        "x": 540,
+        "y": 120,
         "wires": [
             [
                 "2b2f7c601b02fc11"
             ]
+        ]
+    },
+    {
+        "id": "e76a965d86634085",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "getDataForCurrentPremise",
+        "func": "let reservationData = global.get('reservationData');\n\nlet currentName = global.get('currentPremise');\n\nlet filteredReservations = reservationData.filter(reservation => reservation.premise_name === currentName);\n\nmsg.payload = filteredReservations;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 400,
+        "wires": [
+            [
+                "5ff74dcd7064a6fa"
+            ]
+        ]
+    },
+    {
+        "id": "5ff74dcd7064a6fa",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "checkIfReservationIsNow",
+        "func": "let filteredReservations = msg.payload;\nlet currentDate = new Date();\nlet result = false;\n\nfor (let reservation of filteredReservations) {\n    let startTime = new Date(reservation.start_time);\n    let endTime = new Date(reservation.end_time);\n    \n    if (currentDate >= startTime && currentDate <= endTime) {\n        result = true;\n        break;\n    }\n}\n\nmsg.payload = result;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 400,
+        "wires": [
+            [
+                "fde7679c576a0709"
+            ]
+        ]
+    },
+    {
+        "id": "fde7679c576a0709",
+        "type": "switch",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "reservation?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 400,
+        "wires": [
+            [
+                "287aae9a9238b558"
+            ],
+            [
+                "c10f6f1561b6cd40"
+            ]
+        ]
+    },
+    {
+        "id": "287aae9a9238b558",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Occupé",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 360,
+        "wires": [
+            [
+                "209054f98f416386"
+            ]
+        ]
+    },
+    {
+        "id": "c10f6f1561b6cd40",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Libre",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 440,
+        "wires": [
+            [
+                "209054f98f416386"
+            ]
+        ]
+    },
+    {
+        "id": "38d122b3c3b12009",
+        "type": "mqtt in",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "hello",
+        "topic": "smartoffice/1/+/hello",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "e76a965d86634085",
+                "b938c7cb121c53e7",
+                "e81a75bf50a618c9"
+            ]
+        ]
+    },
+    {
+        "id": "b938c7cb121c53e7",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rpiActive",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "6fab27b9c05f9df7"
+            ]
+        ]
+    },
+    {
+        "id": "6fab27b9c05f9df7",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "checkRpiActive",
+        "func": "const isActive = global.get('rpiActive');\n\nif(isActive) {\n    msg.payload = \"Actif\";\n} else {\n    msg.payload = \"Inactif\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [
+                "a91a3199ac6a18da"
+            ]
+        ]
+    },
+    {
+        "id": "e81a75bf50a618c9",
+        "type": "delay",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "interval_dead",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "07a0fd7fb6a301ec"
+            ]
+        ]
+    },
+    {
+        "id": "07a0fd7fb6a301ec",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rpiActive",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "6fab27b9c05f9df7"
+            ]
+        ]
+    },
+    {
+        "id": "ca32210b57565f5d",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rpiActive",
+                "pt": "global",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 840,
+        "wires": [
+            []
         ]
     },
     {
@@ -4464,8 +4959,7 @@
         "y": 360,
         "wires": [
             [
-                "be0b18b31c0adf57",
-                "3ac5627ba95034cb"
+                "be0b18b31c0adf57"
             ]
         ]
     },
@@ -4482,26 +4976,9 @@
         "y": 480,
         "wires": [
             [
-                "bf4d56d9869cd0c9",
-                "3ac5627ba95034cb"
+                "bf4d56d9869cd0c9"
             ]
         ]
-    },
-    {
-        "id": "3ac5627ba95034cb",
-        "type": "debug",
-        "z": "df1a303ec9e1b819",
-        "name": "debug 10",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 700,
-        "y": 260,
-        "wires": []
     },
     {
         "id": "065d264aa47c211a",
