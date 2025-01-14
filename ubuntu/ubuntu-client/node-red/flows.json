@@ -160,6 +160,315 @@
         "h": 162
     },
     {
+        "id": "ccb069e81cf069c2",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7ce08affddeab4ea",
+            "8d83378d17572eea",
+            "3d8a4d7a697b706b",
+            "75680836e4f80837",
+            "c5c99200d4be6aee",
+            "ddec77a73510afac",
+            "a092be41ed4f7e6b",
+            "ee6c97f4e7d07d57",
+            "8ee28446dd85d838",
+            "7a4cbfceb7aa3e95",
+            "b04bf2629fdccf3b",
+            "2740cf20720b1a61",
+            "0bebc33ba9eb758a",
+            "15c91546bc53c7d2",
+            "7e4d06239d75c45e",
+            "6120ee65d788a2ac",
+            "c193eb9a4497f2b7",
+            "57843337e96261b9",
+            "13bba33c4c23465e",
+            "c4e68b2f0ddf484b",
+            "bd4e3660d71f5103",
+            "168eaec1b7a98d4a",
+            "f62dc34083744dc0",
+            "d420f6fcbf97a6a1"
+        ],
+        "x": 14,
+        "y": 39,
+        "w": 1272,
+        "h": 442
+    },
+    {
+        "id": "cd6f4e02c3e3acd0",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3fa65fc688213d56",
+            "e6c2b49c82e472ec",
+            "e5e3745fc8aaf3ec",
+            "d056b9c31bc3dabe",
+            "f93ac2a6971844a0",
+            "2272194001cc5497",
+            "600770e1c9962a12"
+        ],
+        "x": 754,
+        "y": 499,
+        "w": 732,
+        "h": 242
+    },
+    {
+        "id": "1501d7bab16f0152",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5ea7201186c39d78",
+            "dc64d5a8f07b8a51",
+            "df2886bcb2806c4a",
+            "e2c10c63f4e84396",
+            "c2d22e93f525737f",
+            "9067218c53ba6cbe",
+            "f506b700ac5e373b"
+        ],
+        "x": 14,
+        "y": 599,
+        "w": 712,
+        "h": 202
+    },
+    {
+        "id": "02634166f1864967",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b25b11cde203614a",
+            "152d59af688bfd2e",
+            "8f031aee5b67aa8d"
+        ],
+        "x": 14,
+        "y": 479,
+        "w": 672,
+        "h": 82
+    },
+    {
+        "id": "1d61923917992343",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c9b96fcb3f9a4c9f",
+            "a147a8a9cc0a78fb",
+            "c502d1aa06ef84c8"
+        ],
+        "x": 1314,
+        "y": 319,
+        "w": 652,
+        "h": 82
+    },
+    {
+        "id": "ee2a6888dd01074b",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "65a7457d474c2588",
+            "df7d43d2f481b1b0",
+            "dc982ded04959f43",
+            "2028de94f5a9e6f4",
+            "1e2dc49481d7a43c",
+            "327033fcf5e4a864"
+        ],
+        "x": 14,
+        "y": 799,
+        "w": 1292,
+        "h": 82
+    },
+    {
+        "id": "e47015bbcd561a71",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4431d4db3aa78aee",
+            "50c67b457275e78e",
+            "a4648b7c3b62ec2a",
+            "ad051c630f71aca6"
+        ],
+        "x": 14,
+        "y": 919,
+        "w": 632,
+        "h": 142
+    },
+    {
+        "id": "20dfacadc7600b19",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b66ed4d6167846b0",
+            "7210d850469831b7",
+            "4b8937aa9badfa68",
+            "da9aa2f4a85227c4",
+            "11b9a3c190463011",
+            "14a69f243c9384b2",
+            "dc21bb075e71a6ab",
+            "34f824be3a8439fc"
+        ],
+        "x": 14,
+        "y": 1079,
+        "w": 872,
+        "h": 182
+    },
+    {
+        "id": "0d0f4ba3b295a5e0",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "93578839b4841675",
+            "e1a692039636ccb6",
+            "f9cacadcad47695b",
+            "a419e9e367d6a717",
+            "f49b0d09a33e7b5b",
+            "fd3a94d5c2f5f41d",
+            "8383793c1105f10c",
+            "7f102e07e5ef5c01",
+            "5c0e85234562f4e2",
+            "cc25423c5d8e26d6",
+            "2e61021ce704dfe4",
+            "547243056bf26e0a",
+            "ee93e7ac092f78b3",
+            "52305503b0150169",
+            "86413ad55842e730"
+        ],
+        "x": 14,
+        "y": 1279,
+        "w": 1552,
+        "h": 322
+    },
+    {
+        "id": "2b444b808f2003ca",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1aeaa4607ee6b29a",
+            "5dc1787fd36ea227",
+            "482f68d72f3e71f6",
+            "5b3126d8779138f9",
+            "c6f719b6be57c666",
+            "9b88fd4b128fc57c"
+        ],
+        "x": 14,
+        "y": 1879,
+        "w": 652,
+        "h": 202
+    },
+    {
+        "id": "c8e0075148b8c946",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c24b96c496942605",
+            "38e95f2c24175c35",
+            "52498b44064f823a",
+            "ea9465a1fc8c9e18",
+            "cf28368a6c246fc7",
+            "008d0f8c6ef1132f"
+        ],
+        "x": 14,
+        "y": 1659,
+        "w": 1232,
+        "h": 202
+    },
+    {
         "id": "9e1f662934605284",
         "type": "ui_base",
         "theme": {
@@ -694,11 +1003,11 @@
         "cert": "",
         "key": "",
         "ca": "",
-        "certname": "",
-        "keyname": "",
-        "caname": "",
+        "certname": "mqtt.crt",
+        "keyname": "mqtt.key",
+        "caname": "mosquitto.org.crt",
         "servername": "",
-        "verifyservercert": true,
+        "verifyservercert": false,
         "alpnprotocol": ""
     },
     {
@@ -832,9 +1141,73 @@
         "height": 1
     },
     {
+        "id": "54759efd76491718",
+        "type": "mqtt-broker",
+        "name": "private-broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "true",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "64c8814b618a706e",
+        "type": "mqtt-broker",
+        "name": "public-secure-broker",
+        "broker": "test.mosquitto.org",
+        "port": "8884",
+        "tls": "eaa024f859c5f78e",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
         "id": "7ce08affddeab4ea",
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
         "name": "temperature",
         "group": "eba1eeab2c58edb8",
         "order": 1,
@@ -855,104 +1228,26 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 590,
-        "y": 160,
+        "x": 550,
+        "y": 140,
         "wires": []
-    },
-    {
-        "id": "a951431026817237",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "temperature",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "25",
-        "payloadType": "num",
-        "x": 150,
-        "y": 160,
-        "wires": [
-            [
-                "1c572a9b6aad7cc2"
-            ]
-        ]
-    },
-    {
-        "id": "7006526e0ba7d14a",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "light_sensor",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "5",
-        "payloadType": "num",
-        "x": 150,
-        "y": 480,
-        "wires": [
-            [
-                "a322f0f04a91ee26"
-            ]
-        ]
-    },
-    {
-        "id": "340db043376c7982",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "sound_sensor",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 240,
-        "wires": [
-            [
-                "14651d281752c495"
-            ]
-        ]
     },
     {
         "id": "5ea7201186c39d78",
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
         "name": "light_level ",
         "group": "f755c7094e0204d7",
         "order": 1,
         "width": 12,
         "height": 2,
         "gtype": "gage",
-        "title": "Luminosité",
+        "title": "Luminosité (ADC)",
         "label": "units",
         "format": "{{value}}",
         "min": 0,
-        "max": "20",
+        "max": "800",
         "colors": [
             "#99c1f1",
             "#e6e600",
@@ -962,85 +1257,26 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 600,
-        "y": 480,
+        "x": 360,
+        "y": 640,
         "wires": []
-    },
-    {
-        "id": "1c572a9b6aad7cc2",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 160,
-        "wires": [
-            [
-                "7ce08affddeab4ea"
-            ]
-        ]
-    },
-    {
-        "id": "a322f0f04a91ee26",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 480,
-        "wires": [
-            [
-                "5ea7201186c39d78"
-            ]
-        ]
-    },
-    {
-        "id": "14651d281752c495",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 240,
-        "wires": [
-            [
-                "3fa65fc688213d56"
-            ]
-        ]
     },
     {
         "id": "3fa65fc688213d56",
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
+        "g": "cd6f4e02c3e3acd0",
         "name": "sound-level",
         "group": "7c4ba8e1e71b582f",
         "order": 1,
         "width": 12,
         "height": 2,
         "gtype": "gage",
-        "title": "Sound level",
+        "title": "Sound level (ADC)",
         "label": "°",
         "format": "{{value}}",
-        "min": 0,
-        "max": "40",
+        "min": "100",
+        "max": "400",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1048,41 +1284,17 @@
         ],
         "seg1": "",
         "seg2": "",
-        "diff": true,
+        "diff": false,
         "className": "",
-        "x": 630,
-        "y": 240,
+        "x": 1130,
+        "y": 540,
         "wires": []
-    },
-    {
-        "id": "2cbf6b2a0733df7e",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "local",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "290 C",
-        "payloadType": "str",
-        "x": 130,
-        "y": 320,
-        "wires": [
-            [
-                "b25b11cde203614a"
-            ]
-        ]
     },
     {
         "id": "b25b11cde203614a",
         "type": "ui_form",
         "z": "0277478f1e68b0ce",
+        "g": "02634166f1864967",
         "name": "associated_local",
         "label": "Local associé",
         "group": "1db4abaa008c9aa6",
@@ -1108,16 +1320,19 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 390,
-        "y": 320,
+        "x": 130,
+        "y": 520,
         "wires": [
-            []
+            [
+                "152d59af688bfd2e"
+            ]
         ]
     },
     {
         "id": "8d83378d17572eea",
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
         "name": "humidity",
         "group": "77cc3ec7a2ad9d4e",
         "order": 1,
@@ -1138,59 +1353,15 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 600,
-        "y": 400,
+        "x": 540,
+        "y": 240,
         "wires": []
-    },
-    {
-        "id": "d1b7f378b4eafaa2",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "humidity",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 140,
-        "y": 400,
-        "wires": [
-            [
-                "23653ae5c39ed34f"
-            ]
-        ]
-    },
-    {
-        "id": "23653ae5c39ed34f",
-        "type": "function",
-        "z": "0277478f1e68b0ce",
-        "name": "set payload",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 400,
-        "wires": [
-            [
-                "8d83378d17572eea"
-            ]
-        ]
     },
     {
         "id": "ee93e7ac092f78b3",
         "type": "ui_text",
         "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
         "group": "f988ca3073539a8c",
         "order": 1,
         "width": 34,
@@ -1204,39 +1375,15 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 350,
-        "y": 60,
+        "x": 1310,
+        "y": 1560,
         "wires": []
-    },
-    {
-        "id": "93981230535d1cb9",
-        "type": "inject",
-        "z": "0277478f1e68b0ce",
-        "name": "290 C",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "290C ",
-        "payloadType": "str",
-        "x": 130,
-        "y": 60,
-        "wires": [
-            [
-                "ee93e7ac092f78b3"
-            ]
-        ]
     },
     {
         "id": "c9b96fcb3f9a4c9f",
         "type": "ui_button",
         "z": "0277478f1e68b0ce",
+        "g": "1d61923917992343",
         "name": "camera_button",
         "group": "6d9ac2ca21f48ee4",
         "order": 1,
@@ -1253,8 +1400,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 140,
-        "y": 560,
+        "x": 1420,
+        "y": 360,
         "wires": [
             [
                 "a147a8a9cc0a78fb"
@@ -1265,6 +1412,7 @@
         "id": "3d8a4d7a697b706b",
         "type": "ui_button",
         "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
         "name": "alert_button",
         "group": "78055e7e1fa8ec1f",
         "order": 2,
@@ -1281,11 +1429,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 640,
+        "x": 830,
+        "y": 260,
         "wires": [
             [
-                "75680836e4f80837"
+                "7a4cbfceb7aa3e95"
             ]
         ]
     },
@@ -1293,87 +1441,819 @@
         "id": "75680836e4f80837",
         "type": "ui_text",
         "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
         "group": "78055e7e1fa8ec1f",
         "order": 1,
         "width": 0,
         "height": 0,
         "name": "alert",
-        "label": "Température élevée",
+        "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "className": "",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 350,
-        "y": 640,
+        "x": 1150,
+        "y": 140,
         "wires": []
     },
     {
         "id": "008d0f8c6ef1132f",
         "type": "ui_text",
         "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
         "group": "de51837b8b377b3b",
         "order": 1,
         "width": 12,
         "height": 1,
         "name": "reservation",
-        "label": "Libre",
+        "label": "status",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "className": "",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 130,
-        "y": 720,
+        "x": 1150,
+        "y": 1760,
         "wires": []
     },
     {
-        "id": "ea41ab0465f47990",
-        "type": "ui_text",
+        "id": "93578839b4841675",
+        "type": "mqtt in",
         "z": "0277478f1e68b0ce",
-        "group": "eb521a47e9a8db09",
-        "order": 1,
-        "width": 12,
-        "height": 6,
-        "name": "logs",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "hello",
+        "topic": "smartoffice/1/+/hello",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 1420,
+        "wires": [
+            [
+                "e1a692039636ccb6",
+                "f9cacadcad47695b",
+                "52305503b0150169",
+                "c24b96c496942605"
+            ]
+        ]
+    },
+    {
+        "id": "c5c99200d4be6aee",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "get_temperature",
+        "topic": "smartoffice/1/+/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "ddec77a73510afac",
+                "a092be41ed4f7e6b",
+                "0bebc33ba9eb758a"
+            ]
+        ]
+    },
+    {
+        "id": "dc64d5a8f07b8a51",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
+        "name": "get_light_sensor",
+        "topic": "smartoffice/1/+/light_sensor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "5ea7201186c39d78",
+                "df2886bcb2806c4a",
+                "9067218c53ba6cbe"
+            ]
+        ]
+    },
+    {
+        "id": "e6c2b49c82e472ec",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "g": "cd6f4e02c3e3acd0",
+        "name": "get_sound_sensor",
+        "topic": "smartoffice/1/+/sound_sensor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 870,
+        "y": 540,
+        "wires": [
+            [
+                "3fa65fc688213d56",
+                "e5e3745fc8aaf3ec",
+                "600770e1c9962a12"
+            ]
+        ]
+    },
+    {
+        "id": "482f68d72f3e71f6",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "g": "2b444b808f2003ca",
+        "name": "get_location",
+        "topic": "smartoffice/1/+/gps",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 1920,
+        "wires": [
+            [
+                "5b3126d8779138f9",
+                "c6f719b6be57c666"
+            ]
+        ]
+    },
+    {
+        "id": "50c67b457275e78e",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "g": "e47015bbcd561a71",
+        "name": "get_rfid",
+        "topic": "smartoffice/1/+/rfid",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 1020,
+        "wires": [
+            [
+                "a4648b7c3b62ec2a"
+            ]
+        ]
+    },
+    {
+        "id": "a147a8a9cc0a78fb",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "1d61923917992343",
+        "name": "containsLink",
+        "func": "msg.payload = global.get('cameraLink');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 360,
+        "wires": [
+            [
+                "c502d1aa06ef84c8"
+            ]
+        ]
+    },
+    {
+        "id": "c502d1aa06ef84c8",
+        "type": "ui_template",
+        "z": "0277478f1e68b0ce",
+        "g": "1d61923917992343",
+        "group": "6d9ac2ca21f48ee4",
+        "name": "redirect",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload) {\n                window.open(msg.payload, '_blank');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
         "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 350,
-        "y": 800,
+        "x": 1880,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a419e9e367d6a717",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "device",
+        "operation": "findOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "getDevice",
+        "x": 520,
+        "y": 1420,
+        "wires": [
+            [
+                "f49b0d09a33e7b5b"
+            ]
+        ]
+    },
+    {
+        "id": "e1a692039636ccb6",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "set payload",
+        "func": "const serial = msg.payload;\n\nconst query = { \"_id\": serial };\n\nmsg.payload = [query];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1420,
+        "wires": [
+            [
+                "a419e9e367d6a717"
+            ]
+        ]
+    },
+    {
+        "id": "f49b0d09a33e7b5b",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "checkDevice",
+        "func": "if (msg.payload) {\n    global.set('serial_id', msg.payload._id)\n    const idPremise = msg.payload.id_premise;\n\n    const premiseData = global.get('premiseData') || [];\n\n    const matchedPremise = premiseData.find(premise => premise._id.toString() === idPremise.toString());\n\n    if (matchedPremise) {\n        msg.payload = matchedPremise.name;\n    } else {\n        msg.payload = `Premise with id '${idPremise}' not found in premiseData.`;\n    }\n} else {\n    msg.payload = \"\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1420,
+        "wires": [
+            [
+                "fd3a94d5c2f5f41d"
+            ]
+        ]
+    },
+    {
+        "id": "fd3a94d5c2f5f41d",
+        "type": "switch",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "check",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 910,
+        "y": 1420,
+        "wires": [
+            [
+                "7f102e07e5ef5c01"
+            ],
+            [
+                "8383793c1105f10c"
+            ]
+        ]
+    },
+    {
+        "id": "7f102e07e5ef5c01",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "notExists",
+        "func": "const deviceData = global.get('serial_id');\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/youare\";\nmsg.payload = \"NONE\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 1380,
+        "wires": [
+            [
+                "2e61021ce704dfe4",
+                "5c0e85234562f4e2"
+            ]
+        ]
+    },
+    {
+        "id": "8383793c1105f10c",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "exists",
+        "func": "const deviceData = global.get('serial_id');\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/youare\";\n\nglobal.set('currentPremise', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1480,
+        "wires": [
+            [
+                "547243056bf26e0a",
+                "ee93e7ac092f78b3"
+            ]
+        ]
+    },
+    {
+        "id": "547243056bf26e0a",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c09494ed61fa6c9",
+        "x": 1310,
+        "y": 1480,
         "wires": []
     },
     {
-        "id": "b2adb1c024dc31f8",
+        "id": "2e61021ce704dfe4",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c09494ed61fa6c9",
+        "x": 1310,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "cc25423c5d8e26d6",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "device",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "createDevice",
+        "x": 1470,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c0e85234562f4e2",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "createDeviceInDb",
+        "func": "const serial_id = global.get('serial_id');\n\nconst deviceObject = {\n    _id: serial_id,  \n    name: \"non défini\" \n};\n\nmsg.payload = deviceObject;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1340,
+        "wires": [
+            [
+                "cc25423c5d8e26d6"
+            ]
+        ]
+    },
+    {
+        "id": "ddec77a73510afac",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "getTemperature",
+        "func": "msg.payload = parseFloat(msg.payload.temperature);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "7ce08affddeab4ea",
+                "ee6c97f4e7d07d57",
+                "c4e68b2f0ddf484b"
+            ]
+        ]
+    },
+    {
+        "id": "a092be41ed4f7e6b",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "getHumidity",
+        "func": "msg.payload = parseInt(msg.payload.humidity, 10);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "8d83378d17572eea",
+                "13bba33c4c23465e"
+            ]
+        ]
+    },
+    {
+        "id": "152d59af688bfd2e",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "02634166f1864967",
+        "name": "updateLocal",
+        "func": "const currentPremise = global.get('currentPremise');\nconst local1Value = msg.payload.local1;\n\nconst premiseData = global.get('premiseData') || [];\n\nconst matchedPremise = premiseData.find(premise => premise.name === currentPremise);\n\nif (matchedPremise) {\n    msg.payload = {\n        filter: { \"_id\": matchedPremise._id },\n        update: { \"$set\": { \"name\": local1Value } }\n    };\n} else {\n    msg.payload = `Premise with name '${currentPremise}' not found.`;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "8f031aee5b67aa8d"
+            ]
+        ]
+    },
+    {
+        "id": "8f031aee5b67aa8d",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "02634166f1864967",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "premise",
+        "operation": "updateMany",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "editPremise",
+        "x": 590,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee6c97f4e7d07d57",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "temperatureTooHigh",
+        "func": "const deviceData = global.get('serial_id');\n\nif (msg.payload > 20 && !global.get('alarmPrevention')) {\n        msg.topic = \"smartoffice/1/\" + deviceData + \"/lcd\";\n        global.set('alarmText', \"La température est élevée : \" + msg.payload + \"°C\");\n        msg.payload = \"ERROR; La temperature est elevee : \" + msg.payload + \"C\";\n        global.set('alarmPrevention', true)\n} else {\n    msg.topic = \"bin\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 80,
+        "wires": [
+            [
+                "8ee28446dd85d838",
+                "2740cf20720b1a61"
+            ]
+        ]
+    },
+    {
+        "id": "8ee28446dd85d838",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "d": true,
+        "g": "ccb069e81cf069c2",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c09494ed61fa6c9",
+        "x": 970,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "dc982ded04959f43",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "ee2a6888dd01074b",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "find",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "find.logs",
+        "x": 540,
+        "y": 840,
+        "wires": [
+            [
+                "2028de94f5a9e6f4"
+            ]
+        ]
+    },
+    {
+        "id": "65a7457d474c2588",
         "type": "inject",
         "z": "0277478f1e68b0ce",
-        "name": "logs_injector",
+        "g": "ee2a6888dd01074b",
+        "name": "trigger",
         "props": [
             {
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "5",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "20/12 10:43 Pierre Paul",
-        "payloadType": "str",
-        "x": 150,
-        "y": 800,
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 840,
         "wires": [
             [
-                "ea41ab0465f47990"
+                "df7d43d2f481b1b0"
+            ]
+        ]
+    },
+    {
+        "id": "df7d43d2f481b1b0",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ee2a6888dd01074b",
+        "name": "searchRfidLogs",
+        "func": "const serialId = global.get('serial_id');\n\nconst query = { \n    id_device: serialId,\n    topic: { $regex: /rfid/i }\n};\n\nmsg.payload = [query];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 840,
+        "wires": [
+            [
+                "dc982ded04959f43"
+            ]
+        ]
+    },
+    {
+        "id": "327033fcf5e4a864",
+        "type": "ui_template",
+        "z": "0277478f1e68b0ce",
+        "g": "ee2a6888dd01074b",
+        "group": "eb521a47e9a8db09",
+        "name": "display_logs",
+        "order": 6,
+        "width": "11",
+        "height": 7,
+        "format": "<table>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row.readableDate }}</td>\n            <td>{{ row.client }}</td>\n        </tr>\n    </tbody>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1210,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e2dc49481d7a43c",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ee2a6888dd01074b",
+        "name": "set payload",
+        "func": "let data = msg.payload;\n\nif (Array.isArray(data)) {\n    data.forEach(item => {\n        if (item.date_log) {\n            let date = new Date(item.date_log);\n            item.readableDate = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            });\n        }\n    });\n}\n\n\nif (Array.isArray(data)) {\n    flow.set('mongodbData', data);\n}\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 840,
+        "wires": [
+            [
+                "327033fcf5e4a864"
+            ]
+        ]
+    },
+    {
+        "id": "2028de94f5a9e6f4",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ee2a6888dd01074b",
+        "name": "joinDataToHaveClient",
+        "func": "let logs = msg.payload;\nlet clients = global.get('clientData');\n\nlogs.forEach(log => {\n    let client = clients.find(client => client.rfid === log.value_log.toString());\n    if (client) {\n        log.client = client.firstname + \" \" + client.name;\n    } else {\n        log.client = null; \n    }\n});\n\nmsg.payload = logs;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 840,
+        "wires": [
+            [
+                "1e2dc49481d7a43c"
+            ]
+        ]
+    },
+    {
+        "id": "6120ee65d788a2ac",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "10minTrigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "c193eb9a4497f2b7"
+            ]
+        ]
+    },
+    {
+        "id": "c193eb9a4497f2b7",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "resetAlarm",
+        "func": "global.set('alarmPrevention', false);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a4cbfceb7aa3e95",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "disableAlarm",
+        "func": "const deviceData = global.get('serial_id');\n\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/button\";\nmsg.payload = \"PRESSED\";\nmsg.message = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 260,
+        "wires": [
+            [
+                "b04bf2629fdccf3b"
+            ]
+        ]
+    },
+    {
+        "id": "b04bf2629fdccf3b",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c09494ed61fa6c9",
+        "x": 1210,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2740cf20720b1a61",
+        "type": "change",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "alarmText",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 140,
+        "wires": [
+            [
+                "75680836e4f80837"
             ]
         ]
     },
@@ -1381,6 +2261,7 @@
         "id": "9b88fd4b128fc57c",
         "type": "ui_text",
         "z": "0277478f1e68b0ce",
+        "g": "2b444b808f2003ca",
         "group": "f36af4e5677b5672",
         "order": 1,
         "width": 12,
@@ -1394,29 +2275,25 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 370,
-        "y": 880,
+        "x": 550,
+        "y": 1920,
         "wires": []
     },
     {
-        "id": "6a6730ad1b5f4f13",
-        "type": "inject",
+        "id": "5b3126d8779138f9",
+        "type": "function",
         "z": "0277478f1e68b0ce",
-        "name": "gps_injector",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Rue du cheval blanc, 4000 Liège",
-        "payloadType": "str",
-        "x": 150,
-        "y": 880,
+        "g": "2b444b808f2003ca",
+        "name": "formatAddress",
+        "func": "const addressObj = msg.payload;\n\nconst address = `${addressObj.house_number}, ${addressObj.road}, ${addressObj.postcode} ${addressObj.village}, ${addressObj.municipality}, ${addressObj.country}`;\n\nglobal.set('coordinates', {\n    latitude: addressObj.lat,\n    longitude: addressObj.lon\n});\n\nglobal.set('currentAddress', address);\n\nmsg.payload = address;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1920,
         "wires": [
             [
                 "9b88fd4b128fc57c"
@@ -1424,112 +2301,12 @@
         ]
     },
     {
-        "id": "f7d333af7d00a920",
-        "type": "debug",
-        "z": "0277478f1e68b0ce",
-        "name": "mosquitto_debug",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 950,
-        "y": 1240,
-        "wires": []
-    },
-    {
-        "id": "93578839b4841675",
+        "id": "b66ed4d6167846b0",
         "type": "mqtt in",
         "z": "0277478f1e68b0ce",
-        "name": "hello",
-        "topic": "smartoffice/2/+/hello",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1020,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "c5c99200d4be6aee",
-        "type": "mqtt in",
-        "z": "0277478f1e68b0ce",
-        "name": "get_temperature",
-        "topic": "smartoffice/2/+/temperature",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 160,
-        "y": 1100,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "dc64d5a8f07b8a51",
-        "type": "mqtt in",
-        "z": "0277478f1e68b0ce",
-        "name": "get_light_sensor",
-        "topic": "smartoffice/2/+/light_sensor",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 160,
-        "y": 1180,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "e6c2b49c82e472ec",
-        "type": "mqtt in",
-        "z": "0277478f1e68b0ce",
-        "name": "get_sound_sensor",
-        "topic": "smartoffice/2/+/sound_sensor",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 170,
-        "y": 1260,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "482f68d72f3e71f6",
-        "type": "mqtt in",
-        "z": "0277478f1e68b0ce",
-        "name": "get_location",
-        "topic": "smartoffice/2/+/gps",
+        "g": "20dfacadc7600b19",
+        "name": "getCameraLinkAndStatus",
+        "topic": "smartoffice/1/+/camera",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "9c09494ed61fa6c9",
@@ -1538,40 +2315,196 @@
         "rh": 0,
         "inputs": 0,
         "x": 150,
-        "y": 1340,
+        "y": 1180,
         "wires": [
             [
-                "f7d333af7d00a920"
+                "4b8937aa9badfa68",
+                "7210d850469831b7",
+                "da9aa2f4a85227c4"
             ]
         ]
     },
     {
-        "id": "50c67b457275e78e",
-        "type": "mqtt in",
-        "z": "0277478f1e68b0ce",
-        "name": "get_rfid",
-        "topic": "smartoffice/2/+/rfid",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 1420,
-        "wires": [
-            [
-                "f7d333af7d00a920"
-            ]
-        ]
-    },
-    {
-        "id": "a147a8a9cc0a78fb",
+        "id": "4b8937aa9badfa68",
         "type": "function",
         "z": "0277478f1e68b0ce",
-        "name": "containsLink",
-        "func": "msg.payload = \"http://192.168.167.178:8000/camera\";\nreturn msg;",
+        "g": "20dfacadc7600b19",
+        "name": "updateCameraLink",
+        "func": "const ip = msg.payload.ip;\nconst status = msg.payload.status;\n\nmsg.payload = global.set('cameraLink', `http://${ip}:8000/camera`);\nmsg.payload = global.set('cameraStatus', status);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4648b7c3b62ec2a",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "e47015bbcd561a71",
+        "name": "formatDataToLog",
+        "func": "const array = msg.payload;\n\nconst rfid = array.map(num => String.fromCharCode(num)).join(\"\");\nconst topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: rfid,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1020,
+        "wires": [
+            [
+                "ad051c630f71aca6",
+                "4431d4db3aa78aee"
+            ]
+        ]
+    },
+    {
+        "id": "ad051c630f71aca6",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "e47015bbcd561a71",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateRfidLog",
+        "x": 530,
+        "y": 1020,
+        "wires": [
+            [
+                "df7d43d2f481b1b0"
+            ]
+        ]
+    },
+    {
+        "id": "14a69f243c9384b2",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "g": "20dfacadc7600b19",
+        "group": "6d9ac2ca21f48ee4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "status",
+        "label": "statut",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7210d850469831b7",
+        "type": "change",
+        "z": "0277478f1e68b0ce",
+        "g": "20dfacadc7600b19",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "cameraStatus",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1120,
+        "wires": [
+            [
+                "11b9a3c190463011"
+            ]
+        ]
+    },
+    {
+        "id": "11b9a3c190463011",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "20dfacadc7600b19",
+        "name": "displayStatus",
+        "func": "if(msg.payload) {\n    msg.payload = \"activé\";\n} else {\n    msg.payload = \"désactivé\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1120,
+        "wires": [
+            [
+                "14a69f243c9384b2"
+            ]
+        ]
+    },
+    {
+        "id": "0bebc33ba9eb758a",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "15c91546bc53c7d2",
+                "7e4d06239d75c45e"
+            ]
+        ]
+    },
+    {
+        "id": "1aeaa4607ee6b29a",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "2b444b808f2003ca",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 560,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "df2886bcb2806c4a",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1579,32 +2512,689 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 560,
+        "y": 700,
         "wires": [
             [
-                "c502d1aa06ef84c8"
+                "e2c10c63f4e84396",
+                "c2d22e93f525737f"
             ]
         ]
     },
     {
-        "id": "c502d1aa06ef84c8",
-        "type": "ui_template",
+        "id": "e5e3745fc8aaf3ec",
+        "type": "function",
         "z": "0277478f1e68b0ce",
-        "group": "6d9ac2ca21f48ee4",
-        "name": "redirect",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "format": "<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload) {\n                window.open(msg.payload, '_blank');\n            }\n        });\n    })(scope);\n</script>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 560,
-        "y": 560,
+        "g": "cd6f4e02c3e3acd0",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 620,
+        "wires": [
+            [
+                "d056b9c31bc3dabe",
+                "f93ac2a6971844a0"
+            ]
+        ]
+    },
+    {
+        "id": "da9aa2f4a85227c4",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "20dfacadc7600b19",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1220,
+        "wires": [
+            [
+                "dc21bb075e71a6ab",
+                "34f824be3a8439fc"
+            ]
+        ]
+    },
+    {
+        "id": "f9cacadcad47695b",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1460,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c6f719b6be57c666",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "2b444b808f2003ca",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1980,
+        "wires": [
+            [
+                "1aeaa4607ee6b29a",
+                "5dc1787fd36ea227"
+            ]
+        ]
+    },
+    {
+        "id": "5dc1787fd36ea227",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "2b444b808f2003ca",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateLog",
+        "x": 550,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15c91546bc53c7d2",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateLog",
+        "x": 590,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e4d06239d75c45e",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 580,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e2c10c63f4e84396",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateLog",
+        "x": 610,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2d22e93f525737f",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 620,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "d056b9c31bc3dabe",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "cd6f4e02c3e3acd0",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateLog",
+        "x": 1370,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f93ac2a6971844a0",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "cd6f4e02c3e3acd0",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 1380,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "4431d4db3aa78aee",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "e47015bbcd561a71",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 520,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "dc21bb075e71a6ab",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "20dfacadc7600b19",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateLog",
+        "x": 650,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34f824be3a8439fc",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "20dfacadc7600b19",
+        "name": "send-log-mqtt",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 660,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "57843337e96261b9",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "group": "77cc3ec7a2ad9d4e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "displayHumidityLevel",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "36",
+        "color": "#ffffff",
+        "x": 660,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "13bba33c4c23465e",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "switchHumidity",
+        "func": "let humidity = msg.payload;\n\nlet status = \"\";\n\nif (humidity < 30) {\n    status = \"Sec\";\n} else if (humidity >= 30 && humidity <= 60) {\n    status = \"Humide\";\n} else if (humidity > 60) {\n    status = \"Mouillé\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 300,
+        "wires": [
+            [
+                "57843337e96261b9"
+            ]
+        ]
+    },
+    {
+        "id": "c4e68b2f0ddf484b",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "switchTemperature",
+        "func": "let temperature = msg.payload;\n\nlet status = \"\";\n\nif (temperature < 18) {\n    status = \"Froid\";\n} else if (temperature >= 18 && temperature <= 24) {\n    status = \"Chaud\";\n} else if (temperature > 24) {\n    status = \"Trop chaud\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "bd4e3660d71f5103"
+            ]
+        ]
+    },
+    {
+        "id": "bd4e3660d71f5103",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "group": "eba1eeab2c58edb8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "displayTemperatureLevel",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "36",
+        "color": "#ffffff",
+        "x": 750,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2272194001cc5497",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "g": "cd6f4e02c3e3acd0",
+        "group": "7c4ba8e1e71b582f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "displaySoundLevel",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "36",
+        "color": "#ffffff",
+        "x": 1230,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "600770e1c9962a12",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "cd6f4e02c3e3acd0",
+        "name": "switchSound",
+        "func": "let sound = msg.payload;\n\nlet status = \"\";\n\nif (sound < 300) {\n    status = \"Silencieux\";\n} else if (sound >= 300) {\n    status = \"Bruillant\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 700,
+        "wires": [
+            [
+                "2272194001cc5497"
+            ]
+        ]
+    },
+    {
+        "id": "9067218c53ba6cbe",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
+        "name": "switchLight",
+        "func": "let light = msg.payload;\n\nlet status = \"\";\n\nif (light < 100) {\n    status = \"Sombre\";\n} else if (light >= 100) {\n    status = \"Eclairé\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "f506b700ac5e373b"
+            ]
+        ]
+    },
+    {
+        "id": "f506b700ac5e373b",
+        "type": "ui_text",
+        "z": "0277478f1e68b0ce",
+        "g": "1501d7bab16f0152",
+        "group": "f755c7094e0204d7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "displayLightLevel",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "36",
+        "color": "#ffffff",
+        "x": 570,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "52305503b0150169",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1380,
+        "wires": [
+            [
+                "86413ad55842e730"
+            ]
+        ]
+    },
+    {
+        "id": "86413ad55842e730",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "0d0f4ba3b295a5e0",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateLog",
+        "x": 550,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "168eaec1b7a98d4a",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "disableAlarm",
+        "func": "const deviceData = global.get('serial_id');\n\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/lcd\";\nmsg.payload = \"NONE\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 360,
+        "wires": [
+            [
+                "f62dc34083744dc0"
+            ]
+        ]
+    },
+    {
+        "id": "f62dc34083744dc0",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c09494ed61fa6c9",
+        "x": 1210,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d420f6fcbf97a6a1",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "g": "ccb069e81cf069c2",
+        "name": "get_button_alarm",
+        "topic": "smartoffice/1/+/button",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9c09494ed61fa6c9",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 840,
+        "y": 360,
+        "wires": [
+            [
+                "168eaec1b7a98d4a"
+            ]
+        ]
+    },
+    {
+        "id": "c24b96c496942605",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "getDataForCurrentPremise",
+        "func": "let reservationData = global.get('reservationData');\n\nlet currentName = global.get('currentPremise');\n\nlet filteredReservations = reservationData.filter(reservation => reservation.premise_name === currentName);\n\nmsg.payload = filteredReservations;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 1760,
+        "wires": [
+            [
+                "38e95f2c24175c35"
+            ]
+        ]
+    },
+    {
+        "id": "38e95f2c24175c35",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "checkIfReservationIsNow",
+        "func": "let filteredReservations = msg.payload;\nlet currentDate = new Date();\nlet result = false;\n\nfor (let reservation of filteredReservations) {\n    let startTime = new Date(reservation.start_time);\n    let endTime = new Date(reservation.end_time);\n    \n    if (currentDate >= startTime && currentDate <= endTime) {\n        result = true;\n        break;\n    }\n}\n\nmsg.payload = result;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1760,
+        "wires": [
+            [
+                "52498b44064f823a"
+            ]
+        ]
+    },
+    {
+        "id": "52498b44064f823a",
+        "type": "switch",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "reservation?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 730,
+        "y": 1760,
+        "wires": [
+            [
+                "ea9465a1fc8c9e18"
+            ],
+            [
+                "cf28368a6c246fc7"
+            ]
+        ]
+    },
+    {
+        "id": "cf28368a6c246fc7",
+        "type": "change",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Libre",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1820,
+        "wires": [
+            [
+                "008d0f8c6ef1132f"
+            ]
+        ]
+    },
+    {
+        "id": "ea9465a1fc8c9e18",
+        "type": "change",
+        "z": "0277478f1e68b0ce",
+        "g": "c8e0075148b8c946",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Occupé",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1700,
+        "wires": [
+            [
+                "008d0f8c6ef1132f"
+            ]
         ]
     },
     {
@@ -2046,33 +3636,6 @@
         "wires": []
     },
     {
-        "id": "1123a8fd972228e4",
-        "type": "inject",
-        "z": "4e821b48bbd42ca3",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Rue du cheval blanc, 4000 Liège",
-        "payloadType": "str",
-        "x": 910,
-        "y": 160,
-        "wires": [
-            [
-                "3bc6f0b95980261e",
-                "eb17202416c7c47c",
-                "990b135bf2ec1184"
-            ]
-        ]
-    },
-    {
         "id": "2b2f7c601b02fc11",
         "type": "ui_text",
         "z": "4e821b48bbd42ca3",
@@ -2083,14 +3646,14 @@
         "name": "address",
         "label": "",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "row-left",
         "className": "",
         "style": false,
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 1720,
-        "y": 160,
+        "x": 1320,
+        "y": 300,
         "wires": []
     },
     {
@@ -2102,8 +3665,8 @@
         "width": 16,
         "height": 5,
         "name": "",
-        "lat": "50.6418143",
-        "lon": "5.5725594483456655",
+        "lat": "",
+        "lon": "",
         "zoom": "18",
         "layer": "OSMC",
         "cluster": "",
@@ -2130,76 +3693,11 @@
         "wires": []
     },
     {
-        "id": "2dfae8b7e7686a90",
-        "type": "mqtt in",
-        "z": "4e821b48bbd42ca3",
-        "name": "get_location",
-        "topic": "smartoffice/2/+/gps",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 910,
-        "y": 240,
-        "wires": [
-            [
-                "96da40a1ccfe7227"
-            ]
-        ]
-    },
-    {
-        "id": "3bc6f0b95980261e",
-        "type": "http request",
-        "z": "4e821b48bbd42ca3",
-        "name": "getAddressFromGpsSensor",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://api.geoapify.com/v1/geocode/reverse?lat=50.641780905467826&lon=5.572511534949572&apiKey=deeb5f3960dc4cf78c576f97f9ad146f",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1180,
-        "y": 160,
-        "wires": [
-            [
-                "83e04dd130ea4f2a"
-            ]
-        ]
-    },
-    {
-        "id": "83e04dd130ea4f2a",
-        "type": "function",
-        "z": "4e821b48bbd42ca3",
-        "name": "formatDataFromApi",
-        "func": "var data = JSON.parse(msg.payload);\n\nmsg.payload = data.features[0].properties.formatted;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1470,
-        "y": 160,
-        "wires": [
-            [
-                "2b2f7c601b02fc11"
-            ]
-        ]
-    },
-    {
         "id": "eb17202416c7c47c",
         "type": "function",
         "z": "4e821b48bbd42ca3",
         "name": "injectCoordinatesToWorldmap",
-        "func": "msg.payload = {\n    name: \"SmartOffice\",\n    lat: 50.6418143,         // Latitude dynamique\n    lon: 5.5725594483456655, // Longitude dynamique\n    icon: \"fa-map-marker\",   // Icône à utiliser sur la carte\n    fillColor: \"#ff0000\",    // Couleur de remplissage (optionnel)\n    color: \"#ff0000\"         // Couleur du contour (optionnel)\n};\n\nreturn msg;",
+        "func": "msg.payload = {\n    lat: global.get('coordinates').latitude,         \n    lon: global.get('coordinates').longitude, \n};\n\nmsg.lat = global.get('coordinates').latitude;\nmsg.lon = global.get('coordinates').longitude;\n\nmsg.latitude = global.get('coordinates').latitude;\nmsg.longitude = global.get('coordinates').longitude;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2212,158 +3710,6 @@
             [
                 "7d7db317f38e1625"
             ]
-        ]
-    },
-    {
-        "id": "990b135bf2ec1184",
-        "type": "function",
-        "z": "4e821b48bbd42ca3",
-        "name": "storeCoordinatesInContext",
-        "func": "//var lat = msg.payload.latitude;  // Assurez-vous que le payload contient latitude\n//var lon = msg.payload.longitude; // Assurez-vous que le payload contient longitude\nvar lat = 50.641780905467826\nvar lon = 5.572511534949572\nglobal.set(\"coordinates\", { latitude: lat, longitude: lon });\n\nmsg.payload = \"Coordinates stored: Latitude = \" + lat + \", Longitude = \" + lon;\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1140,
-        "y": 340,
-        "wires": [
-            [
-                "bbae968c8ad7c12f"
-            ]
-        ]
-    },
-    {
-        "id": "bbae968c8ad7c12f",
-        "type": "debug",
-        "z": "4e821b48bbd42ca3",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1400,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "cb1b78fea3a07f49",
-        "type": "http request",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 1150,
-        "y": 960,
-        "wires": [
-            [
-                "c76811d58c34c5d6"
-            ]
-        ]
-    },
-    {
-        "id": "10e719f75a3e1ff9",
-        "type": "function",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "name": "injectApiParameters",
-        "func": "var coordinates = global.get(\"coordinates\");\n\nif (coordinates && coordinates.latitude && coordinates.longitude) {\n    var lat = coordinates.latitude;\n    var lon = coordinates.longitude;\n\n    msg.url = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&hourly=pm10,pm2_5&timezone=auto`;\n    return msg;\n} else {\n    node.error(\"Coordinates not found in global context\", msg);\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 960,
-        "wires": [
-            [
-                "cb1b78fea3a07f49"
-            ]
-        ]
-    },
-    {
-        "id": "a960b3602a6a3cd1",
-        "type": "inject",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.3",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 650,
-        "y": 960,
-        "wires": [
-            [
-                "10e719f75a3e1ff9"
-            ]
-        ]
-    },
-    {
-        "id": "c76811d58c34c5d6",
-        "type": "function",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "name": "checkAirQuality",
-        "func": "try {\n    let payloadObject = JSON.parse(msg.payload);\n\n    if (payloadObject && payloadObject.elevation) {\n        let elevation = payloadObject.elevation;\n        msg.payload = elevation;\n    } else {\n        msg.payload = \"Elevation data not available.\";\n    }\n} catch (error) {\n    msg.payload = \"Invalid JSON data.\";\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 960,
-        "wires": [
-            [
-                "388a14b9ed4aeb4e"
-            ]
-        ]
-    },
-    {
-        "id": "388a14b9ed4aeb4e",
-        "type": "function",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "name": "convertAirQualityIntoString",
-        "func": "if (msg.payload >= 0 && msg.payload <= 50) {\n    msg.payload = \"Bonne\";\n} else if (msg.payload > 50 && msg.payload <= 100) {\n    msg.payload = \"Modérée\";\n} else if (msg.payload > 100) {\n    msg.payload = \"Mauvaise\";\n} else {\n    msg.payload = \"Valeur invalide\";\n}\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1660,
-        "y": 960,
-        "wires": [
-            []
         ]
     },
     {
@@ -2386,22 +3732,6 @@
         "color": "#ffffff",
         "x": 1250,
         "y": 600,
-        "wires": []
-    },
-    {
-        "id": "96da40a1ccfe7227",
-        "type": "debug",
-        "z": "4e821b48bbd42ca3",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 440,
         "wires": []
     },
     {
@@ -2441,7 +3771,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": "0.3",
+        "onceDelay": "0.8",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -2489,7 +3819,6 @@
         "y": 780,
         "wires": [
             [
-                "96da40a1ccfe7227",
                 "413463b444a6cc80"
             ],
             [],
@@ -2513,8 +3842,64 @@
         "wires": [
             [
                 "6442631fb648dd6a",
-                "fb85b18a99c3394a",
-                "96da40a1ccfe7227"
+                "fb85b18a99c3394a"
+            ]
+        ]
+    },
+    {
+        "id": "b7dfce441a268d6f",
+        "type": "inject",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 930,
+        "y": 240,
+        "wires": [
+            [
+                "5b169e960d830605",
+                "eb17202416c7c47c"
+            ]
+        ]
+    },
+    {
+        "id": "5b169e960d830605",
+        "type": "change",
+        "z": "4e821b48bbd42ca3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "currentAddress",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 300,
+        "wires": [
+            [
+                "2b2f7c601b02fc11"
             ]
         ]
     },
@@ -2636,14 +4021,14 @@
                 "p": "payload"
             }
         ],
-        "repeat": "",
+        "repeat": "8",
         "crontab": "",
         "once": true,
         "onceDelay": "0.5",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
+        "x": 120,
         "y": 260,
         "wires": [
             [
@@ -2676,7 +4061,7 @@
         "type": "function",
         "z": "4db1d4819dfea4ef",
         "name": "add_action_and_format_date",
-        "func": "let reservations = msg.payload;\n\nif (Array.isArray(reservations)) {\n    reservations.forEach(item => {\n        if (item.start_time) {\n            let date = new Date(item.start_time); // Convertir en objet Date\n            item.start_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n        if (item.end_time) {\n            let date = new Date(item.end_time); // Convertir en objet Date\n            item.end_time = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\nreservations = reservations.map(reservation => {\n    reservation.action = `<a href=\"/cancel_booking?id=${reservation._id}\">Annuler</a>`;\n    return reservation;\n});\n\n\nmsg.payload = reservations;\nreturn msg;",
+        "func": "let reservations = msg.payload;\n\nif (Array.isArray(reservations)) {\n    reservations.forEach(item => {\n        if (item.start_time) {\n            let date = new Date(item.start_time); // Convertir en objet Date\n            item.start_time_readable = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n        if (item.end_time) {\n            let date = new Date(item.end_time); // Convertir en objet Date\n            item.end_time_readable = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\nreservations = reservations.map(reservation => {\n    reservation.action = `<a href=\"/cancel_booking?id=${reservation._id}\">Annuler</a>`;\n    return reservation;\n});\n\n\nmsg.payload = reservations;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2700,7 +4085,7 @@
         "order": 4,
         "width": 29,
         "height": 6,
-        "format": "<table>\n    <thead>\n        <tr>\n            <th>Client</th>\n            <th>Local</th>\n            <th>Début</th>\n            <th>Fin</th>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row.client_email }}</td>\n            <td>{{ row.premise_name }}</td>\n            <td>{{ row.start_time }}</td>\n            <td>{{ row.end_time }}</td>\n            <td ng-bind-html=\"row.action\"></td>\n        </tr>\n    </tbody>\n</table>",
+        "format": "<table>\n    <thead>\n        <tr>\n            <th>Client</th>\n            <th>Local</th>\n            <th>Début</th>\n            <th>Fin</th>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row.client_email }}</td>\n            <td>{{ row.premise_name }}</td>\n            <td>{{ row.start_time_readable }}</td>\n            <td>{{ row.end_time_readable }}</td>\n            <td ng-bind-html=\"row.action\"></td>\n        </tr>\n    </tbody>\n</table>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -2754,7 +4139,7 @@
         "type": "function",
         "z": "4db1d4819dfea4ef",
         "name": "cancel_reservation",
-        "func": "let reservations = global.get('reservationData');\n\nlet reservationId = msg.req.query.id;\n\nlet reservation = reservations.find(reservation => reservation._id.toString() === reservationId);\n\ndelete reservation.action;\ndelete reservation.premise_name;\ndelete reservation.client_email;\ndelete reservation.start_time;\ndelete reservation.end_time;\n\nif (reservation) {\n    msg.payload = reservation;\n} else {\n    msg.payload = { message: \"Réservation non trouvée\" };\n}\n\nreturn msg;\n\n",
+        "func": "let reservations = global.get('reservationData');\n\nlet reservationId = msg.req.query.id;\n\nlet reservation = reservations.find(reservation => reservation._id.toString() === reservationId);\n\ndelete reservation.action;\ndelete reservation.premise_name;\ndelete reservation.client_email;\ndelete reservation.start_time;\ndelete reservation.end_time;\ndelete reservation.end_time_readable;\ndelete reservation.start_time_readable;\n\nif (reservation) {\n    msg.payload = reservation;\n} else {\n    msg.payload = { message: \"Réservation non trouvée\" };\n}\n\nreturn msg;\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2889,7 +4274,7 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 140,
+        "x": 300,
         "y": 360,
         "wires": [
             [
@@ -2931,7 +4316,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": "0.4",
+        "onceDelay": "5",
         "topic": "",
         "payload": "Réserver",
         "payloadType": "str",
@@ -2940,7 +4325,8 @@
         "wires": [
             [
                 "f7b193dda725f7f2",
-                "665db45f4d7359c0"
+                "665db45f4d7359c0",
+                "bf4d56d9869cd0c9"
             ]
         ]
     },
@@ -3002,7 +4388,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 520,
         "y": 360,
         "wires": [
             [
@@ -3022,12 +4408,11 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "insertReservation",
-        "x": 550,
+        "x": 730,
         "y": 360,
         "wires": [
             [
-                "cc714ee28301d5b1",
-                "34e2bb5e1ea5df41"
+                "cc714ee28301d5b1"
             ]
         ]
     },
@@ -3043,7 +4428,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
+        "x": 980,
         "y": 360,
         "wires": [
             [
@@ -3057,17 +4442,56 @@
         "z": "df1a303ec9e1b819",
         "name": "change_tab",
         "events": "all",
-        "x": 1090,
+        "x": 1230,
         "y": 360,
         "wires": [
             []
         ]
     },
     {
-        "id": "34e2bb5e1ea5df41",
+        "id": "bf4d56d9869cd0c9",
+        "type": "function",
+        "z": "df1a303ec9e1b819",
+        "name": "prepareForm",
+        "func": "function roundToNext30Minutes(date) {\n    const roundedDate = new Date(date);\n    const minutes = roundedDate.getMinutes();\n    roundedDate.setMinutes(minutes < 30 ? 30 : 0); // Passe à la prochaine demi-heure\n    roundedDate.setHours(roundedDate.getHours() + (minutes >= 30 ? 1 : 0)); // Incrémente l'heure si nécessaire\n    roundedDate.setSeconds(0, 0); // Réinitialise les secondes et millisecondes\n    return roundedDate;\n}\n\nconst now = new Date();\nconst roundedNow = roundToNext30Minutes(now);\n\nconst today = now.toISOString().split('T')[0];\n\nfunction formatISOTime(date) {\n    const hours = String(date.getHours()).padStart(2, '0');\n    const minutes = String(date.getMinutes()).padStart(2, '0');\n    return `1970-01-01T${hours}:${minutes}`;\n}\n\nconst startTime = formatISOTime(roundedNow); // Heure locale arrondie à la demi-heure suivante\nconst endTimeDate = new Date(roundedNow.getTime() + 60 * 60 * 1000); // +1 heure\nconst endTime = formatISOTime(endTimeDate); // Heure locale +1h\n\nmsg.payload = {\n    start_date: today,\n    start_time: startTime,\n    end_date: today,\n    end_time: endTime\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "be0b18b31c0adf57",
+                "3ac5627ba95034cb"
+            ]
+        ]
+    },
+    {
+        "id": "bf9ea7513ce24828",
+        "type": "http in",
+        "z": "df1a303ec9e1b819",
+        "name": "complete_form_with_date",
+        "url": "/#!/6",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "bf4d56d9869cd0c9",
+                "3ac5627ba95034cb"
+            ]
+        ]
+    },
+    {
+        "id": "3ac5627ba95034cb",
         "type": "debug",
         "z": "df1a303ec9e1b819",
-        "name": "debug 8",
+        "name": "debug 10",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -3075,7 +4499,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
+        "x": 700,
         "y": 260,
         "wires": []
     },
@@ -3233,31 +4657,6 @@
         ]
     },
     {
-        "id": "46dd09ca7b7ac7c8",
-        "type": "inject",
-        "z": "0ab432dc59b6d0a3",
-        "name": "trigger",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 240,
-        "wires": [
-            [
-                "62b35b4144bc0c52"
-            ]
-        ]
-    },
-    {
         "id": "62b35b4144bc0c52",
         "type": "function",
         "z": "0ab432dc59b6d0a3",
@@ -3380,6 +4779,34 @@
         "topicType": "msg",
         "x": 110,
         "y": 300,
+        "wires": [
+            [
+                "62b35b4144bc0c52"
+            ]
+        ]
+    },
+    {
+        "id": "6fc5c06cf6d6b14f",
+        "type": "ui_button",
+        "z": "0ab432dc59b6d0a3",
+        "name": "refresh_logs",
+        "group": "f87d496c91fac1c3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Rafraîchir les losg",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 180,
         "wires": [
             [
                 "62b35b4144bc0c52"
