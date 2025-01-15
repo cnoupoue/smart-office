@@ -1,6 +1,6 @@
 from geopy.geocoders import Nominatim
 
-def getAdress(latitude, longitude):
+def get_address(latitude, longitude):
     # Initialize geolocator
     geoLoc = Nominatim(user_agent="GeoLoc")
 

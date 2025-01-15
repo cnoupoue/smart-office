@@ -11,11 +11,11 @@ def run():
         while True:
             if ser.in_waiting <= 0:
                 continue
-            message = la66.readMessage(ser)
+            message = la66.read(ser)
             if not message or not message.startswith("smartoffice:"):
                 continue
             extractedMessage = message.split(":")[1]
-            mqtt_controller.publish(env.RFID, extractedMessage)
+            mqtt_controller.put_in_publish_queue(env.RFID, extractedMessage)
                 
     except Exception as e:
         print("Error: " + str(e))

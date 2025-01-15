@@ -2,13 +2,13 @@
 import grovepi
 
 # to port D7
-button = 7
+pin = 7
 
-grovepi.pinMode(button,"INPUT")
+grovepi.pinMode(pin,"INPUT")
 
 def read():
     try:
-        return grovepi.digitalRead(button)
+        return grovepi.digitalRead(pin)
     except IOError as e:
         print ("Error: " + str(e))
         return None

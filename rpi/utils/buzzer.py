@@ -2,23 +2,23 @@
 import time
 import grovepi
 
-buzzer = 8
-grovepi.pinMode(buzzer,"OUTPUT")
+pin = 8
+grovepi.pinMode(pin,"OUTPUT")
 
 def on():
     try:
-        grovepi.digitalWrite(buzzer,1)
+        grovepi.digitalWrite(pin,1)
     except KeyboardInterrupt as e:
-        grovepi.digitalWrite(buzzer,0)
+        grovepi.digitalWrite(pin,0)
         print ("Error: " + e)
     except IOError as e:
         print ("Error: " + e)
 
 def off():
     try:
-        grovepi.digitalWrite(buzzer,0)
+        grovepi.digitalWrite(pin,0)
     except KeyboardInterrupt as e:
-        grovepi.digitalWrite(buzzer,0)
+        grovepi.digitalWrite(pin,0)
         print ("Error: " + e)
     except IOError as e:
         print ("Error: " + e)

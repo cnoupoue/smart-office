@@ -2,13 +2,13 @@
 import grovepi
 
 # to analog port A0
-sound_sensor = 0
+pin = 0
 
-grovepi.pinMode(sound_sensor,"INPUT")
+grovepi.pinMode(pin,"INPUT")
 
 def read():
     try:
-        return grovepi.analogRead(sound_sensor)
+        return grovepi.analogRead(pin)
     except Exception  as e:
         print(f"Error reading sensor: {e}")
         return None

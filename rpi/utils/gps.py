@@ -20,7 +20,7 @@ patterns=["$GPGGA",
     "/[0-9]+\.[0-9]*/" # altitude x.x
     ]
 
-class GROVEGPS():
+class _GROVEGPS():
     def __init__(self, port='/dev/ttyAMA0', baud=9600, timeout=0):
         self.ser = serial.Serial(port, baud, timeout=timeout)
         self.ser.flush()
@@ -155,15 +155,15 @@ class GROVEGPS():
 
         return True
 
-gps = GROVEGPS()
+gps = _GROVEGPS()
 
-def read():
+def _read():
     # time.sleep(0.2)
     in_data = gps.read()
     if in_data != []:
         return in_data
 
-def get_coordinates(gpgga_data):
+def _get_coordinates(gpgga_data):
     if gpgga_data == None:
         return None
 
@@ -186,4 +186,4 @@ def get_coordinates(gpgga_data):
     return latitude, longitude
 
 def read_coordinates():
-    return get_coordinates(read())
+    return _get_coordinates(_read())

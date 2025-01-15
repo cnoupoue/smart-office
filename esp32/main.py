@@ -10,11 +10,12 @@ PUB_DELAY = 2
 
 SSID = "kotinas"         # Your Wi-Fi SSID
 PASSWORD = "rootroot"    # Your Wi-Fi Password
-
+COMPANY_ID = "1"
+RPI_SERIAL_ID = "1000000044888d31"
 BROKER = "broker.hivemq.com"  # Replace with your broker address
-TOPIC_TEMP = "smartoffice/2/1000000044888d31/temperature"
-TOPIC_SUB_RELAY = "smartoffice/2/1000000044888d31/relay"
-TOPIC_SUB_LED = "smartoffice/2/1000000044888d31/led"
+TOPIC_TEMP = f"smartoffice/{COMPANY_ID}/{RPI_SERIAL_ID}/temperature"
+TOPIC_SUB_RELAY = f"smartoffice/{COMPANY_ID}/{RPI_SERIAL_ID}/relay"
+TOPIC_SUB_LED = f"smartoffice/{COMPANY_ID}/{RPI_SERIAL_ID}/led"
 
 LED = machine.Pin(5, machine.Pin.OUT)
 RELAY = machine.Pin(18, machine.Pin.OUT)
@@ -41,7 +42,7 @@ def getTemperature():
     return json.dumps(data)
 
 def pub_mqtt(client, message):
-    client.publish(TOPIC_TEMP, message, qos=2)
+    client.publish(TOPIC_TEMP, message)
     print(f"Published {message} for topic {TOPIC_TEMP}")
 
 def sub_callback(topic, msg):
@@ -112,16 +113,19 @@ async def pub_mqtt_temp():
 
 # code
 async def main():
-    await connect_wifi()
-    # Create separate tasks for subscription and publication
-    asyncio.create_task(pub_mqtt_temp())
-    asyncio.create_task(sub_mqtt())
+    try:
+        await connect_wifi()
+        # Create separate tasks for subscription and publication
+        asyncio.create_task(pub_mqtt_temp())
+        asyncio.create_task(sub_mqtt())
 
-    # indicator of ready
-    await asyncio.sleep(0.5)
-
-    # Infinite loop necessary to keep program alive, otherwise it will stop when reaching the end of the code
-    while True:
+        # indicator of ready
         await asyncio.sleep(0.5)
+
+        # Infinite loop necessary to keep program alive, otherwise it will stop when reaching the end of the code
+        while True:
+            await asyncio.sleep(0.5)
+    except Exception as e:
+        print(f"Error in pub_mqtt_temp: {e}")
 
 asyncio.run(main())

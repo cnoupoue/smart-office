@@ -7,6 +7,31 @@ import time
 import threading
 import mongo_api
 from mqtt import MQTT
+from flask import Flask, render_template, request, jsonify
+from flask_httpauth import HTTPBasicAuth
+
+app = Flask(__name__)
+auth = HTTPBasicAuth()
+
+# In-memory user data (you can replace this with a database)
+users = {
+    "admin": "smartoffice",  # username: password
+}
+
+# Verify username and password
+@auth.verify_password
+def verify_password(username, password):
+    if username in users and users[username] == password:
+        return username
+    return None
+
+@app.route('/')
+@auth.login_required
+def index():
+    search_query = request.args.get('query', '')  # Get the search query from the URL parameter
+    logs = mongo_api.get_logs(search_query)  # Fetch and filter logs based on the search query
+    
+    return render_template('logs.html', logs=logs)
 
 def encapsulate_into_vuln_html(list):
     vulnerabilities_table = ""
@@ -49,13 +74,13 @@ def execute_command():
     # get and send short shodan results via sms
     msg_for_sms = shodan_api.get_vuln_message_for_sms()
     twilio_api.send(msg_for_sms)
-    webex_api.send_message("SMS envoyé!")
+    webex_api.send("SMS envoyé!")
 
     def send_email():
         # get and send long shodan results via email
         list_vuln_for_email = shodan_api.get_vuln_list_for_email()
         sendgrid_api.send(message=encapsulate_into_vuln_html(list_vuln_for_email))
-        webex_api.send_message("Email envoyé!")
+        webex_api.send("Email envoyé!")
 
     # Create threads for email
     email_thread = threading.Thread(target=send_email)
@@ -64,17 +89,19 @@ def execute_command():
 
 def save_mqtt_logs():
     MQTTC = MQTT(sub_callback = callback, 
-                 secured=True, 
+                 secured=True,
                  ca_certs="mosquitto.org.crt",
                  certfile="clientcrt.pem",
                  keyfile="clientkey.pem")
-    MQTTC.connect("test.mosquitto.org", 8883)
-    MQTTC.publish("test", "hello")
-    MQTTC.subscribe("test")
+    MQTTC.connect("test.mosquitto.org", 8884)
+    MQTTC.subscribe("smartoffice/log")
     while True:
         time.sleep(2)
+
 def callback(topic, message):
-    print(topic, message)
+    # print(topic, message)
+    mongo_api.save(topic, message)
+
 def start_webex_handler():
     print("Waiting for new messages...")
     webex_api.init()
@@ -84,10 +111,18 @@ def start_webex_handler():
         if command == 'shodan':
             print("command received")
             message = "Requête shodan envoyé. Vous recevrez les résultats par mail (prend quelques minutes) et SMS."
-            webex_api.send_message(message)
+            webex_api.send(message)
             execute_command()
 
         time.sleep(1)  # Check for new messages every 10 seconds
 
-threading.Thread(target=save_mqtt_logs).start()
-# start_webex_handler()
+def run_flask_log_page():
+    context = ('server.crt', 'server.key')
+    app.run(host="0.0.0.0", ssl_context=context, debug=True, use_reloader=False)
+
+def main():
+    threading.Thread(target=save_mqtt_logs).start()
+    threading.Thread(target=run_flask_log_page).start()
+    start_webex_handler()
+
+main()
