@@ -5380,7 +5380,7 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "fetchLogsInDb",
-        "x": 600,
+        "x": 720,
         "y": 240,
         "wires": [
             [
@@ -5400,8 +5400,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 240,
+        "x": 520,
+        "y": 200,
         "wires": [
             [
                 "eb75d147338e0d5e"
@@ -5423,7 +5423,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "logs_table_smartoffice",
-        "x": 1510,
+        "x": 1630,
         "y": 240,
         "wires": [
             []
@@ -5441,7 +5441,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1210,
+        "x": 1330,
         "y": 240,
         "wires": [
             [
@@ -5481,7 +5481,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 1000,
         "y": 240,
         "wires": [
             [
@@ -5509,7 +5509,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 600,
+        "x": 720,
         "y": 320,
         "wires": [
             [
@@ -5537,11 +5537,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
+        "x": 90,
         "y": 240,
         "wires": [
             [
-                "62b35b4144bc0c52"
+                "d8f0f90a42663b1f"
             ]
         ]
     },
@@ -5566,11 +5566,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 90,
+        "x": 70,
         "y": 120,
         "wires": [
             [
-                "62b35b4144bc0c52"
+                "d8f0f90a42663b1f"
             ]
         ]
     },
@@ -5593,11 +5593,106 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
+        "x": 980,
         "y": 320,
         "wires": [
             [
                 "2cf404800ccde71e"
+            ]
+        ]
+    },
+    {
+        "id": "d8f0f90a42663b1f",
+        "type": "switch",
+        "z": "0ab432dc59b6d0a3",
+        "name": "",
+        "property": "currentRole",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "admin",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "admin",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "62b35b4144bc0c52",
+                "852e49285f82d78d"
+            ],
+            [
+                "aa815aa22747d280"
+            ]
+        ]
+    },
+    {
+        "id": "b2a705ef4f5c603d",
+        "type": "ui_text",
+        "z": "0ab432dc59b6d0a3",
+        "group": "f87d496c91fac1c3",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 490,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "aa815aa22747d280",
+        "type": "function",
+        "z": "0ab432dc59b6d0a3",
+        "name": "function 3",
+        "func": "msg.payload = \"Vous devez être admin pour voir les logs\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 420,
+        "wires": [
+            [
+                "b2a705ef4f5c603d"
+            ]
+        ]
+    },
+    {
+        "id": "852e49285f82d78d",
+        "type": "function",
+        "z": "0ab432dc59b6d0a3",
+        "name": "function 4",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "b2a705ef4f5c603d"
             ]
         ]
     },
@@ -6497,9 +6592,7 @@
         "y": 60,
         "wires": [
             [
-                "4677ddfdc16a5fcc",
-                "88f9e9b6d4ceb707",
-                "af2fb76caa543a3b"
+                "4677ddfdc16a5fcc"
             ]
         ]
     },
@@ -6600,110 +6693,19 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 940,
-        "y": 140,
+        "y": 240,
         "wires": []
-    },
-    {
-        "id": "88f9e9b6d4ceb707",
-        "type": "function",
-        "z": "1317a1110c9c2dbe",
-        "name": "function 7",
-        "func": "const jwt = require('jsonwebtoken');\nvar token = msg.req.headers['authorization'].split(' ')[1];  // Récupérer le token\ntry {\n    var decoded = jwt.verify(token, 'secret_key');  // Décodez avec la clé secrète\n    msg.payload = { role: decoded.role };\n} catch (e) {\n    msg.payload = { message: 'Invalid or expired token' };\n}\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 200,
-        "wires": [
-            [
-                "14bf1c546e428536"
-            ]
-        ]
-    },
-    {
-        "id": "dd1bd408634ff4a3",
-        "type": "function",
-        "z": "1317a1110c9c2dbe",
-        "name": "getHashAndSalt",
-        "func": "let parts = msg.payload.split(\" \");\n\nmsg.hashed_password = parts[0];\nmsg.salt = parts[1];\n\nlet user = flow.get('tempUser');\nuser.password = msg.hashed_password;\nuser.salt = msg.salt;\n\nmsg.payload = user;\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 940,
-        "y": 420,
-        "wires": [
-            [
-                "8da4040033587d5a"
-            ]
-        ]
-    },
-    {
-        "id": "8da4040033587d5a",
-        "type": "mongodb4",
-        "z": "1317a1110c9c2dbe",
-        "clientNode": "08886a7cd4dd855e",
-        "mode": "collection",
-        "collection": "client",
-        "operation": "insertOne",
-        "output": "toArray",
-        "maxTimeMS": "0",
-        "handleDocId": false,
-        "name": "createClient",
-        "x": 530,
-        "y": 320,
-        "wires": [
-            [
-                "a364d1030b9d4b5b"
-            ]
-        ]
-    },
-    {
-        "id": "a364d1030b9d4b5b",
-        "type": "function",
-        "z": "1317a1110c9c2dbe",
-        "name": "redirectToUsersPage",
-        "func": "msg.payload = {\"tab\":\"Utilisateurs\"};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 760,
-        "y": 320,
-        "wires": [
-            [
-                "0bf244f36ec90f62"
-            ]
-        ]
-    },
-    {
-        "id": "0bf244f36ec90f62",
-        "type": "ui_ui_control",
-        "z": "1317a1110c9c2dbe",
-        "name": "switchTab",
-        "events": "all",
-        "x": 960,
-        "y": 320,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "70f5df734cbe9edb",
         "type": "exec",
         "z": "1317a1110c9c2dbe",
-        "command": "python3 flask/decode_password.py ${payload}",
+        "command": "python3 flask/decode_token.py ${payload}",
         "addpay": "payload",
         "append": "",
         "useSpawn": "false",
@@ -6715,7 +6717,7 @@
         "y": 420,
         "wires": [
             [
-                "dd1bd408634ff4a3"
+                "3ea9cff0e95b3943"
             ],
             [],
             []
@@ -6725,19 +6727,97 @@
         "id": "af2fb76caa543a3b",
         "type": "function",
         "z": "1317a1110c9c2dbe",
-        "name": "getPassword",
-        "func": "msg.payload = msg.payload.password;\n\nreturn msg;",
+        "name": "prepareRequest",
+        "func": "msg.payload = msg.payload;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 480,
         "y": 420,
         "wires": [
             [
                 "70f5df734cbe9edb"
+            ]
+        ]
+    },
+    {
+        "id": "bbf56735fca25924",
+        "type": "inject",
+        "z": "1317a1110c9c2dbe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cameron.noupoue@student.hepl.be",
+        "payloadType": "str",
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "af2fb76caa543a3b"
+            ]
+        ]
+    },
+    {
+        "id": "243e6b40a4c1304d",
+        "type": "inject",
+        "z": "1317a1110c9c2dbe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "nasser.kotiyev@student.hepl.be",
+        "payloadType": "str",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "af2fb76caa543a3b"
+            ]
+        ]
+    },
+    {
+        "id": "3ea9cff0e95b3943",
+        "type": "function",
+        "z": "1317a1110c9c2dbe",
+        "name": "setGlobalRole",
+        "func": "// Remplacer les guillemets simples par des guillemets doubles\nnode.warn(msg.payload);\nconst validJsonString = msg.payload.replace(/'/g, '\"');\n\n// Convertir la chaîne en objet JSON\ntry {\n    const payload = JSON.parse(validJsonString);\n\n    // Retourne uniquement la valeur de 'role'\n    msg.payload = payload.role;\n    global.set('currentRole', payload.role);\n\n} catch (error) {\n    msg.payload = \"Invalid JSON format\";\n    node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid JSON\" });\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 420,
+        "wires": [
+            [
+                "14bf1c546e428536"
             ]
         ]
     }
