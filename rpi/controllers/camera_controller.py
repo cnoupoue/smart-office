@@ -12,7 +12,7 @@ import env
 import time
 import utils.ip as ip
 
-def get_page():
+def _get_page():
     return """\
     <!DOCTYPE html>
     <html lang="en">
@@ -142,7 +142,7 @@ def get_page():
 camera = None
 output = None
 
-class StreamingOutput(object):
+class _StreamingOutput(object):
     def __init__(self):
         self.frame = None
         self.buffer = io.BytesIO()
@@ -157,11 +157,11 @@ class StreamingOutput(object):
             self.buffer.seek(0)
         return self.buffer.write(buf)
 
-class StreamingHandler(server.BaseHTTPRequestHandler):
+class _StreamingHandler(server.BaseHTTPRequestHandler):
     def do_GET(self):
         global output, camera
         if self.path == '/camera':
-            content = get_page().encode('utf-8')
+            content = _get_page().encode('utf-8')
             self.send_response(200)
             self.send_header('Content-Type', 'text/html')
             self.send_header('Content-Length', len(content))
@@ -216,7 +216,7 @@ class StreamingHandler(server.BaseHTTPRequestHandler):
             response = {"status": "started" if camera_active else "stopped"}
             self.wfile.write(json.dumps(response).encode('utf-8'))
             
-class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
+class _StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     allow_reuse_address = True
     daemon_threads = True
 
@@ -224,17 +224,17 @@ camera_active = False
 
 def camera_hello():
     while True:
-        mqtt_controller.publish(env.CAMERA, json.dumps({"ip": ip.read(), "status": camera_active}))
+        mqtt_controller.put_in_publish_queue(env.CAMERA, json.dumps({"ip": ip.read(), "status": camera_active}))
         time.sleep(env.CAMERA_HELLO_DELAY)
 
 def run():
     global output, camera
     with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
-        output = StreamingOutput()
+        output = _StreamingOutput()
         Thread(target=camera_hello, daemon=True).start()
         try:
             address = ('', 8000)
-            server = StreamingServer(address, StreamingHandler)
+            server = _StreamingServer(address, _StreamingHandler)
             print("Server started...")
             server.serve_forever()
         finally:

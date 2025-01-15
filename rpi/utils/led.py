@@ -2,18 +2,18 @@
 import grovepi
 
 # to digital port D4
-led = 4
+pin = 4
 
-grovepi.pinMode(led,"OUTPUT")
+grovepi.pinMode(pin,"OUTPUT")
 
 def on():
     try:
-        grovepi.digitalWrite(led,1)
+        grovepi.digitalWrite(pin,1)
     except IOError:
         print ("Error")
 
 def off():
     try:
-        grovepi.digitalWrite(led,0)
+        grovepi.digitalWrite(pin,0)
     except IOError:
         print ("Error")

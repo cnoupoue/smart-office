@@ -7,7 +7,8 @@ CAMERA_HELLO_DELAY = 5
 BUTTON_DELAY = 0.02
 
 # MQTT BROKER
-BROKER = "broker.hivemq.com"
+BROKER = "smartoffice-company1.local"
+# BROKER = "broker.hivemq.com"
 CLIENT_ID = "1"
 PORT = 1883
 
@@ -18,12 +19,11 @@ SERIAL_ID = None
 
 # MQTT TOPIC
 MQTT_ROOT_TOPIC = "smartoffice/"
-DEF_COMPANY_ID = "2/"
-def_local = "null"
-HELLO_TOPIC = None
-YOU_ARE_TOPIC = None
+DEF_COMPANY_ID = "1/"
 
-# SENSOR TYPE
+# TOPIC/SENSOR TYPE
+HELLO = "hello"
+YOU_ARE = "youare"
 LIGHT_SENSOR = "light_sensor"
 SOUND_SENSOR = "sound_sensor"
 CAMERA = "camera"
@@ -32,6 +32,4 @@ BUTTON = "button"
 BUZZER = "buzzer"
 LCD = "lcd"
 RFID = "rfid"
-TEMPERATURE = "temperature"
-LED = "led"
 RELAY = "relay"

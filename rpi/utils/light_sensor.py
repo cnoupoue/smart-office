@@ -2,13 +2,13 @@
 import grovepi
 
 # to port A1
-light_sensor = 1
+pin = 1
 
-grovepi.pinMode(light_sensor,"INPUT")
+grovepi.pinMode(pin,"INPUT")
 
 def read():
     try:
-        return grovepi.analogRead(light_sensor)
+        return grovepi.analogRead(pin)
     except Exception  as e:
         print(f"Error reading sensor: {e}")
         return None

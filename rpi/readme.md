@@ -88,4 +88,5 @@ crontab -e
 
 ```bash
 @reboot /home/pi/Documents/office-station/script.sh
+
 ```

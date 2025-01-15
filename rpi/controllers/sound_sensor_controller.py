@@ -8,7 +8,7 @@ import controllers.mqtt_controller as mqtt_controller
 SOUND_MAX_VALUE = 1000 
 last_read = 0
 
-def read(SOUND_QUEUE):
+def run(SOUND_QUEUE):
     global last_read
     sound_value = sound_sensor.read()
     avg_sound_value = 0
@@ -20,5 +20,5 @@ def read(SOUND_QUEUE):
         SOUND_QUEUE.append(sound_value)
             # calculation for more accuracy based on previous values
         avg_sound_value = sum(SOUND_QUEUE) / len(SOUND_QUEUE)
-        mqtt_controller.publish(env.SOUND_SENSOR, avg_sound_value)
+        mqtt_controller.put_in_publish_queue(env.SOUND_SENSOR, avg_sound_value)
         print("sound: " + str(avg_sound_value))

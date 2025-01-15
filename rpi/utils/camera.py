@@ -69,14 +69,14 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     allow_reuse_address = True
     daemon_threads = True
 
-def start_camera_recording():
+def start_recording():
     global camera, output
     camera = picamera.PiCamera(resolution='640x480', framerate=24)  # Fixed typo: PiCamera to PICamera
     output = StreamingOutput()
     camera.start_recording(output, format='mjpeg')
     print("Camera recording started.")
 
-def stop_camera_recording():
+def stop_recording():
     global camera
     camera.stop_recording()
     camera.close()

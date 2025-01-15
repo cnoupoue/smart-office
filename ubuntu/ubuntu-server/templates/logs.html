@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <script>
+        // This function submits the form with the search term
+        function searchLogs() {
+            const searchTerm = document.getElementById("searchInput").value;
+            const queryString = searchTerm ? `?query=${encodeURIComponent(searchTerm)}` : '';
+            window.location.href = window.location.pathname + queryString;  // Redirect to the same page with the query
+        }
+    </script>
+</head>
+<body>
+    <h1>Logs Viewer</h1>
+    <div class="search-bar">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search logs..." 
+            value="{{ request.args.get('query', '') }}"
+        />
+        <button onclick="searchLogs()">Search</button> <!-- Button to trigger search -->
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Date Log</th>
+                <th>Value Log</th>
+                <th>Premise ID</th>
+                <th>Device ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td>{{ log.topic }}</td>
+                <td>{{ log.date_log }}</td>
+                <td>
+                    {% if log.value_log is mapping and 'house_number' in log.value_log and 'road' in log.value_log and 'village' in log.value_log and 'municipality' in log.value_log and 'postcode' in log.value_log %}
+                        {{ log.value_log['house_number'] }} {{ log.value_log['road'] }}, {{ log.value_log['village'] }}, {{ log.value_log['municipality'] }}, {{ log.value_log['postcode'] }}
+                    {% elif log.value_log is mapping and 'lat' in log.value_log and 'lon' in log.value_log %}
+                        {"lat": {{ log.value_log['lat'] }}, "lon": {{ log.value_log['lon'] }}}
+                    {% else %}
+                        {{ log.value_log }}
+                    {% endif %}
+                </td>
+                <td>{{ log.id_premise }}</td>
+                <td>{{ log.id_device }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

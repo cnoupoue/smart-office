@@ -9,7 +9,7 @@ import controllers.mqtt_controller as mqtt_controller
 LIGHT_MAX_VALUE = 800 
 last_read = 0
 
-def read(LIGHT_QUEUE):
+def run(LIGHT_QUEUE):
     global last_read
     light_value = light_sensor.read()
     avg_light_value = 0
@@ -21,5 +21,5 @@ def read(LIGHT_QUEUE):
         LIGHT_QUEUE.append(light_value)
         # calculation for more accuracy based on previous values
         avg_light_value = sum(LIGHT_QUEUE) / len(LIGHT_QUEUE)
-        mqtt_controller.publish(env.LIGHT_SENSOR, avg_light_value)
+        mqtt_controller.put_in_publish_queue(env.LIGHT_SENSOR, avg_light_value)
         print("light: " + str(avg_light_value))

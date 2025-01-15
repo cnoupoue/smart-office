@@ -1,39 +1,53 @@
 import controllers.common as common
-import time
 import utils.buzzer as buzzer
+import time
 import threading
 import os
+import env
 
-def get_buzzer_alarm_state():
+def _get_buzzer_alarm_state():
     return str(os.environ.get("buzzer_state", 0))
 
-def set_buzzer_alarm_state(value):
-    os.environ["buzzer_state"] = str(value)
+def _activate_alarm_state(value:bool):
+    os.environ["buzzer_state"] = str(1 if value else 0)
 
-def start():
-    threading.Thread(target=_start).start()
+def start_alarm():
+    threading.Thread(target=_start_alarm).start()
 
-def _start():
-    set_buzzer_alarm_state(1)
-    while get_buzzer_alarm_state() == "1":
-        common.set_buzzer(1)
+def _start_alarm():
+    _activate_alarm_state(True)
+    while _get_buzzer_alarm_state() == "1":
+        _set_buzzer(1)
         time.sleep(1)
-        common.set_buzzer(0)
+        _set_buzzer(0)
         time.sleep(1)
 
 def stop():
-    set_buzzer_alarm_state(0)
+    _activate_alarm_state(False)
 
 def three_quick_bip():
-    common.set_buzzer(1)
+    _set_buzzer(1)
     time.sleep(0.1)
-    common.set_buzzer(0)
+    _set_buzzer(0)
     time.sleep(0.1)
-    common.set_buzzer(1)
+    _set_buzzer(1)
     time.sleep(0.1)
-    common.set_buzzer(0)
+    _set_buzzer(0)
     time.sleep(0.1)
-    common.set_buzzer(1)
+    _set_buzzer(1)
     time.sleep(0.1)
-    common.set_buzzer(0)
+    _set_buzzer(0)
     time.sleep(0.1)
+
+
+def update_state():
+    if _get_buzzer() == "1":
+        buzzer.on()
+    else:
+        buzzer.off()
+
+def _get_buzzer():
+    return str(os.environ.get(env.BUZZER, 0))
+
+def _set_buzzer(value):
+    os.environ[env.BUZZER] = str(value)
