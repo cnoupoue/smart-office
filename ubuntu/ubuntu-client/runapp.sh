@@ -1,5 +1,14 @@
 #!/bin/bash
 
+check_avahi() {
+    if ! dpkg -l | grep -qw avahi-daemon; then
+        echo "avahi-daemon not found. Installing..."
+        sudo apt update
+        sudo apt install -y avahi-daemon && echo "avahi-daemon installed successfully."
+        sudo systemctl enable avahi-daemon && echo "avahi-daemon enabled."
+    fi
+}
+
 # Fonction pour couper les processus Flask et Node-RED
 stop_processes() {
     echo "Stopping Node-RED and Flask..."
@@ -16,6 +25,10 @@ start_processes() {
     echo "Launching Node-RED in a new terminal..."
     gnome-terminal -- bash -c "node-red; exec bash" &
 }
+
+check_avahi
+sudo hostnamectl set-hostname smartoffice-company1
+sudo systemctl restart avahi-daemon
 
 # Demander à l'utilisateur s'il souhaite reconstruire l'image MongoDB
 read -p "Do you want to rebuild the MongoDB Docker image? (y/n): " rebuild_choice

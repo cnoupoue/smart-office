@@ -19,9 +19,7 @@ db.client.insertMany([
         password: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe.DSg.zs82PvlO8rpesoP4gtQwOik8fW",
         salt: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe",
         role: "user",
-        rfid: null, // Optional attribute for RFID association
-        token: "exampleToken123",
-        token_expiration: "2025-01-10T10:00:00Z"
+        rfid: "027004241250",
     },
     {
         _id: ObjectId(),
@@ -32,9 +30,7 @@ db.client.insertMany([
         password: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe.DSg.zs82PvlO8rpesoP4gtQwOik8fW",
         salt: "$2b$12$lNEgT3SSWrQeR/6RIoCfVe",
         role: "admin",
-        rfid: "ABC123", // Example RFID tag
-        token: "exampleAdminToken456",
-        token_expiration: "2025-01-15T10:00:00Z"
+        rfid: "000000006680",
     }
 ]);
 
@@ -55,8 +51,7 @@ db.premise.insertMany([
 db.createCollection("device");
 db.device.insertMany([
     {
-        _id: ObjectId(),
-        name: "MyRPI-IoT",
+        _id: "1000000044888d31",
         id_premise: db.premise.findOne({ name: "290A" })._id
     },
 ]);
@@ -68,15 +63,15 @@ db.reservation.insertMany([
         _id: ObjectId(),
         start_time: ISODate("2024-12-25T09:00:00Z"),
         end_time: ISODate("2024-12-25T10:00:00Z"),
-        id_premise: db.premise.findOne({ name: "290C" })._id,
-        id_client: db.client.findOne({ rfid: "ABC123" })._id
+        id_premise: db.premise.findOne({ name: "290A" })._id,
+        id_client: db.client.findOne({ rfid: "027004241250" })._id
     },
     {
         _id: ObjectId(),
         start_time: ISODate("2024-12-25T11:00:00Z"),
         end_time: ISODate("2024-12-25T12:00:00Z"),
         id_premise: db.premise.findOne({ name: "290A" })._id,
-        id_client: db.client.findOne({ rfid: "ABC123" })._id
+        id_client: db.client.findOne({ rfid: "027004241250" })._id
     }
 ]);
 
@@ -85,19 +80,19 @@ db.createCollection("log");
 db.log.insertMany([
     {
         _id: ObjectId(),
-        topic: "RFID_SCAN",
+        topic: "rfid",
         date_log: ISODate("2024-12-25T09:15:00Z"),
-        value_log: "ABC123",
+        value_log: "027004241250",
         id_premise: db.premise.findOne({ name: "290A" })._id,
-        id_device: db.device.findOne({ name: "MyRPI-IoT" })._id
+        id_device: "1000000044888d31"
     },
     {
         _id: ObjectId(),
-        topic: "DOOR_OPEN",
-        date_log: ISODate("2024-12-25T09:20:00Z"),
-        value_log: "Manually unlocked",
+        topic: "rfid",
+        date_log: ISODate("2024-12-26T09:20:00Z"),
+        value_log: "027004241250",
         id_premise: db.premise.findOne({ name: "290A" })._id,
-        id_device: db.device.findOne({ name: "MyRPI-IoT" })._id
+        id_device: "1000000044888d31"
     }
 ]);
 

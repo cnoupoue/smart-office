@@ -78,5 +78,4 @@ def validate_token():
         return jsonify(message="No token provided"), 401
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
-
+    app.run(debug=True, host='127.0.0.1', port=5000, ssl_context=('../../certificates/flask.crt', '../../certificates/flask.key'))
