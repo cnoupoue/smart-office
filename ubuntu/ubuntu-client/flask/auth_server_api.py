@@ -3,7 +3,6 @@ import jwt
 import datetime
 from flask import Flask, request, jsonify, redirect, url_for, session
 from flask_pymongo import PyMongo
-from bson import ObjectId
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'cameronnasser'
@@ -13,11 +12,6 @@ mongo = PyMongo(app)
 SECRET_KEY = 'cameronnasser'
 ALGORITHM = 'HS256'
 EXPIRATION_TIME = 3600
-
-def hash_password(password):
-    salt = bcrypt.gensalt()
-    hashed_password = bcrypt.hashpw(password.encode(), salt).decode('utf-8')
-    return hashed_password, salt.decode('utf-8')
 
 def check_password(stored_hash, salt, password):
     return stored_hash.encode('utf-8') == bcrypt.hashpw(password.encode(), salt.encode('utf-8'))
