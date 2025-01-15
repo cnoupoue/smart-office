@@ -1,7 +1,8 @@
 import bcrypt
 import jwt
 import datetime
-from flask import Flask, request, jsonify, redirect, url_for, session
+from bson import ObjectId
+from flask import Flask, request, jsonify, redirect, url_for, session, make_response
 from flask_pymongo import PyMongo
 
 app = Flask(__name__)
@@ -18,11 +19,24 @@ def check_password(stored_hash, salt, password):
 
 def generate_token(user_id):
     expiration = datetime.datetime.utcnow() + datetime.timedelta(seconds=EXPIRATION_TIME)
-    token = jwt.encode({
-        'user_id': user_id,
-        'exp': expiration
-    }, SECRET_KEY, algorithm=ALGORITHM)
-    return token
+    user = mongo.db['client'].find_one({"_id": ObjectId(user_id)})
+    
+    if user:
+        role = str(user.get('role', ''))
+        token = jwt.encode({
+            'user_id': user_id,
+            'role': role,
+            'exp': expiration
+        }, SECRET_KEY, algorithm=ALGORITHM)
+        
+        mongo.db['client'].update_one(
+            {"_id": ObjectId(user_id)},
+            {"$set": {"token": token}}
+        )
+        
+        return token
+    else:
+        raise ValueError("User not found")
 
 def verify_token(token):
     try:
@@ -65,7 +79,14 @@ def validate_token():
     if token:
         user_id = verify_token(token)
         if user_id:
-            return jsonify(message="Token is valid, welcome to the protected area."), 200
+            user = mongo.db['client'].find_one({"_id": ObjectId(user_id)})
+            if user:
+                role = str(user.get('role', ''))
+                response = make_response(jsonify(role=role), 200)
+                response.headers['X-Role'] = role  # Ajouter le rôle dans l'en-tête
+                return response
+            else:
+                return jsonify(message="User not found"), 404
         else:
             return jsonify(message="Invalid or expired token"), 401
     else:

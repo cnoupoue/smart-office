@@ -81,7 +81,14 @@ module.exports = {
             {
                 "username": "hepl",
                 "password": "$2y$08$QKrIW6GFjp//Gz1rSYhC9.Fy4AiqI9F4jxWUptmXQ8TW17isgiUxK",
-                "permissions": "*"
+                "permissions": "*",
+		"role": "admin",
+            },
+	    {
+            	"username": "user1",
+            	"password": "$2y$08$Uhxc43LoMdf.RAdp5OWdHO.rib6UfU6nmnN1camhJuOLiyzDsQJHy",
+            	"permissions": "read",
+		"role": "user",
             }
         ]
     },
