@@ -28,13 +28,14 @@ The project is divided into four levels
 
 ## Dashboard overview
  
-| ![Image 1](project-study/result/main.png) | ![Image 2](project-study/result/reservation) |
-|------------------------------------|------------------------------------|
-| *Image 1*                          | *Image 2*                          |
-
-| ![Image 3](project-study/result/logs) | ![Image 4](project-study/result/users) |
-|------------------------------------|------------------------------------|
-| *Image 3*                          | *Image 4*                          |
+<p align="center">
+  <img src="project-study/result/main.png" alt="Image 1" width="45%" style="margin-right: 10px;">
+  <img src="project-study/result/reservation.png" alt="Image 2" width="45%">
+</p>
+<p align="center">
+  <img src="project-study/result/users.ong" alt="Image 3" width="45%" style="margin-right: 10px;">
+  <img src="project-study/result/" alt="Image 4" width="45%">
+</p>
 
 ## Authors 
 
