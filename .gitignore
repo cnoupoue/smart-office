@@ -5,6 +5,8 @@
 # Private key
 *.ppk
 
+.vscode/*
+
 ### Certificates
 certificates/*
 

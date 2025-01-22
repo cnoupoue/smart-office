@@ -26,7 +26,15 @@ The project is divided into four levels
 4. The cloud (with data)
   
 
-## Architecture 
+## Dashboard overview
+ 
+| ![Image 1](project-study/result/main.png) | ![Image 2](project-study/result/reservation) |
+|------------------------------------|------------------------------------|
+| *Image 1*                          | *Image 2*                          |
+
+| ![Image 3](project-study/result/logs) | ![Image 4](project-study/result/users) |
+|------------------------------------|------------------------------------|
+| *Image 3*                          | *Image 4*                          |
 
 ## Authors 
 
