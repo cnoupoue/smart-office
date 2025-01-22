@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "jsonwebtoken": "^9.0.2",
     "node-red-contrib-buffer-parser": "^3.2.2",
     "node-red-contrib-mongodb4": "~2.5.2",
     "node-red-contrib-play-audio": "^2.5.0",

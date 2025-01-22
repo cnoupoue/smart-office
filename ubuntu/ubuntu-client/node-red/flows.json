@@ -72,6 +72,14 @@
         "env": []
     },
     {
+        "id": "1317a1110c9c2dbe",
+        "type": "tab",
+        "label": "Frontend",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "50484f8edde3dcf6",
         "type": "group",
         "z": "4e821b48bbd42ca3",
@@ -94,12 +102,14 @@
             "b938c7cb121c53e7",
             "6fab27b9c05f9df7",
             "e81a75bf50a618c9",
-            "07a0fd7fb6a301ec"
+            "07a0fd7fb6a301ec",
+            "4e8fbb7da98c1491",
+            "5e3ff8dfc9d6ba90"
         ],
         "x": 54,
-        "y": 159,
-        "w": 1192,
-        "h": 322
+        "y": 139,
+        "w": 1272,
+        "h": 342
     },
     {
         "id": "829459fd4bc2bd59",
@@ -125,24 +135,6 @@
         "y": 539,
         "w": 732,
         "h": 142
-    },
-    {
-        "id": "52529d8d7b615ffa",
-        "type": "group",
-        "z": "4e821b48bbd42ca3",
-        "name": "",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "fb85b18a99c3394a",
-            "f032958d3bcb43c7",
-            "4f7dd4b144e7f41d"
-        ],
-        "x": 1054,
-        "y": 479,
-        "w": 292,
-        "h": 162
     },
     {
         "id": "ccb069e81cf069c2",
@@ -187,9 +179,9 @@
             "5e9433c8a2cb5521"
         ],
         "x": 14,
-        "y": 39,
-        "w": 1592,
-        "h": 442
+        "y": 19,
+        "w": 1492,
+        "h": 742
     },
     {
         "id": "cd6f4e02c3e3acd0",
@@ -214,9 +206,9 @@
             "600770e1c9962a12",
             "b163c44657714096"
         ],
-        "x": 1054,
-        "y": 539,
-        "w": 992,
+        "x": 14,
+        "y": 3099,
+        "w": 1052,
         "h": 242
     },
     {
@@ -243,8 +235,8 @@
             "bfdbe67471782da6"
         ],
         "x": 14,
-        "y": 599,
-        "w": 1012,
+        "y": 2499,
+        "w": 1052,
         "h": 202
     },
     {
@@ -266,8 +258,8 @@
             "8f031aee5b67aa8d"
         ],
         "x": 14,
-        "y": 479,
-        "w": 672,
+        "y": 2379,
+        "w": 752,
         "h": 82
     },
     {
@@ -288,9 +280,9 @@
             "a147a8a9cc0a78fb",
             "c502d1aa06ef84c8"
         ],
-        "x": 1614,
-        "y": 79,
-        "w": 652,
+        "x": 14,
+        "y": 779,
+        "w": 732,
         "h": 82
     },
     {
@@ -315,8 +307,8 @@
             "327033fcf5e4a864"
         ],
         "x": 14,
-        "y": 799,
-        "w": 1292,
+        "y": 2939,
+        "w": 1472,
         "h": 82
     },
     {
@@ -340,9 +332,9 @@
             "fdb9322806b9d976"
         ],
         "x": 14,
-        "y": 899,
-        "w": 992,
-        "h": 162
+        "y": 2759,
+        "w": 972,
+        "h": 142
     },
     {
         "id": "20dfacadc7600b19",
@@ -369,9 +361,9 @@
             "738570c47c3f2c0f"
         ],
         "x": 14,
-        "y": 1079,
-        "w": 1072,
-        "h": 182
+        "y": 899,
+        "w": 1092,
+        "h": 202
     },
     {
         "id": "0d0f4ba3b295a5e0",
@@ -407,8 +399,8 @@
             "044d98a2b8dc7c7a"
         ],
         "x": 14,
-        "y": 1259,
-        "w": 1752,
+        "y": 1139,
+        "w": 1832,
         "h": 342
     },
     {
@@ -434,8 +426,8 @@
             "421ae207c005b560"
         ],
         "x": 14,
-        "y": 1839,
-        "w": 952,
+        "y": 1759,
+        "w": 992,
         "h": 202
     },
     {
@@ -465,9 +457,35 @@
             "cdf5a67d5c2ad4cf"
         ],
         "x": 14,
-        "y": 1619,
-        "w": 1932,
+        "y": 1519,
+        "w": 2052,
         "h": 202
+    },
+    {
+        "id": "b2b7d65f2a1b01c8",
+        "type": "group",
+        "z": "0277478f1e68b0ce",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "23c95a9f0540bec5",
+            "3570325e8b5ae823",
+            "9bed59b34c201e13",
+            "69e27d850cf87988",
+            "2295aae27696080b",
+            "12d36d88e9171d2f"
+        ],
+        "x": 14,
+        "y": 2119,
+        "w": 1012,
+        "h": 222
     },
     {
         "id": "9e1f662934605284",
@@ -628,7 +646,7 @@
         "tab": "40a836b15e21b5f0",
         "order": 1,
         "disp": false,
-        "width": 28,
+        "width": 24,
         "collapse": false,
         "className": ""
     },
@@ -675,7 +693,7 @@
         "tab": "dc7fd2a2a5b25c12",
         "order": 1,
         "disp": false,
-        "width": 29,
+        "width": 22,
         "collapse": false,
         "className": ""
     },
@@ -686,7 +704,7 @@
         "tab": "7d4fc252c55d200f",
         "order": 1,
         "disp": false,
-        "width": 34,
+        "width": 20,
         "collapse": false,
         "className": ""
     },
@@ -697,7 +715,7 @@
         "tab": "0e66de217ecb6d6e",
         "order": 1,
         "disp": false,
-        "width": 29,
+        "width": 20,
         "collapse": false,
         "className": ""
     },
@@ -708,7 +726,7 @@
         "tab": "f4731d1939b558e5",
         "order": 1,
         "disp": false,
-        "width": 29,
+        "width": 20,
         "collapse": false,
         "className": ""
     },
@@ -730,7 +748,7 @@
         "tab": "40a836b15e21b5f0",
         "order": 3,
         "disp": true,
-        "width": 16,
+        "width": 12,
         "collapse": false,
         "className": ""
     },
@@ -741,7 +759,7 @@
         "tab": "40a836b15e21b5f0",
         "order": 4,
         "disp": true,
-        "width": 16,
+        "width": 12,
         "collapse": false,
         "className": ""
     },
@@ -818,7 +836,7 @@
         "tab": "b58955a989bd717a",
         "order": 8,
         "disp": true,
-        "width": "12",
+        "width": 12,
         "collapse": false,
         "className": ""
     },
@@ -851,7 +869,7 @@
         "tab": "b58955a989bd717a",
         "order": 1,
         "disp": false,
-        "width": 34,
+        "width": 24,
         "collapse": false,
         "className": ""
     },
@@ -871,7 +889,7 @@
         "tab": "2dd860a0786620d5",
         "order": 1,
         "disp": false,
-        "width": "23",
+        "width": 20,
         "collapse": false,
         "className": ""
     },
@@ -891,29 +909,9 @@
         "tab": "c7b473b3c51d1231",
         "order": 1,
         "disp": false,
-        "width": 34,
+        "width": 20,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "fe00c51b9ccea92f",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "600bf87db0283dac",
-        "order": 2,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "d9c60283f21d18d6",
-        "type": "ui_spacer",
-        "z": "19da2f4cf4bf4170",
-        "name": "spacer",
-        "group": "600bf87db0283dac",
-        "order": 4,
-        "width": 11,
-        "height": 1
     },
     {
         "id": "bf68deda59755705",
@@ -1012,136 +1010,6 @@
         "alpnprotocol": ""
     },
     {
-        "id": "5eaa2c834f3274ec",
-        "type": "ui_spacer",
-        "z": "4db1d4819dfea4ef",
-        "name": "spacer",
-        "group": "821b48d3e4d5beb6",
-        "order": 3,
-        "width": 29,
-        "height": 1
-    },
-    {
-        "id": "4b10401f138508c4",
-        "type": "ui_spacer",
-        "z": "0ab432dc59b6d0a3",
-        "name": "spacer",
-        "group": "b433e86cb98af344",
-        "order": 3,
-        "width": 29,
-        "height": 1
-    },
-    {
-        "id": "f3a08283dd9986da",
-        "type": "ui_spacer",
-        "z": "4e821b48bbd42ca3",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 1,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "9ad2bfdd9930ce40",
-        "type": "ui_spacer",
-        "z": "4e821b48bbd42ca3",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 3,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "8460b08d2593fcc7",
-        "type": "ui_spacer",
-        "z": "4e821b48bbd42ca3",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 6,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "132a750d071fc015",
-        "type": "ui_spacer",
-        "z": "4e821b48bbd42ca3",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 8,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "f4ee0191ec87e50d",
-        "type": "ui_spacer",
-        "z": "4e821b48bbd42ca3",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 11,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "c8d06474d29e7d88",
-        "type": "ui_spacer",
-        "z": "4e821b48bbd42ca3",
-        "name": "spacer",
-        "group": "841582caaa17523e",
-        "order": 13,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "d3ab588c8981d764",
-        "type": "ui_spacer",
-        "z": "4e821b48bbd42ca3",
-        "name": "spacer",
-        "group": "7fda8290ea03273e",
-        "order": 4,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "64a222381a385473",
-        "type": "ui_spacer",
-        "z": "d959e01e9af70966",
-        "name": "spacer",
-        "group": "b255ced8c894f4f0",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "58e28a0c5ac22840",
-        "type": "ui_spacer",
-        "z": "d959e01e9af70966",
-        "name": "spacer",
-        "group": "b255ced8c894f4f0",
-        "order": 3,
-        "width": 34,
-        "height": 1
-    },
-    {
-        "id": "ce85ca96bf7f3312",
-        "type": "ui_spacer",
-        "z": "0ab432dc59b6d0a3",
-        "name": "spacer",
-        "group": "f87d496c91fac1c3",
-        "order": 4,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "f3794d5d57b171e6",
-        "type": "ui_spacer",
-        "z": "0ab432dc59b6d0a3",
-        "name": "spacer",
-        "group": "f87d496c91fac1c3",
-        "order": 5,
-        "width": 29,
-        "height": 1
-    },
-    {
         "id": "54759efd76491718",
         "type": "mqtt-broker",
         "name": "private-broker",
@@ -1205,11 +1073,161 @@
         "sessionExpiry": ""
     },
     {
+        "id": "396b51b1e80299db",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "821b48d3e4d5beb6",
+        "order": 3,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "12c5473d402a3328",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 2,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "9f480af02624f4a4",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 3,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "45a014a07809fa44",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 4,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "9ecc70b14f3ae3e4",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 6,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "be86ac293dd68b3b",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 7,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "1abfa5c4c5aba46f",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b255ced8c894f4f0",
+        "order": 8,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "01438ef15e432dad",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "de9de6233b92bfed",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "aa439e16c4339b0a",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 6,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "0fe629a8ee25b296",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "f87d496c91fac1c3",
+        "order": 8,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "364dbd91f5b7b5f0",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b433e86cb98af344",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2976bf37854e3182",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "b433e86cb98af344",
+        "order": 4,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "1ede613224c90159",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 4,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "fb517bdc61591b61",
+        "type": "ui_spacer",
+        "z": "4e821b48bbd42ca3",
+        "name": "spacer",
+        "group": "841582caaa17523e",
+        "order": 5,
+        "width": 12,
+        "height": 1
+    },
+    {
         "id": "7ce08affddeab4ea",
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "temperature",
+        "name": "displayTemperatureGauge",
         "group": "eba1eeab2c58edb8",
         "order": 1,
         "width": 12,
@@ -1229,7 +1247,7 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 550,
+        "x": 820,
         "y": 140,
         "wires": []
     },
@@ -1238,7 +1256,7 @@
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "g": "1501d7bab16f0152",
-        "name": "light_level ",
+        "name": "displatLightGauge ",
         "group": "f755c7094e0204d7",
         "order": 1,
         "width": 12,
@@ -1258,8 +1276,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 360,
-        "y": 640,
+        "x": 410,
+        "y": 2540,
         "wires": []
     },
     {
@@ -1267,7 +1285,7 @@
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "g": "cd6f4e02c3e3acd0",
-        "name": "sound-level",
+        "name": "displaySoundGauge",
         "group": "7c4ba8e1e71b582f",
         "order": 1,
         "width": 12,
@@ -1276,8 +1294,8 @@
         "title": "Sound level (ADC)",
         "label": "°",
         "format": "{{value}}",
-        "min": "100",
-        "max": "400",
+        "min": "0",
+        "max": "700",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1287,8 +1305,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 1430,
-        "y": 580,
+        "x": 440,
+        "y": 3140,
         "wires": []
     },
     {
@@ -1322,7 +1340,7 @@
         "splitLayout": "",
         "className": "",
         "x": 130,
-        "y": 520,
+        "y": 2420,
         "wires": [
             [
                 "152d59af688bfd2e"
@@ -1334,7 +1352,7 @@
         "type": "ui_gauge",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "humidity",
+        "name": "displayHumidityGauge",
         "group": "77cc3ec7a2ad9d4e",
         "order": 1,
         "width": 12,
@@ -1354,8 +1372,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 540,
-        "y": 240,
+        "x": 780,
+        "y": 300,
         "wires": []
     },
     {
@@ -1365,9 +1383,9 @@
         "g": "0d0f4ba3b295a5e0",
         "group": "f988ca3073539a8c",
         "order": 1,
-        "width": 34,
+        "width": 24,
         "height": 1,
-        "name": "title",
+        "name": "displayRpiTitle",
         "label": "Vue d'ensemble > ",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -1376,8 +1394,8 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 1310,
-        "y": 1560,
+        "x": 1340,
+        "y": 1440,
         "wires": []
     },
     {
@@ -1385,11 +1403,11 @@
         "type": "ui_button",
         "z": "0277478f1e68b0ce",
         "g": "1d61923917992343",
-        "name": "camera_button",
+        "name": "cameraButton",
         "group": "6d9ac2ca21f48ee4",
         "order": 1,
         "width": 12,
-        "height": 2,
+        "height": 1,
         "passthru": false,
         "label": "Accéder à la caméra",
         "tooltip": "",
@@ -1401,8 +1419,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1720,
-        "y": 120,
+        "x": 120,
+        "y": 820,
         "wires": [
             [
                 "a147a8a9cc0a78fb"
@@ -1414,7 +1432,7 @@
         "type": "ui_button",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "alert_button",
+        "name": "desactivateAlertButton",
         "group": "78055e7e1fa8ec1f",
         "order": 2,
         "width": 12,
@@ -1430,8 +1448,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 830,
-        "y": 260,
+        "x": 180,
+        "y": 600,
         "wires": [
             [
                 "7a4cbfceb7aa3e95"
@@ -1445,9 +1463,9 @@
         "g": "ccb069e81cf069c2",
         "group": "78055e7e1fa8ec1f",
         "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "alert",
+        "width": 12,
+        "height": 1,
+        "name": "displayAlertText",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -1456,8 +1474,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1150,
-        "y": 140,
+        "x": 1400,
+        "y": 120,
         "wires": []
     },
     {
@@ -1469,7 +1487,7 @@
         "order": 1,
         "width": 12,
         "height": 1,
-        "name": "reservation",
+        "name": "displayReservationOrNot",
         "label": "status",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -1478,8 +1496,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1150,
-        "y": 1720,
+        "x": 1190,
+        "y": 1620,
         "wires": []
     },
     {
@@ -1491,13 +1509,13 @@
         "topic": "smartoffice/1/+/hello",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
         "x": 90,
-        "y": 1420,
+        "y": 1300,
         "wires": [
             [
                 "e1a692039636ccb6",
@@ -1511,7 +1529,7 @@
         "type": "mqtt in",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "get_temperature",
+        "name": "getTemperatureAndHumidityPublic",
         "topic": "smartoffice/1/+/temperature",
         "qos": "2",
         "datatype": "auto-detect",
@@ -1520,7 +1538,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
+        "x": 180,
         "y": 200,
         "wires": [
             [
@@ -1535,17 +1553,17 @@
         "type": "mqtt in",
         "z": "0277478f1e68b0ce",
         "g": "1501d7bab16f0152",
-        "name": "get_light_sensor",
+        "name": "getLightSensorPrivate",
         "topic": "smartoffice/1/+/light_sensor",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
-        "y": 640,
+        "x": 140,
+        "y": 2540,
         "wires": [
             [
                 "5ea7201186c39d78",
@@ -1559,17 +1577,17 @@
         "type": "mqtt in",
         "z": "0277478f1e68b0ce",
         "g": "cd6f4e02c3e3acd0",
-        "name": "get_sound_sensor",
+        "name": "getSoundSensorPrivate",
         "topic": "smartoffice/1/+/sound_sensor",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1170,
-        "y": 580,
+        "x": 140,
+        "y": 3140,
         "wires": [
             [
                 "3fa65fc688213d56",
@@ -1587,13 +1605,13 @@
         "topic": "smartoffice/1/+/gps",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
         "x": 110,
-        "y": 1880,
+        "y": 1800,
         "wires": [
             [
                 "5b3126d8779138f9",
@@ -1606,17 +1624,17 @@
         "type": "mqtt in",
         "z": "0277478f1e68b0ce",
         "g": "e47015bbcd561a71",
-        "name": "get_rfid",
+        "name": "getRfidPrivate",
         "topic": "smartoffice/1/+/rfid",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 90,
-        "y": 1020,
+        "x": 110,
+        "y": 2860,
         "wires": [
             [
                 "a4648b7c3b62ec2a"
@@ -1628,7 +1646,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "1d61923917992343",
-        "name": "containsLink",
+        "name": "containsCameraLink",
         "func": "msg.payload = global.get('cameraLink');\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -1636,8 +1654,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1950,
-        "y": 120,
+        "x": 360,
+        "y": 820,
         "wires": [
             [
                 "c502d1aa06ef84c8"
@@ -1650,18 +1668,18 @@
         "z": "0277478f1e68b0ce",
         "g": "1d61923917992343",
         "group": "6d9ac2ca21f48ee4",
-        "name": "redirect",
-        "order": 4,
-        "width": 0,
-        "height": 0,
+        "name": "redirectToCameraPage",
+        "order": 3,
+        "width": 1,
+        "height": 1,
         "format": "<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload) {\n                window.open(msg.payload, '_blank');\n            }\n        });\n    })(scope);\n</script>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2180,
-        "y": 120,
+        "x": 610,
+        "y": 820,
         "wires": [
             []
         ]
@@ -1679,8 +1697,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "getDevice",
-        "x": 520,
-        "y": 1420,
+        "x": 600,
+        "y": 1300,
         "wires": [
             [
                 "f49b0d09a33e7b5b"
@@ -1692,7 +1710,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "0d0f4ba3b295a5e0",
-        "name": "set payload",
+        "name": "prepareQueryToGetDeviceInDb",
         "func": "const serial = msg.payload;\n\nconst query = { \"_id\": serial };\n\nmsg.payload = [query];\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1700,8 +1718,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 1420,
+        "x": 370,
+        "y": 1300,
         "wires": [
             [
                 "a419e9e367d6a717"
@@ -1721,8 +1739,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 1420,
+        "x": 770,
+        "y": 1300,
         "wires": [
             [
                 "fd3a94d5c2f5f41d"
@@ -1749,7 +1767,7 @@
         "repair": false,
         "outputs": 2,
         "x": 910,
-        "y": 1420,
+        "y": 1300,
         "wires": [
             [
                 "7f102e07e5ef5c01"
@@ -1773,7 +1791,7 @@
         "finalize": "",
         "libs": [],
         "x": 1060,
-        "y": 1380,
+        "y": 1260,
         "wires": [
             [
                 "2e61021ce704dfe4",
@@ -1796,7 +1814,7 @@
         "finalize": "",
         "libs": [],
         "x": 1050,
-        "y": 1480,
+        "y": 1360,
         "wires": [
             [
                 "547243056bf26e0a",
@@ -1810,7 +1828,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "0d0f4ba3b295a5e0",
-        "name": "",
+        "name": "sendYouArePrivate",
         "topic": "",
         "qos": "",
         "retain": "true",
@@ -1819,9 +1837,9 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "9c09494ed61fa6c9",
-        "x": 1310,
-        "y": 1480,
+        "broker": "54759efd76491718",
+        "x": 1350,
+        "y": 1360,
         "wires": []
     },
     {
@@ -1829,7 +1847,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "0d0f4ba3b295a5e0",
-        "name": "",
+        "name": "sendYouArePrivate",
         "topic": "",
         "qos": "",
         "retain": "true",
@@ -1838,9 +1856,9 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "9c09494ed61fa6c9",
-        "x": 1310,
-        "y": 1380,
+        "broker": "54759efd76491718",
+        "x": 1350,
+        "y": 1260,
         "wires": []
     },
     {
@@ -1857,7 +1875,7 @@
         "handleDocId": false,
         "name": "createDevice",
         "x": 1470,
-        "y": 1340,
+        "y": 1200,
         "wires": [
             []
         ]
@@ -1876,7 +1894,7 @@
         "finalize": "",
         "libs": [],
         "x": 1270,
-        "y": 1340,
+        "y": 1200,
         "wires": [
             [
                 "cc25423c5d8e26d6"
@@ -1888,7 +1906,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "getTemperature",
+        "name": "extractTemperatureFromJson",
         "func": "msg.payload = parseFloat(msg.payload.temperature);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1896,7 +1914,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 500,
         "y": 140,
         "wires": [
             [
@@ -1911,7 +1929,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "getHumidity",
+        "name": "extractHumidityFromJson",
         "func": "msg.payload = parseInt(msg.payload.humidity, 10);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1919,8 +1937,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 240,
+        "x": 490,
+        "y": 300,
         "wires": [
             [
                 "8d83378d17572eea",
@@ -1933,7 +1951,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "02634166f1864967",
-        "name": "updateLocal",
+        "name": "prepareQueryToUpdatePremise",
         "func": "const currentPremise = global.get('currentPremise');\nconst local1Value = msg.payload.local1;\n\nconst premiseData = global.get('premiseData') || [];\n\nconst matchedPremise = premiseData.find(premise => premise.name === currentPremise);\n\nif (matchedPremise) {\n    msg.payload = {\n        filter: { \"_id\": matchedPremise._id },\n        update: { \"$set\": { \"name\": local1Value } }\n    };\n} else {\n    msg.payload = `Premise with name '${currentPremise}' not found.`;\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1941,8 +1959,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 520,
+        "x": 410,
+        "y": 2420,
         "wires": [
             [
                 "8f031aee5b67aa8d"
@@ -1962,8 +1980,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "editPremise",
-        "x": 590,
-        "y": 520,
+        "x": 670,
+        "y": 2420,
         "wires": [
             []
         ]
@@ -1973,16 +1991,16 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "temperatureTooHigh",
-        "func": "const deviceData = global.get('serial_id');\n\nif (msg.payload > 20 && !global.get('alarmPrevention')) {\n        msg.topic = \"smartoffice/1/\" + deviceData + \"/lcd\";\n        global.set('alarmText', \"La température est élevée : \" + msg.payload + \"°C\");\n        msg.payload = \"ERROR; La temperature est elevee : \" + msg.payload + \"C\";\n        global.set('alarmPrevention', true)\n} else {\n    msg.topic = \"bin\"\n}\n\nreturn msg;",
+        "name": "checkIfTemperatureTooHigh",
+        "func": "const deviceData = global.get('serial_id');\n\nif (msg.payload > 28 && !global.get('alarmPrevention')) {\n        msg.topic = \"smartoffice/1/\" + deviceData + \"/lcd\";\n        global.set('alarmText', \"La température est élevée : \" + msg.payload + \"°C\");\n        msg.payload = \"ERROR; La temperature est elevee : \" + msg.payload + \"C\";\n        global.set('alarmPrevention', true)\n} else {\n    msg.topic = \"bin\"\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 80,
+        "x": 800,
+        "y": 60,
         "wires": [
             [
                 "8ee28446dd85d838",
@@ -1994,9 +2012,8 @@
         "id": "8ee28446dd85d838",
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
-        "d": true,
         "g": "ccb069e81cf069c2",
-        "name": "",
+        "name": "sendAlarmPrivate",
         "topic": "",
         "qos": "",
         "retain": "true",
@@ -2005,9 +2022,9 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "9c09494ed61fa6c9",
-        "x": 970,
-        "y": 80,
+        "broker": "54759efd76491718",
+        "x": 1130,
+        "y": 60,
         "wires": []
     },
     {
@@ -2022,9 +2039,9 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "find.logs",
-        "x": 540,
-        "y": 840,
+        "name": "findLogsInDb",
+        "x": 790,
+        "y": 2980,
         "wires": [
             [
                 "2028de94f5a9e6f4"
@@ -2036,7 +2053,7 @@
         "type": "inject",
         "z": "0277478f1e68b0ce",
         "g": "ee2a6888dd01074b",
-        "name": "trigger",
+        "name": "triggerEach5seconds",
         "props": [
             {
                 "p": "payload"
@@ -2049,8 +2066,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
-        "y": 840,
+        "x": 160,
+        "y": 2980,
         "wires": [
             [
                 "df7d43d2f481b1b0"
@@ -2062,7 +2079,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ee2a6888dd01074b",
-        "name": "searchRfidLogs",
+        "name": "prepareQueryToFetchRfidLogsForCurrentDevice",
         "func": "const serialId = global.get('serial_id');\n\nconst query = { \n    id_device: serialId,\n    topic: { $regex: /rfid/i }\n};\n\nmsg.payload = [query];\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -2070,8 +2087,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 840,
+        "x": 500,
+        "y": 2980,
         "wires": [
             [
                 "dc982ded04959f43"
@@ -2084,9 +2101,9 @@
         "z": "0277478f1e68b0ce",
         "g": "ee2a6888dd01074b",
         "group": "eb521a47e9a8db09",
-        "name": "display_logs",
-        "order": 6,
-        "width": "11",
+        "name": "displayLogs",
+        "order": 1,
+        "width": 12,
         "height": 7,
         "format": "<table>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row.readableDate }}</td>\n            <td>{{ row.client }}</td>\n        </tr>\n    </tbody>\n</table>",
         "storeOutMessages": true,
@@ -2094,8 +2111,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1210,
-        "y": 840,
+        "x": 1390,
+        "y": 2980,
         "wires": [
             []
         ]
@@ -2105,7 +2122,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ee2a6888dd01074b",
-        "name": "set payload",
+        "name": "formatDate",
         "func": "let data = msg.payload;\n\nif (Array.isArray(data)) {\n    data.forEach(item => {\n        if (item.date_log) {\n            let date = new Date(item.date_log);\n            item.readableDate = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            });\n        }\n    });\n}\n\n\nif (Array.isArray(data)) {\n    flow.set('mongodbData', data);\n}\n\nmsg.payload = data;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -2113,8 +2130,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
-        "y": 840,
+        "x": 1210,
+        "y": 2980,
         "wires": [
             [
                 "327033fcf5e4a864"
@@ -2134,8 +2151,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 840,
+        "x": 1000,
+        "y": 2980,
         "wires": [
             [
                 "1e2dc49481d7a43c"
@@ -2196,7 +2213,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "disableAlarm",
+        "name": "prepareMqttToDisableAlarm",
         "func": "const deviceData = global.get('serial_id');\n\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/button\";\nmsg.payload = \"PRESSED\";\nmsg.message = \"\";\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -2204,8 +2221,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1030,
-        "y": 260,
+        "x": 440,
+        "y": 600,
         "wires": [
             [
                 "b04bf2629fdccf3b",
@@ -2218,7 +2235,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "",
+        "name": "sendDisableAlarmPrivate",
         "topic": "",
         "qos": "",
         "retain": "true",
@@ -2227,9 +2244,9 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "9c09494ed61fa6c9",
-        "x": 1210,
-        "y": 260,
+        "broker": "54759efd76491718",
+        "x": 730,
+        "y": 660,
         "wires": []
     },
     {
@@ -2237,7 +2254,7 @@
         "type": "change",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "",
+        "name": "prepareAlertTextToDisplay",
         "rules": [
             {
                 "t": "set",
@@ -2252,8 +2269,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
-        "y": 140,
+        "x": 1150,
+        "y": 120,
         "wires": [
             [
                 "75680836e4f80837"
@@ -2269,7 +2286,7 @@
         "order": 1,
         "width": 12,
         "height": 1,
-        "name": "gps_location",
+        "name": "displayAddress",
         "label": "Localisation détectée",
         "format": "{{msg.payload}}",
         "layout": "col-center",
@@ -2278,8 +2295,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 550,
-        "y": 1880,
+        "x": 560,
+        "y": 1800,
         "wires": []
     },
     {
@@ -2288,7 +2305,7 @@
         "z": "0277478f1e68b0ce",
         "g": "2b444b808f2003ca",
         "name": "formatAddress",
-        "func": "const addressObj = msg.payload;\n\nconst address = `${addressObj.house_number}, ${addressObj.road}, ${addressObj.postcode} ${addressObj.village}, ${addressObj.municipality}, ${addressObj.country}`;\n\nglobal.set('coordinates', {\n    latitude: addressObj.lat,\n    longitude: addressObj.lon\n});\n\nglobal.set('currentAddress', address);\n\nmsg.payload = address;\nreturn msg;\n",
+        "func": "const addressObj = msg.payload;\n\nconst address = `${addressObj.house_number}, ${addressObj.road}, ${addressObj.postcode}, ${addressObj.state}, ${addressObj.country}`;\n\nglobal.set('coordinates', {\n    latitude: addressObj.lat,\n    longitude: addressObj.lon\n});\n\nglobal.set('currentAddress', address);\n\nmsg.payload = global.get('currentAddress');\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2296,7 +2313,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1880,
+        "y": 1800,
         "wires": [
             [
                 "9b88fd4b128fc57c"
@@ -2312,13 +2329,13 @@
         "topic": "smartoffice/1/+/camera",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
         "x": 150,
-        "y": 1180,
+        "y": 1000,
         "wires": [
             [
                 "4b8937aa9badfa68",
@@ -2341,7 +2358,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 1180,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -2352,15 +2369,15 @@
         "z": "0277478f1e68b0ce",
         "g": "e47015bbcd561a71",
         "name": "formatDataToLog",
-        "func": "const array = msg.payload;\n\nconst rfid = array.map(num => String.fromCharCode(num)).join(\"\");\nconst topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nlet currentDate = new Date();\nlet currentDateAdjusted = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);\n\nmsg.payload = {\n    topic: topic,\n    date_log: currentDateAdjusted.toISOString,\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "func": "const array = msg.payload;\n\nconst rfid = array.map(num => String.fromCharCode(num)).join(\"\");\nconst topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nlet currentDate = new Date();\nlet currentDateAdjusted = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: rfid,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
-        "y": 1020,
+        "x": 310,
+        "y": 2860,
         "wires": [
             [
                 "ad051c630f71aca6",
@@ -2381,8 +2398,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "generateRfidLog",
-        "x": 530,
-        "y": 1020,
+        "x": 550,
+        "y": 2860,
         "wires": [
             [
                 "df7d43d2f481b1b0"
@@ -2396,9 +2413,9 @@
         "g": "20dfacadc7600b19",
         "group": "6d9ac2ca21f48ee4",
         "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "status",
+        "width": 11,
+        "height": 1,
+        "name": "displayCameraStatus",
         "label": "statut",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -2407,8 +2424,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 810,
-        "y": 1120,
+        "x": 980,
+        "y": 940,
         "wires": []
     },
     {
@@ -2416,7 +2433,7 @@
         "type": "change",
         "z": "0277478f1e68b0ce",
         "g": "20dfacadc7600b19",
-        "name": "",
+        "name": "putCameraStatusInPayload",
         "rules": [
             {
                 "t": "set",
@@ -2431,8 +2448,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 1120,
+        "x": 460,
+        "y": 940,
         "wires": [
             [
                 "11b9a3c190463011"
@@ -2444,7 +2461,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "20dfacadc7600b19",
-        "name": "displayStatus",
+        "name": "prepareStatusToDisplay",
         "func": "if(msg.payload) {\n    msg.payload = \"activé\";\n} else {\n    msg.payload = \"désactivé\";\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -2452,8 +2469,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 1120,
+        "x": 730,
+        "y": 940,
         "wires": [
             [
                 "14a69f243c9384b2"
@@ -2473,8 +2490,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 440,
+        "x": 450,
+        "y": 520,
         "wires": [
             [
                 "15c91546bc53c7d2",
@@ -2487,7 +2504,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "2b444b808f2003ca",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -2497,8 +2514,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 860,
-        "y": 2000,
+        "x": 880,
+        "y": 1920,
         "wires": []
     },
     {
@@ -2514,8 +2531,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 700,
+        "x": 410,
+        "y": 2600,
         "wires": [
             [
                 "e2c10c63f4e84396",
@@ -2536,8 +2553,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1430,
-        "y": 660,
+        "x": 410,
+        "y": 3220,
         "wires": [
             [
                 "d056b9c31bc3dabe",
@@ -2559,7 +2576,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 1220,
+        "y": 1060,
         "wires": [
             [
                 "dc21bb075e71a6ab",
@@ -2581,7 +2598,7 @@
         "finalize": "",
         "libs": [],
         "x": 330,
-        "y": 1940,
+        "y": 1860,
         "wires": [
             [
                 "5dc1787fd36ea227",
@@ -2603,7 +2620,7 @@
         "handleDocId": false,
         "name": "generateLog",
         "x": 550,
-        "y": 1940,
+        "y": 1860,
         "wires": [
             []
         ]
@@ -2621,8 +2638,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "generateLog",
-        "x": 590,
-        "y": 380,
+        "x": 750,
+        "y": 460,
         "wires": [
             []
         ]
@@ -2632,7 +2649,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -2642,8 +2659,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 880,
-        "y": 440,
+        "x": 1100,
+        "y": 520,
         "wires": []
     },
     {
@@ -2659,8 +2676,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "generateLog",
-        "x": 610,
-        "y": 640,
+        "x": 630,
+        "y": 2540,
         "wires": [
             []
         ]
@@ -2670,7 +2687,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "1501d7bab16f0152",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -2680,8 +2697,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 920,
-        "y": 700,
+        "x": 940,
+        "y": 2600,
         "wires": []
     },
     {
@@ -2697,8 +2714,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "generateLog",
-        "x": 1670,
-        "y": 580,
+        "x": 690,
+        "y": 3140,
         "wires": [
             []
         ]
@@ -2708,7 +2725,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "cd6f4e02c3e3acd0",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -2718,8 +2735,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 1940,
-        "y": 660,
+        "x": 940,
+        "y": 3220,
         "wires": []
     },
     {
@@ -2727,7 +2744,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "e47015bbcd561a71",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -2737,8 +2754,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 900,
-        "y": 940,
+        "x": 860,
+        "y": 2800,
         "wires": []
     },
     {
@@ -2755,7 +2772,7 @@
         "handleDocId": false,
         "name": "generateLog",
         "x": 650,
-        "y": 1160,
+        "y": 980,
         "wires": [
             []
         ]
@@ -2765,7 +2782,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "20dfacadc7600b19",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -2776,7 +2793,7 @@
         "expiry": "",
         "broker": "64c8814b618a706e",
         "x": 980,
-        "y": 1220,
+        "y": 1060,
         "wires": []
     },
     {
@@ -2785,10 +2802,10 @@
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
         "group": "77cc3ec7a2ad9d4e",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "displayHumidityLevel",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "displayHumidityIndicator",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-center",
@@ -2797,8 +2814,8 @@
         "font": "",
         "fontSize": "36",
         "color": "#ffffff",
-        "x": 660,
-        "y": 300,
+        "x": 1070,
+        "y": 380,
         "wires": []
     },
     {
@@ -2806,7 +2823,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "switchHumidity",
+        "name": "prepareHumidityIndication",
         "func": "let humidity = msg.payload;\n\nlet status = \"\";\n\nif (humidity < 30) {\n    status = \"Sec\";\n} else if (humidity >= 30 && humidity <= 60) {\n    status = \"Humide\";\n} else if (humidity > 60) {\n    status = \"Mouillé\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -2814,8 +2831,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 300,
+        "x": 790,
+        "y": 380,
         "wires": [
             [
                 "57843337e96261b9"
@@ -2827,16 +2844,16 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "switchTemperature",
-        "func": "let temperature = msg.payload;\n\nlet status = \"\";\n\nif (temperature < 18) {\n    status = \"Froid\";\n} else if (temperature >= 18 && temperature <= 24) {\n    status = \"Chaud\";\n} else if (temperature > 24) {\n    status = \"Trop chaud\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
+        "name": "prepareTemperatureIndication",
+        "func": "let temperature = msg.payload;\n\nlet status = \"\";\n\nif (temperature < 18) {\n    status = \"Froid\";\n} else if (temperature >= 18 && temperature <= 24) {\n    status = \"Chaud\";\n} else if (temperature > 28) {\n    status = \"Trop chaud\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 180,
+        "x": 810,
+        "y": 220,
         "wires": [
             [
                 "bd4e3660d71f5103"
@@ -2849,10 +2866,10 @@
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
         "group": "eba1eeab2c58edb8",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "displayTemperatureLevel",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "displayTemperatureIndicator",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-center",
@@ -2861,8 +2878,8 @@
         "font": "",
         "fontSize": "36",
         "color": "#ffffff",
-        "x": 750,
-        "y": 180,
+        "x": 1100,
+        "y": 220,
         "wires": []
     },
     {
@@ -2871,10 +2888,10 @@
         "z": "0277478f1e68b0ce",
         "g": "cd6f4e02c3e3acd0",
         "group": "7c4ba8e1e71b582f",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "displaySoundLevel",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "displaySoundIncation",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-center",
@@ -2883,8 +2900,8 @@
         "font": "",
         "fontSize": "36",
         "color": "#ffffff",
-        "x": 1530,
-        "y": 740,
+        "x": 680,
+        "y": 3300,
         "wires": []
     },
     {
@@ -2892,7 +2909,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "cd6f4e02c3e3acd0",
-        "name": "switchSound",
+        "name": "prepareSoundIndication",
         "func": "let sound = msg.payload;\n\nlet status = \"\";\n\nif (sound < 300) {\n    status = \"Silencieux\";\n} else if (sound >= 300) {\n    status = \"Bruillant\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -2900,8 +2917,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1290,
-        "y": 740,
+        "x": 390,
+        "y": 3300,
         "wires": [
             [
                 "2272194001cc5497"
@@ -2913,7 +2930,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "1501d7bab16f0152",
-        "name": "switchLight",
+        "name": "prepareTemperatureIndication",
         "func": "let light = msg.payload;\n\nlet status = \"\";\n\nif (light < 100) {\n    status = \"Sombre\";\n} else if (light >= 100) {\n    status = \"Eclairé\";\n}\n\nmsg.payload = status;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -2921,8 +2938,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 760,
+        "x": 450,
+        "y": 2660,
         "wires": [
             [
                 "f506b700ac5e373b"
@@ -2935,10 +2952,10 @@
         "z": "0277478f1e68b0ce",
         "g": "1501d7bab16f0152",
         "group": "f755c7094e0204d7",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "displayLightLevel",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "displayLightIndication",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-center",
@@ -2947,8 +2964,8 @@
         "font": "",
         "fontSize": "36",
         "color": "#ffffff",
-        "x": 570,
-        "y": 760,
+        "x": 700,
+        "y": 2660,
         "wires": []
     },
     {
@@ -2964,8 +2981,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 1360,
+        "x": 310,
+        "y": 1180,
         "wires": [
             [
                 "86413ad55842e730",
@@ -2987,7 +3004,7 @@
         "handleDocId": false,
         "name": "generateLog",
         "x": 570,
-        "y": 1300,
+        "y": 1180,
         "wires": [
             []
         ]
@@ -2997,7 +3014,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "disableAlarm",
+        "name": "prepareMqttToDisableAlarm",
         "func": "const deviceData = global.get('serial_id');\n\nmsg.topic = \"smartoffice/1/\" + deviceData + \"/lcd\";\nmsg.payload = \"NONE\";\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -3005,8 +3022,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1030,
-        "y": 360,
+        "x": 1040,
+        "y": 720,
         "wires": [
             [
                 "f62dc34083744dc0",
@@ -3019,7 +3036,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "",
+        "name": "sendNoneToLcdPrivate",
         "topic": "",
         "qos": "",
         "retain": "true",
@@ -3028,9 +3045,9 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "9c09494ed61fa6c9",
-        "x": 1210,
-        "y": 360,
+        "broker": "54759efd76491718",
+        "x": 1350,
+        "y": 720,
         "wires": []
     },
     {
@@ -3038,17 +3055,17 @@
         "type": "mqtt in",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "get_button_alarm",
+        "name": "getButtonPressedPrivate",
         "topic": "smartoffice/1/+/button",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 840,
-        "y": 360,
+        "x": 770,
+        "y": 720,
         "wires": [
             [
                 "168eaec1b7a98d4a"
@@ -3060,7 +3077,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "c8e0075148b8c946",
-        "name": "getDataForCurrentPremise",
+        "name": "getReservationsForCurrentPremise",
         "func": "let reservationData = global.get('reservationData');\n\nlet currentName = global.get('currentPremise');\n\nlet filteredReservations = reservationData.filter(reservation => reservation.premise_name === currentName);\n\nmsg.payload = filteredReservations;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -3068,8 +3085,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 160,
-        "y": 1720,
+        "x": 180,
+        "y": 1620,
         "wires": [
             [
                 "38e95f2c24175c35"
@@ -3081,7 +3098,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "c8e0075148b8c946",
-        "name": "checkIfReservationIsNow",
+        "name": "checkIfReservationNow",
         "func": "let filteredReservations = msg.payload;\nlet currentDate = new Date();\nlet result = false;\n\nfor (let reservation of filteredReservations) {\n    let startTime = new Date(reservation.start_time);\n    let endTime = new Date(reservation.end_time);\n    \n    if (currentDate >= startTime && currentDate <= endTime) {\n        result = true;\n        break;\n    }\n}\n\nmsg.payload = result;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -3090,7 +3107,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 1720,
+        "y": 1620,
         "wires": [
             [
                 "52498b44064f823a"
@@ -3117,7 +3134,7 @@
         "repair": false,
         "outputs": 2,
         "x": 730,
-        "y": 1720,
+        "y": 1620,
         "wires": [
             [
                 "ea9465a1fc8c9e18"
@@ -3132,7 +3149,7 @@
         "type": "change",
         "z": "0277478f1e68b0ce",
         "g": "c8e0075148b8c946",
-        "name": "",
+        "name": "no",
         "rules": [
             {
                 "t": "set",
@@ -3147,8 +3164,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
-        "y": 1780,
+        "x": 890,
+        "y": 1680,
         "wires": [
             [
                 "008d0f8c6ef1132f",
@@ -3161,7 +3178,7 @@
         "type": "change",
         "z": "0277478f1e68b0ce",
         "g": "c8e0075148b8c946",
-        "name": "",
+        "name": "yes",
         "rules": [
             {
                 "t": "set",
@@ -3176,8 +3193,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
-        "y": 1660,
+        "x": 890,
+        "y": 1560,
         "wires": [
             [
                 "008d0f8c6ef1132f",
@@ -3190,7 +3207,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "0d0f4ba3b295a5e0",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -3200,8 +3217,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 840,
-        "y": 1360,
+        "x": 860,
+        "y": 1240,
         "wires": []
     },
     {
@@ -3218,7 +3235,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 700,
+        "y": 2600,
         "wires": [
             [
                 "c2d22e93f525737f"
@@ -3230,7 +3247,7 @@
         "type": "function",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "convertPremiseIdToName",
+        "name": "changePremiseIdToPremiseName",
         "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -3238,8 +3255,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 440,
+        "x": 820,
+        "y": 520,
         "wires": [
             [
                 "7e4d06239d75c45e"
@@ -3259,8 +3276,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
-        "y": 660,
+        "x": 690,
+        "y": 3220,
         "wires": [
             [
                 "f93ac2a6971844a0"
@@ -3280,8 +3297,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 940,
+        "x": 590,
+        "y": 2800,
         "wires": [
             [
                 "4431d4db3aa78aee"
@@ -3302,7 +3319,7 @@
         "finalize": "",
         "libs": [],
         "x": 710,
-        "y": 1220,
+        "y": 1060,
         "wires": [
             [
                 "34f824be3a8439fc"
@@ -3322,8 +3339,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 1360,
+        "x": 610,
+        "y": 1240,
         "wires": [
             [
                 "eead5ce7da467f2e"
@@ -3344,7 +3361,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 2000,
+        "y": 1920,
         "wires": [
             [
                 "1aeaa4607ee6b29a"
@@ -3364,8 +3381,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1260,
-        "y": 200,
+        "x": 940,
+        "y": 600,
         "wires": [
             [
                 "5e9433c8a2cb5521"
@@ -3377,7 +3394,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "ccb069e81cf069c2",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -3387,8 +3404,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 1500,
-        "y": 200,
+        "x": 1180,
+        "y": 600,
         "wires": []
     },
     {
@@ -3404,8 +3421,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1420,
-        "y": 1440,
+        "x": 1460,
+        "y": 1320,
         "wires": [
             [
                 "044d98a2b8dc7c7a"
@@ -3417,7 +3434,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "0d0f4ba3b295a5e0",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -3427,8 +3444,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 1660,
-        "y": 1440,
+        "x": 1720,
+        "y": 1320,
         "wires": []
     },
     {
@@ -3436,7 +3453,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "c8e0075148b8c946",
-        "name": "",
+        "name": "sendLedOnOffPublic",
         "topic": "",
         "qos": "",
         "retain": "true",
@@ -3446,8 +3463,8 @@
         "correl": "",
         "expiry": "",
         "broker": "9c09494ed61fa6c9",
-        "x": 1410,
-        "y": 1720,
+        "x": 1460,
+        "y": 1620,
         "wires": []
     },
     {
@@ -3464,7 +3481,7 @@
         "finalize": "",
         "libs": [],
         "x": 1190,
-        "y": 1660,
+        "y": 1560,
         "wires": [
             [
                 "3a6fa2bcfc33ca85",
@@ -3486,7 +3503,7 @@
         "finalize": "",
         "libs": [],
         "x": 1200,
-        "y": 1780,
+        "y": 1680,
         "wires": [
             [
                 "3a6fa2bcfc33ca85",
@@ -3499,7 +3516,7 @@
         "type": "mqtt out",
         "z": "0277478f1e68b0ce",
         "g": "c8e0075148b8c946",
-        "name": "send-log-mqtt",
+        "name": "sendLogPublicSecure",
         "topic": "smartoffice/log",
         "qos": "",
         "retain": "",
@@ -3509,8 +3526,8 @@
         "correl": "",
         "expiry": "",
         "broker": "64c8814b618a706e",
-        "x": 1840,
-        "y": 1720,
+        "x": 1940,
+        "y": 1620,
         "wires": []
     },
     {
@@ -3526,11 +3543,217 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1600,
-        "y": 1720,
+        "x": 1700,
+        "y": 1620,
         "wires": [
             [
                 "5d363f243f30be67"
+            ]
+        ]
+    },
+    {
+        "id": "23c95a9f0540bec5",
+        "type": "mqtt in",
+        "z": "0277478f1e68b0ce",
+        "g": "b2b7d65f2a1b01c8",
+        "name": "getRelayPrivate",
+        "topic": "smartoffice/1/+/relay",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "54759efd76491718",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 2160,
+        "wires": [
+            [
+                "3570325e8b5ae823"
+            ]
+        ]
+    },
+    {
+        "id": "3570325e8b5ae823",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "b2b7d65f2a1b01c8",
+        "name": "formatDataToLog",
+        "func": "const topic = msg.topic;\nconst device = global.get('serial_id');\nconst premiseName = global.get('currentPremise');\nconst premiseData = global.get('premiseData');\n\nconst matchedPremise = premiseData.find(p => p.name === premiseName);\n\nconst premise_id = matchedPremise ? matchedPremise._id : null;\n\n\nif (!device) {\n    node.error(\"Serial ID not defined in global context.\");\n    return null;\n}\nif (!premiseName) {\n    node.error(\"Premise not defined in global context.\");\n    return null;\n}\n\nmsg.payload = {\n    topic: topic,\n    date_log: new Date().toISOString(),\n    value_log: msg.payload,\n    id_device: device,\n    id_premise: premise_id\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2160,
+        "wires": [
+            [
+                "9bed59b34c201e13",
+                "69e27d850cf87988"
+            ]
+        ]
+    },
+    {
+        "id": "9bed59b34c201e13",
+        "type": "mongodb4",
+        "z": "0277478f1e68b0ce",
+        "g": "b2b7d65f2a1b01c8",
+        "clientNode": "08886a7cd4dd855e",
+        "mode": "collection",
+        "collection": "log",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": false,
+        "name": "generateLog",
+        "x": 570,
+        "y": 2160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69e27d850cf87988",
+        "type": "function",
+        "z": "0277478f1e68b0ce",
+        "g": "b2b7d65f2a1b01c8",
+        "name": "convertPremiseIdToName",
+        "func": "var premiseId = msg.payload.id_premise;\n\nvar premiseData = global.get('premiseData');\n\nvar premise = premiseData.find(p => String(p._id) === String(premiseId));\n\nif (premise) {\n    msg.payload.id_premise = premise.name;\n} else {\n    node.error(\"Premise not found for ID: \" + premiseId);\n    return null;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 2240,
+        "wires": [
+            [
+                "2295aae27696080b",
+                "12d36d88e9171d2f"
+            ]
+        ]
+    },
+    {
+        "id": "2295aae27696080b",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "b2b7d65f2a1b01c8",
+        "name": "sendLogPublicSecure",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "64c8814b618a706e",
+        "x": 900,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "12d36d88e9171d2f",
+        "type": "mqtt out",
+        "z": "0277478f1e68b0ce",
+        "g": "b2b7d65f2a1b01c8",
+        "name": "sendLogPublic",
+        "topic": "smartoffice/log",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c09494ed61fa6c9",
+        "x": 880,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "97f9a05c2395bb73",
+        "type": "inject",
+        "z": "0277478f1e68b0ce",
+        "name": "triggerBeginningProgram",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 2020,
+        "wires": [
+            [
+                "8b5175397bc078be"
+            ]
+        ]
+    },
+    {
+        "id": "8b5175397bc078be",
+        "type": "change",
+        "z": "0277478f1e68b0ce",
+        "name": "setDefaultAddress",
+        "rules": [
+            {
+                "t": "set",
+                "p": "currentAddress",
+                "pt": "global",
+                "to": "En attente d'un signal du SmartOffice",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 2020,
+        "wires": [
+            [
+                "eae75b0f98c2f85d"
+            ]
+        ]
+    },
+    {
+        "id": "eae75b0f98c2f85d",
+        "type": "change",
+        "z": "0277478f1e68b0ce",
+        "name": "getDefaultAddress",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "currentAddress",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 2020,
+        "wires": [
+            [
+                "9b88fd4b128fc57c"
             ]
         ]
     },
@@ -3540,9 +3763,9 @@
         "z": "4e821b48bbd42ca3",
         "group": "1760465bb1ca33bd",
         "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "title",
+        "width": 24,
+        "height": 1,
+        "name": "displayTitle",
         "label": "Vue d'ensemble",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
@@ -3552,7 +3775,7 @@
         "fontSize": "32",
         "color": "#ffffff",
         "x": 130,
-        "y": 60,
+        "y": 40,
         "wires": []
     },
     {
@@ -3562,8 +3785,8 @@
         "g": "50484f8edde3dcf6",
         "name": "rpi1",
         "group": "841582caaa17523e",
-        "order": 2,
-        "width": 8,
+        "order": 1,
+        "width": 12,
         "height": 1,
         "passthru": false,
         "label": "290A",
@@ -3577,7 +3800,7 @@
         "topic": "",
         "topicType": "str",
         "x": 130,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
                 "a580835a1833e887"
@@ -3590,10 +3813,10 @@
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
         "group": "841582caaa17523e",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "name": "is_active",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "name": "displayIfRpiIsActive",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -3602,8 +3825,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#33d17a",
-        "x": 980,
-        "y": 320,
+        "x": 1210,
+        "y": 260,
         "wires": []
     },
     {
@@ -3612,10 +3835,10 @@
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
         "group": "841582caaa17523e",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "is_free",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "name": "displayIfRpiIsFree",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -3624,8 +3847,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#e01b24",
-        "x": 1170,
-        "y": 380,
+        "x": 1150,
+        "y": 400,
         "wires": []
     },
     {
@@ -3633,10 +3856,10 @@
         "type": "ui_ui_control",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "",
+        "name": "switch",
         "events": "change",
-        "x": 700,
-        "y": 200,
+        "x": 470,
+        "y": 180,
         "wires": [
             []
         ]
@@ -3646,7 +3869,7 @@
         "type": "change",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "",
+        "name": "switchToRpi",
         "rules": [
             {
                 "t": "set",
@@ -3661,8 +3884,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 200,
+        "x": 310,
+        "y": 180,
         "wires": [
             [
                 "68e0cfa4b06db715"
@@ -3677,8 +3900,8 @@
         "g": "829459fd4bc2bd59",
         "name": "rpi2",
         "group": "841582caaa17523e",
-        "order": 7,
-        "width": 8,
+        "order": 6,
+        "width": 12,
         "height": 1,
         "passthru": false,
         "label": "290C",
@@ -3708,9 +3931,9 @@
         "d": true,
         "g": "829459fd4bc2bd59",
         "group": "841582caaa17523e",
-        "order": 10,
-        "width": 0,
-        "height": 0,
+        "order": 8,
+        "width": 12,
+        "height": 1,
         "name": "is_active",
         "label": "innactif",
         "format": "",
@@ -3731,9 +3954,9 @@
         "d": true,
         "g": "829459fd4bc2bd59",
         "group": "841582caaa17523e",
-        "order": 9,
-        "width": 0,
-        "height": 0,
+        "order": 7,
+        "width": 12,
+        "height": 1,
         "name": "is_free",
         "label": "libre",
         "format": "",
@@ -3794,16 +4017,15 @@
         "id": "fb85b18a99c3394a",
         "type": "ui_gauge",
         "z": "4e821b48bbd42ca3",
-        "g": "52529d8d7b615ffa",
-        "name": "co_quantity",
+        "name": "displayCoQuantity",
         "group": "7fda8290ea03273e",
         "order": 2,
-        "width": 8,
+        "width": 7,
         "height": 6,
         "gtype": "donut",
         "title": "Quantité de CO",
         "label": "",
-        "format": "{{value}} (190 µg/m3)",
+        "format": "{{value}} (µg/m3)",
         "min": 0,
         "max": "200",
         "colors": [
@@ -3815,38 +4037,8 @@
         "seg2": "100",
         "diff": false,
         "className": "",
-        "x": 1150,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "f032958d3bcb43c7",
-        "type": "ui_gauge",
-        "z": "4e821b48bbd42ca3",
-        "d": true,
-        "g": "52529d8d7b615ffa",
-        "name": "air_quality",
-        "group": "7fda8290ea03273e",
-        "order": 3,
-        "width": 3,
-        "height": 1,
-        "gtype": "donut",
-        "title": "Qualité de l'air",
-        "label": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "200",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ffa348"
-        ],
-        "seg1": "50",
-        "seg2": "100",
-        "diff": false,
-        "className": "",
-        "x": 1150,
-        "y": 600,
+        "x": 1590,
+        "y": 660,
         "wires": []
     },
     {
@@ -3855,9 +4047,9 @@
         "z": "4e821b48bbd42ca3",
         "group": "8753015cdcb44cc3",
         "order": 1,
-        "width": 16,
+        "width": 12,
         "height": 1,
-        "name": "address",
+        "name": "displayAddress",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -3866,8 +4058,8 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 720,
-        "y": 120,
+        "x": 880,
+        "y": 100,
         "wires": []
     },
     {
@@ -3876,11 +4068,11 @@
         "z": "4e821b48bbd42ca3",
         "group": "8753015cdcb44cc3",
         "order": 2,
-        "width": 16,
+        "width": 12,
         "height": 5,
         "name": "",
-        "lat": "",
-        "lon": "",
+        "lat": "50.620788",
+        "lon": "5.581412",
         "zoom": "18",
         "layer": "OSMC",
         "cluster": "",
@@ -3902,8 +4094,8 @@
         "mapurl": "",
         "mapopt": "",
         "mapwms": false,
-        "x": 820,
-        "y": 60,
+        "x": 860,
+        "y": 40,
         "wires": []
     },
     {
@@ -3911,15 +4103,15 @@
         "type": "function",
         "z": "4e821b48bbd42ca3",
         "name": "injectCoordinatesToWorldmap",
-        "func": "msg.payload = {\n    lat: global.get('coordinates').latitude,         \n    lon: global.get('coordinates').longitude, \n};\n\nmsg.lat = global.get('coordinates').latitude;\nmsg.lon = global.get('coordinates').longitude;\n\nmsg.latitude = global.get('coordinates').latitude;\nmsg.longitude = global.get('coordinates').longitude;\n\nreturn msg;",
+        "func": "const lat = global.get('coordinates').latitude;\nconst lon = global.get('coordinates').longitude;\nconst name = global.get('currentPremise');\n\nmsg.payload = {\n    lat: lat,  // Latitude\n    lon: lon,   // Longitude\n    name: name,\n    icon: \"fa fa-map-marker\",\n};\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 60,
+        "x": 630,
+        "y": 40,
         "wires": [
             [
                 "7d7db317f38e1625"
@@ -3930,29 +4122,28 @@
         "id": "4f7dd4b144e7f41d",
         "type": "ui_text",
         "z": "4e821b48bbd42ca3",
-        "g": "52529d8d7b615ffa",
         "group": "7fda8290ea03273e",
         "order": 1,
-        "width": 8,
+        "width": 5,
         "height": 6,
-        "name": "air_quality",
+        "name": "displayAirQuality",
         "label": "Qualité globale de l'air",
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
         "style": true,
         "font": "",
-        "fontSize": "30",
+        "fontSize": "24",
         "color": "#ffffff",
-        "x": 1250,
-        "y": 600,
+        "x": 1870,
+        "y": 800,
         "wires": []
     },
     {
         "id": "db9490194e0d84ad",
         "type": "function",
         "z": "4e821b48bbd42ca3",
-        "name": "getLatAndLon",
+        "name": "getLatAndLonFromGlobalVariables",
         "func": "var coordinates = global.get(\"coordinates\");\n\nif (coordinates && coordinates.latitude && coordinates.longitude) {\n    var lat = coordinates.latitude;\n    var lon = coordinates.longitude;\n    msg.payload = `${lat} ${lon}`;\n\n    return msg;\n} else {\n    node.error(\"Coordinates not found in global context\", msg);\n}",
         "outputs": 1,
         "timeout": 0,
@@ -3960,8 +4151,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 780,
+        "x": 780,
+        "y": 740,
         "wires": [
             [
                 "f99b355d863dff2e"
@@ -3972,7 +4163,7 @@
         "id": "867dd12675ba7723",
         "type": "inject",
         "z": "4e821b48bbd42ca3",
-        "name": "",
+        "name": "triggerApiAirQualityEach15seconds",
         "props": [
             {
                 "p": "payload"
@@ -3982,19 +4173,18 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
-        "onceDelay": "0.8",
+        "onceDelay": "3",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 590,
-        "y": 780,
+        "x": 230,
+        "y": 740,
         "wires": [
             [
-                "db9490194e0d84ad",
-                "ca32210b57565f5d"
+                "4b4ad7fb32e36f09"
             ]
         ]
     },
@@ -4011,7 +4201,7 @@
         "finalize": "",
         "libs": [],
         "x": 1600,
-        "y": 780,
+        "y": 740,
         "wires": [
             [
                 "4f7dd4b144e7f41d"
@@ -4030,8 +4220,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "api_python_requests",
-        "x": 1040,
-        "y": 780,
+        "x": 1120,
+        "y": 740,
         "wires": [
             [
                 "413463b444a6cc80"
@@ -4044,7 +4234,7 @@
         "id": "413463b444a6cc80",
         "type": "function",
         "z": "4e821b48bbd42ca3",
-        "name": "function 3",
+        "name": "parseValueToInt",
         "func": "msg.payload = parseInt(msg.payload, 10);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4052,8 +4242,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
-        "y": 780,
+        "x": 1340,
+        "y": 740,
         "wires": [
             [
                 "6442631fb648dd6a",
@@ -4065,7 +4255,7 @@
         "id": "b7dfce441a268d6f",
         "type": "inject",
         "z": "4e821b48bbd42ca3",
-        "name": "",
+        "name": "triggerGpsCoordinates",
         "props": [
             {
                 "p": "payload"
@@ -4082,8 +4272,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 330,
-        "y": 60,
+        "x": 350,
+        "y": 40,
         "wires": [
             [
                 "5b169e960d830605",
@@ -4095,7 +4285,7 @@
         "id": "5b169e960d830605",
         "type": "change",
         "z": "4e821b48bbd42ca3",
-        "name": "",
+        "name": "prepareToDisplayAddress",
         "rules": [
             {
                 "t": "set",
@@ -4110,8 +4300,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
-        "y": 120,
+        "x": 610,
+        "y": 100,
         "wires": [
             [
                 "2b2f7c601b02fc11"
@@ -4123,7 +4313,7 @@
         "type": "function",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "getDataForCurrentPremise",
+        "name": "getReservationsForThisRpi",
         "func": "let reservationData = global.get('reservationData');\n\nlet currentName = global.get('currentPremise');\n\nlet filteredReservations = reservationData.filter(reservation => reservation.premise_name === currentName);\n\nmsg.payload = filteredReservations;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4131,7 +4321,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 200,
+        "x": 220,
         "y": 400,
         "wires": [
             [
@@ -4144,7 +4334,7 @@
         "type": "function",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "checkIfReservationIsNow",
+        "name": "checkIfReservationNowForThisRpi",
         "func": "let filteredReservations = msg.payload;\nlet currentDate = new Date();\nlet result = false;\n\nfor (let reservation of filteredReservations) {\n    let startTime = new Date(reservation.start_time);\n    let endTime = new Date(reservation.end_time);\n    \n    if (currentDate >= startTime && currentDate <= endTime) {\n        result = true;\n        break;\n    }\n}\n\nmsg.payload = result;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -4152,7 +4342,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 500,
         "y": 400,
         "wires": [
             [
@@ -4179,7 +4369,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 770,
+        "x": 750,
         "y": 400,
         "wires": [
             [
@@ -4195,7 +4385,7 @@
         "type": "change",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "",
+        "name": "yes",
         "rules": [
             {
                 "t": "set",
@@ -4210,7 +4400,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
+        "x": 930,
         "y": 360,
         "wires": [
             [
@@ -4223,7 +4413,7 @@
         "type": "change",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "",
+        "name": "no",
         "rules": [
             {
                 "t": "set",
@@ -4238,7 +4428,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
+        "x": 930,
         "y": 440,
         "wires": [
             [
@@ -4251,17 +4441,17 @@
         "type": "mqtt in",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "hello",
+        "name": "helloPrivate",
         "topic": "smartoffice/1/+/hello",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "9c09494ed61fa6c9",
+        "broker": "54759efd76491718",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 130,
-        "y": 320,
+        "x": 150,
+        "y": 260,
         "wires": [
             [
                 "e76a965d86634085",
@@ -4275,7 +4465,7 @@
         "type": "change",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "",
+        "name": "setRpiAsActive",
         "rules": [
             {
                 "t": "set",
@@ -4290,7 +4480,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
+        "x": 360,
         "y": 320,
         "wires": [
             [
@@ -4303,7 +4493,7 @@
         "type": "function",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "checkRpiActive",
+        "name": "checkIfRpiIsActive",
         "func": "const isActive = global.get('rpiActive');\n\nif(isActive) {\n    msg.payload = \"Actif\";\n} else {\n    msg.payload = \"Inactif\";\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4311,7 +4501,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
+        "x": 930,
         "y": 320,
         "wires": [
             [
@@ -4324,7 +4514,7 @@
         "type": "delay",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "interval_dead",
+        "name": "intervalDeadToConsiderRpiInactive",
         "pauseType": "delay",
         "timeout": "1",
         "timeoutUnits": "minutes",
@@ -4337,7 +4527,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 360,
+        "x": 420,
         "y": 260,
         "wires": [
             [
@@ -4350,7 +4540,7 @@
         "type": "change",
         "z": "4e821b48bbd42ca3",
         "g": "50484f8edde3dcf6",
-        "name": "",
+        "name": "setRpiAsInactive",
         "rules": [
             {
                 "t": "set",
@@ -4365,7 +4555,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 690,
         "y": 260,
         "wires": [
             [
@@ -4374,16 +4564,47 @@
         ]
     },
     {
-        "id": "ca32210b57565f5d",
+        "id": "4e8fbb7da98c1491",
+        "type": "inject",
+        "z": "4e821b48bbd42ca3",
+        "g": "50484f8edde3dcf6",
+        "name": "triggerDisplayInactive",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 780,
+        "y": 180,
+        "wires": [
+            [
+                "5e3ff8dfc9d6ba90"
+            ]
+        ]
+    },
+    {
+        "id": "5e3ff8dfc9d6ba90",
         "type": "change",
         "z": "4e821b48bbd42ca3",
-        "name": "",
+        "g": "50484f8edde3dcf6",
+        "name": "setRpiInactive",
         "rules": [
             {
                 "t": "set",
-                "p": "rpiActive",
-                "pt": "global",
-                "to": "false",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Inactif",
                 "tot": "str"
             }
         ],
@@ -4392,10 +4613,61 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
-        "y": 840,
+        "x": 1000,
+        "y": 180,
         "wires": [
-            []
+            [
+                "a91a3199ac6a18da"
+            ]
+        ]
+    },
+    {
+        "id": "4b4ad7fb32e36f09",
+        "type": "switch",
+        "z": "4e821b48bbd42ca3",
+        "name": "coordinates?",
+        "property": "coordinates",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "nnull"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 490,
+        "y": 740,
+        "wires": [
+            [
+                "db9490194e0d84ad"
+            ],
+            [
+                "8899601f92d9e4d2"
+            ]
+        ]
+    },
+    {
+        "id": "8899601f92d9e4d2",
+        "type": "function",
+        "z": "4e821b48bbd42ca3",
+        "name": "waitForSignal",
+        "func": "msg.payload = global.get('currentAddress');\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 880,
+        "wires": [
+            [
+                "4f7dd4b144e7f41d"
+            ]
         ]
     },
     {
@@ -4404,9 +4676,9 @@
         "z": "4db1d4819dfea4ef",
         "group": "821b48d3e4d5beb6",
         "order": 1,
-        "width": 26,
+        "width": 19,
         "height": 1,
-        "name": "title",
+        "name": "displayPageTitle",
         "label": "Réservation",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
@@ -4415,7 +4687,7 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 130,
+        "x": 140,
         "y": 60,
         "wires": []
     },
@@ -4423,7 +4695,7 @@
         "id": "b54ecb6b4b720a44",
         "type": "ui_button",
         "z": "4db1d4819dfea4ef",
-        "name": "button_book",
+        "name": "buttonReservation",
         "group": "821b48d3e4d5beb6",
         "order": 2,
         "width": 3,
@@ -4439,7 +4711,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 570,
+        "x": 410,
         "y": 60,
         "wires": [
             [
@@ -4451,9 +4723,9 @@
         "id": "982bdb0a083bd7bd",
         "type": "ui_ui_control",
         "z": "4db1d4819dfea4ef",
-        "name": "",
+        "name": "doSwitch",
         "events": "change",
-        "x": 940,
+        "x": 900,
         "y": 60,
         "wires": [
             []
@@ -4463,7 +4735,7 @@
         "id": "64aebe12c013e608",
         "type": "change",
         "z": "4db1d4819dfea4ef",
-        "name": "",
+        "name": "switchToCreateReservation",
         "rules": [
             {
                 "t": "set",
@@ -4478,7 +4750,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
+        "x": 680,
         "y": 60,
         "wires": [
             [
@@ -4497,9 +4769,9 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "find.reservation",
-        "x": 540,
-        "y": 420,
+        "name": "fetchReservationsInDb",
+        "x": 740,
+        "y": 180,
         "wires": [
             [
                 "3df8284650839b33"
@@ -4510,21 +4782,21 @@
         "id": "e620b61b5850c836",
         "type": "inject",
         "z": "4db1d4819dfea4ef",
-        "name": "trigger",
+        "name": "triggerEach5sec",
         "props": [
             {
                 "p": "payload"
             }
         ],
-        "repeat": "8",
+        "repeat": "5",
         "crontab": "",
         "once": true,
         "onceDelay": "0.5",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 120,
-        "y": 260,
+        "x": 150,
+        "y": 180,
         "wires": [
             [
                 "547d7b722673664e"
@@ -4535,7 +4807,7 @@
         "id": "547d7b722673664e",
         "type": "function",
         "z": "4db1d4819dfea4ef",
-        "name": "set payload",
+        "name": "prepareQueryToFetchReservationsFromDb",
         "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4543,8 +4815,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 340,
+        "x": 430,
+        "y": 180,
         "wires": [
             [
                 "5d4a41df373f227d"
@@ -4555,7 +4827,7 @@
         "id": "d2d764f24a97ca5f",
         "type": "function",
         "z": "4db1d4819dfea4ef",
-        "name": "add_action_and_format_date",
+        "name": "addActionButtonAndFormatDateToDisplay",
         "func": "let reservations = msg.payload;\n\nif (Array.isArray(reservations)) {\n    reservations.forEach(item => {\n        if (item.start_time) {\n            let date = new Date(item.start_time); // Convertir en objet Date\n            item.start_time_readable = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n        if (item.end_time) {\n            let date = new Date(item.end_time); // Convertir en objet Date\n            item.end_time_readable = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            }); // Reformater en une date lisible\n        }\n    });\n}\nreservations = reservations.map(reservation => {\n    reservation.action = `<a href=\"/cancel_booking?id=${reservation._id}\">Annuler</a>`;\n    return reservation;\n});\n\n\nmsg.payload = reservations;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4563,8 +4835,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 420,
+        "x": 1280,
+        "y": 260,
         "wires": [
             [
                 "988308436198a81e"
@@ -4576,18 +4848,18 @@
         "type": "ui_template",
         "z": "4db1d4819dfea4ef",
         "group": "821b48d3e4d5beb6",
-        "name": "",
+        "name": "displayReservationsInTable",
         "order": 4,
-        "width": 29,
-        "height": 6,
+        "width": 22,
+        "height": 5,
         "format": "<table>\n    <thead>\n        <tr>\n            <th>Client</th>\n            <th>Local</th>\n            <th>Début</th>\n            <th>Fin</th>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row.client_email }}</td>\n            <td>{{ row.premise_name }}</td>\n            <td>{{ row.start_time_readable }}</td>\n            <td>{{ row.end_time_readable }}</td>\n            <td ng-bind-html=\"row.action\"></td>\n        </tr>\n    </tbody>\n</table>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "className": "",
-        "x": 1200,
-        "y": 520,
+        "className": "reservation_table_smartoffice",
+        "x": 1580,
+        "y": 260,
         "wires": [
             []
         ]
@@ -4604,8 +4876,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 420,
+        "x": 960,
+        "y": 260,
         "wires": [
             [
                 "d2d764f24a97ca5f"
@@ -4616,12 +4888,12 @@
         "id": "5d123201b01615c5",
         "type": "http in",
         "z": "4db1d4819dfea4ef",
-        "name": "cancel_booking_request",
+        "name": "cancel_booking_request_http",
         "url": "/cancel_booking",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 610,
+        "x": 180,
         "y": 340,
         "wires": [
             [
@@ -4633,7 +4905,7 @@
         "id": "87b77c671fe9d809",
         "type": "function",
         "z": "4db1d4819dfea4ef",
-        "name": "cancel_reservation",
+        "name": "prepareQueryToDeleteReservation",
         "func": "let reservations = global.get('reservationData');\n\nlet reservationId = msg.req.query.id;\n\nlet reservation = reservations.find(reservation => reservation._id.toString() === reservationId);\n\ndelete reservation.action;\ndelete reservation.premise_name;\ndelete reservation.client_email;\ndelete reservation.start_time;\ndelete reservation.end_time;\ndelete reservation.end_time_readable;\ndelete reservation.start_time_readable;\n\nif (reservation) {\n    msg.payload = reservation;\n} else {\n    msg.payload = { message: \"Réservation non trouvée\" };\n}\n\nreturn msg;\n\n",
         "outputs": 1,
         "timeout": 0,
@@ -4641,7 +4913,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
+        "x": 460,
         "y": 340,
         "wires": [
             [
@@ -4653,7 +4925,7 @@
         "id": "1968917eb0d9146d",
         "type": "function",
         "z": "4db1d4819dfea4ef",
-        "name": "redirect_to_reservation_page",
+        "name": "prepareToRefreshReservations",
         "func": "msg.statusCode = 302;\nmsg.headers = { location: \"/#!/1\" }; // Lien vers lequel rediriger\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4661,7 +4933,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1380,
+        "x": 1030,
         "y": 340,
         "wires": [
             [
@@ -4673,10 +4945,10 @@
         "id": "c8bddb85ddc80226",
         "type": "http response",
         "z": "4db1d4819dfea4ef",
-        "name": "http_response",
+        "name": "refreshPageUsingHttpRequest",
         "statusCode": "",
         "headers": {},
-        "x": 1620,
+        "x": 1350,
         "y": 340,
         "wires": []
     },
@@ -4691,8 +4963,8 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "remove_reservation",
-        "x": 1120,
+        "name": "RemoveReservationInDb",
+        "x": 750,
         "y": 340,
         "wires": [
             [
@@ -4704,12 +4976,12 @@
         "id": "be0b18b31c0adf57",
         "type": "ui_form",
         "z": "df1a303ec9e1b819",
-        "name": "booking_form",
+        "name": "reservationForm",
         "label": "",
         "group": "ca6e864468baaad4",
-        "order": 2,
-        "width": 23,
-        "height": 10,
+        "order": 3,
+        "width": 20,
+        "height": 1,
         "options": [
             {
                 "label": "Utilisateur",
@@ -4769,8 +5041,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 300,
-        "y": 360,
+        "x": 680,
+        "y": 280,
         "wires": [
             [
                 "c7c3bb6395593a9c"
@@ -4782,10 +5054,10 @@
         "type": "ui_text",
         "z": "df1a303ec9e1b819",
         "group": "ca6e864468baaad4",
-        "order": 1,
-        "width": 23,
+        "order": 2,
+        "width": 20,
         "height": 1,
-        "name": "title",
+        "name": "displayTitle",
         "label": "Réservation > ",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -4794,7 +5066,7 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 370,
+        "x": 330,
         "y": 80,
         "wires": []
     },
@@ -4802,7 +5074,7 @@
         "id": "b182437a122655b4",
         "type": "inject",
         "z": "df1a303ec9e1b819",
-        "name": "reserver",
+        "name": "trigger",
         "props": [
             {
                 "p": "payload"
@@ -4815,7 +5087,7 @@
         "topic": "",
         "payload": "Réserver",
         "payloadType": "str",
-        "x": 160,
+        "x": 110,
         "y": 80,
         "wires": [
             [
@@ -4835,9 +5107,9 @@
         "tooltip": "",
         "place": "Choisir un client",
         "group": "ca6e864468baaad4",
-        "order": 2,
-        "width": 0,
-        "height": 0,
+        "order": 1,
+        "width": 20,
+        "height": 1,
         "passthru": true,
         "multiple": false,
         "options": [],
@@ -4845,8 +5117,8 @@
         "topic": "payload",
         "topicType": "msg",
         "className": "",
-        "x": 370,
-        "y": 220,
+        "x": 630,
+        "y": 160,
         "wires": [
             []
         ]
@@ -4855,7 +5127,7 @@
         "id": "665db45f4d7359c0",
         "type": "function",
         "z": "df1a303ec9e1b819",
-        "name": "getClients",
+        "name": "getClientsToPutInDropdown",
         "func": "let data = global.get('clientData');\nmsg.options = data.map(client => client.email);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4863,8 +5135,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 160,
-        "y": 220,
+        "x": 360,
+        "y": 160,
         "wires": [
             [
                 "55ea4423867b72a4"
@@ -4875,7 +5147,7 @@
         "id": "c7c3bb6395593a9c",
         "type": "function",
         "z": "df1a303ec9e1b819",
-        "name": "prepareObject",
+        "name": "reformatReservationToPutInDb",
         "func": "// Récupérer le message payload\nlet data = msg.payload;\n\n// Récupérer les données client depuis la variable globale\nlet clientData = global.get('clientData');\nlet premiseData = global.get('premiseData');\n\n// Regrouper start_date et start_time dans une nouvelle clé start_datetime\nlet startDate = new Date(data.start_date);\nlet startTime = new Date(data.start_time);\nstartDate.setHours(startTime.getHours());\nstartDate.setMinutes(startTime.getMinutes());\nstartDate.setSeconds(startTime.getSeconds());\ndata.start_time = startDate.toISOString(); // Formater la date résultante\n\n// Regrouper end_date et end_time dans une nouvelle clé end_datetime\nlet endDate = new Date(data.end_date);\nlet endTime = new Date(data.end_time);\nendDate.setHours(endTime.getHours());\nendDate.setMinutes(endTime.getMinutes());\nendDate.setSeconds(endTime.getSeconds());\ndata.end_time = endDate.toISOString(); // Formater la date résultante\n\n// Remplacer id_client par _id du client correspondant\nlet client = clientData.find(client => client.email === data.id_client);\nif (client) {\n    data.id_client = client._id;\n} else {\n    // Si aucun client n'est trouvé, garder l'ID initial ou gérer l'erreur\n    data.id_client = null;\n}\n\nlet premise = premiseData.find(premise => premise.name === data.id_premise);\nif (client) {\n    data.id_premise = premise._id;\n} else {\n    // Si aucun client n'est trouvé, garder l'ID initial ou gérer l'erreur\n    data.id_premise = null;\n}\n\n// Supprimer les anciens champs\ndelete data.start_date;\ndelete data.end_date;\n\nmsg.payload = data;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -4883,8 +5155,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
-        "y": 360,
+        "x": 950,
+        "y": 280,
         "wires": [
             [
                 "e595840b287591df"
@@ -4902,9 +5174,9 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "insertReservation",
-        "x": 730,
-        "y": 360,
+        "name": "createReservationInDb",
+        "x": 1220,
+        "y": 280,
         "wires": [
             [
                 "cc714ee28301d5b1"
@@ -4915,7 +5187,7 @@
         "id": "cc714ee28301d5b1",
         "type": "function",
         "z": "df1a303ec9e1b819",
-        "name": "redirect_to_reservation_page",
+        "name": "switchToReservationsPage",
         "func": "msg.payload = {\"tab\":\"Réservation\"};\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4923,8 +5195,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 360,
+        "x": 1480,
+        "y": 280,
         "wires": [
             [
                 "0b9cfdfd3387f444"
@@ -4935,10 +5207,10 @@
         "id": "0b9cfdfd3387f444",
         "type": "ui_ui_control",
         "z": "df1a303ec9e1b819",
-        "name": "change_tab",
+        "name": "switchTab",
         "events": "all",
-        "x": 1230,
-        "y": 360,
+        "x": 1700,
+        "y": 280,
         "wires": [
             []
         ]
@@ -4947,7 +5219,7 @@
         "id": "bf4d56d9869cd0c9",
         "type": "function",
         "z": "df1a303ec9e1b819",
-        "name": "prepareForm",
+        "name": "prepareFormWithActualDateAndHour",
         "func": "function roundToNext30Minutes(date) {\n    const roundedDate = new Date(date);\n    const minutes = roundedDate.getMinutes();\n    roundedDate.setMinutes(minutes < 30 ? 30 : 0); // Passe à la prochaine demi-heure\n    roundedDate.setHours(roundedDate.getHours() + (minutes >= 30 ? 1 : 0)); // Incrémente l'heure si nécessaire\n    roundedDate.setSeconds(0, 0); // Réinitialise les secondes et millisecondes\n    return roundedDate;\n}\n\nconst now = new Date();\nconst roundedNow = roundToNext30Minutes(now);\n\nconst today = now.toISOString().split('T')[0];\n\nfunction formatISOTime(date) {\n    const hours = String(date.getHours()).padStart(2, '0');\n    const minutes = String(date.getMinutes()).padStart(2, '0');\n    return `1970-01-01T${hours}:${minutes}`;\n}\n\nconst startTime = formatISOTime(roundedNow); // Heure locale arrondie à la demi-heure suivante\nconst endTimeDate = new Date(roundedNow.getTime() + 60 * 60 * 1000); // +1 heure\nconst endTime = formatISOTime(endTimeDate); // Heure locale +1h\n\nmsg.payload = {\n    start_date: today,\n    start_time: startTime,\n    end_date: today,\n    end_time: endTime\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -4955,28 +5227,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 110,
-        "y": 360,
+        "x": 390,
+        "y": 280,
         "wires": [
             [
                 "be0b18b31c0adf57"
-            ]
-        ]
-    },
-    {
-        "id": "bf9ea7513ce24828",
-        "type": "http in",
-        "z": "df1a303ec9e1b819",
-        "name": "complete_form_with_date",
-        "url": "/#!/6",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 110,
-        "y": 480,
-        "wires": [
-            [
-                "bf4d56d9869cd0c9"
             ]
         ]
     },
@@ -4986,9 +5241,9 @@
         "z": "d959e01e9af70966",
         "group": "b255ced8c894f4f0",
         "order": 1,
-        "width": 33,
+        "width": 20,
         "height": 1,
-        "name": "title",
+        "name": "displayTitle",
         "label": "Support",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
@@ -4997,7 +5252,7 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 110,
+        "x": 130,
         "y": 60,
         "wires": []
     },
@@ -5005,11 +5260,11 @@
         "id": "0822e0a08a81e9e3",
         "type": "ui_button",
         "z": "d959e01e9af70966",
-        "name": "support_link_button",
+        "name": "supportButton",
         "group": "b255ced8c894f4f0",
         "order": 5,
-        "width": 34,
-        "height": 4,
+        "width": 4,
+        "height": 1,
         "passthru": false,
         "label": "Accéder au support WebEx",
         "tooltip": "",
@@ -5021,7 +5276,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 150,
+        "x": 140,
         "y": 140,
         "wires": [
             [
@@ -5033,7 +5288,7 @@
         "id": "1e4cc66b57ed2b56",
         "type": "function",
         "z": "d959e01e9af70966",
-        "name": "containsLink",
+        "name": "containsLinkToWebex",
         "func": "msg.payload = \"https://web.webex.com/spaces/aHR0cHM6Ly9jb252LWsud2J4Mi5jb20vY29udmVyc2F0aW9uL2FwaS92MS9jb252ZXJzYXRpb25zLzZmNTg2ODcwLThkMzYtMTFlZi05NGM2LWZiYThmZGViNmE3ZA==\";\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -5041,7 +5296,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 420,
         "y": 140,
         "wires": [
             [
@@ -5054,17 +5309,17 @@
         "type": "ui_template",
         "z": "d959e01e9af70966",
         "group": "b255ced8c894f4f0",
-        "name": "redirect",
-        "order": 4,
-        "width": 0,
-        "height": 0,
+        "name": "redirectToLink",
+        "order": 9,
+        "width": 20,
+        "height": 1,
         "format": "<script>\n    (function(scope) {\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.payload) {\n                window.open(msg.payload, '_blank');\n            }\n        });\n    })(scope);\n</script>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 580,
+        "x": 640,
         "y": 140,
         "wires": [
             []
@@ -5076,9 +5331,9 @@
         "z": "0ab432dc59b6d0a3",
         "group": "f87d496c91fac1c3",
         "order": 1,
-        "width": 20,
+        "width": 12,
         "height": 1,
-        "name": "title",
+        "name": "displayTitle",
         "label": "Logs",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
@@ -5095,18 +5350,18 @@
         "id": "67e4568a7a3501fe",
         "type": "ui_date_picker",
         "z": "0ab432dc59b6d0a3",
-        "name": "",
+        "name": "searchByDateButton",
         "label": "Rechercher par date",
         "group": "f87d496c91fac1c3",
-        "order": 3,
+        "order": 4,
         "width": 3,
         "height": 1,
         "passthru": true,
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 640,
-        "y": 120,
+        "x": 600,
+        "y": 60,
         "wires": [
             [
                 "a657d51e759ff876"
@@ -5124,8 +5379,8 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "find.logs",
-        "x": 540,
+        "name": "fetchLogsInDb",
+        "x": 720,
         "y": 240,
         "wires": [
             [
@@ -5137,7 +5392,7 @@
         "id": "62b35b4144bc0c52",
         "type": "function",
         "z": "0ab432dc59b6d0a3",
-        "name": "set payload",
+        "name": "prepareQueryToFetchInDb",
         "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -5145,8 +5400,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 240,
+        "x": 520,
+        "y": 200,
         "wires": [
             [
                 "eb75d147338e0d5e"
@@ -5158,17 +5413,17 @@
         "type": "ui_template",
         "z": "0ab432dc59b6d0a3",
         "group": "f87d496c91fac1c3",
-        "name": "",
-        "order": 6,
-        "width": 29,
-        "height": 7,
+        "name": "displayLogsInTable",
+        "order": 7,
+        "width": 20,
+        "height": 6,
         "format": "<table>\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Local</th>\n            <th>Topic</th>\n            <th>Date</th>\n            <th>Valeur</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row._id }}</td>\n            <td>{{ row.premise_name }}</td>\n            <td>{{ row.topic }}</td>\n            <td>{{ row.readableDate }}</td>\n            <td>{{ row.value_log }}</td>\n        </tr>\n    </tbody>\n</table>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "className": "",
-        "x": 1260,
+        "className": "logs_table_smartoffice",
+        "x": 1630,
         "y": 240,
         "wires": [
             []
@@ -5178,15 +5433,15 @@
         "id": "2cf404800ccde71e",
         "type": "function",
         "z": "0ab432dc59b6d0a3",
-        "name": "set payload",
-        "func": "let data = msg.payload;\n\nif (Array.isArray(data)) {\n    data.forEach(item => {\n        if (item.date_log) {\n            let date = new Date(item.date_log);\n            item.readableDate = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            });\n        }\n    });\n}\n\n\nif (Array.isArray(data)) {\n    flow.set('mongodbData', data);\n}\n\nmsg.payload = data;\nreturn msg;",
+        "name": "formatDateAndGet100LastLogs",
+        "func": "let data = msg.payload;\n\nif (Array.isArray(data)) {\n    data.forEach(item => {\n        if (item.date_log) {\n            let date = new Date(item.date_log);\n            item.readableDate = date.toLocaleString('fr-FR', {\n                year: 'numeric',\n                month: 'long',\n                day: 'numeric',\n                hour: '2-digit',\n                minute: '2-digit',\n                second: '2-digit',\n            });\n        }\n    });\n}\n\n\nif (Array.isArray(data)) {\n    data.reverse();\n    flow.set('mongodbData', data);\n    data = data.slice(0, 100);\n    flow.set('mongodbData100', data);\n}\n\nmsg.payload = data;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 1330,
         "y": 240,
         "wires": [
             [
@@ -5198,16 +5453,16 @@
         "id": "a657d51e759ff876",
         "type": "function",
         "z": "0ab432dc59b6d0a3",
-        "name": "sortByDate",
-        "func": "// Récupérer les données depuis le contexte\nlet data = flow.get(\"mongodbData\");\n\n// Vérifier si 'data' est bien un tableau\nif (!Array.isArray(data)) {\n    msg.payload = { status: \"mongodbData is not an array or not found\" };\n    return msg;  // Quitte tôt si 'data' n'est pas un tableau\n}\n\nlet timestamp = msg.payload; \n\nlet date = new Date(timestamp);\nlet targetDate = date.toISOString().split('T')[0]; // Extraire uniquement la partie 'YYYY-MM-DD'\n\n// Filtrer les objets de 'data' dont \"date_log\" correspond à la même date\nlet filteredData = data.filter(item => {\n    let itemDate = new Date(item.date_log).toISOString().split('T')[0];\n    return itemDate === targetDate;\n});\n\nif (filteredData.length > 0) {\n    msg.payload = filteredData;\n} else {\n    msg.payload = { status: \"No matching data found\", data: data };\n}\n\nreturn msg;\n",
+        "name": "sortByDateFunction",
+        "func": "let data = flow.get(\"mongodbData\");\n\nif (!Array.isArray(data)) {\n    msg.payload = { status: \"mongodbData is not an array or not found\" };\n    return msg;  // Quitte tôt si 'data' n'est pas un tableau\n}\n\nlet timestamp = msg.payload; \nlet date = new Date(timestamp);\n\nlet targetDate = date.toISOString().split('T')[0];\n\nlet filteredData = data.filter(item => {\n    if (!isNaN(new Date(item.date_log))) {\n        let itemDate = new Date(item.date_log).toISOString().split('T')[0];\n        return itemDate === targetDate;\n    } else {\n        return false;\n    }\n});\n\nif (filteredData.length > 0) {\n    msg.payload = filteredData;\n} else {\n    msg.payload = { status: \"No matching data found\", data: data };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 120,
+        "x": 870,
+        "y": 60,
         "wires": [
             [
                 "5df8d8e55bcfaa12"
@@ -5218,7 +5473,7 @@
         "id": "7878dc4f22923344",
         "type": "function",
         "z": "0ab432dc59b6d0a3",
-        "name": "joinDataToHavePremise",
+        "name": "joinDataToHavePremiseNameInsteadOfId",
         "func": "let logs = msg.payload;\nlet premises = global.get('premiseData');\n\n// Ajouter email et name aux objets de reservation\nlogs.forEach(log => {\n    // Trouver la premise correspondant à id_premise\n    let premise = premises.find(premise => premise._id.toString() === log.id_premise.toString());\n    if (premise) {\n        log.premise_name = premise.name;\n    } else {\n        log.premise_name = null; // ou une valeur par défaut\n    }\n});\n\nmsg.payload = logs;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -5226,7 +5481,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
+        "x": 1000,
         "y": 240,
         "wires": [
             [
@@ -5238,10 +5493,10 @@
         "id": "a12d5659ca6e4f67",
         "type": "ui_button",
         "z": "0ab432dc59b6d0a3",
-        "name": "reset_logs",
+        "name": "resetLogsButton",
         "group": "f87d496c91fac1c3",
-        "order": 2,
-        "width": 3,
+        "order": 3,
+        "width": 2,
         "height": 1,
         "passthru": false,
         "label": "Réinitialiser",
@@ -5254,11 +5509,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
-        "y": 300,
+        "x": 720,
+        "y": 320,
         "wires": [
             [
-                "62b35b4144bc0c52"
+                "05bbbced881bf006"
             ]
         ]
     },
@@ -5266,13 +5521,13 @@
         "id": "6fc5c06cf6d6b14f",
         "type": "ui_button",
         "z": "0ab432dc59b6d0a3",
-        "name": "refresh_logs",
+        "name": "refreshLogsButton",
         "group": "f87d496c91fac1c3",
-        "order": 6,
-        "width": 0,
-        "height": 0,
+        "order": 9,
+        "width": 20,
+        "height": 1,
         "passthru": false,
-        "label": "Rafraîchir les losg",
+        "label": "Rafraîchir les logs",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -5282,11 +5537,162 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
-        "y": 180,
+        "x": 90,
+        "y": 240,
         "wires": [
             [
-                "62b35b4144bc0c52"
+                "d8f0f90a42663b1f"
+            ]
+        ]
+    },
+    {
+        "id": "1fed120fbb0a7dc9",
+        "type": "inject",
+        "z": "0ab432dc59b6d0a3",
+        "name": "trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 120,
+        "wires": [
+            [
+                "d8f0f90a42663b1f"
+            ]
+        ]
+    },
+    {
+        "id": "05bbbced881bf006",
+        "type": "change",
+        "z": "0ab432dc59b6d0a3",
+        "name": "definesDataTo100LastLogs",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "mongodbData100",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 320,
+        "wires": [
+            [
+                "2cf404800ccde71e"
+            ]
+        ]
+    },
+    {
+        "id": "d8f0f90a42663b1f",
+        "type": "switch",
+        "z": "0ab432dc59b6d0a3",
+        "name": "",
+        "property": "currentRole",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "admin",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "admin",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "62b35b4144bc0c52",
+                "852e49285f82d78d"
+            ],
+            [
+                "aa815aa22747d280"
+            ]
+        ]
+    },
+    {
+        "id": "b2a705ef4f5c603d",
+        "type": "ui_text",
+        "z": "0ab432dc59b6d0a3",
+        "group": "f87d496c91fac1c3",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 490,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "aa815aa22747d280",
+        "type": "function",
+        "z": "0ab432dc59b6d0a3",
+        "name": "function 3",
+        "func": "msg.payload = \"Vous devez être admin pour voir les logs\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 420,
+        "wires": [
+            [
+                "b2a705ef4f5c603d"
+            ]
+        ]
+    },
+    {
+        "id": "852e49285f82d78d",
+        "type": "function",
+        "z": "0ab432dc59b6d0a3",
+        "name": "function 4",
+        "func": "msg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "b2a705ef4f5c603d"
             ]
         ]
     },
@@ -5296,9 +5702,9 @@
         "z": "19da2f4cf4bf4170",
         "group": "b433e86cb98af344",
         "order": 1,
-        "width": 26,
+        "width": 14,
         "height": 1,
-        "name": "title",
+        "name": "displayTitle",
         "label": "Utilisateurs",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
@@ -5307,17 +5713,17 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 90,
-        "y": 180,
+        "x": 110,
+        "y": 80,
         "wires": []
     },
     {
         "id": "2511177c847c7df8",
         "type": "ui_button",
         "z": "19da2f4cf4bf4170",
-        "name": "create_user",
+        "name": "createUserButton",
         "group": "b433e86cb98af344",
-        "order": 2,
+        "order": 3,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -5331,8 +5737,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 530,
-        "y": 180,
+        "x": 470,
+        "y": 80,
         "wires": [
             [
                 "4c39ee51ddf3b1a6"
@@ -5343,10 +5749,10 @@
         "id": "ec687b3180687b6d",
         "type": "ui_ui_control",
         "z": "19da2f4cf4bf4170",
-        "name": "",
+        "name": "switch",
         "events": "change",
-        "x": 900,
-        "y": 180,
+        "x": 910,
+        "y": 80,
         "wires": [
             []
         ]
@@ -5355,7 +5761,7 @@
         "id": "4c39ee51ddf3b1a6",
         "type": "change",
         "z": "19da2f4cf4bf4170",
-        "name": "",
+        "name": "switchToCreateUserTab",
         "rules": [
             {
                 "t": "set",
@@ -5370,8 +5776,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 720,
-        "y": 180,
+        "x": 710,
+        "y": 80,
         "wires": [
             [
                 "ec687b3180687b6d"
@@ -5389,8 +5795,8 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "find.clients",
-        "x": 530,
+        "name": "fetchClientsInDb",
+        "x": 640,
         "y": 260,
         "wires": [
             [
@@ -5428,7 +5834,7 @@
         "id": "5b027e2170cc7ef8",
         "type": "function",
         "z": "19da2f4cf4bf4170",
-        "name": "set payload",
+        "name": "prepareQueryToFetchClientsInDb",
         "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -5436,7 +5842,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
+        "x": 360,
         "y": 260,
         "wires": [
             [
@@ -5448,7 +5854,7 @@
         "id": "a921be82d0c2c420",
         "type": "function",
         "z": "19da2f4cf4bf4170",
-        "name": "add_action",
+        "name": "addActionButtonToEachClientToDelete",
         "func": "let users = msg.payload;\n\nglobal.set('clientData', users);\n\nusers = users.map(user => {\n    user.action = `<a href=\"/delete_user?id=${user._id}\">Supprimer</a>`;\n    return user;\n});\n\n\nmsg.payload = users;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -5456,7 +5862,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
+        "x": 930,
         "y": 260,
         "wires": [
             [
@@ -5469,17 +5875,17 @@
         "type": "ui_template",
         "z": "19da2f4cf4bf4170",
         "group": "b433e86cb98af344",
-        "name": "",
-        "order": 4,
-        "width": 29,
+        "name": "displayClientsInTable",
+        "order": 5,
+        "width": 20,
         "height": 6,
         "format": "<table>\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Email</th>\n            <th>Prénom</th>\n            <th>Nom</th>\n            <th>Téléphone</th>\n            <th>Role</th>\n            <th>Action</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n        <tr ng-repeat=\"row in msg.payload\">\n            <td>{{ row._id }}</td>\n            <td>{{ row.email }}</td>\n            <td>{{ row.firstname }}</td>\n            <td>{{ row.name }}</td>\n            <td>{{ row.telephone }}</td>\n            <td>{{ row.role }}</td>\n            <td ng-bind-html=\"row.action\"></td>        </tr>\n    </tbody>\n</table>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "className": "",
-        "x": 1100,
+        "className": "users_table_smartoffice",
+        "x": 1220,
         "y": 260,
         "wires": [
             []
@@ -5496,8 +5902,8 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "find.premise",
-        "x": 530,
+        "name": "fetchPremisesInDb",
+        "x": 650,
         "y": 360,
         "wires": [
             [
@@ -5509,7 +5915,7 @@
         "id": "9fc6d51011e61320",
         "type": "function",
         "z": "19da2f4cf4bf4170",
-        "name": "set payload",
+        "name": "prepareQueryToFetchPremiseInDb",
         "func": "const query = { };\n\nmsg.payload = [query];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -5517,7 +5923,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
+        "x": 360,
         "y": 360,
         "wires": [
             [
@@ -5529,7 +5935,7 @@
         "id": "192ca4dd97f406f7",
         "type": "function",
         "z": "19da2f4cf4bf4170",
-        "name": "waitAndSend",
+        "name": "setPremiseDataAsGlobalVariable",
         "func": "global.set('premiseData', msg.payload);",
         "outputs": 1,
         "timeout": 0,
@@ -5537,7 +5943,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
+        "x": 920,
         "y": 360,
         "wires": [
             []
@@ -5547,11 +5953,11 @@
         "id": "f540ca4c2be60134",
         "type": "ui_form",
         "z": "a71c83548b86d5cf",
-        "name": "create_user_form",
+        "name": "createUserForm",
         "label": "",
         "group": "600bf87db0283dac",
-        "order": 3,
-        "width": 23,
+        "order": 2,
+        "width": 20,
         "height": 1,
         "options": [
             {
@@ -5620,7 +6026,7 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 170,
+        "x": 100,
         "y": 160,
         "wires": [
             [
@@ -5634,9 +6040,9 @@
         "z": "a71c83548b86d5cf",
         "group": "600bf87db0283dac",
         "order": 1,
-        "width": 23,
+        "width": 20,
         "height": 1,
-        "name": "title",
+        "name": "displayTitle",
         "label": "Utilisateur > ",
         "format": "{{msg.payload}}",
         "layout": "row-left",
@@ -5645,7 +6051,7 @@
         "font": "",
         "fontSize": "32",
         "color": "#ffffff",
-        "x": 370,
+        "x": 390,
         "y": 60,
         "wires": []
     },
@@ -5653,7 +6059,7 @@
         "id": "be608c14c998f1dc",
         "type": "inject",
         "z": "a71c83548b86d5cf",
-        "name": "créer",
+        "name": "triggerTitle",
         "props": [
             {
                 "p": "payload"
@@ -5666,7 +6072,7 @@
         "topic": "",
         "payload": "Créer",
         "payloadType": "str",
-        "x": 150,
+        "x": 170,
         "y": 60,
         "wires": [
             [
@@ -5686,11 +6092,10 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "createClient",
-        "x": 690,
-        "y": 160,
+        "x": 730,
+        "y": 180,
         "wires": [
             [
-                "9b5ec61c8a1b1076",
                 "ab2f3df19898e40e"
             ]
         ]
@@ -5699,7 +6104,7 @@
         "id": "027dbc9a9f236cce",
         "type": "function",
         "z": "a71c83548b86d5cf",
-        "name": "prepareObject",
+        "name": "formatFormToInsertInDb",
         "func": "let user = msg.payload;\n\nif (user.role === false) {\n    user.role = \"user\";\n} else if (user.role === true) {\n    user.role = \"admin\";\n}\n\nmsg.payload = user;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -5707,11 +6112,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 160,
+        "x": 270,
+        "y": 220,
         "wires": [
             [
-                "aadfbbe2d1c83e76"
+                "c19dfb984873cbaa"
             ]
         ]
     },
@@ -5719,7 +6124,7 @@
         "id": "ab2f3df19898e40e",
         "type": "function",
         "z": "a71c83548b86d5cf",
-        "name": "redirect_to_reservation_page",
+        "name": "redirectToUsersPage",
         "func": "msg.payload = {\"tab\":\"Utilisateurs\"};\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -5728,7 +6133,7 @@
         "finalize": "",
         "libs": [],
         "x": 960,
-        "y": 160,
+        "y": 180,
         "wires": [
             [
                 "ac2484a266f7be90"
@@ -5739,29 +6144,102 @@
         "id": "ac2484a266f7be90",
         "type": "ui_ui_control",
         "z": "a71c83548b86d5cf",
-        "name": "change_tab",
+        "name": "switchTab",
         "events": "all",
-        "x": 1190,
-        "y": 160,
+        "x": 1160,
+        "y": 180,
         "wires": [
             []
         ]
     },
     {
-        "id": "9b5ec61c8a1b1076",
-        "type": "debug",
+        "id": "3e4baf5e013c3a75",
+        "type": "function",
         "z": "a71c83548b86d5cf",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
+        "name": "getPassword",
+        "func": "msg.payload = msg.payload.password;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "44acf02726cbef6c"
+            ]
+        ]
+    },
+    {
+        "id": "44acf02726cbef6c",
+        "type": "exec",
+        "z": "a71c83548b86d5cf",
+        "command": "python3 flask/hash_password.py ${payload}",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "api_hash_password_bcrypt",
         "x": 900,
-        "y": 100,
-        "wires": []
+        "y": 280,
+        "wires": [
+            [
+                "8c51c8fd6444db58"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8c51c8fd6444db58",
+        "type": "function",
+        "z": "a71c83548b86d5cf",
+        "name": "getHashAndSalt",
+        "func": "let parts = msg.payload.split(\" \");\n\nmsg.hashed_password = parts[0];\nmsg.salt = parts[1];\n\nlet user = flow.get('tempUser');\nuser.password = msg.hashed_password;\nuser.salt = msg.salt;\n\nmsg.payload = user;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 280,
+        "wires": [
+            [
+                "aadfbbe2d1c83e76"
+            ]
+        ]
+    },
+    {
+        "id": "c19dfb984873cbaa",
+        "type": "change",
+        "z": "a71c83548b86d5cf",
+        "name": "savePayloadInTempUser",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tempUser",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "3e4baf5e013c3a75"
+            ]
+        ]
     },
     {
         "id": "70df47423de0b885",
@@ -5841,8 +6319,8 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 720,
-        "y": 300,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
                 "88cbe4022143dfab"
@@ -5899,32 +6377,6 @@
         ]
     },
     {
-        "id": "254b9a8fdd1a2021",
-        "type": "ui_button",
-        "z": "01557fa3c5d57cbe",
-        "name": "delete_button",
-        "group": "1e09fa150998fee1",
-        "order": 3,
-        "width": 2,
-        "height": 1,
-        "passthru": false,
-        "label": "Supprimer",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "red",
-        "className": "",
-        "icon": "",
-        "payload": "{ \"url\": \"https://example.com\" }",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 180,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "73a0b0e86d1ecfcd",
         "type": "function",
         "z": "01557fa3c5d57cbe",
@@ -5937,8 +6389,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 300,
+        "x": 280,
+        "y": 140,
         "wires": [
             [
                 "63d2c5beb1139d43"
@@ -5958,8 +6410,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "findWithId",
-        "x": 500,
-        "y": 300,
+        "x": 460,
+        "y": 140,
         "wires": [
             [
                 "70df47423de0b885"
@@ -5979,8 +6431,8 @@
         "maxTimeMS": "0",
         "handleDocId": false,
         "name": "edit",
-        "x": 1170,
-        "y": 300,
+        "x": 1010,
+        "y": 140,
         "wires": [
             []
         ]
@@ -5998,8 +6450,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 300,
+        "x": 860,
+        "y": 140,
         "wires": [
             [
                 "b61235c8ef4235fa"
@@ -6010,13 +6462,13 @@
         "id": "50702c252190167a",
         "type": "http in",
         "z": "01557fa3c5d57cbe",
-        "name": "remove_user_request",
+        "name": "removeUserHttpRequest",
         "url": "/delete_user",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 400,
-        "y": 480,
+        "x": 130,
+        "y": 280,
         "wires": [
             [
                 "5c78dcafba76ebfd"
@@ -6027,7 +6479,7 @@
         "id": "5c78dcafba76ebfd",
         "type": "function",
         "z": "01557fa3c5d57cbe",
-        "name": "remove_user_preparation",
+        "name": "prepareQueryToDeleteInDb",
         "func": "let users = global.get('clientData');\n\nlet userId = msg.req.query.id;\n\nlet user = users.find(user => user._id.toString() === userId);\ndelete user.action;\n\nif (user) {\n    msg.payload = user;\n} else {\n    msg.payload = { message: \"Utilisateur non trouvé\" };\n}\n\nreturn msg;\n\n",
         "outputs": 1,
         "timeout": 0,
@@ -6035,8 +6487,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 480,
+        "x": 400,
+        "y": 280,
         "wires": [
             [
                 "342a07ec23ace6e8"
@@ -6047,7 +6499,7 @@
         "id": "22835d4307fbe224",
         "type": "function",
         "z": "01557fa3c5d57cbe",
-        "name": "redirect_to_clients_page",
+        "name": "prepareToRedirectToUsersPage",
         "func": "msg.statusCode = 302;\nmsg.headers = { location: \"/#!/4\" };\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -6055,8 +6507,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 480,
+        "x": 890,
+        "y": 280,
         "wires": [
             [
                 "06200f288e5e02a9"
@@ -6067,11 +6519,11 @@
         "id": "06200f288e5e02a9",
         "type": "http response",
         "z": "01557fa3c5d57cbe",
-        "name": "http_response",
+        "name": "redirectUsingHttpRequest",
         "statusCode": "",
         "headers": {},
-        "x": 1380,
-        "y": 480,
+        "x": 1170,
+        "y": 280,
         "wires": []
     },
     {
@@ -6085,12 +6537,287 @@
         "output": "toArray",
         "maxTimeMS": "0",
         "handleDocId": false,
-        "name": "remove_user",
-        "x": 890,
-        "y": 480,
+        "name": "removeUser",
+        "x": 650,
+        "y": 280,
         "wires": [
             [
                 "22835d4307fbe224"
+            ]
+        ]
+    },
+    {
+        "id": "298adb3fd1c582a4",
+        "type": "ui_template",
+        "z": "1317a1110c9c2dbe",
+        "group": "",
+        "name": "Custom CSS",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body {\n\tbackground: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\n\tbackground-size: 400% 400%;\n\tanimation: gradient 15s ease infinite;\n\theight: 100vh;\n}\n\n@keyframes gradient {\n\t0% {\n\t\tbackground-position: 0% 50%;\n\t}\n\t50% {\n\t\tbackground-position: 100% 50%;\n\t}\n\t100% {\n\t\tbackground-position: 0% 50%;\n\t}\n}\n    \n    /* Top bar */\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n    color: #FFFFFF !important;\n    }\n    \n    /* Left menu */\n    /* Sidebar */\n    body.nr-dashboard-theme md-sidenav {\n    color: white !important;\n    background-color: rgba(0, 0, 0, 0) !important;\n    }\n    \n    /* Hover selection */\n    a.md-no-style, button.md-no-style {\n    border-radius: 10px !important;\n    }\n    \n    /* Selected */\n    .nr-menu-item-active div button {\n    border-right: 4px solid rgb(41, 98, 255) !important;\n    }\n    \n    /* List */\n    body.nr-dashboard-theme md-sidenav div.md-list-item-inner {\n    color: white !important;\n    background-color: rgba(40, 85, 165, 1) !important;\n    border-radius: 10px !important;\n    }\n    \n    /* Groups */\n    ui-card-panel {\n    background-color: rgba(255, 255, 255, 0.1) !important;\n    border-radius: 10px !important;\n    }\n    \n    .nr-dashboard-theme ui-card-panel {\n    border: none !important;\n    }\n    \n    /* Name groups */\n    .nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n    color: rgba(255, 255, 255, 0.5) !important;\n    }\n    \n    /* Buttons */\n    .nr-dashboard-theme .nr-dashboard-button .md-button {\n    background-color: rgba(255, 255, 255, 0.1) !important;\n    }\n    \n    .md-button {\n    border-radius: 10px !important;\n    }\n    \n    /* Dropdown menu */\n    .nr-dashboard-theme md-select-menu {\n    background-color: rgba(40, 85, 165, 1) !important;\n    }\n    \n    .nr-dashboard-theme md-select-menu,\n    .nr-dashboard-theme md-select-menu md-option {\n    background-color: transparent !important;\n    }\n    \n    .nr-dashboard-theme .md-select-menu-container {\n    border-radius: 10px !important;\n    border: none !important;\n    }\n    \n    .nr-dashboard-theme md-select-menu md-option[selected] {\n    color: white !important;\n    background-color: #1a3566 !important;\n    }\n    \n    /* Template */\n    md-card > img,\n    md-card > md-card-header img,\n    md-card md-card-title-media img {\n    border-radius: 10px !important;\n    }\n    \n    /* Color picker text BG */\n    .nr-dashboard-theme .color-picker-input-wrapper > input {\n    color: white !important;\n    background-color: transparent !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a120abfcab3a8c2f",
+        "type": "inject",
+        "z": "1317a1110c9c2dbe",
+        "name": "atBegginingTrigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "4677ddfdc16a5fcc"
+            ]
+        ]
+    },
+    {
+        "id": "4677ddfdc16a5fcc",
+        "type": "change",
+        "z": "1317a1110c9c2dbe",
+        "name": "setRpiAsInactive",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rpiActive",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a8283ed015441de",
+        "type": "ui_template",
+        "z": "1317a1110c9c2dbe",
+        "group": "",
+        "name": "Logs_table CSS",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .logs_table_smartoffice table {\n    width: 100% !important;\n    border-collapse: collapse !important;\n    font-family: Arial, sans-serif !important;\n    margin: 20px 0 !important;\n    font-size: 16px !important;\n    text-align: left !important;\n    color: #ffffff !important; /* Texte blanc */\n    }\n    \n    .logs_table_smartoffice thead th {\n    padding: 10px !important;\n    border: 1px solid #dddddd !important;\n    color: #ffffff !important; /* Texte blanc */\n    background-color: rgba(255, 255, 255, 0.5) !important; /* Arrière-plan blanc avec opacité */\n    }\n    \n    .logs_table_smartoffice tbody tr {\n    border-bottom: 1px solid #dddddd !important;\n    background-color: transparent !important; /* Supprime les arrière-plans imposés */\n    }\n    \n    .logs_table_smartoffice tbody tr:nth-child(even) {\n    background-color: transparent !important; /* Empêche le style alterné par défaut */\n    }\n    \n    .logs_table_smartoffice tbody td {\n    padding: 8px 10px !important;\n    border: 1px solid #dddddd !important;\n    color: #ffffff !important; /* Texte blanc */\n    background-color: transparent !important; /* Supprime tout arrière-plan */\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57d92515054025a5",
+        "type": "ui_template",
+        "z": "1317a1110c9c2dbe",
+        "group": "",
+        "name": "Users table CSS",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .users_table_smartoffice table {\n    width: 100% !important;\n    border-collapse: collapse !important;\n    font-family: Arial, sans-serif !important;\n    margin: 20px 0 !important;\n    font-size: 16px !important;\n    text-align: left !important;\n    color: #ffffff !important; /* Texte blanc */\n    }\n\n    .users_table_smartoffice thead th {\n        padding: 10px !important;\n        border: 1px solid #dddddd !important;\n        color: #ffffff !important; /* Texte blanc */\n        background-color: rgba(255, 255, 255, 0.5) !important; /* Arrière-plan blanc avec opacité */\n    }\n\n    .users_table_smartoffice tbody tr {\n        border-bottom: 1px solid #dddddd !important;\n        background-color: transparent !important; /* Supprime les arrière-plans imposés */\n    }\n\n    .users_table_smartoffice tbody tr:nth-child(even) {\n        background-color: transparent !important; /* Empêche le style alterné par défaut */\n    }\n\n    .users_table_smartoffice tbody td {\n        padding: 8px 10px !important;\n        border: 1px solid #dddddd !important;\n        color: #ffffff !important; /* Texte blanc */\n        background-color: transparent !important; /* Supprime tout arrière-plan */\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67b99b59e82c4fe5",
+        "type": "ui_template",
+        "z": "1317a1110c9c2dbe",
+        "group": "",
+        "name": "Reservation table CSS",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .reservation_table_smartoffice table {\n    width: 100% !important;\n    border-collapse: collapse !important;\n    font-family: Arial, sans-serif !important;\n    margin: 20px 0 !important;\n    font-size: 16px !important;\n    text-align: left !important;\n    color: #ffffff !important; /* Texte blanc */\n    }\n    \n    .reservation_table_smartoffice thead th {\n    padding: 10px !important;\n    border: 1px solid #dddddd !important;\n    color: #ffffff !important; /* Texte blanc */\n    background-color: rgba(255, 255, 255, 0.5) !important; /* Arrière-plan blanc avec opacité */\n    }\n    \n    .reservation_table_smartoffice tbody tr {\n    border-bottom: 1px solid #dddddd !important;\n    background-color: transparent !important; /* Supprime les arrière-plans imposés */\n    }\n    \n    .reservation_table_smartoffice tbody tr:nth-child(even) {\n    background-color: transparent !important; /* Empêche le style alterné par défaut */\n    }\n    \n    .reservation_table_smartoffice tbody td {\n    padding: 8px 10px !important;\n    border: 1px solid #dddddd !important;\n    color: #ffffff !important; /* Texte blanc */\n    background-color: transparent !important; /* Supprime tout arrière-plan */\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 180,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14bf1c546e428536",
+        "type": "debug",
+        "z": "1317a1110c9c2dbe",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "70f5df734cbe9edb",
+        "type": "exec",
+        "z": "1317a1110c9c2dbe",
+        "command": "python3 flask/decode_token.py ${payload}",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "api_decode_token",
+        "x": 670,
+        "y": 420,
+        "wires": [
+            [
+                "3ea9cff0e95b3943"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "af2fb76caa543a3b",
+        "type": "function",
+        "z": "1317a1110c9c2dbe",
+        "name": "prepareRequest",
+        "func": "msg.payload = msg.payload;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 420,
+        "wires": [
+            [
+                "70f5df734cbe9edb"
+            ]
+        ]
+    },
+    {
+        "id": "bbf56735fca25924",
+        "type": "inject",
+        "z": "1317a1110c9c2dbe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cameron.noupoue@student.hepl.be",
+        "payloadType": "str",
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "af2fb76caa543a3b"
+            ]
+        ]
+    },
+    {
+        "id": "243e6b40a4c1304d",
+        "type": "inject",
+        "z": "1317a1110c9c2dbe",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "nasser.kotiyev@student.hepl.be",
+        "payloadType": "str",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "af2fb76caa543a3b"
+            ]
+        ]
+    },
+    {
+        "id": "3ea9cff0e95b3943",
+        "type": "function",
+        "z": "1317a1110c9c2dbe",
+        "name": "setGlobalRole",
+        "func": "// Remplacer les guillemets simples par des guillemets doubles\nnode.warn(msg.payload);\nconst validJsonString = msg.payload.replace(/'/g, '\"');\n\n// Convertir la chaîne en objet JSON\ntry {\n    const payload = JSON.parse(validJsonString);\n\n    // Retourne uniquement la valeur de 'role'\n    msg.payload = payload.role;\n    global.set('currentRole', payload.role);\n\n} catch (error) {\n    msg.payload = \"Invalid JSON format\";\n    node.status({ fill: \"red\", shape: \"dot\", text: \"Invalid JSON\" });\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 420,
+        "wires": [
+            [
+                "14bf1c546e428536"
             ]
         ]
     }
