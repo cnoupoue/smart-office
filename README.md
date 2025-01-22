@@ -33,8 +33,8 @@ The project is divided into four levels
   <img src="project-study/result/reservation.png" alt="Image 2" width="45%">
 </p>
 <p align="center">
-  <img src="project-study/result/users.ong" alt="Image 3" width="45%" style="margin-right: 10px;">
-  <img src="project-study/result/" alt="Image 4" width="45%">
+  <img src="project-study/result/users.png" alt="Image 3" width="45%" style="margin-right: 10px;">
+  <img src="project-study/result/logs.png" alt="Image 4" width="45%">
 </p>
 
 ## Authors 
