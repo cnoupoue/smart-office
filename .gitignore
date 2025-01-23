@@ -1,6 +1,13 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,putty,ssh
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,putty,ssh
 
+
+# Ignore all .DS_Store files
+.DS_Store
+
+# Ignore all .idea directories
+.idea/
+
 ### PuTTY ###
 # Private key
 *.ppk
