@@ -5,6 +5,7 @@
 # Private key
 *.ppk
 
+./idea/
 .vscode/*
 
 ### Certificates
